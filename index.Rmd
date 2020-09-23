@@ -1,0 +1,16 @@
+--- 
+title: "BIG DATA URBANA"
+author: "Angie Scetta"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+subtitle: "Manual de Clase para Big Data Urbana"
+lang: es
+---
+
+# Bienvenidos {-}
+
+Este es el manual que vamos a utilizar en las 4 clases
