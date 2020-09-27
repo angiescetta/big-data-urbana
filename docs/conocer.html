@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Clase 1 CONOCER | BIG DATA URBANA</title>
+  <meta name="description" content="Clase 1 CONOCER | BIG DATA URBANA" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Clase 1 CONOCER | BIG DATA URBANA" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Clase 1 CONOCER | BIG DATA URBANA" />
+  
+  
+  
+
+<meta name="author" content="Angie Scetta" />
+
+
+<meta name="date" content="2020-09-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="explorar.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Big Data Urbana</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>INTRODUCCIÓN</a></li>
+<li class="chapter" data-level="1" data-path="conocer.html"><a href="conocer.html"><i class="fa fa-check"></i><b>1</b> CONOCER</a></li>
+<li class="chapter" data-level="2" data-path="explorar.html"><a href="explorar.html"><i class="fa fa-check"></i><b>2</b> EXPLORAR</a><ul>
+<li class="chapter" data-level="2.1" data-path="explorar.html"><a href="explorar.html#filtrar"><i class="fa fa-check"></i><b>2.1</b> <strong>FILTRAR</strong></a></li>
+<li class="chapter" data-level="2.2" data-path="explorar.html"><a href="explorar.html#modificar"><i class="fa fa-check"></i><b>2.2</b> <strong>MODIFICAR</strong></a></li>
+<li class="chapter" data-level="2.3" data-path="explorar.html"><a href="explorar.html#seleccionar"><i class="fa fa-check"></i><b>2.3</b> <strong>SELECCIONAR</strong></a></li>
+<li class="chapter" data-level="2.4" data-path="explorar.html"><a href="explorar.html#resumir"><i class="fa fa-check"></i><b>2.4</b> <strong>RESUMIR</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="graficar.html"><a href="graficar.html"><i class="fa fa-check"></i><b>3</b> GRAFICAR</a></li>
+<li class="chapter" data-level="4" data-path="mapear.html"><a href="mapear.html"><i class="fa fa-check"></i><b>4</b> MAPEAR</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">BIG DATA URBANA</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="conocer" class="section level1">
+<h1><span class="header-section-number">Clase 1</span> CONOCER</h1>
+<p><strong>Hola a todos, ¡Bienvenidos a BIG DATA URBANA!</strong></p>
+<p>A lo largo del curso trabajaremos con el formato <strong>RMarkdown</strong> que nos permitirá analizar y visualizar nuestros datos.</p>
+<p>Empecemos de a poco:</p>
+<ul>
+<li>Para crear un <strong>nuevo proyecto y un RMarkdown</strong> pueden seguir el siguiente tutorial: <strong><a href="https://rpubs.com/angiescetta/conociendo-R" class="uri">https://rpubs.com/angiescetta/conociendo-R</a></strong></li>
+</ul>
+<p>Ahora si, ya podemos comenzar!</p>
+<p><strong>¿Para que sirve el formato RMawkdown?</strong></p>
+<p>Este formato sirve para manipular datos y armar informes listos para presentar. Hay 2 formas de escribir en un RMarkdown:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Texto</strong> como el que estoy escribiendo ahora.</p></li>
+<li><p><strong>Bloques de código</strong> (o “chunks”) para analizar, modificar o visualizar datos.</p></li>
+</ol>
+<p>A lo largo del curso vamos a trabajar con los datos de Properati, un portal web de compra, venta y alquiler de inmuebles en toda América Latina.
+Estos datos son públicos y pueden encontrarlos en <a href="https://properati.com.ar/data" class="uri">https://properati.com.ar/data</a>.</p>
+<p>En este caso usaremos un set de datos de propiedades en AMBA con info de 3 meses del 2020: Mayo, Junio y Julio. Previamente procesados que pueden descargarse de <a href="https://data.world/angie-scetta/amba-properati" class="uri">https://data.world/angie-scetta/amba-properati</a></p>
+<p>Ahora si, manos a la obra! Carguemos el dataset descargado:</p>
+<p><em>Recomendación: Al descargarlo, moverlo de la carpeta “Descargas” a la carpeta del Proyecto donde estén trabajando.</em></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="conocer.html#cb1-1"></a>datos_amba &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/amba_properati.csv&quot;</span>)</span></code></pre></div>
+<p>Y empecemos a conocer nuestro dataset, veamos como se estructura (cuantas filas y columnas tiene) y que información contiene. Para esto empezaremos utilizando dim():</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="conocer.html#cb2-1"></a><span class="kw">dim</span>(datos_amba)</span></code></pre></div>
+<pre><code>## [1] 22040    13</code></pre>
+<p>Podemos ver que tenemos 22.040 registros/filas y 13 columnas, pero ¿qué contienen esas columnas? Veamoslo con names():</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="conocer.html#cb4-1"></a><span class="kw">names</span>(datos_amba)</span></code></pre></div>
+<pre><code>##  [1] &quot;created_on&quot;      &quot;provincia&quot;       &quot;partido&quot;        
+##  [4] &quot;rooms&quot;           &quot;surface_total&quot;   &quot;surface_covered&quot;
+##  [7] &quot;price&quot;           &quot;currency&quot;        &quot;title&quot;          
+## [10] &quot;property_type&quot;   &quot;operation_type&quot;  &quot;lat&quot;            
+## [13] &quot;long&quot;</code></pre>
+<p>Bien, las columnas tienen fecha de publicación de la propiedad, provincia y partido donde se ubica, cantidad de ambientes, superficie total y superficie cubierta, precio publicado, tipo de moneda (ARS o USD), el título que el usuario escribió al publicar su propiedad, el tipo de propiedad, el tipo de operación, y finalmente la ubicación del inmueble con sus coordenadas: latitud y longitud.</p>
+<p>Ahora veamos una pequeña muestra de la data con head():</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="conocer.html#cb6-1"></a><span class="kw">head</span>(datos_amba)</span></code></pre></div>
+<pre><code>##   created_on provincia   partido rooms surface_total surface_covered
+## 1     202005       GBA  La Plata     8           840             325
+## 2     202005      CABA  Comuna 5     2            48              46
+## 3     202005       GBA   Escobar     2           165              65
+## 4     202005      CABA Comuna 14     2            55              50
+## 5     202005      CABA  Comuna 1     2            60              55
+## 6     202005      CABA  Comuna 6     2            51              45
+##    price currency
+## 1  85000      ARS
+## 2 140000      USD
+## 3  20000      ARS
+## 4  48000      ARS
+## 5  19000      ARS
+## 6  25000      ARS
+##                                                                                            title
+## 1                                                                           San Facundo alquiler
+## 2                                                                                  Gascon al 100
+## 3 Lindisimo departamento en alquiler . Complejo Civis Tortuguitas,  dos ambientes  con amenities
+## 4                                                          Fray Justo Santa Maria de Oro al 2800
+## 5                                                             2 ambientes de 60 m2 con amenities
+## 6                                   Impecable 2 amb c/cochera, SUM y parrilla - Subte A Carabobo
+##   property_type operation_type       lat      long
+## 1          Casa       Alquiler -58.04245 -34.89847
+## 2  Departamento          Venta -58.42453 -34.61118
+## 3  Departamento       Alquiler -58.73963 -34.44330
+## 4  Departamento       Alquiler -58.42125 -34.57589
+## 5  Departamento       Alquiler -58.39047 -34.60833
+## 6  Departamento       Alquiler -58.45344 -34.62673</code></pre>
+<p>Y un resúmen estadístico de la información:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="conocer.html#cb8-1"></a><span class="kw">summary</span>(datos_amba)</span></code></pre></div>
+<pre><code>##    created_on     provincia         partido          rooms       
+##  Min.   :202005   CABA:13116   Comuna 14: 2961   Min.   : 1.000  
+##  1st Qu.:202005   GBA : 8924   Comuna 13: 1677   1st Qu.: 2.000  
+##  Median :202006                Tigre    : 1605   Median : 3.000  
+##  Mean   :202006                Comuna 15: 1595   Mean   : 3.041  
+##  3rd Qu.:202007                Comuna 2 : 1242   3rd Qu.: 4.000  
+##  Max.   :202007                Comuna 1 : 1132   Max.   :10.000  
+##                                (Other)  :11828                   
+##  surface_total  surface_covered      price         currency   
+##  Min.   :  10   Min.   : 10.00   Min.   :  10000   ARS: 4820  
+##  1st Qu.:  50   1st Qu.: 45.00   1st Qu.:  71000   USD:17220  
+##  Median :  75   Median : 65.00   Median : 138000              
+##  Mean   : 114   Mean   : 90.78   Mean   : 200688              
+##  3rd Qu.: 128   3rd Qu.:105.00   3rd Qu.: 240000              
+##  Max.   :5000   Max.   :882.00   Max.   :3000000              
+##                                                               
+##                                                   title      
+##  Departamento de 2 ambientes en Venta en Villa crespo:  270  
+##  Departamento de 2 ambientes en Venta en Almagro     :  190  
+##  Departamento de 2 ambientes en Venta en Palermo     :  184  
+##  Departamento de 3 ambientes en Venta en Villa crespo:  179  
+##  Departamento de 3 ambientes en Venta en Almagro     :  165  
+##  Departamento de 3 ambientes en Venta en Palermo     :  162  
+##  (Other)                                             :20890  
+##       property_type    operation_type       lat              long       
+##  Casa        : 3349   Alquiler: 4820   Min.   :-59.04   Min.   :-35.12  
+##  Departamento:16819   Venta   :17220   1st Qu.:-58.53   1st Qu.:-34.62  
+##  PH          : 1872                    Median :-58.45   Median :-34.59  
+##                                        Mean   :-58.47   Mean   :-34.59  
+##                                        3rd Qu.:-58.41   3rd Qu.:-34.56  
+##                                        Max.   :-57.83   Max.   :-34.26  
+## </code></pre>
+<p>A priori, en este resumen podemos entender varias cosas de la data. Por ejemplo:</p>
+<ul>
+<li><p>Hay registros de propiedades publicadas entre Mayo (Min) y Julio (Max) 2020</p></li>
+<li><p>La mayoría de las publicaciones son en CABA (13.116 vs 8.924)</p></li>
+<li><p>El Partido/Comuna que más aparece es la Comuna 14 (Barrio de Palermo)</p></li>
+<li><p>De las 3 tipologías de propiedades, lo que más hay es Departamentos, seguido por Casas y por último PHs.</p></li>
+<li><p>Hay más propiedades en Venta que en Alquiler (17.220 vs 4.820)</p></li>
+</ul>
+<p>Por último, investiguemos como es la estructura de la data, es decir que tipo de información tiene cada campo. Si bien algo ya nos imaginamos gracias al summary(), usemos str() para revisarlo:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="conocer.html#cb10-1"></a><span class="kw">str</span>(datos_amba)</span></code></pre></div>
+<pre><code>## &#39;data.frame&#39;:	22040 obs. of  13 variables:
+##  $ created_on     : int  202005 202005 202005 202005 202005 202005 202005 202005 202005 202005 ...
+##  $ provincia      : Factor w/ 2 levels &quot;CABA&quot;,&quot;GBA&quot;: 2 1 2 1 1 1 1 1 2 2 ...
+##  $ partido        : Factor w/ 50 levels &quot;Almirante Brown&quot;,..: 32 16 22 11 6 17 12 6 27 41 ...
+##  $ rooms          : int  8 2 2 2 2 2 2 2 2 3 ...
+##  $ surface_total  : int  840 48 165 55 60 51 62 90 50 80 ...
+##  $ surface_covered: int  325 46 65 50 55 45 48 70 45 80 ...
+##  $ price          : int  85000 140000 20000 48000 19000 25000 110001 65000 93000 22000 ...
+##  $ currency       : Factor w/ 2 levels &quot;ARS&quot;,&quot;USD&quot;: 1 2 1 1 1 1 2 1 2 1 ...
+##  $ title          : Factor w/ 14745 levels &quot;- Casa Venta Tipo Chalet 5 Amb con Cochera - Villa Pueyrredo&quot;,..: 11726 8726 9564 8711 357 9214 5544 7570 1695 4291 ...
+##  $ property_type  : Factor w/ 3 levels &quot;Casa&quot;,&quot;Departamento&quot;,..: 1 2 2 2 2 2 2 2 2 2 ...
+##  $ operation_type : Factor w/ 2 levels &quot;Alquiler&quot;,&quot;Venta&quot;: 1 2 1 1 1 1 2 1 2 1 ...
+##  $ lat            : num  -58 -58.4 -58.7 -58.4 -58.4 ...
+##  $ long           : num  -34.9 -34.6 -34.4 -34.6 -34.6 ...</code></pre>
+<p>Hay varios tipos de datos, pero en nuestro set nos encontramos con 3: integer (int), numeric (num) y Factor.</p>
+<p>Ahora bien, ¿Qué significa eso?</p>
+<ul>
+<li><p>Integer son números enteros, es decir que el campo solo admite números sin decimales como por ejemplo metros cuadrados de propiedades, que siempre se calculan en metros y nunca se suman centímetros cuadrados.</p></li>
+<li><p>Numeric son números con decimales, como por ejemplo, latitud y longitud que siempre tienen decimales.</p></li>
+<li><p>Factor son categorías, por ejemplo Barrios, Partidos, Tipos de propiedades, etc.</p></li>
+</ul>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="explorar.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["manual-big-data-urbana.pdf", "manual-big-data-urbana.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

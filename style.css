@@ -1,6 +1,12 @@
-p.caption {
-  color: #777;
-  margin-top: 10px;
+/* Whole document: */
+body{
+  font-family: Courier New;
+  font-size: 10pt;
+}
+/* Headers */
+h1,h2,h3,h4,h5,h6{
+font-family: Courier New;
+  font-size: 14pt;
 }
 p code {
   white-space: inherit;

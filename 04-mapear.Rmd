@@ -1,0 +1,60 @@
+# MAPEAR
+
+Llegamos al final del curso y ahora nos toca mapear toda la información que estuvimos analizando las clases anteriores. Para esto vamos a tener que instalar un nuevo paquete llamado `sf` y luego activarlo con *library()* al igual que como lo veníamos haciendo con `tidyverse`:
+
+```{r}
+library(tidyverse)
+#install.packages(sf)
+library(sf)
+```
+
+```{r}
+datos_amba <- read.csv("data/amba_properati.csv")
+```
+
+Descarguen el zip con el shape de los partidos de amba en el siguiente link https://data.world/angie-scetta/partidos-amba
+
+```{r}
+partidos_amba <- st_read("data/partidos_amba.shp")
+```
+
+```{r}
+mapear <- datos_amba %>%
+  filter(operation_type=="Venta",
+         created_on==max(created_on))
+
+mapear <- mapear %>%
+  group_by(partido) %>%
+  summarise(cantidad=n(),
+            price_m2=median(price/surface_covered))
+```
+
+```{r}
+partidos_amba <- left_join(partidos_amba, mapear, by=c("nombre"="partido"))
+```
+```{r}
+ggplot()+
+  geom_sf(data=partidos_amba, aes(fill=price_m2))
+```
+
+```{r}
+ggplot()+
+  geom_sf(data=partidos_amba, aes(fill=price_m2), color=NA) +
+    labs(title = "Valor del m2 por Partido",
+         subtitle = "AMBA",
+         fill = "USD/m2",
+         caption= "Fuente: Properati")+
+  scale_fill_gradient(low="lightgoldenrodyellow", high="deeppink4") +
+  theme_void()
+```
+
+```{r}
+ggplot()+
+  geom_sf(data=partidos_amba, aes(fill=cantidad), color=NA) +
+    labs(title = "Propiedades en venta por Partido",
+         subtitle = "AMBA",
+         fill = "Cantidad",
+         caption= "Fuente: Properati")+
+  scale_fill_gradient(low="lightgoldenrodyellow", high="deeppink4") +
+  theme_void()
+```

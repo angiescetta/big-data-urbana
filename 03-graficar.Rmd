@@ -1,0 +1,38 @@
+# GRAFICAR
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+datos_amba <- read.csv("data/amba_properati.csv")
+```
+
+```{r}
+ggplot()+
+  geom_bar(data=datos_amba, aes(x=partido, weight=price)) +
+  coord_flip()
+```
+
+```{r}
+ggplot()+
+  geom_point(data=datos_amba, aes(x=surface_covered, y=price))
+```
+
+```{r}
+ggplot()+
+  geom_point(data=datos_amba, aes(x=surface_covered, y=price)) +
+  facet_wrap(~provincia)
+```
+
+```{r}
+ggplot()+
+  geom_point(data=datos_amba, aes(x=long, y=lat))
+```
+
+¿Tiene forma de AMBA?
+
+```{r}
+options(scipen=999)
+```
+

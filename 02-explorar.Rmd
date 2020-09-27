@@ -1,0 +1,106 @@
+# EXPLORAR
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+datos_amba <- read.csv("data/amba_properati.csv")
+```
+
+## **FILTRAR**
+
+```{r}
+a <- filter(datos_amba, operation_type=="Venta")
+```
+
+
+```{r}
+filtro <- filter(datos_amba, provincia=="CABA")
+
+head(filtro)
+```
+
+```{r}
+filtro <- filter(datos_amba, provincia=="CABA" & partido=="Comuna 5")
+
+head(filtro)
+```
+
+```{r}
+filtro <- filter(datos_amba, partido=="Comuna 13" | partido=="Comuna 5")
+
+head(filtro)
+```
+
+```{r}
+filtro <- filter(datos_amba, surface_total>=100 & operation_type=="Alquiler")
+
+head(filtro)
+```
+
+## **MODIFICAR**
+
+```{r}
+modificar <- mutate(datos_amba, price_m2=price/surface_covered)
+
+head(modificar)
+```
+
+## **SELECCIONAR**
+
+```{r}
+seleccion <- select(datos_amba, created_on, provincia, price, currency)
+
+head(seleccion)
+```
+
+```{r}
+seleccion <- select(datos_amba, -title)
+
+head(seleccion)
+```
+
+```{r}
+seleccion <- select(datos_amba, price:operation_type)
+
+head(seleccion)
+```
+
+```{r}
+seleccion <- select(datos_amba, 7:10)
+
+head(seleccion)
+```
+
+```{r}
+seleccion <- select(datos_amba, starts_with("p"))
+
+head(seleccion)
+```
+
+```{r}
+seleccion <- select(datos_amba, ends_with("e"))
+
+head(seleccion)
+```
+
+```{r}
+seleccion <- select(datos_amba, contains("surface"))
+
+head(seleccion)
+```
+
+## **RESUMIR**
+
+```{r}
+a <- mutate(a, price_m2=price/surface_covered)
+a <- select(a, -price)
+summarise(a, price_m2=median(price_m2))
+
+a <- group_by(a, partido)
+a <- summarise(a, price_m2=median(price_m2))
+
+a <- arrange(a, desc(price_m2))
+head(a)
+```
