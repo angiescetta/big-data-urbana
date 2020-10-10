@@ -16,11 +16,11 @@ Este formato sirve para manipular datos y armar informes listos para presentar. 
 
 2. **Bloques de código** (o "chunks") donde insertaremos nuestras líneas de código con el objetivo de manipular (analizar, modificar, visualizar) los datos. Esto es un chunk:
 
-![](E:/03-OTROS/SCA-CURSOS-2020/capturas/022.jpg)
+![](images/001.jpg)
 
 Y se inserta haciendo click en **Insert/R** o con el siguiente atajo en el teclado: **Ctrl + Shift + I**
 
-![](E:/03-OTROS/SCA-CURSOS-2020/capturas/023.jpg)
+![](images/002.jpg)
 
 **Carguemos nuestro primer dataset**
 
