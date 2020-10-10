@@ -1,14 +1,12 @@
 # CONOCER
 
-**Hola a todos, ¡Bienvenidos a BIG DATA URBANA!**
-
-A lo largo del curso trabajaremos con el formato **RMarkdown** que nos permitirá analizar y visualizar nuestros datos.
+A lo largo del curso trabajaremos con el formato **RMarkdown**, un tipo de documento de RStudio que integra texto con código de R.
 
 Empecemos de a poco:
 
-* Para crear un **nuevo proyecto y un RMarkdown** pueden seguir el siguiente tutorial: **https://rpubs.com/angiescetta/conociendo-R**
+Primero tenemos que crear un **nuevo proyecto y un nuevo RMarkdown**. Los pasos a seguir pueden encontrarlos en el siguiente tutorial: **https://rpubs.com/angiescetta/conociendo-R**
 
-Ahora si, ya podemos comenzar!
+Ahora si, comencemos!
 
 **¿Para que sirve el formato RMawkdown?**
 
@@ -16,68 +14,105 @@ Este formato sirve para manipular datos y armar informes listos para presentar. 
 
 1. **Texto** como el que estoy escribiendo ahora.
 
-2. **Bloques de código** (o "chunks") para analizar, modificar o visualizar datos.
+2. **Bloques de código** (o "chunks") donde insertaremos nuestras líneas de código con el objetivo de manipular (analizar, modificar, visualizar) los datos. Esto es un chunk:
+
+![](E:/03-OTROS/SCA-CURSOS-2020/capturas/022.jpg)
+
+Y se inserta haciendo click en **Insert/R** o con el siguiente atajo en el teclado: **Ctrl + Shift + I**
+
+![](E:/03-OTROS/SCA-CURSOS-2020/capturas/023.jpg)
+
+**Carguemos nuestro primer dataset**
 
 A lo largo del curso vamos a trabajar con los datos de Properati, un portal web de compra, venta y alquiler de inmuebles en toda América Latina.
 Estos datos son públicos y pueden encontrarlos en https://properati.com.ar/data.
 
-En este caso usaremos un set de datos de propiedades en AMBA con info de 3 meses del 2020: Mayo, Junio y Julio. Previamente procesados que pueden descargarse de https://data.world/angie-scetta/amba-properati
-
-Ahora si, manos a la obra! Carguemos el dataset descargado:
+En este caso, para facilitar la manipulación de la información, usaremos un set de datos (en formato csv) previamente procesado que contiene datos de propiedades publicadas en AMBA en Junio y Julio del 2020. Pueden descargarlo de https://data.world/angie-scetta/amba-properati.
 
 *Recomendación: Al descargarlo, moverlo de la carpeta "Descargas" a la carpeta del Proyecto donde estén trabajando.*
+
+Ahora si, manos a la obra! Para cargar el dataset pueden copiar la siguiente línea de código y pegarla dentro de un chunk:
 
 ```{r}
 datos_amba <- read.csv("data/amba_properati.csv")
 ```
 
-Y empecemos a conocer nuestro dataset, veamos como se estructura (cuantas filas y columnas tiene) y que información contiene. Para esto empezaremos utilizando dim():
+Para entender la lógica detrás del chunk anterior pueden revisar este link: https://rpubs.com/angiescetta/importar-dataset
+
+Ahora exploremos nuestro dataset, veamos como se estructura (cuantas filas y columnas tiene) y que información trae...
+
+Para esto empezaremos utilizando `dim()`:
 
 ```{r}
 dim(datos_amba)
 ```
 
-Podemos ver que tenemos 22.040 registros/filas y 13 columnas, pero ¿qué contienen esas columnas? Veamoslo con names():
+Podemos ver que tenemos 14.929 registros/filas y 13 columnas. También podríamos ver esto por separado de la siguiente forma:
+
+```{r}
+ncol(datos_amba)
+```
+```{r}
+nrow(datos_amba)
+```
+
+Pero ¿qué contienen esas 13 columnas? Esto podemos verlo con `names()`:
 
 ```{r}
 names(datos_amba)
 ```
 Bien, las columnas tienen fecha de publicación de la propiedad, provincia y partido donde se ubica, cantidad de ambientes, superficie total y superficie cubierta, precio publicado, tipo de moneda (ARS o USD), el título que el usuario escribió al publicar su propiedad, el tipo de propiedad, el tipo de operación, y finalmente la ubicación del inmueble con sus coordenadas: latitud y longitud.
 
-Ahora veamos una pequeña muestra de la data con head():
+Parece que cada fila/registro de la base corresponde a una propiedad publicada, pero veamos una pequeña muestra de la data con `head()` para estar seguros:
 
 ```{r}
 head(datos_amba)
 ```
-Y un resúmen estadístico de la información:
+Y un resumen estadístico de la información:
 
 ```{r}
 summary(datos_amba)
 ```
+
 A priori, en este resumen podemos entender varias cosas de la data. Por ejemplo:
 
-- Hay registros de propiedades publicadas entre Mayo (Min) y Julio (Max) 2020
+- Hay registros de propiedades publicadas entre Junio (Min) y Julio (Max) 2020
 
-- La mayoría de las publicaciones son en CABA (13.116 vs 8.924)
+- La mayoría de las publicaciones son en CABA (8.896 vs 6.033)
 
-- El Partido/Comuna que más aparece es la Comuna 14 (Barrio de Palermo)
+- El Partido/Comuna que más aparece es la Comuna 14 (Barrio de Palermo), seguido por Tigre.
 
 - De las 3 tipologías de propiedades, lo que más hay es Departamentos, seguido por Casas y por último PHs.
 
-- Hay más propiedades en Venta que en Alquiler (17.220 vs 4.820)
+- Hay más propiedades en Venta que en Alquiler (11.678 vs 3.251)
 
-Por último, investiguemos como es la estructura de la data, es decir que tipo de información tiene cada campo. Si bien algo ya nos imaginamos gracias al summary(), usemos str() para revisarlo:
+Por último, investiguemos como es la estructura de la data, es decir que tipo de información tiene cada campo. Si bien algo ya nos imaginamos gracias al `summary()`, usemos `str()` para revisarlo:
 
 ```{r}
 str(datos_amba)
 ```
 
-Hay varios tipos de datos, pero en nuestro set nos encontramos con 3: integer (int), numeric (num) y Factor.
+Existen varios tipos de datos, pero en nuestro set nos encontramos con 3: integer (int), numeric (num) y Factor.
 
 Ahora bien, ¿Qué significa eso?
 
-- Integer son números enteros, es decir que el campo solo admite números sin decimales como por ejemplo metros cuadrados de propiedades, que siempre se calculan en metros y nunca se suman centímetros cuadrados.
+- **Integer** son números enteros, es decir que el campo solo admite números sin decimales como por ejemplo cantidad de habitaciones de una propiedad.
 
-- Numeric son números con decimales, como por ejemplo, latitud y longitud que siempre tienen decimales.
+- **Numeric** son números con decimales, como por ejemplo, latitud y longitud.
 
-- Factor son categorías, por ejemplo Barrios, Partidos, Tipos de propiedades, etc.
+- **Factor** son categorías, por ejemplo Barrios, Partidos, Tipos de propiedades, etc.
+
+Además del tipo de dato, con `str()` también podemos ver la cantidad de niveles que tienen las variables de tipo Factor. Por ejemplo, se observa que la columna provincia solo tiene 2 categorías posibles (CABA o AMBA), en cambio la columna partido tiene 50.
+
+
+**Próximos Pasos**
+
+Acá concluye la primer clase, pero los invito a que repliquen lo realizado en clase con algún otro dataset que les interese. Pueden descargar datos de diversos portales abiertos como por ejemplo: 
+
+- Portal de Datos Abiertos de Argentina: https://datos.gob.ar/
+
+- Portal de Datos Abiertos de CABA: https://data.buenosaires.gob.ar/
+
+- Portal de Datos Abiertos de PBA: https://catalogo.datos.gba.gob.ar/
+
+- O de cualquier otro portal de datos que conozcan o encuentren!

@@ -24,7 +24,7 @@
 <meta name="author" content="Angie Scetta" />
 
 
-<meta name="date" content="2020-09-27" />
+<meta name="date" content="2020-10-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -134,7 +134,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Big Data Urbana</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>INTRODUCCIÓN</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>INTRODUCCIÓN</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#programa"><i class="fa fa-check"></i>PROGRAMA</a></li>
+</ul></li>
 <li class="chapter" data-level="1" data-path="conocer.html"><a href="conocer.html"><i class="fa fa-check"></i><b>1</b> CONOCER</a></li>
 <li class="chapter" data-level="2" data-path="explorar.html"><a href="explorar.html"><i class="fa fa-check"></i><b>2</b> EXPLORAR</a><ul>
 <li class="chapter" data-level="2.1" data-path="explorar.html"><a href="explorar.html#filtrar"><i class="fa fa-check"></i><b>2.1</b> <strong>FILTRAR</strong></a></li>
@@ -166,130 +168,147 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="conocer" class="section level1">
 <h1><span class="header-section-number">Clase 1</span> CONOCER</h1>
-<p><strong>Hola a todos, ¡Bienvenidos a BIG DATA URBANA!</strong></p>
-<p>A lo largo del curso trabajaremos con el formato <strong>RMarkdown</strong> que nos permitirá analizar y visualizar nuestros datos.</p>
+<p>A lo largo del curso trabajaremos con el formato <strong>RMarkdown</strong>, un tipo de documento de RStudio que integra texto con código de R.</p>
 <p>Empecemos de a poco:</p>
-<ul>
-<li>Para crear un <strong>nuevo proyecto y un RMarkdown</strong> pueden seguir el siguiente tutorial: <strong><a href="https://rpubs.com/angiescetta/conociendo-R" class="uri">https://rpubs.com/angiescetta/conociendo-R</a></strong></li>
-</ul>
-<p>Ahora si, ya podemos comenzar!</p>
+<p>Primero tenemos que crear un <strong>nuevo proyecto y un nuevo RMarkdown</strong>. Los pasos a seguir pueden encontrarlos en el siguiente tutorial: <strong><a href="https://rpubs.com/angiescetta/conociendo-R" class="uri">https://rpubs.com/angiescetta/conociendo-R</a></strong></p>
+<p>Ahora si, comencemos!</p>
 <p><strong>¿Para que sirve el formato RMawkdown?</strong></p>
 <p>Este formato sirve para manipular datos y armar informes listos para presentar. Hay 2 formas de escribir en un RMarkdown:</p>
 <ol style="list-style-type: decimal">
 <li><p><strong>Texto</strong> como el que estoy escribiendo ahora.</p></li>
-<li><p><strong>Bloques de código</strong> (o “chunks”) para analizar, modificar o visualizar datos.</p></li>
+<li><p><strong>Bloques de código</strong> (o “chunks”) donde insertaremos nuestras líneas de código con el objetivo de manipular (analizar, modificar, visualizar) los datos. Esto es un chunk:</p></li>
 </ol>
+<p><img src="E:/03-OTROS/SCA-CURSOS-2020/capturas/022.JPG" /></p>
+<p>Y se inserta haciendo click en <strong>Insert/R</strong> o con el siguiente atajo en el teclado: <strong>Ctrl + Shift + I</strong></p>
+<p><img src="E:/03-OTROS/SCA-CURSOS-2020/capturas/023.jpg" /></p>
+<p><strong>Carguemos nuestro primer dataset</strong></p>
 <p>A lo largo del curso vamos a trabajar con los datos de Properati, un portal web de compra, venta y alquiler de inmuebles en toda América Latina.
 Estos datos son públicos y pueden encontrarlos en <a href="https://properati.com.ar/data" class="uri">https://properati.com.ar/data</a>.</p>
-<p>En este caso usaremos un set de datos de propiedades en AMBA con info de 3 meses del 2020: Mayo, Junio y Julio. Previamente procesados que pueden descargarse de <a href="https://data.world/angie-scetta/amba-properati" class="uri">https://data.world/angie-scetta/amba-properati</a></p>
-<p>Ahora si, manos a la obra! Carguemos el dataset descargado:</p>
+<p>En este caso, para facilitar la manipulación de la información, usaremos un set de datos (en formato csv) previamente procesado que contiene datos de propiedades publicadas en AMBA en Junio y Julio del 2020. Pueden descargarlo de <a href="https://data.world/angie-scetta/amba-properati" class="uri">https://data.world/angie-scetta/amba-properati</a>.</p>
 <p><em>Recomendación: Al descargarlo, moverlo de la carpeta “Descargas” a la carpeta del Proyecto donde estén trabajando.</em></p>
+<p>Ahora si, manos a la obra! Para cargar el dataset pueden copiar la siguiente línea de código y pegarla dentro de un chunk:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="conocer.html#cb1-1"></a>datos_amba &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/amba_properati.csv&quot;</span>)</span></code></pre></div>
-<p>Y empecemos a conocer nuestro dataset, veamos como se estructura (cuantas filas y columnas tiene) y que información contiene. Para esto empezaremos utilizando dim():</p>
+<p>Para entender la lógica detrás del chunk anterior pueden revisar este link: <a href="https://rpubs.com/angiescetta/importar-dataset" class="uri">https://rpubs.com/angiescetta/importar-dataset</a></p>
+<p>Ahora exploremos nuestro dataset, veamos como se estructura (cuantas filas y columnas tiene) y que información trae…</p>
+<p>Para esto empezaremos utilizando <code>dim()</code>:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="conocer.html#cb2-1"></a><span class="kw">dim</span>(datos_amba)</span></code></pre></div>
-<pre><code>## [1] 22040    13</code></pre>
-<p>Podemos ver que tenemos 22.040 registros/filas y 13 columnas, pero ¿qué contienen esas columnas? Veamoslo con names():</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="conocer.html#cb4-1"></a><span class="kw">names</span>(datos_amba)</span></code></pre></div>
+<pre><code>## [1] 14929    13</code></pre>
+<p>Podemos ver que tenemos 14.929 registros/filas y 13 columnas. También podríamos ver esto por separado de la siguiente forma:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="conocer.html#cb4-1"></a><span class="kw">ncol</span>(datos_amba)</span></code></pre></div>
+<pre><code>## [1] 13</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="conocer.html#cb6-1"></a><span class="kw">nrow</span>(datos_amba)</span></code></pre></div>
+<pre><code>## [1] 14929</code></pre>
+<p>Pero ¿qué contienen esas 13 columnas? Esto podemos verlo con <code>names()</code>:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="conocer.html#cb8-1"></a><span class="kw">names</span>(datos_amba)</span></code></pre></div>
 <pre><code>##  [1] &quot;created_on&quot;      &quot;provincia&quot;       &quot;partido&quot;        
 ##  [4] &quot;rooms&quot;           &quot;surface_total&quot;   &quot;surface_covered&quot;
 ##  [7] &quot;price&quot;           &quot;currency&quot;        &quot;title&quot;          
 ## [10] &quot;property_type&quot;   &quot;operation_type&quot;  &quot;lat&quot;            
 ## [13] &quot;long&quot;</code></pre>
 <p>Bien, las columnas tienen fecha de publicación de la propiedad, provincia y partido donde se ubica, cantidad de ambientes, superficie total y superficie cubierta, precio publicado, tipo de moneda (ARS o USD), el título que el usuario escribió al publicar su propiedad, el tipo de propiedad, el tipo de operación, y finalmente la ubicación del inmueble con sus coordenadas: latitud y longitud.</p>
-<p>Ahora veamos una pequeña muestra de la data con head():</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="conocer.html#cb6-1"></a><span class="kw">head</span>(datos_amba)</span></code></pre></div>
-<pre><code>##   created_on provincia   partido rooms surface_total surface_covered
-## 1     202005       GBA  La Plata     8           840             325
-## 2     202005      CABA  Comuna 5     2            48              46
-## 3     202005       GBA   Escobar     2           165              65
-## 4     202005      CABA Comuna 14     2            55              50
-## 5     202005      CABA  Comuna 1     2            60              55
-## 6     202005      CABA  Comuna 6     2            51              45
-##    price currency
-## 1  85000      ARS
-## 2 140000      USD
-## 3  20000      ARS
-## 4  48000      ARS
-## 5  19000      ARS
-## 6  25000      ARS
-##                                                                                            title
-## 1                                                                           San Facundo alquiler
-## 2                                                                                  Gascon al 100
-## 3 Lindisimo departamento en alquiler . Complejo Civis Tortuguitas,  dos ambientes  con amenities
-## 4                                                          Fray Justo Santa Maria de Oro al 2800
-## 5                                                             2 ambientes de 60 m2 con amenities
-## 6                                   Impecable 2 amb c/cochera, SUM y parrilla - Subte A Carabobo
+<p>Parece que cada fila/registro de la base corresponde a una propiedad publicada, pero veamos una pequeña muestra de la data con <code>head()</code> para estar seguros:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="conocer.html#cb10-1"></a><span class="kw">head</span>(datos_amba)</span></code></pre></div>
+<pre><code>##   created_on provincia       partido rooms surface_total surface_covered
+## 1     202006      CABA      Comuna 7     1            40              37
+## 2     202006      CABA     Comuna 13     1            30              30
+## 3     202006      CABA     Comuna 13     1            31              29
+## 4     202006      CABA      Comuna 1     1            35              35
+## 5     202006       GBA Vicente López     1            36              27
+## 6     202006       GBA    La Matanza     2            24              24
+##   price currency
+## 1 22500      ARS
+## 2 18000      ARS
+## 3 17900      ARS
+## 4 42000      ARS
+## 5 19000      ARS
+## 6 12000      ARS
+##                                                                           title
+## 1                                                         Departamento - Flores
+## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
+## 3                                                       Departamento - Belgrano
+## 4                              Monoambiente con cochera. Zencity. Puerto Madero
+## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
+## 6                                                        PH - Lomas Del Mirador
 ##   property_type operation_type       lat      long
-## 1          Casa       Alquiler -58.04245 -34.89847
-## 2  Departamento          Venta -58.42453 -34.61118
-## 3  Departamento       Alquiler -58.73963 -34.44330
-## 4  Departamento       Alquiler -58.42125 -34.57589
-## 5  Departamento       Alquiler -58.39047 -34.60833
-## 6  Departamento       Alquiler -58.45344 -34.62673</code></pre>
-<p>Y un resúmen estadístico de la información:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="conocer.html#cb8-1"></a><span class="kw">summary</span>(datos_amba)</span></code></pre></div>
-<pre><code>##    created_on     provincia         partido          rooms       
-##  Min.   :202005   CABA:13116   Comuna 14: 2961   Min.   : 1.000  
-##  1st Qu.:202005   GBA : 8924   Comuna 13: 1677   1st Qu.: 2.000  
-##  Median :202006                Tigre    : 1605   Median : 3.000  
-##  Mean   :202006                Comuna 15: 1595   Mean   : 3.041  
-##  3rd Qu.:202007                Comuna 2 : 1242   3rd Qu.: 4.000  
-##  Max.   :202007                Comuna 1 : 1132   Max.   :10.000  
-##                                (Other)  :11828                   
+## 1  Departamento       Alquiler -58.46222 -34.61917
+## 2  Departamento       Alquiler -58.46652 -34.55460
+## 3  Departamento       Alquiler -58.46461 -34.56318
+## 4  Departamento       Alquiler -58.36090 -34.61836
+## 5  Departamento       Alquiler -58.49345 -34.53344
+## 6            PH       Alquiler -58.52914 -34.66253</code></pre>
+<p>Y un resumen estadístico de la información:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="conocer.html#cb12-1"></a><span class="kw">summary</span>(datos_amba)</span></code></pre></div>
+<pre><code>##    created_on     provincia        partido         rooms       
+##  Min.   :202006   CABA:8896   Comuna 14:2001   Min.   : 1.000  
+##  1st Qu.:202006   GBA :6033   Tigre    :1222   1st Qu.: 2.000  
+##  Median :202006               Comuna 13:1193   Median : 3.000  
+##  Mean   :202006               Comuna 15:1077   Mean   : 3.057  
+##  3rd Qu.:202007               Comuna 2 : 853   3rd Qu.: 4.000  
+##  Max.   :202007               Comuna 1 : 765   Max.   :10.000  
+##                               (Other)  :7818                   
 ##  surface_total  surface_covered      price         currency   
-##  Min.   :  10   Min.   : 10.00   Min.   :  10000   ARS: 4820  
-##  1st Qu.:  50   1st Qu.: 45.00   1st Qu.:  71000   USD:17220  
-##  Median :  75   Median : 65.00   Median : 138000              
-##  Mean   : 114   Mean   : 90.78   Mean   : 200688              
-##  3rd Qu.: 128   3rd Qu.:105.00   3rd Qu.: 240000              
+##  Min.   :  10   Min.   : 10.00   Min.   :  10000   ARS: 3251  
+##  1st Qu.:  51   1st Qu.: 46.00   1st Qu.:  72000   USD:11678  
+##  Median :  75   Median : 66.00   Median : 140000              
+##  Mean   : 117   Mean   : 91.98   Mean   : 206342              
+##  3rd Qu.: 130   3rd Qu.:108.00   3rd Qu.: 250000              
 ##  Max.   :5000   Max.   :882.00   Max.   :3000000              
 ##                                                               
 ##                                                   title      
-##  Departamento de 2 ambientes en Venta en Villa crespo:  270  
-##  Departamento de 2 ambientes en Venta en Almagro     :  190  
-##  Departamento de 2 ambientes en Venta en Palermo     :  184  
-##  Departamento de 3 ambientes en Venta en Villa crespo:  179  
-##  Departamento de 3 ambientes en Venta en Almagro     :  165  
-##  Departamento de 3 ambientes en Venta en Palermo     :  162  
-##  (Other)                                             :20890  
+##  Departamento de 2 ambientes en Venta en Villa crespo:  182  
+##  Departamento de 2 ambientes en Venta en Almagro     :  124  
+##  Departamento de 2 ambientes en Venta en Palermo     :  124  
+##  Departamento de 3 ambientes en Venta en Villa crespo:  121  
+##  Departamento de 3 ambientes en Venta en Almagro     :  108  
+##  Departamento de 3 ambientes en Venta en Palermo     :  108  
+##  (Other)                                             :14162  
 ##       property_type    operation_type       lat              long       
-##  Casa        : 3349   Alquiler: 4820   Min.   :-59.04   Min.   :-35.12  
-##  Departamento:16819   Venta   :17220   1st Qu.:-58.53   1st Qu.:-34.62  
-##  PH          : 1872                    Median :-58.45   Median :-34.59  
+##  Casa        : 2297   Alquiler: 3251   Min.   :-59.04   Min.   :-35.12  
+##  Departamento:11344   Venta   :11678   1st Qu.:-58.53   1st Qu.:-34.61  
+##  PH          : 1288                    Median :-58.45   Median :-34.59  
 ##                                        Mean   :-58.47   Mean   :-34.59  
-##                                        3rd Qu.:-58.41   3rd Qu.:-34.56  
+##                                        3rd Qu.:-58.41   3rd Qu.:-34.55  
 ##                                        Max.   :-57.83   Max.   :-34.26  
 ## </code></pre>
 <p>A priori, en este resumen podemos entender varias cosas de la data. Por ejemplo:</p>
 <ul>
-<li><p>Hay registros de propiedades publicadas entre Mayo (Min) y Julio (Max) 2020</p></li>
-<li><p>La mayoría de las publicaciones son en CABA (13.116 vs 8.924)</p></li>
-<li><p>El Partido/Comuna que más aparece es la Comuna 14 (Barrio de Palermo)</p></li>
+<li><p>Hay registros de propiedades publicadas entre Junio (Min) y Julio (Max) 2020</p></li>
+<li><p>La mayoría de las publicaciones son en CABA (8.896 vs 6.033)</p></li>
+<li><p>El Partido/Comuna que más aparece es la Comuna 14 (Barrio de Palermo), seguido por Tigre.</p></li>
 <li><p>De las 3 tipologías de propiedades, lo que más hay es Departamentos, seguido por Casas y por último PHs.</p></li>
-<li><p>Hay más propiedades en Venta que en Alquiler (17.220 vs 4.820)</p></li>
+<li><p>Hay más propiedades en Venta que en Alquiler (11.678 vs 3.251)</p></li>
 </ul>
-<p>Por último, investiguemos como es la estructura de la data, es decir que tipo de información tiene cada campo. Si bien algo ya nos imaginamos gracias al summary(), usemos str() para revisarlo:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="conocer.html#cb10-1"></a><span class="kw">str</span>(datos_amba)</span></code></pre></div>
-<pre><code>## &#39;data.frame&#39;:	22040 obs. of  13 variables:
-##  $ created_on     : int  202005 202005 202005 202005 202005 202005 202005 202005 202005 202005 ...
-##  $ provincia      : Factor w/ 2 levels &quot;CABA&quot;,&quot;GBA&quot;: 2 1 2 1 1 1 1 1 2 2 ...
-##  $ partido        : Factor w/ 50 levels &quot;Almirante Brown&quot;,..: 32 16 22 11 6 17 12 6 27 41 ...
-##  $ rooms          : int  8 2 2 2 2 2 2 2 2 3 ...
-##  $ surface_total  : int  840 48 165 55 60 51 62 90 50 80 ...
-##  $ surface_covered: int  325 46 65 50 55 45 48 70 45 80 ...
-##  $ price          : int  85000 140000 20000 48000 19000 25000 110001 65000 93000 22000 ...
-##  $ currency       : Factor w/ 2 levels &quot;ARS&quot;,&quot;USD&quot;: 1 2 1 1 1 1 2 1 2 1 ...
-##  $ title          : Factor w/ 14745 levels &quot;- Casa Venta Tipo Chalet 5 Amb con Cochera - Villa Pueyrredo&quot;,..: 11726 8726 9564 8711 357 9214 5544 7570 1695 4291 ...
-##  $ property_type  : Factor w/ 3 levels &quot;Casa&quot;,&quot;Departamento&quot;,..: 1 2 2 2 2 2 2 2 2 2 ...
-##  $ operation_type : Factor w/ 2 levels &quot;Alquiler&quot;,&quot;Venta&quot;: 1 2 1 1 1 1 2 1 2 1 ...
-##  $ lat            : num  -58 -58.4 -58.7 -58.4 -58.4 ...
-##  $ long           : num  -34.9 -34.6 -34.4 -34.6 -34.6 ...</code></pre>
-<p>Hay varios tipos de datos, pero en nuestro set nos encontramos con 3: integer (int), numeric (num) y Factor.</p>
+<p>Por último, investiguemos como es la estructura de la data, es decir que tipo de información tiene cada campo. Si bien algo ya nos imaginamos gracias al <code>summary()</code>, usemos <code>str()</code> para revisarlo:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="conocer.html#cb14-1"></a><span class="kw">str</span>(datos_amba)</span></code></pre></div>
+<pre><code>## &#39;data.frame&#39;:	14929 obs. of  13 variables:
+##  $ created_on     : int  202006 202006 202006 202006 202006 202006 202006 202006 202006 202006 ...
+##  $ provincia      : Factor w/ 2 levels &quot;CABA&quot;,&quot;GBA&quot;: 1 1 1 1 2 2 2 1 1 1 ...
+##  $ partido        : Factor w/ 50 levels &quot;Almirante Brown&quot;,..: 18 10 10 6 50 31 27 10 10 6 ...
+##  $ rooms          : int  1 1 1 1 1 2 2 2 2 2 ...
+##  $ surface_total  : int  40 30 31 35 36 24 40 60 53 39 ...
+##  $ surface_covered: int  37 30 29 35 27 24 40 50 44 34 ...
+##  $ price          : int  22500 18000 17900 42000 19000 12000 15000 32000 26000 14000 ...
+##  $ currency       : Factor w/ 2 levels &quot;ARS&quot;,&quot;USD&quot;: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ title          : Factor w/ 10634 levels &quot;- Casa Venta Tipo Chalet 5 Amb con Cochera - Villa Pueyrredo&quot;,..: 2864 8265 2810 7014 1091 7646 7622 4885 8682 2741 ...
+##  $ property_type  : Factor w/ 3 levels &quot;Casa&quot;,&quot;Departamento&quot;,..: 2 2 2 2 2 3 3 2 2 2 ...
+##  $ operation_type : Factor w/ 2 levels &quot;Alquiler&quot;,&quot;Venta&quot;: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ lat            : num  -58.5 -58.5 -58.5 -58.4 -58.5 ...
+##  $ long           : num  -34.6 -34.6 -34.6 -34.6 -34.5 ...</code></pre>
+<p>Existen varios tipos de datos, pero en nuestro set nos encontramos con 3: integer (int), numeric (num) y Factor.</p>
 <p>Ahora bien, ¿Qué significa eso?</p>
 <ul>
-<li><p>Integer son números enteros, es decir que el campo solo admite números sin decimales como por ejemplo metros cuadrados de propiedades, que siempre se calculan en metros y nunca se suman centímetros cuadrados.</p></li>
-<li><p>Numeric son números con decimales, como por ejemplo, latitud y longitud que siempre tienen decimales.</p></li>
-<li><p>Factor son categorías, por ejemplo Barrios, Partidos, Tipos de propiedades, etc.</p></li>
+<li><p><strong>Integer</strong> son números enteros, es decir que el campo solo admite números sin decimales como por ejemplo cantidad de habitaciones de una propiedad.</p></li>
+<li><p><strong>Numeric</strong> son números con decimales, como por ejemplo, latitud y longitud.</p></li>
+<li><p><strong>Factor</strong> son categorías, por ejemplo Barrios, Partidos, Tipos de propiedades, etc.</p></li>
+</ul>
+<p>Además del tipo de dato, con <code>str()</code> también podemos ver la cantidad de niveles que tienen las variables de tipo Factor. Por ejemplo, se observa que la columna provincia solo tiene 2 categorías posibles (CABA o AMBA), en cambio la columna partido tiene 50.</p>
+<p><strong>Próximos Pasos</strong></p>
+<p>Acá concluye la primer clase, pero los invito a que repliquen lo realizado en clase con algún otro dataset que les interese. Pueden descargar datos de diversos portales abiertos como por ejemplo:</p>
+<ul>
+<li><p>Portal de Datos Abiertos de Argentina: <a href="https://datos.gob.ar/" class="uri">https://datos.gob.ar/</a></p></li>
+<li><p>Portal de Datos Abiertos de CABA: <a href="https://data.buenosaires.gob.ar/" class="uri">https://data.buenosaires.gob.ar/</a></p></li>
+<li><p>Portal de Datos Abiertos de PBA: <a href="https://catalogo.datos.gba.gob.ar/" class="uri">https://catalogo.datos.gba.gob.ar/</a></p></li>
+<li><p>O de cualquier otro portal de datos que conozcan o encuentren!</p></li>
 </ul>
 
 </div>

@@ -1,11 +1,15 @@
 /* Whole document: */
 body{
-  font-family: Courier New;
-  font-size: 10pt;
+  font-family: Tahoma;
+  font-size: 11pt;
+}
+p {
+  font-family: Tahoma;
+  font-size: 11pt;
 }
 /* Headers */
 h1,h2,h3,h4,h5,h6{
-font-family: Courier New;
+font-family: Tahoma;
   font-size: 14pt;
 }
 p code {

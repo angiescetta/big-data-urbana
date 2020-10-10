@@ -24,7 +24,7 @@
 <meta name="author" content="Angie Scetta" />
 
 
-<meta name="date" content="2020-09-27" />
+<meta name="date" content="2020-10-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -134,7 +134,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Big Data Urbana</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>INTRODUCCIÓN</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>INTRODUCCIÓN</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#programa"><i class="fa fa-check"></i>PROGRAMA</a></li>
+</ul></li>
 <li class="chapter" data-level="1" data-path="conocer.html"><a href="conocer.html"><i class="fa fa-check"></i><b>1</b> CONOCER</a></li>
 <li class="chapter" data-level="2" data-path="explorar.html"><a href="explorar.html"><i class="fa fa-check"></i><b>2</b> EXPLORAR</a><ul>
 <li class="chapter" data-level="2.1" data-path="explorar.html"><a href="explorar.html#filtrar"><i class="fa fa-check"></i><b>2.1</b> <strong>FILTRAR</strong></a></li>
@@ -166,24 +168,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="graficar" class="section level1">
 <h1><span class="header-section-number">Clase 3</span> GRAFICAR</h1>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="graficar.html#cb43-1"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
-<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="graficar.html#cb44-1"></a>datos_amba &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/amba_properati.csv&quot;</span>)</span></code></pre></div>
-<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="graficar.html#cb45-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
-<span id="cb45-2"><a href="graficar.html#cb45-2"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">data=</span>datos_amba, <span class="kw">aes</span>(<span class="dt">x=</span>partido, <span class="dt">weight=</span>price)) <span class="op">+</span></span>
-<span id="cb45-3"><a href="graficar.html#cb45-3"></a><span class="st">  </span><span class="kw">coord_flip</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
-<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="graficar.html#cb46-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
-<span id="cb46-2"><a href="graficar.html#cb46-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>datos_amba, <span class="kw">aes</span>(<span class="dt">x=</span>surface_covered, <span class="dt">y=</span>price))</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="graficar.html#cb47-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
-<span id="cb47-2"><a href="graficar.html#cb47-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>datos_amba, <span class="kw">aes</span>(<span class="dt">x=</span>surface_covered, <span class="dt">y=</span>price)) <span class="op">+</span></span>
-<span id="cb47-3"><a href="graficar.html#cb47-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span>provincia)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
-<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="graficar.html#cb48-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
-<span id="cb48-2"><a href="graficar.html#cb48-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>datos_amba, <span class="kw">aes</span>(<span class="dt">x=</span>long, <span class="dt">y=</span>lat))</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-35-1.png" width="672" /></p>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="graficar.html#cb60-1"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="graficar.html#cb61-1"></a>datos_amba &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/amba_properati.csv&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="graficar.html#cb62-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb62-2"><a href="graficar.html#cb62-2"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">data=</span>datos_amba, <span class="kw">aes</span>(<span class="dt">x=</span>partido, <span class="dt">weight=</span>price)) <span class="op">+</span></span>
+<span id="cb62-3"><a href="graficar.html#cb62-3"></a><span class="st">  </span><span class="kw">coord_flip</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="graficar.html#cb63-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb63-2"><a href="graficar.html#cb63-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>datos_amba, <span class="kw">aes</span>(<span class="dt">x=</span>surface_covered, <span class="dt">y=</span>price))</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="graficar.html#cb64-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb64-2"><a href="graficar.html#cb64-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>datos_amba, <span class="kw">aes</span>(<span class="dt">x=</span>surface_covered, <span class="dt">y=</span>price)) <span class="op">+</span></span>
+<span id="cb64-3"><a href="graficar.html#cb64-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span>provincia)</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="graficar.html#cb65-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb65-2"><a href="graficar.html#cb65-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>datos_amba, <span class="kw">aes</span>(<span class="dt">x=</span>long, <span class="dt">y=</span>lat))</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
 <p>¿Tiene forma de AMBA?</p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="graficar.html#cb49-1"></a><span class="kw">options</span>(<span class="dt">scipen=</span><span class="dv">999</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="graficar.html#cb66-1"></a><span class="kw">options</span>(<span class="dt">scipen=</span><span class="dv">999</span>)</span></code></pre></div>
 
 </div>
             </section>
