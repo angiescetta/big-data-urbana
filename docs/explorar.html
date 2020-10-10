@@ -178,17 +178,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="explorar.html#cb16-1"></a><span class="co">#install.packages(&quot;tidyverse&quot;)</span></span></code></pre></div>
 <p>Una vez que instalamos el paquete, no vamos a tener que volver a hacerlo. Solamente vamos a tener que “activarlo” cada vez que quiera usarlo. Esto se hace con <code>library(tidyverse)</code>:</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="explorar.html#cb17-1"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
+<pre><code>## Warning: package &#39;tidyverse&#39; was built under R version 3.5.3</code></pre>
+<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.0 --</code></pre>
+<pre><code>## v ggplot2 3.3.0     v purrr   0.3.3
+## v tibble  3.0.0     v dplyr   0.8.3
+## v tidyr   1.0.2     v stringr 1.4.0
+## v readr   1.3.1     v forcats 0.5.0</code></pre>
+<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 3.5.3</code></pre>
+<pre><code>## Warning: package &#39;tidyr&#39; was built under R version 3.5.3</code></pre>
+<pre><code>## Warning: package &#39;readr&#39; was built under R version 3.5.3</code></pre>
+<pre><code>## Warning: package &#39;purrr&#39; was built under R version 3.5.3</code></pre>
+<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 3.5.3</code></pre>
+<pre><code>## Warning: package &#39;stringr&#39; was built under R version 3.5.3</code></pre>
+<pre><code>## Warning: package &#39;forcats&#39; was built under R version 3.5.3</code></pre>
+<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
 <p>Antes de comenzar volvamos a cargar nuestro dataset:</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="explorar.html#cb18-1"></a>datos_amba &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/amba_properati.csv&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="explorar.html#cb29-1"></a>datos_amba &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/amba_properati.csv&quot;</span>)</span></code></pre></div>
 <p>A continuación veremos como el paquete <code>tidyverse</code> nos va a permitir <strong>filtrar</strong>, <strong>modificar</strong>, <strong>seleccionar</strong>, <strong>ordenar</strong>, <strong>renombrar</strong>, <strong>resumir</strong> y <strong>agrupar</strong> los datos.</p>
 <div id="filtrar" class="section level2">
 <h2><span class="header-section-number">2.1</span> <strong>FILTRAR</strong></h2>
 <p>Filtrar, como su nombre lo indica, hace referencia a realizar un filtro determinado sobre los registros/filas de toda la base de datos. Gráficamente se vería como algo así:</p>
 <p><img src="E:/03-OTROS/SCA-CURSOS-2020/capturas/tidyverse_filtrar.jpg" /></p>
 <p>Es decir que, nos será muy útil si por algún motivo queremos dejar de lado algunos registros y utilizar solo una parte de la base, por ejemplo podríamos filtrar los registros ubicados en CABA:</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="explorar.html#cb19-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, provincia<span class="op">==</span><span class="st">&quot;CABA&quot;</span>)</span>
-<span id="cb19-2"><a href="explorar.html#cb19-2"></a></span>
-<span id="cb19-3"><a href="explorar.html#cb19-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="explorar.html#cb30-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, provincia<span class="op">==</span><span class="st">&quot;CABA&quot;</span>)</span>
+<span id="cb30-2"><a href="explorar.html#cb30-2"></a></span>
+<span id="cb30-3"><a href="explorar.html#cb30-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
 <pre><code>##   created_on provincia   partido rooms surface_total surface_covered price
 ## 1     202006      CABA  Comuna 7     1            40              37 22500
 ## 2     202006      CABA Comuna 13     1            30              30 18000
@@ -211,9 +227,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5  Departamento       Alquiler -58.46671 -34.53795
 ## 6  Departamento       Alquiler -58.47037 -34.54756</code></pre>
 <p>O los del mes de Julio 2020:</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="explorar.html#cb21-1"></a>a &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, created_on<span class="op">==</span><span class="dv">202007</span>)</span>
-<span id="cb21-2"><a href="explorar.html#cb21-2"></a></span>
-<span id="cb21-3"><a href="explorar.html#cb21-3"></a><span class="kw">head</span>(a)</span></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="explorar.html#cb32-1"></a>a &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, created_on<span class="op">==</span><span class="dv">202007</span>)</span>
+<span id="cb32-2"><a href="explorar.html#cb32-2"></a></span>
+<span id="cb32-3"><a href="explorar.html#cb32-3"></a><span class="kw">head</span>(a)</span></code></pre></div>
 <pre><code>##   created_on provincia   partido rooms surface_total surface_covered price
 ## 1     202007       GBA     Tigre     2           108              69 20000
 ## 2     202007       GBA     Tigre     2            57              45 27500
@@ -252,9 +268,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><strong>&gt;=</strong> mayor o igual a</li>
 </ul>
 <p>Entonces, por ejemplo si quiero filtrar solo las propiedades que tienen una superficie cubierta mayor o igual a 75m2 debería escribirlo así:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="explorar.html#cb23-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, surface_covered<span class="op">&gt;=</span><span class="dv">75</span>)</span>
-<span id="cb23-2"><a href="explorar.html#cb23-2"></a></span>
-<span id="cb23-3"><a href="explorar.html#cb23-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="explorar.html#cb34-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, surface_covered<span class="op">&gt;=</span><span class="dv">75</span>)</span>
+<span id="cb34-2"><a href="explorar.html#cb34-2"></a></span>
+<span id="cb34-3"><a href="explorar.html#cb34-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
 <pre><code>##   created_on provincia   partido rooms surface_total surface_covered
 ## 1     202006       GBA Ituzaingó     3            75              75
 ## 2     202006       GBA     Tigre     3            95              80
@@ -292,9 +308,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><strong>!</strong>condición 1 <strong>&amp;</strong> condición 2 no se cumple la condición 1 pero si la condición 2</li>
 <li><strong>!</strong>(condición 1 <strong>&amp;</strong> condición 2) no se cumple ninguna de las 2 condiciones</li>
 </ul>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="explorar.html#cb25-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, partido<span class="op">==</span><span class="st">&quot;Comuna 13&quot;</span> <span class="op">|</span><span class="st"> </span>partido<span class="op">==</span><span class="st">&quot;Comuna 5&quot;</span>)</span>
-<span id="cb25-2"><a href="explorar.html#cb25-2"></a></span>
-<span id="cb25-3"><a href="explorar.html#cb25-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="explorar.html#cb36-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, partido<span class="op">==</span><span class="st">&quot;Comuna 13&quot;</span> <span class="op">|</span><span class="st"> </span>partido<span class="op">==</span><span class="st">&quot;Comuna 5&quot;</span>)</span>
+<span id="cb36-2"><a href="explorar.html#cb36-2"></a></span>
+<span id="cb36-3"><a href="explorar.html#cb36-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
 <pre><code>##   created_on provincia   partido rooms surface_total surface_covered price
 ## 1     202006      CABA Comuna 13     1            30              30 18000
 ## 2     202006      CABA Comuna 13     1            31              29 17900
@@ -316,9 +332,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4  Departamento       Alquiler -58.47037 -34.54756
 ## 5  Departamento       Alquiler -58.42947 -34.60613
 ## 6  Departamento       Alquiler -58.46550 -34.56313</code></pre>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="explorar.html#cb27-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, surface_total<span class="op">&gt;=</span><span class="dv">100</span> <span class="op">&amp;</span><span class="st"> </span>operation_type<span class="op">==</span><span class="st">&quot;Alquiler&quot;</span>)</span>
-<span id="cb27-2"><a href="explorar.html#cb27-2"></a></span>
-<span id="cb27-3"><a href="explorar.html#cb27-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="explorar.html#cb38-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, surface_total<span class="op">&gt;=</span><span class="dv">100</span> <span class="op">&amp;</span><span class="st"> </span>operation_type<span class="op">==</span><span class="st">&quot;Alquiler&quot;</span>)</span>
+<span id="cb38-2"><a href="explorar.html#cb38-2"></a></span>
+<span id="cb38-3"><a href="explorar.html#cb38-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
 <pre><code>##   created_on provincia   partido rooms surface_total surface_covered
 ## 1     202006      CABA Comuna 13     3           109              94
 ## 2     202006      CABA Comuna 14     3           152             152
@@ -350,9 +366,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="modificar" class="section level2">
 <h2><span class="header-section-number">2.2</span> <strong>MODIFICAR</strong></h2>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="explorar.html#cb29-1"></a>modificar &lt;-<span class="st"> </span><span class="kw">mutate</span>(datos_amba, <span class="dt">price_m2=</span>price<span class="op">/</span>surface_covered)</span>
-<span id="cb29-2"><a href="explorar.html#cb29-2"></a></span>
-<span id="cb29-3"><a href="explorar.html#cb29-3"></a><span class="kw">head</span>(modificar)</span></code></pre></div>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="explorar.html#cb40-1"></a>modificar &lt;-<span class="st"> </span><span class="kw">mutate</span>(datos_amba, <span class="dt">price_m2=</span>price<span class="op">/</span>surface_covered)</span>
+<span id="cb40-2"><a href="explorar.html#cb40-2"></a></span>
+<span id="cb40-3"><a href="explorar.html#cb40-3"></a><span class="kw">head</span>(modificar)</span></code></pre></div>
 <pre><code>##   created_on provincia       partido rooms surface_total surface_covered
 ## 1     202006      CABA      Comuna 7     1            40              37
 ## 2     202006      CABA     Comuna 13     1            30              30
@@ -384,9 +400,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="seleccionar" class="section level2">
 <h2><span class="header-section-number">2.3</span> <strong>SELECCIONAR</strong></h2>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="explorar.html#cb31-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, created_on, provincia, price, currency)</span>
-<span id="cb31-2"><a href="explorar.html#cb31-2"></a></span>
-<span id="cb31-3"><a href="explorar.html#cb31-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="explorar.html#cb42-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, created_on, provincia, price, currency)</span>
+<span id="cb42-2"><a href="explorar.html#cb42-2"></a></span>
+<span id="cb42-3"><a href="explorar.html#cb42-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
 <pre><code>##   created_on provincia price currency
 ## 1     202006      CABA 22500      ARS
 ## 2     202006      CABA 18000      ARS
@@ -394,9 +410,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006      CABA 42000      ARS
 ## 5     202006       GBA 19000      ARS
 ## 6     202006       GBA 12000      ARS</code></pre>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="explorar.html#cb33-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="op">-</span>title)</span>
-<span id="cb33-2"><a href="explorar.html#cb33-2"></a></span>
-<span id="cb33-3"><a href="explorar.html#cb33-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="explorar.html#cb44-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="op">-</span>title)</span>
+<span id="cb44-2"><a href="explorar.html#cb44-2"></a></span>
+<span id="cb44-3"><a href="explorar.html#cb44-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
 <pre><code>##   created_on provincia       partido rooms surface_total surface_covered
 ## 1     202006      CABA      Comuna 7     1            40              37
 ## 2     202006      CABA     Comuna 13     1            30              30
@@ -411,9 +427,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4 42000      ARS  Departamento       Alquiler -58.36090 -34.61836
 ## 5 19000      ARS  Departamento       Alquiler -58.49345 -34.53344
 ## 6 12000      ARS            PH       Alquiler -58.52914 -34.66253</code></pre>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="explorar.html#cb35-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, price<span class="op">:</span>operation_type)</span>
-<span id="cb35-2"><a href="explorar.html#cb35-2"></a></span>
-<span id="cb35-3"><a href="explorar.html#cb35-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="explorar.html#cb46-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, price<span class="op">:</span>operation_type)</span>
+<span id="cb46-2"><a href="explorar.html#cb46-2"></a></span>
+<span id="cb46-3"><a href="explorar.html#cb46-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
 <pre><code>##   price currency
 ## 1 22500      ARS
 ## 2 18000      ARS
@@ -435,9 +451,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4  Departamento       Alquiler
 ## 5  Departamento       Alquiler
 ## 6            PH       Alquiler</code></pre>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="explorar.html#cb37-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="dv">7</span><span class="op">:</span><span class="dv">10</span>)</span>
-<span id="cb37-2"><a href="explorar.html#cb37-2"></a></span>
-<span id="cb37-3"><a href="explorar.html#cb37-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="explorar.html#cb48-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="dv">7</span><span class="op">:</span><span class="dv">10</span>)</span>
+<span id="cb48-2"><a href="explorar.html#cb48-2"></a></span>
+<span id="cb48-3"><a href="explorar.html#cb48-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
 <pre><code>##   price currency
 ## 1 22500      ARS
 ## 2 18000      ARS
@@ -459,9 +475,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4  Departamento
 ## 5  Departamento
 ## 6            PH</code></pre>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="explorar.html#cb39-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="kw">starts_with</span>(<span class="st">&quot;p&quot;</span>))</span>
-<span id="cb39-2"><a href="explorar.html#cb39-2"></a></span>
-<span id="cb39-3"><a href="explorar.html#cb39-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="explorar.html#cb50-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="kw">starts_with</span>(<span class="st">&quot;p&quot;</span>))</span>
+<span id="cb50-2"><a href="explorar.html#cb50-2"></a></span>
+<span id="cb50-3"><a href="explorar.html#cb50-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
 <pre><code>##   provincia       partido price property_type
 ## 1      CABA      Comuna 7 22500  Departamento
 ## 2      CABA     Comuna 13 18000  Departamento
@@ -469,9 +485,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4      CABA      Comuna 1 42000  Departamento
 ## 5       GBA Vicente López 19000  Departamento
 ## 6       GBA    La Matanza 12000            PH</code></pre>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="explorar.html#cb41-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="kw">ends_with</span>(<span class="st">&quot;e&quot;</span>))</span>
-<span id="cb41-2"><a href="explorar.html#cb41-2"></a></span>
-<span id="cb41-3"><a href="explorar.html#cb41-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="explorar.html#cb52-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="kw">ends_with</span>(<span class="st">&quot;e&quot;</span>))</span>
+<span id="cb52-2"><a href="explorar.html#cb52-2"></a></span>
+<span id="cb52-3"><a href="explorar.html#cb52-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
 <pre><code>##   price
 ## 1 22500
 ## 2 18000
@@ -493,9 +509,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4  Departamento       Alquiler
 ## 5  Departamento       Alquiler
 ## 6            PH       Alquiler</code></pre>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="explorar.html#cb43-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="kw">contains</span>(<span class="st">&quot;surface&quot;</span>))</span>
-<span id="cb43-2"><a href="explorar.html#cb43-2"></a></span>
-<span id="cb43-3"><a href="explorar.html#cb43-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="explorar.html#cb54-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="kw">contains</span>(<span class="st">&quot;surface&quot;</span>))</span>
+<span id="cb54-2"><a href="explorar.html#cb54-2"></a></span>
+<span id="cb54-3"><a href="explorar.html#cb54-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
 <pre><code>##   surface_total surface_covered
 ## 1            40              37
 ## 2            30              30
@@ -506,16 +522,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="resumir" class="section level2">
 <h2><span class="header-section-number">2.4</span> <strong>RESUMIR</strong></h2>
-<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="explorar.html#cb45-1"></a>a &lt;-<span class="st"> </span><span class="kw">mutate</span>(a, <span class="dt">price_m2=</span>price<span class="op">/</span>surface_covered)</span>
-<span id="cb45-2"><a href="explorar.html#cb45-2"></a>a &lt;-<span class="st"> </span><span class="kw">select</span>(a, <span class="op">-</span>price)</span>
-<span id="cb45-3"><a href="explorar.html#cb45-3"></a><span class="kw">summarise</span>(a, <span class="dt">price_m2=</span><span class="kw">median</span>(price_m2))</span></code></pre></div>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="explorar.html#cb56-1"></a>a &lt;-<span class="st"> </span><span class="kw">mutate</span>(a, <span class="dt">price_m2=</span>price<span class="op">/</span>surface_covered)</span>
+<span id="cb56-2"><a href="explorar.html#cb56-2"></a>a &lt;-<span class="st"> </span><span class="kw">select</span>(a, <span class="op">-</span>price)</span>
+<span id="cb56-3"><a href="explorar.html#cb56-3"></a><span class="kw">summarise</span>(a, <span class="dt">price_m2=</span><span class="kw">median</span>(price_m2))</span></code></pre></div>
 <pre><code>##   price_m2
 ## 1 2189.039</code></pre>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="explorar.html#cb47-1"></a>a &lt;-<span class="st"> </span><span class="kw">group_by</span>(a, partido)</span>
-<span id="cb47-2"><a href="explorar.html#cb47-2"></a>a &lt;-<span class="st"> </span><span class="kw">summarise</span>(a, <span class="dt">price_m2=</span><span class="kw">median</span>(price_m2))</span>
-<span id="cb47-3"><a href="explorar.html#cb47-3"></a></span>
-<span id="cb47-4"><a href="explorar.html#cb47-4"></a>a &lt;-<span class="st"> </span><span class="kw">arrange</span>(a, <span class="kw">desc</span>(price_m2))</span>
-<span id="cb47-5"><a href="explorar.html#cb47-5"></a><span class="kw">head</span>(a)</span></code></pre></div>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="explorar.html#cb58-1"></a>a &lt;-<span class="st"> </span><span class="kw">group_by</span>(a, partido)</span>
+<span id="cb58-2"><a href="explorar.html#cb58-2"></a>a &lt;-<span class="st"> </span><span class="kw">summarise</span>(a, <span class="dt">price_m2=</span><span class="kw">median</span>(price_m2))</span>
+<span id="cb58-3"><a href="explorar.html#cb58-3"></a></span>
+<span id="cb58-4"><a href="explorar.html#cb58-4"></a>a &lt;-<span class="st"> </span><span class="kw">arrange</span>(a, <span class="kw">desc</span>(price_m2))</span>
+<span id="cb58-5"><a href="explorar.html#cb58-5"></a><span class="kw">head</span>(a)</span></code></pre></div>
 <pre><code>## # A tibble: 6 x 2
 ##   partido    price_m2
 ##   &lt;fct&gt;         &lt;dbl&gt;

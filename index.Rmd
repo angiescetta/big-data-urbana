@@ -38,7 +38,7 @@ Será un curso de 4 clases de 3hs donde se estima un 90% práctico y un 10% teó
 
 ¿Qué es la Ciencia de Datos? ¿Cómo utilizar grandes volúmenes de datos para analizar dinámicas urbanas? ¿Qué datos existen? Introducción a programación en lenguaje R y el software RStudio.
 
-Para esta clase será necesario tener previamente instalado el lenguaje de programación R (https://cloud.r-project.org/) , y la interfaz gráfica RStudio Desktop (https://rstudio.com/products/rstudio/download/).
+Para esta clase será necesario tener previamente instalado el lenguaje de programación R (https://cloud.r-project.org/), y la interfaz gráfica RStudio Desktop (https://rstudio.com/products/rstudio/download/).
 
 **Clase 2: EXPLORAR**
 
