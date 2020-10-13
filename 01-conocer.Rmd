@@ -1,18 +1,79 @@
+---
+title: "01-conocer.Rmd"
+author: "Angie Scetta"
+date: "Octubre 2020"
+output: html_document
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, dpi = 150)
+```
+
 # CONOCER
 
-A lo largo del curso trabajaremos con el formato **RMarkdown**, un tipo de documento de RStudio que integra texto con código de R.
+**¿Qué es R y RStudio?**
+
+RStudio es una **interfaz libre y gratuita** que nos permite **explotar todo el potencial que tiene el lenguaje de programación R**.
+
+R es un lenguaje que ofrece una gran variedad de funciones para realizar cálculos estadísticos y generar diversos gráficos a partir de los datos. Sin embargo, el gran potencial está en que, al ser libre y colaborativo, **constantemente los usuarios están actualizando y ampliando la cantidad de funciones que presenta**. Hoy en día podemos realizar desde operaciones básicas sobre los datos hasta aplicar algoritmos de inteligencia artificial.
+
+A su vez, dentro de RStudio, hay diferentes formatos de archivos (RMarkdown, RScript, RNotebook, etc) que su elección depende del objetivo que tengamos. En nuestro caso, a lo largo del curso trabajaremos con el formato **RMarkdown**, un tipo de documento de RStudio que integra texto con código de R y nos permite generar informes a partir de los datos.
 
 Empecemos de a poco:
 
 Primero tenemos que crear un **nuevo proyecto y un nuevo RMarkdown**. Los pasos a seguir pueden encontrarlos en el siguiente tutorial: **https://rpubs.com/angiescetta/conociendo-R**
 
-Ahora si, comencemos!
+## Interfaz Gráfica de RStudio
+
+Antes de seguir, analicemos un poco la **Interfaz Gráfica de RStudio**:
+
+![](images/000_0.jpg)
+
+Tal como se ve en la imagen, podríamos dividir la interfaz en 4 partes/ventanas:
+
+1. **Panel de Edición**
+
+Este panel es en el que vamos a estar creando y modificando nuestro RMarkdown. Aquí también podría haber otro formato de archivo R, como por ejemplo R Script o R Notebook.
+
+2. **Entorno de Variables**
+
+En esta ventana iremos viendo todos los datos que hayamos cargado. Desde aquí también podremos importar o eliminar datos.
+
+Desde la pestaña Historial podremos consultar el historial de comandos y funciones que fuimos utilizando en el Proyecto.
+
+3. **Consola**
+
+En la ventana inferior izquierda irá apareciendo todo lo que ejecutemos tanto desde el Panel de Edición como desde el Entorno de Variables, pero también podemos escribir líneas de código que queremos que se ejecuten y no queremos dejarlas escritas en el RMarkdown.
+
+4. **Panel de Utilidades**
+
+En la ventana inferior derecha se pueden ver varias cosas:
+
+a. Files: El Directorio donde estamos trabajando.
+
+b. Plots: Las visualizaciones/gráficos que se van generando.
+
+c. Packages: Los paquetes de R disponibles.
+
+d. Help: Una sección de ayuda donde podemos consultar información de las funciones.
+
+e. Viewer: Un visor HTML para ver los gráficos interactivos o animados que hayamos hecho.
+
+## Formato RMarkdown
 
 **¿Para que sirve el formato RMawkdown?**
 
 Este formato sirve para manipular datos y armar informes listos para presentar. Hay 2 formas de escribir en un RMarkdown:
 
 1. **Texto** como el que estoy escribiendo ahora.
+
+El RMarkdown tiene una sintaxis específica para poder dar formato al texto del informe final, por ejemplo si escribimos así:
+
+![](images/000.jpg)
+
+Obtenemos los siguientes resultados:
+
+![](images/000_1.jpg)
 
 2. **Bloques de código** (o "chunks") donde insertaremos nuestras líneas de código con el objetivo de manipular (analizar, modificar, visualizar) los datos. Esto es un chunk:
 
@@ -22,24 +83,24 @@ Y se inserta haciendo click en **Insert/R** o con el siguiente atajo en el tecla
 
 ![](images/002.jpg)
 
-**Carguemos nuestro primer dataset**
+## Nuestro primer dataset
 
 A lo largo del curso vamos a trabajar con los datos de Properati, un portal web de compra, venta y alquiler de inmuebles en toda América Latina.
 Estos datos son públicos y pueden encontrarlos en https://properati.com.ar/data.
 
 En este caso, para facilitar la manipulación de la información, usaremos un set de datos (en formato csv) previamente procesado que contiene datos de propiedades publicadas en AMBA en Junio y Julio del 2020. Pueden descargarlo de https://data.world/angie-scetta/amba-properati.
 
-*Recomendación: Al descargarlo, moverlo de la carpeta "Descargas" a la carpeta del Proyecto donde estén trabajando.*
+*Recomendación: Al descargarlo, moverlo de la carpeta "Descargas" a una nueva carpeta llamada "data" dentro de la carpeta del Proyecto donde estén trabajando.*
 
 Ahora si, manos a la obra! Para cargar el dataset pueden copiar la siguiente línea de código y pegarla dentro de un chunk:
 
-```{r}
+```{r warning=FALSE}
 datos_amba <- read.csv("data/amba_properati.csv")
 ```
 
 Para entender la lógica detrás del chunk anterior pueden revisar este link: https://rpubs.com/angiescetta/importar-dataset
 
-Ahora exploremos nuestro dataset, veamos como se estructura (cuantas filas y columnas tiene) y que información trae...
+**Ahora conozcamos nuestro dataset**: Veamos como se estructura (cuantas filas y columnas tiene) y que información trae...
 
 Para esto empezaremos utilizando `dim()`:
 
@@ -56,7 +117,9 @@ ncol(datos_amba)
 nrow(datos_amba)
 ```
 
-Pero ¿qué contienen esas 13 columnas? Esto podemos verlo con `names()`:
+Pero **¿Qué información contienen esas 13 columnas?**
+
+Esto podemos verlo con `names()`:
 
 ```{r}
 names(datos_amba)
@@ -68,7 +131,7 @@ Parece que cada fila/registro de la base corresponde a una propiedad publicada, 
 ```{r}
 head(datos_amba)
 ```
-Y un resumen estadístico de la información:
+Y un **resumen estadístico de la información**:
 
 ```{r}
 summary(datos_amba)
@@ -76,17 +139,17 @@ summary(datos_amba)
 
 A priori, en este resumen podemos entender varias cosas de la data. Por ejemplo:
 
-- Hay registros de propiedades publicadas entre Junio (Min) y Julio (Max) 2020
+- Hay registros de propiedades publicadas entre **Junio (Min) y Julio (Max) 2020**.
 
-- La mayoría de las publicaciones son en CABA (8.896 vs 6.033)
+- La **mayoría de las publicaciones son en CABA** (8.896 vs 6.033).
 
-- El Partido/Comuna que más aparece es la Comuna 14 (Barrio de Palermo), seguido por Tigre.
+- El **Partido/Comuna que más aparece es la Comuna 14** (Barrio de Palermo), seguido por Tigre.
 
-- De las 3 tipologías de propiedades, lo que más hay es Departamentos, seguido por Casas y por último PHs.
+- De las 3 tipologías de propiedades, **lo que más hay es Departamentos**, seguido por Casas y por último PHs.
 
-- Hay más propiedades en Venta que en Alquiler (11.678 vs 3.251)
+- Hay **más propiedades en Venta que en Alquiler** (11.678 vs 3.251).
 
-Por último, investiguemos como es la estructura de la data, es decir que tipo de información tiene cada campo. Si bien algo ya nos imaginamos gracias al `summary()`, usemos `str()` para revisarlo:
+Por último, investiguemos como es la **estructura de la data**, es decir que tipo de información tiene cada campo. Si bien algo ya nos imaginamos gracias al `summary()`, usemos `str()` para revisarlo:
 
 ```{r}
 str(datos_amba)
@@ -104,10 +167,27 @@ Ahora bien, ¿Qué significa eso?
 
 Además del tipo de dato, con `str()` también podemos ver la cantidad de niveles que tienen las variables de tipo Factor. Por ejemplo, se observa que la columna provincia solo tiene 2 categorías posibles (CABA o AMBA), en cambio la columna partido tiene 50.
 
+**Bonus Track**
+
+¿Cómo hacemos si queremos ver la estructura o un resumen estadístico de una sola de las columnas del dataset? Para esto utilizamos el símbolo **$** de la siguiente forma:
+
+```{r}
+summary(datos_amba$property_type)
+```
+
+```{r}
+str(datos_amba$property_type)
+```
+
+**Generemos nuestro primer HTML**
+
+Por último, generemos nuestro primer reporte HTML para poder ver todos los resultados en un único informe. Para esto debemos hacer click en **Knit / Knit to HTML**:
+
+![](images/004.jpg)
 
 **Próximos Pasos**
 
-Acá concluye la primer clase, pero los invito a que repliquen lo realizado en clase con algún otro dataset que les interese. Pueden descargar datos de diversos portales abiertos como por ejemplo: 
+Acá concluye la primer clase, pero los invito a que repliquen lo realizado con algún otro dataset que les interese. Pueden descargar datos de diversos portales abiertos como por ejemplo: 
 
 - Portal de Datos Abiertos de Argentina: https://datos.gob.ar/
 

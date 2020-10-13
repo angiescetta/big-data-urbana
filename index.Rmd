@@ -32,19 +32,21 @@ A lo largo de 4 clases aplicaremos la herramienta a un ejemplo real, con el fin 
 
 Será un curso de 4 clases de 3hs donde se estima un 90% práctico y un 10% teórico.
 
-## PROGRAMA {-}
+## Programa {-}
 
 **Clase 1: CONOCER**
 
-¿Qué es la Ciencia de Datos? ¿Cómo utilizar grandes volúmenes de datos para analizar dinámicas urbanas? ¿Qué datos existen? Introducción a programación en lenguaje R y el software RStudio.
+¿Qué es la Ciencia de Datos? ¿Cómo utilizar grandes volúmenes de datos para analizar dinámicas urbanas? ¿Qué datos existen? ¿Qué información contienen las bases de datos? ¿Cómo se estructuran?
+
+Introducción a programación en lenguaje R y el software RStudio.
 
 Para esta clase será necesario tener previamente instalado el lenguaje de programación R (https://cloud.r-project.org/), y la interfaz gráfica RStudio Desktop (https://rstudio.com/products/rstudio/download/).
 
-**Clase 2: EXPLORAR**
+En el caso de no poder instalar correctamente el programa, se recomienda utilizar RStudio Cloud (https://rstudio.cloud/).
 
-¿Qué información contienen las bases de datos? ¿Cómo se estructuran?
+**Clase 2: COMPRENDER**
 
-Las funciones de *tidyverse* para manipular e interpretar los datos: Extraer información útil a partir de Seleccionar, Filtrar, Ordenar, Modificar y Resumir los datos.
+Las funciones de *tidyverse* para interpretar, manipular y transformar los datos: Extraer información útil a partir de Seleccionar, Filtrar, Ordenar, Modificar, Resumir, Agrupar y Renombrar los datos.
 
 **Clase 3: GRAFICAR**
 
@@ -56,4 +58,4 @@ Extraer conocimiento de los datos a partir de la visualización de los mismos. C
 
 ¿Dónde se ubican los datos? ¿Cómo se distribuyen en el territorio? ¿Presentan algún patrón espacial?
 
-Análisis espacial de los datos. Visualización a partir de mapas.
+Análisis espacial de los datos. Visualización e interpretación a partir de mapas.

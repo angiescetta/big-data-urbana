@@ -24,7 +24,7 @@
 <meta name="author" content="Angie Scetta" />
 
 
-<meta name="date" content="2020-10-10" />
+<meta name="date" content="2020-10-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -135,15 +135,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>INTRODUCCIÓN</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#programa"><i class="fa fa-check"></i>PROGRAMA</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#programa"><i class="fa fa-check"></i>Programa</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="conocer.html"><a href="conocer.html"><i class="fa fa-check"></i><b>1</b> CONOCER</a></li>
-<li class="chapter" data-level="2" data-path="explorar.html"><a href="explorar.html"><i class="fa fa-check"></i><b>2</b> EXPLORAR</a><ul>
-<li class="chapter" data-level="2.1" data-path="explorar.html"><a href="explorar.html#filtrar"><i class="fa fa-check"></i><b>2.1</b> <strong>FILTRAR</strong></a></li>
-<li class="chapter" data-level="2.2" data-path="explorar.html"><a href="explorar.html#modificar"><i class="fa fa-check"></i><b>2.2</b> <strong>MODIFICAR</strong></a></li>
-<li class="chapter" data-level="2.3" data-path="explorar.html"><a href="explorar.html#seleccionar"><i class="fa fa-check"></i><b>2.3</b> <strong>SELECCIONAR</strong></a></li>
-<li class="chapter" data-level="2.4" data-path="explorar.html"><a href="explorar.html#resumir"><i class="fa fa-check"></i><b>2.4</b> <strong>RESUMIR</strong></a></li>
+<li class="chapter" data-level="1" data-path="conocer.html"><a href="conocer.html"><i class="fa fa-check"></i><b>1</b> CONOCER</a><ul>
+<li class="chapter" data-level="1.1" data-path="conocer.html"><a href="conocer.html#interfaz-gráfica-de-rstudio"><i class="fa fa-check"></i><b>1.1</b> Interfaz Gráfica de RStudio</a></li>
+<li class="chapter" data-level="1.2" data-path="conocer.html"><a href="conocer.html#formato-rmarkdown"><i class="fa fa-check"></i><b>1.2</b> Formato RMarkdown</a></li>
+<li class="chapter" data-level="1.3" data-path="conocer.html"><a href="conocer.html#nuestro-primer-dataset"><i class="fa fa-check"></i><b>1.3</b> Nuestro primer dataset</a></li>
 </ul></li>
+<li class="chapter" data-level="2" data-path="comprender.html"><a href="comprender.html"><i class="fa fa-check"></i><b>2</b> COMPRENDER</a></li>
 <li class="chapter" data-level="3" data-path="graficar.html"><a href="graficar.html"><i class="fa fa-check"></i><b>3</b> GRAFICAR</a></li>
 <li class="chapter" data-level="4" data-path="mapear.html"><a href="mapear.html"><i class="fa fa-check"></i><b>4</b> MAPEAR</a></li>
 <li class="divider"></li>
@@ -168,52 +167,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="mapear" class="section level1">
 <h1><span class="header-section-number">Clase 4</span> MAPEAR</h1>
-<p>Llegamos al final del curso y ahora nos toca mapear toda la información que estuvimos analizando las clases anteriores. Para esto vamos a tener que instalar un nuevo paquete llamado <code>sf</code> y luego activarlo con <em>library()</em> al igual que como lo veníamos haciendo con <code>tidyverse</code>:</p>
-<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="mapear.html#cb67-1"></a><span class="kw">library</span>(tidyverse)</span>
-<span id="cb67-2"><a href="mapear.html#cb67-2"></a><span class="co">#install.packages(sf)</span></span>
-<span id="cb67-3"><a href="mapear.html#cb67-3"></a><span class="kw">library</span>(sf)</span></code></pre></div>
-<pre><code>## Linking to GEOS 3.6.1, GDAL 2.2.3, PROJ 4.9.3</code></pre>
-<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="mapear.html#cb69-1"></a>datos_amba &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/amba_properati.csv&quot;</span>)</span></code></pre></div>
-<p>Descarguen el zip con el shape de los partidos de amba en el siguiente link <a href="https://data.world/angie-scetta/partidos-amba" class="uri">https://data.world/angie-scetta/partidos-amba</a></p>
-<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="mapear.html#cb70-1"></a>partidos_amba &lt;-<span class="st"> </span><span class="kw">st_read</span>(<span class="st">&quot;data/partidos_amba.shp&quot;</span>)</span></code></pre></div>
-<pre><code>## Reading layer `partidos_amba&#39; from data source `E:\03-OTROS\SCA-CURSOS-2020\sca-big-data-urbana\data\partidos_amba.shp&#39; using driver `ESRI Shapefile&#39;
-## Simple feature collection with 144 features and 2 fields
-## geometry type:  MULTIPOLYGON
-## dimension:      XY
-## bbox:           xmin: -59.3392 ymin: -35.23893 xmax: -57.70946 ymax: -34.00243
-## CRS:            4326</code></pre>
-<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="mapear.html#cb72-1"></a>mapear &lt;-<span class="st"> </span>datos_amba <span class="op">%&gt;%</span></span>
-<span id="cb72-2"><a href="mapear.html#cb72-2"></a><span class="st">  </span><span class="kw">filter</span>(operation_type<span class="op">==</span><span class="st">&quot;Venta&quot;</span>,</span>
-<span id="cb72-3"><a href="mapear.html#cb72-3"></a>         created_on<span class="op">==</span><span class="kw">max</span>(created_on))</span>
-<span id="cb72-4"><a href="mapear.html#cb72-4"></a></span>
-<span id="cb72-5"><a href="mapear.html#cb72-5"></a>mapear &lt;-<span class="st"> </span>mapear <span class="op">%&gt;%</span></span>
-<span id="cb72-6"><a href="mapear.html#cb72-6"></a><span class="st">  </span><span class="kw">group_by</span>(partido) <span class="op">%&gt;%</span></span>
-<span id="cb72-7"><a href="mapear.html#cb72-7"></a><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">cantidad=</span><span class="kw">n</span>(),</span>
-<span id="cb72-8"><a href="mapear.html#cb72-8"></a>            <span class="dt">price_m2=</span><span class="kw">median</span>(price<span class="op">/</span>surface_covered))</span></code></pre></div>
-<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="mapear.html#cb73-1"></a>partidos_amba &lt;-<span class="st"> </span><span class="kw">left_join</span>(partidos_amba, mapear, <span class="dt">by=</span><span class="kw">c</span>(<span class="st">&quot;nombre&quot;</span>=<span class="st">&quot;partido&quot;</span>))</span></code></pre></div>
-<pre><code>## Warning: Column `nombre`/`partido` joining factors with different levels,
-## coercing to character vector</code></pre>
-<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="mapear.html#cb75-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
-<span id="cb75-2"><a href="mapear.html#cb75-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>partidos_amba, <span class="kw">aes</span>(<span class="dt">fill=</span>price_m2))</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
-<div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb76-1"><a href="mapear.html#cb76-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
-<span id="cb76-2"><a href="mapear.html#cb76-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>partidos_amba, <span class="kw">aes</span>(<span class="dt">fill=</span>price_m2), <span class="dt">color=</span><span class="ot">NA</span>) <span class="op">+</span></span>
-<span id="cb76-3"><a href="mapear.html#cb76-3"></a><span class="st">    </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Valor del m2 por Partido&quot;</span>,</span>
-<span id="cb76-4"><a href="mapear.html#cb76-4"></a>         <span class="dt">subtitle =</span> <span class="st">&quot;AMBA&quot;</span>,</span>
-<span id="cb76-5"><a href="mapear.html#cb76-5"></a>         <span class="dt">fill =</span> <span class="st">&quot;USD/m2&quot;</span>,</span>
-<span id="cb76-6"><a href="mapear.html#cb76-6"></a>         <span class="dt">caption=</span> <span class="st">&quot;Fuente: Properati&quot;</span>)<span class="op">+</span></span>
-<span id="cb76-7"><a href="mapear.html#cb76-7"></a><span class="st">  </span><span class="kw">scale_fill_gradient</span>(<span class="dt">low=</span><span class="st">&quot;lightgoldenrodyellow&quot;</span>, <span class="dt">high=</span><span class="st">&quot;deeppink4&quot;</span>) <span class="op">+</span></span>
-<span id="cb76-8"><a href="mapear.html#cb76-8"></a><span class="st">  </span><span class="kw">theme_void</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-39-1.png" width="672" /></p>
-<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="mapear.html#cb77-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
-<span id="cb77-2"><a href="mapear.html#cb77-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>partidos_amba, <span class="kw">aes</span>(<span class="dt">fill=</span>cantidad), <span class="dt">color=</span><span class="ot">NA</span>) <span class="op">+</span></span>
-<span id="cb77-3"><a href="mapear.html#cb77-3"></a><span class="st">    </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Propiedades en venta por Partido&quot;</span>,</span>
-<span id="cb77-4"><a href="mapear.html#cb77-4"></a>         <span class="dt">subtitle =</span> <span class="st">&quot;AMBA&quot;</span>,</span>
-<span id="cb77-5"><a href="mapear.html#cb77-5"></a>         <span class="dt">fill =</span> <span class="st">&quot;Cantidad&quot;</span>,</span>
-<span id="cb77-6"><a href="mapear.html#cb77-6"></a>         <span class="dt">caption=</span> <span class="st">&quot;Fuente: Properati&quot;</span>)<span class="op">+</span></span>
-<span id="cb77-7"><a href="mapear.html#cb77-7"></a><span class="st">  </span><span class="kw">scale_fill_gradient</span>(<span class="dt">low=</span><span class="st">&quot;lightgoldenrodyellow&quot;</span>, <span class="dt">high=</span><span class="st">&quot;deeppink4&quot;</span>) <span class="op">+</span></span>
-<span id="cb77-8"><a href="mapear.html#cb77-8"></a><span class="st">  </span><span class="kw">theme_void</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-40-1.png" width="672" /></p>
 
 </div>
             </section>

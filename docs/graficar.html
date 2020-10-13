@@ -24,14 +24,14 @@
 <meta name="author" content="Angie Scetta" />
 
 
-<meta name="date" content="2020-10-10" />
+<meta name="date" content="2020-10-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="explorar.html"/>
+<link rel="prev" href="comprender.html"/>
 <link rel="next" href="mapear.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -135,15 +135,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>INTRODUCCIÓN</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#programa"><i class="fa fa-check"></i>PROGRAMA</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#programa"><i class="fa fa-check"></i>Programa</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="conocer.html"><a href="conocer.html"><i class="fa fa-check"></i><b>1</b> CONOCER</a></li>
-<li class="chapter" data-level="2" data-path="explorar.html"><a href="explorar.html"><i class="fa fa-check"></i><b>2</b> EXPLORAR</a><ul>
-<li class="chapter" data-level="2.1" data-path="explorar.html"><a href="explorar.html#filtrar"><i class="fa fa-check"></i><b>2.1</b> <strong>FILTRAR</strong></a></li>
-<li class="chapter" data-level="2.2" data-path="explorar.html"><a href="explorar.html#modificar"><i class="fa fa-check"></i><b>2.2</b> <strong>MODIFICAR</strong></a></li>
-<li class="chapter" data-level="2.3" data-path="explorar.html"><a href="explorar.html#seleccionar"><i class="fa fa-check"></i><b>2.3</b> <strong>SELECCIONAR</strong></a></li>
-<li class="chapter" data-level="2.4" data-path="explorar.html"><a href="explorar.html#resumir"><i class="fa fa-check"></i><b>2.4</b> <strong>RESUMIR</strong></a></li>
+<li class="chapter" data-level="1" data-path="conocer.html"><a href="conocer.html"><i class="fa fa-check"></i><b>1</b> CONOCER</a><ul>
+<li class="chapter" data-level="1.1" data-path="conocer.html"><a href="conocer.html#interfaz-gráfica-de-rstudio"><i class="fa fa-check"></i><b>1.1</b> Interfaz Gráfica de RStudio</a></li>
+<li class="chapter" data-level="1.2" data-path="conocer.html"><a href="conocer.html#formato-rmarkdown"><i class="fa fa-check"></i><b>1.2</b> Formato RMarkdown</a></li>
+<li class="chapter" data-level="1.3" data-path="conocer.html"><a href="conocer.html#nuestro-primer-dataset"><i class="fa fa-check"></i><b>1.3</b> Nuestro primer dataset</a></li>
 </ul></li>
+<li class="chapter" data-level="2" data-path="comprender.html"><a href="comprender.html"><i class="fa fa-check"></i><b>2</b> COMPRENDER</a></li>
 <li class="chapter" data-level="3" data-path="graficar.html"><a href="graficar.html"><i class="fa fa-check"></i><b>3</b> GRAFICAR</a></li>
 <li class="chapter" data-level="4" data-path="mapear.html"><a href="mapear.html"><i class="fa fa-check"></i><b>4</b> MAPEAR</a></li>
 <li class="divider"></li>
@@ -168,24 +167,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="graficar" class="section level1">
 <h1><span class="header-section-number">Clase 3</span> GRAFICAR</h1>
-<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="graficar.html#cb60-1"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
-<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="graficar.html#cb61-1"></a>datos_amba &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/amba_properati.csv&quot;</span>)</span></code></pre></div>
-<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="graficar.html#cb62-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
-<span id="cb62-2"><a href="graficar.html#cb62-2"></a><span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">data=</span>datos_amba, <span class="kw">aes</span>(<span class="dt">x=</span>partido, <span class="dt">weight=</span>price)) <span class="op">+</span></span>
-<span id="cb62-3"><a href="graficar.html#cb62-3"></a><span class="st">  </span><span class="kw">coord_flip</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
-<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="graficar.html#cb63-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
-<span id="cb63-2"><a href="graficar.html#cb63-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>datos_amba, <span class="kw">aes</span>(<span class="dt">x=</span>surface_covered, <span class="dt">y=</span>price))</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
-<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="graficar.html#cb64-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
-<span id="cb64-2"><a href="graficar.html#cb64-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>datos_amba, <span class="kw">aes</span>(<span class="dt">x=</span>surface_covered, <span class="dt">y=</span>price)) <span class="op">+</span></span>
-<span id="cb64-3"><a href="graficar.html#cb64-3"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span>provincia)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
-<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="graficar.html#cb65-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
-<span id="cb65-2"><a href="graficar.html#cb65-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>datos_amba, <span class="kw">aes</span>(<span class="dt">x=</span>long, <span class="dt">y=</span>lat))</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
-<p>¿Tiene forma de AMBA?</p>
-<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="graficar.html#cb66-1"></a><span class="kw">options</span>(<span class="dt">scipen=</span><span class="dv">999</span>)</span></code></pre></div>
 
 </div>
             </section>
@@ -193,7 +174,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="explorar.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="comprender.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="mapear.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>

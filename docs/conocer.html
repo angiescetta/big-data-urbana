@@ -24,7 +24,7 @@
 <meta name="author" content="Angie Scetta" />
 
 
-<meta name="date" content="2020-10-10" />
+<meta name="date" content="2020-10-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="index.html"/>
-<link rel="next" href="explorar.html"/>
+<link rel="next" href="comprender.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -135,15 +135,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>INTRODUCCIÓN</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#programa"><i class="fa fa-check"></i>PROGRAMA</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#programa"><i class="fa fa-check"></i>Programa</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="conocer.html"><a href="conocer.html"><i class="fa fa-check"></i><b>1</b> CONOCER</a></li>
-<li class="chapter" data-level="2" data-path="explorar.html"><a href="explorar.html"><i class="fa fa-check"></i><b>2</b> EXPLORAR</a><ul>
-<li class="chapter" data-level="2.1" data-path="explorar.html"><a href="explorar.html#filtrar"><i class="fa fa-check"></i><b>2.1</b> <strong>FILTRAR</strong></a></li>
-<li class="chapter" data-level="2.2" data-path="explorar.html"><a href="explorar.html#modificar"><i class="fa fa-check"></i><b>2.2</b> <strong>MODIFICAR</strong></a></li>
-<li class="chapter" data-level="2.3" data-path="explorar.html"><a href="explorar.html#seleccionar"><i class="fa fa-check"></i><b>2.3</b> <strong>SELECCIONAR</strong></a></li>
-<li class="chapter" data-level="2.4" data-path="explorar.html"><a href="explorar.html#resumir"><i class="fa fa-check"></i><b>2.4</b> <strong>RESUMIR</strong></a></li>
+<li class="chapter" data-level="1" data-path="conocer.html"><a href="conocer.html"><i class="fa fa-check"></i><b>1</b> CONOCER</a><ul>
+<li class="chapter" data-level="1.1" data-path="conocer.html"><a href="conocer.html#interfaz-gráfica-de-rstudio"><i class="fa fa-check"></i><b>1.1</b> Interfaz Gráfica de RStudio</a></li>
+<li class="chapter" data-level="1.2" data-path="conocer.html"><a href="conocer.html#formato-rmarkdown"><i class="fa fa-check"></i><b>1.2</b> Formato RMarkdown</a></li>
+<li class="chapter" data-level="1.3" data-path="conocer.html"><a href="conocer.html#nuestro-primer-dataset"><i class="fa fa-check"></i><b>1.3</b> Nuestro primer dataset</a></li>
 </ul></li>
+<li class="chapter" data-level="2" data-path="comprender.html"><a href="comprender.html"><i class="fa fa-check"></i><b>2</b> COMPRENDER</a></li>
 <li class="chapter" data-level="3" data-path="graficar.html"><a href="graficar.html"><i class="fa fa-check"></i><b>3</b> GRAFICAR</a></li>
 <li class="chapter" data-level="4" data-path="mapear.html"><a href="mapear.html"><i class="fa fa-check"></i><b>4</b> MAPEAR</a></li>
 <li class="divider"></li>
@@ -168,28 +167,70 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="conocer" class="section level1">
 <h1><span class="header-section-number">Clase 1</span> CONOCER</h1>
-<p>A lo largo del curso trabajaremos con el formato <strong>RMarkdown</strong>, un tipo de documento de RStudio que integra texto con código de R.</p>
+<p><strong>¿Qué es R y RStudio?</strong></p>
+<p>RStudio es una <strong>interfaz libre y gratuita</strong> que nos permite <strong>explotar todo el potencial que tiene el lenguaje de programación R</strong>.</p>
+<p>R es un lenguaje que ofrece una gran variedad de funciones para realizar cálculos estadísticos y generar diversos gráficos a partir de los datos. Sin embargo, el gran potencial está en que, al ser libre y colaborativo, <strong>constantemente los usuarios están actualizando y ampliando la cantidad de funciones que presenta</strong>. Hoy en día podemos realizar desde operaciones básicas sobre los datos hasta aplicar algoritmos de inteligencia artificial.</p>
+<p>A su vez, dentro de RStudio, hay diferentes formatos de archivos (RMarkdown, RScript, RNotebook, etc) que su elección depende del objetivo que tengamos. En nuestro caso, a lo largo del curso trabajaremos con el formato <strong>RMarkdown</strong>, un tipo de documento de RStudio que integra texto con código de R y nos permite generar informes a partir de los datos.</p>
 <p>Empecemos de a poco:</p>
 <p>Primero tenemos que crear un <strong>nuevo proyecto y un nuevo RMarkdown</strong>. Los pasos a seguir pueden encontrarlos en el siguiente tutorial: <strong><a href="https://rpubs.com/angiescetta/conociendo-R" class="uri">https://rpubs.com/angiescetta/conociendo-R</a></strong></p>
-<p>Ahora si, comencemos!</p>
+<div id="interfaz-gráfica-de-rstudio" class="section level2">
+<h2><span class="header-section-number">1.1</span> Interfaz Gráfica de RStudio</h2>
+<p>Antes de seguir, analicemos un poco la <strong>Interfaz Gráfica de RStudio</strong>:</p>
+<p><img src="images/000_0.jpg" /></p>
+<p>Tal como se ve en la imagen, podríamos dividir la interfaz en 4 partes/ventanas:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Panel de Edición</strong></li>
+</ol>
+<p>Este panel es en el que vamos a estar creando y modificando nuestro RMarkdown. Aquí también podría haber otro formato de archivo R, como por ejemplo R Script o R Notebook.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><strong>Entorno de Variables</strong></li>
+</ol>
+<p>En esta ventana iremos viendo todos los datos que hayamos cargado. Desde aquí también podremos importar o eliminar datos.</p>
+<p>Desde la pestaña Historial podremos consultar el historial de comandos y funciones que fuimos utilizando en el Proyecto.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><strong>Consola</strong></li>
+</ol>
+<p>En la ventana inferior izquierda irá apareciendo todo lo que ejecutemos tanto desde el Panel de Edición como desde el Entorno de Variables, pero también podemos escribir líneas de código que queremos que se ejecuten y no queremos dejarlas escritas en el RMarkdown.</p>
+<ol start="4" style="list-style-type: decimal">
+<li><strong>Panel de Utilidades</strong></li>
+</ol>
+<p>En la ventana inferior derecha se pueden ver varias cosas:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Files: El Directorio donde estamos trabajando.</p></li>
+<li><p>Plots: Las visualizaciones/gráficos que se van generando.</p></li>
+<li><p>Packages: Los paquetes de R disponibles.</p></li>
+<li><p>Help: Una sección de ayuda donde podemos consultar información de las funciones.</p></li>
+<li><p>Viewer: Un visor HTML para ver los gráficos interactivos o animados que hayamos hecho.</p></li>
+</ol>
+</div>
+<div id="formato-rmarkdown" class="section level2">
+<h2><span class="header-section-number">1.2</span> Formato RMarkdown</h2>
 <p><strong>¿Para que sirve el formato RMawkdown?</strong></p>
 <p>Este formato sirve para manipular datos y armar informes listos para presentar. Hay 2 formas de escribir en un RMarkdown:</p>
 <ol style="list-style-type: decimal">
-<li><p><strong>Texto</strong> como el que estoy escribiendo ahora.</p></li>
-<li><p><strong>Bloques de código</strong> (o “chunks”) donde insertaremos nuestras líneas de código con el objetivo de manipular (analizar, modificar, visualizar) los datos. Esto es un chunk:</p></li>
+<li><strong>Texto</strong> como el que estoy escribiendo ahora.</li>
+</ol>
+<p>El RMarkdown tiene una sintaxis específica para poder dar formato al texto del informe final, por ejemplo si escribimos así:</p>
+<p><img src="images/000.JPG" /></p>
+<p>Obtenemos los siguientes resultados:</p>
+<p><img src="images/000_1.JPG" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li><strong>Bloques de código</strong> (o “chunks”) donde insertaremos nuestras líneas de código con el objetivo de manipular (analizar, modificar, visualizar) los datos. Esto es un chunk:</li>
 </ol>
 <p><img src="images/001.JPG" /></p>
 <p>Y se inserta haciendo click en <strong>Insert/R</strong> o con el siguiente atajo en el teclado: <strong>Ctrl + Shift + I</strong></p>
 <p><img src="images/002.jpg" /></p>
-<p><strong>Carguemos nuestro primer dataset</strong></p>
+</div>
+<div id="nuestro-primer-dataset" class="section level2">
+<h2><span class="header-section-number">1.3</span> Nuestro primer dataset</h2>
 <p>A lo largo del curso vamos a trabajar con los datos de Properati, un portal web de compra, venta y alquiler de inmuebles en toda América Latina.
 Estos datos son públicos y pueden encontrarlos en <a href="https://properati.com.ar/data" class="uri">https://properati.com.ar/data</a>.</p>
 <p>En este caso, para facilitar la manipulación de la información, usaremos un set de datos (en formato csv) previamente procesado que contiene datos de propiedades publicadas en AMBA en Junio y Julio del 2020. Pueden descargarlo de <a href="https://data.world/angie-scetta/amba-properati" class="uri">https://data.world/angie-scetta/amba-properati</a>.</p>
-<p><em>Recomendación: Al descargarlo, moverlo de la carpeta “Descargas” a la carpeta del Proyecto donde estén trabajando.</em></p>
+<p><em>Recomendación: Al descargarlo, moverlo de la carpeta “Descargas” a una nueva carpeta llamada “data” dentro de la carpeta del Proyecto donde estén trabajando.</em></p>
 <p>Ahora si, manos a la obra! Para cargar el dataset pueden copiar la siguiente línea de código y pegarla dentro de un chunk:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="conocer.html#cb1-1"></a>datos_amba &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/amba_properati.csv&quot;</span>)</span></code></pre></div>
 <p>Para entender la lógica detrás del chunk anterior pueden revisar este link: <a href="https://rpubs.com/angiescetta/importar-dataset" class="uri">https://rpubs.com/angiescetta/importar-dataset</a></p>
-<p>Ahora exploremos nuestro dataset, veamos como se estructura (cuantas filas y columnas tiene) y que información trae…</p>
+<p><strong>Ahora conozcamos nuestro dataset</strong>: Veamos como se estructura (cuantas filas y columnas tiene) y que información trae…</p>
 <p>Para esto empezaremos utilizando <code>dim()</code>:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="conocer.html#cb2-1"></a><span class="kw">dim</span>(datos_amba)</span></code></pre></div>
 <pre><code>## [1] 14929    13</code></pre>
@@ -198,13 +239,14 @@ Estos datos son públicos y pueden encontrarlos en <a href="https://properati.co
 <pre><code>## [1] 13</code></pre>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="conocer.html#cb6-1"></a><span class="kw">nrow</span>(datos_amba)</span></code></pre></div>
 <pre><code>## [1] 14929</code></pre>
-<p>Pero ¿qué contienen esas 13 columnas? Esto podemos verlo con <code>names()</code>:</p>
+<p>Pero <strong>¿Qué información contienen esas 13 columnas?</strong></p>
+<p>Esto podemos verlo con <code>names()</code>:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="conocer.html#cb8-1"></a><span class="kw">names</span>(datos_amba)</span></code></pre></div>
 <pre><code>##  [1] &quot;created_on&quot;      &quot;provincia&quot;       &quot;partido&quot;        
 ##  [4] &quot;rooms&quot;           &quot;surface_total&quot;   &quot;surface_covered&quot;
 ##  [7] &quot;price&quot;           &quot;currency&quot;        &quot;title&quot;          
 ## [10] &quot;property_type&quot;   &quot;operation_type&quot;  &quot;lat&quot;            
-## [13] &quot;long&quot;</code></pre>
+## [13] &quot;lon&quot;</code></pre>
 <p>Bien, las columnas tienen fecha de publicación de la propiedad, provincia y partido donde se ubica, cantidad de ambientes, superficie total y superficie cubierta, precio publicado, tipo de moneda (ARS o USD), el título que el usuario escribió al publicar su propiedad, el tipo de propiedad, el tipo de operación, y finalmente la ubicación del inmueble con sus coordenadas: latitud y longitud.</p>
 <p>Parece que cada fila/registro de la base corresponde a una propiedad publicada, pero veamos una pequeña muestra de la data con <code>head()</code> para estar seguros:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="conocer.html#cb10-1"></a><span class="kw">head</span>(datos_amba)</span></code></pre></div>
@@ -229,14 +271,14 @@ Estos datos son públicos y pueden encontrarlos en <a href="https://properati.co
 ## 4                              Monoambiente con cochera. Zencity. Puerto Madero
 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
 ## 6                                                        PH - Lomas Del Mirador
-##   property_type operation_type       lat      long
-## 1  Departamento       Alquiler -58.46222 -34.61917
-## 2  Departamento       Alquiler -58.46652 -34.55460
-## 3  Departamento       Alquiler -58.46461 -34.56318
-## 4  Departamento       Alquiler -58.36090 -34.61836
-## 5  Departamento       Alquiler -58.49345 -34.53344
-## 6            PH       Alquiler -58.52914 -34.66253</code></pre>
-<p>Y un resumen estadístico de la información:</p>
+##   property_type operation_type       lat       lon
+## 1  Departamento       Alquiler -34.61917 -58.46222
+## 2  Departamento       Alquiler -34.55460 -58.46652
+## 3  Departamento       Alquiler -34.56318 -58.46461
+## 4  Departamento       Alquiler -34.61836 -58.36090
+## 5  Departamento       Alquiler -34.53344 -58.49345
+## 6            PH       Alquiler -34.66253 -58.52914</code></pre>
+<p>Y un <strong>resumen estadístico de la información</strong>:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="conocer.html#cb12-1"></a><span class="kw">summary</span>(datos_amba)</span></code></pre></div>
 <pre><code>##    created_on     provincia        partido         rooms       
 ##  Min.   :202006   CABA:8896   Comuna 14:2001   Min.   : 1.000  
@@ -262,23 +304,23 @@ Estos datos son públicos y pueden encontrarlos en <a href="https://properati.co
 ##  Departamento de 3 ambientes en Venta en Almagro     :  108  
 ##  Departamento de 3 ambientes en Venta en Palermo     :  108  
 ##  (Other)                                             :14162  
-##       property_type    operation_type       lat              long       
-##  Casa        : 2297   Alquiler: 3251   Min.   :-59.04   Min.   :-35.12  
-##  Departamento:11344   Venta   :11678   1st Qu.:-58.53   1st Qu.:-34.61  
-##  PH          : 1288                    Median :-58.45   Median :-34.59  
-##                                        Mean   :-58.47   Mean   :-34.59  
-##                                        3rd Qu.:-58.41   3rd Qu.:-34.55  
-##                                        Max.   :-57.83   Max.   :-34.26  
+##       property_type    operation_type       lat              lon        
+##  Casa        : 2297   Alquiler: 3251   Min.   :-35.12   Min.   :-59.04  
+##  Departamento:11344   Venta   :11678   1st Qu.:-34.61   1st Qu.:-58.53  
+##  PH          : 1288                    Median :-34.59   Median :-58.45  
+##                                        Mean   :-34.59   Mean   :-58.47  
+##                                        3rd Qu.:-34.55   3rd Qu.:-58.41  
+##                                        Max.   :-34.26   Max.   :-57.83  
 ## </code></pre>
 <p>A priori, en este resumen podemos entender varias cosas de la data. Por ejemplo:</p>
 <ul>
-<li><p>Hay registros de propiedades publicadas entre Junio (Min) y Julio (Max) 2020</p></li>
-<li><p>La mayoría de las publicaciones son en CABA (8.896 vs 6.033)</p></li>
-<li><p>El Partido/Comuna que más aparece es la Comuna 14 (Barrio de Palermo), seguido por Tigre.</p></li>
-<li><p>De las 3 tipologías de propiedades, lo que más hay es Departamentos, seguido por Casas y por último PHs.</p></li>
-<li><p>Hay más propiedades en Venta que en Alquiler (11.678 vs 3.251)</p></li>
+<li><p>Hay registros de propiedades publicadas entre <strong>Junio (Min) y Julio (Max) 2020</strong>.</p></li>
+<li><p>La <strong>mayoría de las publicaciones son en CABA</strong> (8.896 vs 6.033).</p></li>
+<li><p>El <strong>Partido/Comuna que más aparece es la Comuna 14</strong> (Barrio de Palermo), seguido por Tigre.</p></li>
+<li><p>De las 3 tipologías de propiedades, <strong>lo que más hay es Departamentos</strong>, seguido por Casas y por último PHs.</p></li>
+<li><p>Hay <strong>más propiedades en Venta que en Alquiler</strong> (11.678 vs 3.251).</p></li>
 </ul>
-<p>Por último, investiguemos como es la estructura de la data, es decir que tipo de información tiene cada campo. Si bien algo ya nos imaginamos gracias al <code>summary()</code>, usemos <code>str()</code> para revisarlo:</p>
+<p>Por último, investiguemos como es la <strong>estructura de la data</strong>, es decir que tipo de información tiene cada campo. Si bien algo ya nos imaginamos gracias al <code>summary()</code>, usemos <code>str()</code> para revisarlo:</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="conocer.html#cb14-1"></a><span class="kw">str</span>(datos_amba)</span></code></pre></div>
 <pre><code>## &#39;data.frame&#39;:	14929 obs. of  13 variables:
 ##  $ created_on     : int  202006 202006 202006 202006 202006 202006 202006 202006 202006 202006 ...
@@ -292,8 +334,8 @@ Estos datos son públicos y pueden encontrarlos en <a href="https://properati.co
 ##  $ title          : Factor w/ 10634 levels &quot;- Casa Venta Tipo Chalet 5 Amb con Cochera - Villa Pueyrredo&quot;,..: 2864 8265 2810 7014 1091 7646 7622 4885 8682 2741 ...
 ##  $ property_type  : Factor w/ 3 levels &quot;Casa&quot;,&quot;Departamento&quot;,..: 2 2 2 2 2 3 3 2 2 2 ...
 ##  $ operation_type : Factor w/ 2 levels &quot;Alquiler&quot;,&quot;Venta&quot;: 1 1 1 1 1 1 1 1 1 1 ...
-##  $ lat            : num  -58.5 -58.5 -58.5 -58.4 -58.5 ...
-##  $ long           : num  -34.6 -34.6 -34.6 -34.6 -34.5 ...</code></pre>
+##  $ lat            : num  -34.6 -34.6 -34.6 -34.6 -34.5 ...
+##  $ lon            : num  -58.5 -58.5 -58.5 -58.4 -58.5 ...</code></pre>
 <p>Existen varios tipos de datos, pero en nuestro set nos encontramos con 3: integer (int), numeric (num) y Factor.</p>
 <p>Ahora bien, ¿Qué significa eso?</p>
 <ul>
@@ -302,8 +344,18 @@ Estos datos son públicos y pueden encontrarlos en <a href="https://properati.co
 <li><p><strong>Factor</strong> son categorías, por ejemplo Barrios, Partidos, Tipos de propiedades, etc.</p></li>
 </ul>
 <p>Además del tipo de dato, con <code>str()</code> también podemos ver la cantidad de niveles que tienen las variables de tipo Factor. Por ejemplo, se observa que la columna provincia solo tiene 2 categorías posibles (CABA o AMBA), en cambio la columna partido tiene 50.</p>
+<p><strong>Bonus Track</strong></p>
+<p>¿Cómo hacemos si queremos ver la estructura o un resumen estadístico de una sola de las columnas del dataset? Para esto utilizamos el símbolo <strong>$</strong> de la siguiente forma:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="conocer.html#cb16-1"></a><span class="kw">summary</span>(datos_amba<span class="op">$</span>property_type)</span></code></pre></div>
+<pre><code>##         Casa Departamento           PH 
+##         2297        11344         1288</code></pre>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="conocer.html#cb18-1"></a><span class="kw">str</span>(datos_amba<span class="op">$</span>property_type)</span></code></pre></div>
+<pre><code>##  Factor w/ 3 levels &quot;Casa&quot;,&quot;Departamento&quot;,..: 2 2 2 2 2 3 3 2 2 2 ...</code></pre>
+<p><strong>Generemos nuestro primer HTML</strong></p>
+<p>Por último, generemos nuestro primer reporte HTML para poder ver todos los resultados en un único informe. Para esto debemos hacer click en <strong>Knit / Knit to HTML</strong>:</p>
+<p><img src="images/004.jpg" /></p>
 <p><strong>Próximos Pasos</strong></p>
-<p>Acá concluye la primer clase, pero los invito a que repliquen lo realizado en clase con algún otro dataset que les interese. Pueden descargar datos de diversos portales abiertos como por ejemplo:</p>
+<p>Acá concluye la primer clase, pero los invito a que repliquen lo realizado con algún otro dataset que les interese. Pueden descargar datos de diversos portales abiertos como por ejemplo:</p>
 <ul>
 <li><p>Portal de Datos Abiertos de Argentina: <a href="https://datos.gob.ar/" class="uri">https://datos.gob.ar/</a></p></li>
 <li><p>Portal de Datos Abiertos de CABA: <a href="https://data.buenosaires.gob.ar/" class="uri">https://data.buenosaires.gob.ar/</a></p></li>
@@ -312,13 +364,14 @@ Estos datos son públicos y pueden encontrarlos en <a href="https://properati.co
 </ul>
 
 </div>
+</div>
             </section>
 
           </div>
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="explorar.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="comprender.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
