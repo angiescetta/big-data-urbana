@@ -44,7 +44,7 @@ Para esta clase será necesario tener previamente instalado el lenguaje de progr
 
 En el caso de no poder instalar correctamente el programa, se recomienda utilizar RStudio Cloud (https://rstudio.cloud/).
 
-**Clase 2: COMPRENDER**
+**Clase 2: MANIPULAR**
 
 Las funciones de *tidyverse* para interpretar, manipular y transformar los datos: Extraer información útil a partir de Seleccionar, Filtrar, Ordenar, Modificar, Resumir, Agrupar y Renombrar los datos.
 

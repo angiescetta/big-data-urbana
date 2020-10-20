@@ -1,4 +1,4 @@
-# COMPRENDER
+# MANIPULAR
 
 Ahora que ya sabemos abrir un dataset y conocer que información tiene, vamos a aprender a manipular y transformar los datos. Para esto vamos a trabajar con uno de los paquetes más usados y más útiles de R que se llama `tidyverse`.
 
@@ -10,7 +10,7 @@ Estos grupos de funciones son a los que llamamos paquetes o packages y para pode
 
 Comencemos instalándolo. Esto podemos hacerlo manualmente en Tools/Install packages:
 
-![](E:/03-OTROS/SCA-CURSOS-2020/capturas/024.jpg)
+![](images/005.jpg)
 
 O directamente escribiendo `install.packages()` adentro de un chunk:
 
@@ -386,9 +386,9 @@ summarise(datos_amba, surface_covered=max(rooms))
 summarise(datos_amba, surface_covered=min(rooms))
 ```
 
-Como verán, esta función resulta útil para ver valores agregados de toda la base, sin embargo, si agrupamos los datos previo a calular los resumenes, los resultados comienzan a ser más específicos. Para esto vamos a utilizar `summarise()` junto a `group_by()`. Veamos un ejemplo:
+Como verán, esta función resulta útil para ver valores agregados de toda la base, sin embargo, también podemos agrupar los datos previo a calular los resumenes, y así obtener resumenes por agrupaciones en vez de uno solo para toda la base. Para esto vamos a utilizar `summarise()` junto a `group_by()`. Veamos un ejemplo:
 
-- Primero agrupemos los datos por la variable "operation_type"
+- Primero agrupemos los datos por la variable "operation_type".
 
 - Luego calculemos el promedio de superficie cubierta sobre la agrupación realizada previamente.
 
@@ -400,7 +400,7 @@ resumir <- summarise(agrupar, surface_covered=mean(surface_covered))
 head(resumir)
 ```
 
-Con la agrupación y el resumen podemos ver que la superficie cubierta promedio de las propiedades en alquiler er 72,93m2 y la de las propiedades en venta es 97,28m2.
+Con la agrupación y el resumen podemos ver que la superficie cubierta promedio de las propiedades en alquiler es 72,93m2 y la de las propiedades en venta es 97,28m2.
 
 Probemos agrupando por 3 columnas:
 
@@ -472,4 +472,11 @@ concatenar <- datos_amba %>%
 head(concatenar)
 ```
 
-Como verán, en ambos casos llegamos al mismo resultado, pero sin dudas, la segunda opción es la más óptima.
+A partir de la agrupación y resumen por ejemplo podemos ver que:
+
+- En ambos meses, en CABA hubo mayor cantidad de propiedades en venta.
+- En ambos meses, la superficie cubierta de las propiedades en venta en GBA son mayores que las de CABA.
+- En ambos meses el valor promedio del m2 es más alto en CABA que ne GBA.
+- En ambas zonas (CABA y GBA), entre Junio y Julio 2020 hubo una caída en la cantidad de propiedades publicadas y en el valor promedio del m2.
+
+Como verán, en ambos casos llegamos al mismo resultado, pero sin dudas, la segunda opción es la recomendable porque nos ahorramos varias líneas de código y resultados intermedios.
