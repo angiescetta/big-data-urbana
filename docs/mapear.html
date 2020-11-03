@@ -24,7 +24,7 @@
 <meta name="author" content="Angie Scetta" />
 
 
-<meta name="date" content="2020-10-27" />
+<meta name="date" content="2020-11-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -159,7 +159,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.5" data-path="graficar.html"><a href="graficar.html#gráfico-de-matriz"><i class="fa fa-check"></i><b>3.5</b> Gráfico de Matriz</a></li>
 <li class="chapter" data-level="3.6" data-path="graficar.html"><a href="graficar.html#gráfico-de-barras"><i class="fa fa-check"></i><b>3.6</b> Gráfico de Barras</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="mapear.html"><a href="mapear.html"><i class="fa fa-check"></i><b>4</b> MAPEAR</a></li>
+<li class="chapter" data-level="4" data-path="mapear.html"><a href="mapear.html"><i class="fa fa-check"></i><b>4</b> MAPEAR</a><ul>
+<li class="chapter" data-level="4.1" data-path="mapear.html"><a href="mapear.html#analizar-datos-espaciales"><i class="fa fa-check"></i><b>4.1</b> Analizar datos espaciales</a></li>
+<li class="chapter" data-level="4.2" data-path="mapear.html"><a href="mapear.html#cruzar-datos-tradicionales-y-espaciales"><i class="fa fa-check"></i><b>4.2</b> Cruzar datos tradicionales y espaciales</a></li>
+<li class="chapter" data-level="4.3" data-path="mapear.html"><a href="mapear.html#cruzar-datos-espaciales"><i class="fa fa-check"></i><b>4.3</b> Cruzar datos espaciales</a></li>
+<li class="chapter" data-level="4.4" data-path="mapear.html"><a href="mapear.html#agregar-mapa-base"><i class="fa fa-check"></i><b>4.4</b> Agregar mapa base</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Publicado con bookdown</a></li>
 
@@ -182,7 +187,477 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="mapear" class="section level1">
 <h1><span class="header-section-number">Clase 4</span> MAPEAR</h1>
+<p>Llegamos al final del curso y ahora nos toca <strong>visualizar en un mapa toda la información</strong> que estuvimos analizando las clases anteriores. Para esto, vamos a trabajar con la información geográfica que contiene nuestro dataset y vamos agregar otras fuentes de datos geográficos.</p>
+<p>Pero antes de empezar, ¿A que nos referimos cuando hablamos de <strong>Sistemas de Información Geográfica</strong> o <strong>SIG</strong>? Bueno, nos referimos a las herramientas informáticas que nos permiten ubicar y analizar un conjunto de datos en lugares específicos del territorio (georreferenciar).</p>
+<p>Para poder hacer uso de los SIG necesitamos contar con información geográfica en nuestro dataset, es decir, que además de la información que ya vimos que puede haber en un dataset tradicional, se sume un componente espacial en cada registro (partido, barrio, manzana, calle o directamente las coordenadas X e Y).</p>
+<p>Las herramientas que nos permitirán visualizar toda esta información serán los <strong>mapas</strong>, que son nada más y nada menos que representaciones planas, reducidas y simplificadas de la tierra que nos dan la posibilidad cruzar y relacionar datos en el espacio. Es decir que, mantienen una relación ordenada en el traspaso de puntos ubicados en la superficie curva de la tierra a puntos ubicados en la superficie plana de los mapas. Esto es posible a partir del uso de sistemas de coordenadas proyectadas.</p>
+<p>En R hay varios paquetes de funciones que nos permiten manipular este tipo de información, entre los que se encuentra <code>sf</code>, que lo aprenderemos hoy. Para comenzar a utilizarlo vamos a tener que instalarlo y luego activarlo con <em>library()</em> al igual que lo veníamos haciendo con <code>tidyverse</code>:</p>
+<div class="sourceCode" id="cb146"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb146-1"><a href="mapear.html#cb146-1"></a><span class="kw">library</span>(tidyverse)</span>
+<span id="cb146-2"><a href="mapear.html#cb146-2"></a><span class="co">#install.packages(sf)</span></span>
+<span id="cb146-3"><a href="mapear.html#cb146-3"></a><span class="kw">library</span>(sf)</span></code></pre></div>
+<p>Como verán, activamos los 2 paquetes porque ambos presentan funciones que son necesarias a la hora de mapear información.</p>
+<div id="analizar-datos-espaciales" class="section level2">
+<h2><span class="header-section-number">4.1</span> Analizar datos espaciales</h2>
+<p>Llegó el momento de conocer y analizar datos espaciales. Para esto, como hicimos en cada clase, volvamos a cargar nuestros datos de Properati:</p>
+<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="mapear.html#cb147-1"></a>datos_amba &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/amba_properati.csv&quot;</span>)</span></code></pre></div>
+<p>Y repasemos el gráfico que generamos la clase pasada con <code>geom_point()</code> asignando la variable longitud (lon) en el eje X y la latitud (lat) en el Y:</p>
+<div class="sourceCode" id="cb148"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb148-1"><a href="mapear.html#cb148-1"></a><span class="kw">ggplot</span>(datos_amba) <span class="op">+</span></span>
+<span id="cb148-2"><a href="mapear.html#cb148-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">x=</span>lon, <span class="dt">y=</span>lat, <span class="dt">color=</span>provincia))</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-313-1.png" width="1050" /></p>
+<p>Con mucha imaginación uno puede darse cuenta que los datos tienen la forma de AMBA, pero está faltando información que nos facilite la lectura del mismo. Para esto sumemos un dataset más a nuestro proyecto que en este caso, será un <strong>dataset espacial</strong> en formato shapefile (SHP) con las geometrías correspondientes a todos los partidos de AMBA. Pueden descargarlo (es un .zip que contiene el SHP) en el siguiente link <a href="https://data.world/angie-scetta/partidos-amba" class="uri">https://data.world/angie-scetta/partidos-amba</a></p>
+<p><em>Recomendación: Al igual que con el csv que trabajamos en las clases anteriores, al descargar el shape deberán moverlo de la carpeta “Descargas” a la carpeta llamada “data” dentro del Proyecto donde estan trabajando.</em></p>
+<p>Para poder cargar nuestros datos espaciales en formato shp utilizaremos la función <code>st_read()</code> de la siguiente forma:</p>
+<div class="sourceCode" id="cb149"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb149-1"><a href="mapear.html#cb149-1"></a>partidos_amba &lt;-<span class="st"> </span><span class="kw">st_read</span>(<span class="st">&quot;data/partidos_amba.shp&quot;</span>)</span></code></pre></div>
+<pre><code>## Reading layer `partidos_amba&#39; from data source `E:\03-OTROS\SCA-CURSOS-2020\sca-big-data-urbana\data\partidos_amba.shp&#39; using driver `ESRI Shapefile&#39;
+## Simple feature collection with 48 features and 3 fields
+## geometry type:  MULTIPOLYGON
+## dimension:      XY
+## bbox:           xmin: -59.3392 ymin: -35.23893 xmax: -57.70946 ymax: -34.23007
+## CRS:            4326</code></pre>
+<p>Y veamos que información contiene:</p>
+<div class="sourceCode" id="cb151"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb151-1"><a href="mapear.html#cb151-1"></a><span class="kw">head</span>(partidos_amba)</span></code></pre></div>
+<pre><code>## Simple feature collection with 6 features and 3 fields
+## geometry type:  MULTIPOLYGON
+## dimension:      XY
+## bbox:           xmin: -59.05579 ymin: -34.91331 xmax: -58.27953 ymax: -34.26732
+## CRS:            4326
+##       nombre provincia area_km2                       geometry
+## 1 Avellaneda       GBA    57.25 MULTIPOLYGON (((-58.33444 -...
+## 2      Tigre       GBA   381.99 MULTIPOLYGON (((-58.5167 -3...
+## 3      Pilar       GBA   382.95 MULTIPOLYGON (((-58.90312 -...
+## 4     Moreno       GBA   186.36 MULTIPOLYGON (((-58.82401 -...
+## 5      Merlo       GBA   173.97 MULTIPOLYGON (((-58.72917 -...
+## 6 La Matanza       GBA   328.26 MULTIPOLYGON (((-58.52885 -...</code></pre>
+<p>Las primeras 3 columnas presentan el nombre del partido, la provincia y el área en km2. Hasta acá son datos muy similares a las que ya veníamos encontrando en los dataset tradicionales; sin embargo, aparece una 4ta columna llamada “geometry” que hasta ahora no la habíamos visto y es donde se aloja la geometría de cada uno de los registros. La información de este campo es la que hace que el dataset sea espacial.</p>
+<p>Si queda alguna duda, podemos utilizar la función <code>class()</code> para ver con que tipo de datos estamos trabajando:</p>
+<div class="sourceCode" id="cb153"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb153-1"><a href="mapear.html#cb153-1"></a><span class="kw">class</span>(datos_amba)</span></code></pre></div>
+<pre><code>## [1] &quot;data.frame&quot;</code></pre>
+<p>Tal como lo imaginábamos, datos_amba es un simple dataframe.</p>
+<div class="sourceCode" id="cb155"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb155-1"><a href="mapear.html#cb155-1"></a><span class="kw">class</span>(partidos_amba)</span></code></pre></div>
+<pre><code>## [1] &quot;sf&quot;         &quot;data.frame&quot;</code></pre>
+<p>Pero partidos_amba, es un dataset espacial u objeto del tipo “sf”, que hace referencia a “simple features” por estar compuesto de geometrías bidimensionales (polígono, punto, línea, multipunto, multilínea, etc.).</p>
+<p>Para poder visualizar toda esta información plasmada en un mapa vamos a utilizar nuevamente <code>ggplot()</code> pero como en esta oportunidad queremos sumar capas geográficas (sf) trabajaremos con <code>geom_sf()</code>. Veamos un ejemplo:</p>
+<div class="sourceCode" id="cb157"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb157-1"><a href="mapear.html#cb157-1"></a><span class="kw">ggplot</span>(partidos_amba)<span class="op">+</span></span>
+<span id="cb157-2"><a href="mapear.html#cb157-2"></a><span class="st">  </span><span class="kw">geom_sf</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-318-1.png" width="1050" /></p>
+<p>Como habrán notado, la lógica en la estructura del chunk que utilizamos para hacer este mapa es la misma del capítulo anterior, donde dentro del ggplot() asignamos el dataset y luego sumamos la capa a graficar/mapear (en este caso un objeto sf).</p>
+<p>En el mapa podemos ver como las geometrías de cada registro del dataset espacial son polígonos que representan los partidos de AMBA. Probemos agregar algún atributo estético <code>aes()</code>:</p>
+<div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="mapear.html#cb158-1"></a><span class="kw">ggplot</span>(partidos_amba)<span class="op">+</span></span>
+<span id="cb158-2"><a href="mapear.html#cb158-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="kw">aes</span>(<span class="dt">fill=</span>area_km2))</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-319-1.png" width="1050" /></p>
+<p>Probemos ajustando algunas cuestiones estéticas: cambiemos la paleta (y su escala) y el color del borde de los polígonos.</p>
+<div class="sourceCode" id="cb159"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb159-1"><a href="mapear.html#cb159-1"></a><span class="kw">ggplot</span>(partidos_amba)<span class="op">+</span></span>
+<span id="cb159-2"><a href="mapear.html#cb159-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="kw">aes</span>(<span class="dt">fill=</span>area_km2), <span class="dt">color=</span><span class="st">&quot;white&quot;</span>)<span class="op">+</span></span>
+<span id="cb159-3"><a href="mapear.html#cb159-3"></a><span class="st">  </span><span class="kw">scale_fill_viridis_c</span>(<span class="dt">breaks=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">250</span>,<span class="dv">500</span>,<span class="dv">750</span>,<span class="dv">1000</span>))</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-320-1.png" width="1050" /></p>
+<p>Y ahora si queremos visualizar en un mismo mapa el dataset espacial (partidos_amba) y el dataset tradicional (datos_amba) tenemos que tener en cuenta 2 cosas:</p>
+<ol style="list-style-type: decimal">
+<li><p>Cuando utilizamos 2 capas (en este caso <code>geom_sf()</code> y <code>geom_point()</code>), tenemos que asignarle a cada una el dataset dentro de la capa y <code>ggplot()</code> queda “vacío”.</p></li>
+<li><p>Las capas se grafican en el mismo orden que se escribe el código, es decir que la que agregamos primero (en este caso partidos_amba) será el fondo de la que agreguemos luego (datos_amba).</p></li>
+</ol>
+<p>Veamos esto en detalle:</p>
+<div class="sourceCode" id="cb160"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb160-1"><a href="mapear.html#cb160-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb160-2"><a href="mapear.html#cb160-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>partidos_amba)<span class="op">+</span></span>
+<span id="cb160-3"><a href="mapear.html#cb160-3"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>datos_amba, <span class="kw">aes</span>(<span class="dt">x=</span>lon, <span class="dt">y=</span>lat, <span class="dt">color=</span>provincia))</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-321-1.png" width="1050" /></p>
+<p>En el mapa anterior hay tantos puntos que nos resulta muy difícil poder encontrar patrones que nos permitan entender donde se concentran más cantidad de puntos y donde menos. En estos casos podemos recurrir a los <strong>mapas de densidad de puntos</strong> que nos ayudarán a encontrar los “hot spots”.</p>
+<p>En R hay varias formas de mapear esto, pero hoy optaremos por <code>geom_bin2d()</code>, que divide el plano en una grilla y cuenta la cantidad de puntos que aparecen en cada celda.</p>
+<div class="sourceCode" id="cb161"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb161-1"><a href="mapear.html#cb161-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb161-2"><a href="mapear.html#cb161-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>partidos_amba)<span class="op">+</span></span>
+<span id="cb161-3"><a href="mapear.html#cb161-3"></a><span class="st">  </span><span class="kw">geom_bin2d</span>(<span class="dt">data =</span> datos_amba, <span class="kw">aes</span>(<span class="dt">x =</span> lon, <span class="dt">y =</span> lat))</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-322-1.png" width="1050" /></p>
+<p>Ahora si nos encontramos con un hot spot que antes no veíamos. Se ve muy claro como en Palermo se concentran la mayor cantidad de propiedades publicadas en Junio y Julio en Properati. Pero, ¿Existirá una diferencia entre los 2 meses? Respondamos esto con un facetado por created_on:</p>
+<div class="sourceCode" id="cb162"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb162-1"><a href="mapear.html#cb162-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb162-2"><a href="mapear.html#cb162-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>partidos_amba)<span class="op">+</span></span>
+<span id="cb162-3"><a href="mapear.html#cb162-3"></a><span class="st">  </span><span class="kw">geom_bin2d</span>(<span class="dt">data =</span> datos_amba, <span class="kw">aes</span>(<span class="dt">x =</span> lon, <span class="dt">y =</span> lat))<span class="op">+</span></span>
+<span id="cb162-4"><a href="mapear.html#cb162-4"></a><span class="st">  </span><span class="kw">facet_grid</span>(<span class="op">~</span>created_on)</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-323-1.png" width="1050" /></p>
+<p>Claramente los patrones de ambos meses son muy parecidos, así que mantengamos un único mapa pero cambiemos el color y el tamaño de los bins (celdas):</p>
+<div class="sourceCode" id="cb163"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb163-1"><a href="mapear.html#cb163-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb163-2"><a href="mapear.html#cb163-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>partidos_amba)<span class="op">+</span></span>
+<span id="cb163-3"><a href="mapear.html#cb163-3"></a><span class="st">  </span><span class="kw">geom_bin2d</span>(<span class="dt">data =</span> datos_amba, <span class="kw">aes</span>(<span class="dt">x =</span> lon, <span class="dt">y =</span> lat), <span class="dt">alpha=</span><span class="fl">0.75</span>, <span class="dt">bins=</span><span class="dv">50</span>)<span class="op">+</span></span>
+<span id="cb163-4"><a href="mapear.html#cb163-4"></a><span class="st">  </span><span class="kw">scale_fill_viridis_c</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-324-1.png" width="1050" /></p>
+<p>¿Y cómo hacemos si queremos ver este mapa con un “zoom” solo de CABA? Tenemos que filtrar ambas capas así:</p>
+<div class="sourceCode" id="cb164"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb164-1"><a href="mapear.html#cb164-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb164-2"><a href="mapear.html#cb164-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span><span class="kw">filter</span>(partidos_amba, provincia<span class="op">==</span><span class="st">&quot;CABA&quot;</span>))<span class="op">+</span></span>
+<span id="cb164-3"><a href="mapear.html#cb164-3"></a><span class="st">  </span><span class="kw">geom_bin2d</span>(<span class="dt">data =</span> <span class="kw">filter</span>(datos_amba, provincia<span class="op">==</span><span class="st">&quot;CABA&quot;</span>), <span class="kw">aes</span>(<span class="dt">x =</span> lon, <span class="dt">y =</span> lat), <span class="dt">alpha=</span><span class="fl">0.75</span>)<span class="op">+</span></span>
+<span id="cb164-4"><a href="mapear.html#cb164-4"></a><span class="st">  </span><span class="kw">scale_fill_viridis_c</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-325-1.png" width="1050" /></p>
+<p>Viendo el mapa anterior nos cambia un poco la percepción y ya no parecería ser solo la Comuna 14 la que tiene la mayor densidad de propiedades, sino que se ve una zona con gran densidad en la Comuna 15 (por Villa Crespo).</p>
+<p>Pero bueno, a pesar de haber llegado a un mapa que nos permitió sacar muchas conclusiones, aún estamos trabajando con 2 dataset separados que no se han unido. ¡Veamos como cruzar y unificar todos estos datos!</p>
+</div>
+<div id="cruzar-datos-tradicionales-y-espaciales" class="section level2">
+<h2><span class="header-section-number">4.2</span> Cruzar datos tradicionales y espaciales</h2>
+<p>Es muy común que a la hora de trabajar con datos no encontremos toda la información que necesitamos en un solo dataset. Frente a esto, lo que se hace es unir/cruzar datos provenientes de diferentes fuentes de información. En este apartado veremos como realizar estos cruces entre datos tradicionales y espaciales.</p>
+<p>Para poder unir 2 set de datos ambos tienen que tener algo en común (alguna columna como por ejemplo un ID), sino sería imposible que R entienda que tiene que unir con qué. Por lo tanto, antes de unirlos deberemos manipularlos y realizarles diferentes tipos de transformaciones que nos permitan llegar a generar esta variable en común.</p>
+<p>Por ejemplo en nuestro caso, si queremos unir algún dato a nuestro dataset espacial de partidos, deberíamos tener un valor único por cada nombre de partido (que funciona como el ID de mi dataset espacial).</p>
+<p>Trabajemos con las propiedades en venta y manipulemos un poco el dataset tradicional para que podamos unirlos:</p>
+<div class="sourceCode" id="cb165"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb165-1"><a href="mapear.html#cb165-1"></a>datos_amba_venta &lt;-<span class="st"> </span>datos_amba <span class="op">%&gt;%</span></span>
+<span id="cb165-2"><a href="mapear.html#cb165-2"></a><span class="st">  </span><span class="kw">filter</span>(operation_type<span class="op">==</span><span class="st">&quot;Venta&quot;</span>) <span class="op">%&gt;%</span></span>
+<span id="cb165-3"><a href="mapear.html#cb165-3"></a><span class="st">  </span><span class="kw">group_by</span>(partido) <span class="op">%&gt;%</span></span>
+<span id="cb165-4"><a href="mapear.html#cb165-4"></a><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">cantidad=</span><span class="kw">n</span>(),</span>
+<span id="cb165-5"><a href="mapear.html#cb165-5"></a>            <span class="dt">valor_m2=</span><span class="kw">mean</span>(price<span class="op">/</span>surface_covered))</span></code></pre></div>
+<div class="sourceCode" id="cb166"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb166-1"><a href="mapear.html#cb166-1"></a><span class="kw">head</span>(datos_amba_venta)</span></code></pre></div>
+<pre><code>## # A tibble: 6 x 3
+##   partido         cantidad valor_m2
+##   &lt;fct&gt;              &lt;int&gt;    &lt;dbl&gt;
+## 1 Almirante Brown       24    1824.
+## 2 Avellaneda            67    1487.
+## 3 Berazategui           47    1787.
+## 4 Berisso                3     952.
+## 5 Cañuelas               3    1293.
+## 6 Comuna 1             542    3526.</code></pre>
+<p>Bien, ahora que tenemos un dataset de 50 observaciones/registros (partidos) donde para cada partido hay 2 columnas con valores asociados (cantidad y valor del m2), ya estamos en condiciones de hacer una unión con el dataset espacial.</p>
+<p>Para esto utilizaremos la función <code>left_join()</code>:</p>
+<div class="sourceCode" id="cb168"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb168-1"><a href="mapear.html#cb168-1"></a>partidos_amba &lt;-<span class="st"> </span><span class="kw">left_join</span>(partidos_amba, datos_amba_venta, <span class="dt">by=</span><span class="kw">c</span>(<span class="st">&quot;nombre&quot;</span>=<span class="st">&quot;partido&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb169"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb169-1"><a href="mapear.html#cb169-1"></a><span class="kw">head</span>(partidos_amba)</span></code></pre></div>
+<pre><code>## Simple feature collection with 6 features and 5 fields
+## geometry type:  MULTIPOLYGON
+## dimension:      XY
+## bbox:           xmin: -59.05579 ymin: -34.91331 xmax: -58.27953 ymax: -34.26732
+## CRS:            4326
+##       nombre provincia area_km2 cantidad valor_m2
+## 1 Avellaneda       GBA    57.25       67 1486.522
+## 2      Tigre       GBA   381.99      887 2674.501
+## 3      Pilar       GBA   382.95      493 1680.706
+## 4     Moreno       GBA   186.36       64 1202.036
+## 5      Merlo       GBA   173.97       83 1146.151
+## 6 La Matanza       GBA   328.26      110 1592.995
+##                         geometry
+## 1 MULTIPOLYGON (((-58.33444 -...
+## 2 MULTIPOLYGON (((-58.5167 -3...
+## 3 MULTIPOLYGON (((-58.90312 -...
+## 4 MULTIPOLYGON (((-58.82401 -...
+## 5 MULTIPOLYGON (((-58.72917 -...
+## 6 MULTIPOLYGON (((-58.52885 -...</code></pre>
+<p>Tal como esperábamos, se agregaron 2 nuevas columnas: cantidad y valor_m2.</p>
+<p>Veamos esto en un mapa:</p>
+<div class="sourceCode" id="cb171"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb171-1"><a href="mapear.html#cb171-1"></a><span class="kw">ggplot</span>(partidos_amba)<span class="op">+</span></span>
+<span id="cb171-2"><a href="mapear.html#cb171-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="kw">aes</span>(<span class="dt">fill=</span>valor_m2))<span class="op">+</span></span>
+<span id="cb171-3"><a href="mapear.html#cb171-3"></a><span class="st">  </span><span class="kw">scale_fill_distiller</span>(<span class="dt">palette =</span> <span class="st">&quot;Spectral&quot;</span>)</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-330-1.png" width="1050" /></p>
+<p>Al igual que en los gráficos, en los mapas pueden agregarse etiquetas (título, subtítulo, etc) y cambiar el aspecto (theme):</p>
+<div class="sourceCode" id="cb172"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb172-1"><a href="mapear.html#cb172-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb172-2"><a href="mapear.html#cb172-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>partidos_amba, <span class="kw">aes</span>(<span class="dt">fill=</span>valor_m2), <span class="dt">color=</span><span class="ot">NA</span>) <span class="op">+</span></span>
+<span id="cb172-3"><a href="mapear.html#cb172-3"></a><span class="st">    </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Valor del m2 en Venta por Partido&quot;</span>,</span>
+<span id="cb172-4"><a href="mapear.html#cb172-4"></a>         <span class="dt">subtitle =</span> <span class="st">&quot;AMBA - Junio y Julio 2020&quot;</span>,</span>
+<span id="cb172-5"><a href="mapear.html#cb172-5"></a>         <span class="dt">fill =</span> <span class="st">&quot;USD/m2&quot;</span>,</span>
+<span id="cb172-6"><a href="mapear.html#cb172-6"></a>         <span class="dt">caption=</span> <span class="st">&quot;Fuente: Properati&quot;</span>) <span class="op">+</span></span>
+<span id="cb172-7"><a href="mapear.html#cb172-7"></a><span class="st">  </span><span class="kw">scale_fill_distiller</span>(<span class="dt">palette =</span> <span class="st">&quot;Spectral&quot;</span>) <span class="op">+</span></span>
+<span id="cb172-8"><a href="mapear.html#cb172-8"></a><span class="st">  </span><span class="kw">theme_light</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-331-1.png" width="1050" /></p>
+<p>Ahora mapiemos la otra nueva variable: cantidad de propiedades publicadas para venta.</p>
+<div class="sourceCode" id="cb173"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb173-1"><a href="mapear.html#cb173-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb173-2"><a href="mapear.html#cb173-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>partidos_amba, <span class="kw">aes</span>(<span class="dt">fill=</span>cantidad), <span class="dt">color=</span><span class="ot">NA</span>) <span class="op">+</span></span>
+<span id="cb173-3"><a href="mapear.html#cb173-3"></a><span class="st">    </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Cantidad de publicaciones de Venta por Partido&quot;</span>,</span>
+<span id="cb173-4"><a href="mapear.html#cb173-4"></a>         <span class="dt">subtitle =</span> <span class="st">&quot;AMBA - Junio y Julio 2020&quot;</span>,</span>
+<span id="cb173-5"><a href="mapear.html#cb173-5"></a>         <span class="dt">fill =</span> <span class="st">&quot;Cantidad&quot;</span>,</span>
+<span id="cb173-6"><a href="mapear.html#cb173-6"></a>         <span class="dt">caption=</span> <span class="st">&quot;Fuente: Properati&quot;</span>) <span class="op">+</span></span>
+<span id="cb173-7"><a href="mapear.html#cb173-7"></a><span class="st">  </span><span class="kw">scale_fill_distiller</span>(<span class="dt">palette =</span> <span class="st">&quot;Spectral&quot;</span>) <span class="op">+</span></span>
+<span id="cb173-8"><a href="mapear.html#cb173-8"></a><span class="st">  </span><span class="kw">theme_light</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-332-1.png" width="1050" /></p>
+<p>En el mapa se ve como la Comuna 14 tiene el valor más alto, sin embargo, para que estos datos sean comparables entre todos los partidos, es necesario que calculemos una densidad relacionando la cantidad de propiedades y la superficie (km2) de cada uno:</p>
+<div class="sourceCode" id="cb174"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb174-1"><a href="mapear.html#cb174-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb174-2"><a href="mapear.html#cb174-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>partidos_amba, <span class="kw">aes</span>(<span class="dt">fill=</span>cantidad<span class="op">/</span>area_km2), <span class="dt">color=</span><span class="ot">NA</span>) <span class="op">+</span></span>
+<span id="cb174-3"><a href="mapear.html#cb174-3"></a><span class="st">    </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Densidad de publicaciones de Venta por Partido&quot;</span>,</span>
+<span id="cb174-4"><a href="mapear.html#cb174-4"></a>         <span class="dt">subtitle =</span> <span class="st">&quot;AMBA - Junio y Julio 2020&quot;</span>,</span>
+<span id="cb174-5"><a href="mapear.html#cb174-5"></a>         <span class="dt">fill =</span> <span class="st">&quot;Densidad&quot;</span>,</span>
+<span id="cb174-6"><a href="mapear.html#cb174-6"></a>         <span class="dt">caption=</span> <span class="st">&quot;Fuente: Properati&quot;</span>) <span class="op">+</span></span>
+<span id="cb174-7"><a href="mapear.html#cb174-7"></a><span class="st">  </span><span class="kw">scale_fill_distiller</span>(<span class="dt">palette =</span> <span class="st">&quot;Spectral&quot;</span>) <span class="op">+</span></span>
+<span id="cb174-8"><a href="mapear.html#cb174-8"></a><span class="st">  </span><span class="kw">theme_light</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-333-1.png" width="1050" /></p>
+<p>El mapa cambia bastante, ahora todos los partidos de AMBA son color azul, es decir que tienen baja densidad y los de CABA se ven coloreados. Hagamos un zoom en CABA y veamos esto en detalle:</p>
+<div class="sourceCode" id="cb175"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb175-1"><a href="mapear.html#cb175-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb175-2"><a href="mapear.html#cb175-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span><span class="kw">filter</span>(partidos_amba, provincia<span class="op">==</span><span class="st">&quot;CABA&quot;</span>), <span class="kw">aes</span>(<span class="dt">fill=</span>cantidad<span class="op">/</span>area_km2), <span class="dt">color=</span><span class="ot">NA</span>) <span class="op">+</span></span>
+<span id="cb175-3"><a href="mapear.html#cb175-3"></a><span class="st">    </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Densidad de publicaciones de Venta por Comuna&quot;</span>,</span>
+<span id="cb175-4"><a href="mapear.html#cb175-4"></a>         <span class="dt">subtitle =</span> <span class="st">&quot;CABA - Junio y Julio 2020&quot;</span>,</span>
+<span id="cb175-5"><a href="mapear.html#cb175-5"></a>         <span class="dt">fill =</span> <span class="st">&quot;Densidad&quot;</span>,</span>
+<span id="cb175-6"><a href="mapear.html#cb175-6"></a>         <span class="dt">caption=</span> <span class="st">&quot;Fuente: Properati&quot;</span>) <span class="op">+</span></span>
+<span id="cb175-7"><a href="mapear.html#cb175-7"></a><span class="st">  </span><span class="kw">scale_fill_distiller</span>(<span class="dt">palette =</span> <span class="st">&quot;Spectral&quot;</span>) <span class="op">+</span></span>
+<span id="cb175-8"><a href="mapear.html#cb175-8"></a><span class="st">  </span><span class="kw">theme_light</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-334-1.png" width="1050" /></p>
+<p>Podemos ver que aparece la Comuna 5 como la más densa seguida por la 14 y la 5. Sin embargo hay varias que tienen una densidad mayor a 50 publicaciones por km2. Veamos cuáles son:</p>
+<div class="sourceCode" id="cb176"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb176-1"><a href="mapear.html#cb176-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb176-2"><a href="mapear.html#cb176-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span><span class="kw">filter</span>(partidos_amba, provincia<span class="op">==</span><span class="st">&quot;CABA&quot;</span> <span class="op">&amp;</span><span class="st"> </span>cantidad<span class="op">/</span>area_km2<span class="op">&gt;=</span><span class="dv">50</span>), <span class="kw">aes</span>(<span class="dt">fill=</span>cantidad<span class="op">/</span>area_km2), <span class="dt">color=</span><span class="ot">NA</span>) <span class="op">+</span></span>
+<span id="cb176-3"><a href="mapear.html#cb176-3"></a><span class="st">  </span><span class="kw">geom_sf_label</span>(<span class="dt">data=</span><span class="kw">filter</span>(partidos_amba, provincia<span class="op">==</span><span class="st">&quot;CABA&quot;</span> <span class="op">&amp;</span><span class="st"> </span>cantidad<span class="op">/</span>area_km2<span class="op">&gt;=</span><span class="dv">50</span>), <span class="kw">aes</span>(<span class="dt">label =</span> nombre), <span class="dt">size=</span><span class="dv">2</span>) <span class="op">+</span></span>
+<span id="cb176-4"><a href="mapear.html#cb176-4"></a><span class="st">    </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Comunas con más de 50 publicaciones por km2&quot;</span>,</span>
+<span id="cb176-5"><a href="mapear.html#cb176-5"></a>         <span class="dt">subtitle =</span> <span class="st">&quot;CABA - Junio y Julio 2020&quot;</span>,</span>
+<span id="cb176-6"><a href="mapear.html#cb176-6"></a>         <span class="dt">fill =</span> <span class="st">&quot;Densidad&quot;</span>,</span>
+<span id="cb176-7"><a href="mapear.html#cb176-7"></a>         <span class="dt">caption=</span> <span class="st">&quot;Fuente: Properati&quot;</span>) <span class="op">+</span></span>
+<span id="cb176-8"><a href="mapear.html#cb176-8"></a><span class="st">  </span><span class="kw">scale_fill_distiller</span>(<span class="dt">palette =</span> <span class="st">&quot;Spectral&quot;</span>) <span class="op">+</span></span>
+<span id="cb176-9"><a href="mapear.html#cb176-9"></a><span class="st">  </span><span class="kw">theme_light</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-335-1.png" width="1050" /></p>
+<p>Y por último agreguémosle el mapa de fondo así las comunas no quedan flotando:</p>
+<div class="sourceCode" id="cb177"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb177-1"><a href="mapear.html#cb177-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb177-2"><a href="mapear.html#cb177-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span><span class="kw">filter</span>(partidos_amba, provincia<span class="op">==</span><span class="st">&quot;CABA&quot;</span>)) <span class="op">+</span></span>
+<span id="cb177-3"><a href="mapear.html#cb177-3"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span><span class="kw">filter</span>(partidos_amba, provincia<span class="op">==</span><span class="st">&quot;CABA&quot;</span> <span class="op">&amp;</span><span class="st"> </span>cantidad<span class="op">/</span>area_km2<span class="op">&gt;=</span><span class="dv">50</span>), <span class="kw">aes</span>(<span class="dt">fill=</span>cantidad<span class="op">/</span>area_km2)) <span class="op">+</span></span>
+<span id="cb177-4"><a href="mapear.html#cb177-4"></a><span class="st">  </span><span class="kw">geom_sf_label</span>(<span class="dt">data=</span><span class="kw">filter</span>(partidos_amba, provincia<span class="op">==</span><span class="st">&quot;CABA&quot;</span> <span class="op">&amp;</span><span class="st"> </span>cantidad<span class="op">/</span>area_km2<span class="op">&gt;=</span><span class="dv">50</span>), <span class="kw">aes</span>(<span class="dt">label =</span> nombre), <span class="dt">size=</span><span class="dv">2</span>) <span class="op">+</span></span>
+<span id="cb177-5"><a href="mapear.html#cb177-5"></a><span class="st">    </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Cantidad de publicaciones de Venta por Comuna&quot;</span>,</span>
+<span id="cb177-6"><a href="mapear.html#cb177-6"></a>         <span class="dt">subtitle =</span> <span class="st">&quot;CABA - Junio y Julio 2020&quot;</span>,</span>
+<span id="cb177-7"><a href="mapear.html#cb177-7"></a>         <span class="dt">fill =</span> <span class="st">&quot;Cantidad&quot;</span>,</span>
+<span id="cb177-8"><a href="mapear.html#cb177-8"></a>         <span class="dt">x=</span><span class="st">&quot;&quot;</span>,</span>
+<span id="cb177-9"><a href="mapear.html#cb177-9"></a>         <span class="dt">y=</span><span class="st">&quot;&quot;</span>,</span>
+<span id="cb177-10"><a href="mapear.html#cb177-10"></a>         <span class="dt">caption=</span> <span class="st">&quot;Fuente: Properati&quot;</span>) <span class="op">+</span></span>
+<span id="cb177-11"><a href="mapear.html#cb177-11"></a><span class="st">  </span><span class="kw">scale_fill_distiller</span>(<span class="dt">palette =</span> <span class="st">&quot;Spectral&quot;</span>) <span class="op">+</span></span>
+<span id="cb177-12"><a href="mapear.html#cb177-12"></a><span class="st">  </span><span class="kw">theme_light</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-336-1.png" width="1050" /></p>
+<p><strong>Variables Categóricas en el Mapa</strong></p>
+<p>Hasta acá todos los mapas que desarrollamos tomaron color a partir de una variable numérica (cantidad o valor del m2), pero ¿Qué pasa si lo que queremos mapear es una variable categórica, cómo por ejemplo la tipología que más aparece publicada por partido?</p>
+<p>Para resolver esta incógnita debemos generar una nueva variable que contenga la información y pueda unirse a nuestro dataset espacial partidos_amba:</p>
+<div class="sourceCode" id="cb178"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb178-1"><a href="mapear.html#cb178-1"></a>datos_amba_tipologia &lt;-<span class="st"> </span>datos_amba <span class="op">%&gt;%</span></span>
+<span id="cb178-2"><a href="mapear.html#cb178-2"></a><span class="st">  </span><span class="kw">group_by</span>(partido, property_type) <span class="op">%&gt;%</span></span>
+<span id="cb178-3"><a href="mapear.html#cb178-3"></a><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">cant_max=</span><span class="kw">n</span>()) <span class="op">%&gt;%</span></span>
+<span id="cb178-4"><a href="mapear.html#cb178-4"></a><span class="st">  </span><span class="kw">filter</span>(cant_max<span class="op">==</span><span class="kw">max</span>(cant_max))</span></code></pre></div>
+<div class="sourceCode" id="cb179"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb179-1"><a href="mapear.html#cb179-1"></a><span class="kw">head</span>(datos_amba_tipologia)</span></code></pre></div>
+<pre><code>## # A tibble: 6 x 3
+## # Groups:   partido [6]
+##   partido         property_type cant_max
+##   &lt;fct&gt;           &lt;fct&gt;            &lt;int&gt;
+## 1 Almirante Brown Casa                19
+## 2 Avellaneda      Departamento        47
+## 3 Berazategui     Departamento        35
+## 4 Berisso         Casa                 3
+## 5 Cañuelas        Casa                 3
+## 6 Comuna 1        Departamento       739</code></pre>
+<div class="sourceCode" id="cb181"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb181-1"><a href="mapear.html#cb181-1"></a>partidos_amba &lt;-<span class="st"> </span>partidos_amba <span class="op">%&gt;%</span></span>
+<span id="cb181-2"><a href="mapear.html#cb181-2"></a><span class="st">  </span><span class="kw">left_join</span>(datos_amba_tipologia, <span class="dt">by=</span><span class="kw">c</span>(<span class="st">&quot;nombre&quot;</span>=<span class="st">&quot;partido&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb182"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb182-1"><a href="mapear.html#cb182-1"></a><span class="kw">head</span>(partidos_amba)</span></code></pre></div>
+<pre><code>## Simple feature collection with 6 features and 7 fields
+## geometry type:  MULTIPOLYGON
+## dimension:      XY
+## bbox:           xmin: -59.05579 ymin: -34.91331 xmax: -58.27953 ymax: -34.26732
+## CRS:            4326
+##       nombre provincia area_km2 cantidad valor_m2 property_type cant_max
+## 1 Avellaneda       GBA    57.25       67 1486.522  Departamento       47
+## 2      Tigre       GBA   381.99      887 2674.501  Departamento      898
+## 3      Pilar       GBA   382.95      493 1680.706          Casa      353
+## 4     Moreno       GBA   186.36       64 1202.036          Casa       50
+## 5      Merlo       GBA   173.97       83 1146.151          Casa       54
+## 6 La Matanza       GBA   328.26      110 1592.995  Departamento       73
+##                         geometry
+## 1 MULTIPOLYGON (((-58.33444 -...
+## 2 MULTIPOLYGON (((-58.5167 -3...
+## 3 MULTIPOLYGON (((-58.90312 -...
+## 4 MULTIPOLYGON (((-58.82401 -...
+## 5 MULTIPOLYGON (((-58.72917 -...
+## 6 MULTIPOLYGON (((-58.52885 -...</code></pre>
+<p>Efectivamente, se sumaron 2 nuevas columnas: property_type y cant_max. Ahora si, mapiemos por la tipología que más aparece:</p>
+<div class="sourceCode" id="cb184"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb184-1"><a href="mapear.html#cb184-1"></a><span class="kw">ggplot</span>(partidos_amba)<span class="op">+</span></span>
+<span id="cb184-2"><a href="mapear.html#cb184-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="kw">aes</span>(<span class="dt">fill=</span>property_type))</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-341-1.png" width="1050" /></p>
+<p>Y modifiquemos su estética como ya aprendimos:</p>
+<div class="sourceCode" id="cb185"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb185-1"><a href="mapear.html#cb185-1"></a><span class="kw">ggplot</span>(partidos_amba)<span class="op">+</span></span>
+<span id="cb185-2"><a href="mapear.html#cb185-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="kw">aes</span>(<span class="dt">fill=</span>property_type), <span class="dt">color=</span><span class="st">&quot;black&quot;</span>) <span class="op">+</span></span>
+<span id="cb185-3"><a href="mapear.html#cb185-3"></a><span class="st">    </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Tipología que predomina en las publicaciones por Partido&quot;</span>,</span>
+<span id="cb185-4"><a href="mapear.html#cb185-4"></a>         <span class="dt">subtitle =</span> <span class="st">&quot;AMBA - Junio y Julio 2020&quot;</span>,</span>
+<span id="cb185-5"><a href="mapear.html#cb185-5"></a>         <span class="dt">fill =</span> <span class="st">&quot;Tipología&quot;</span>,</span>
+<span id="cb185-6"><a href="mapear.html#cb185-6"></a>         <span class="dt">caption=</span> <span class="st">&quot;Fuente: Properati&quot;</span>) <span class="op">+</span></span>
+<span id="cb185-7"><a href="mapear.html#cb185-7"></a><span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;darkseagreen1&quot;</span>, <span class="st">&quot;cyan4&quot;</span>))<span class="op">+</span></span>
+<span id="cb185-8"><a href="mapear.html#cb185-8"></a><span class="st">  </span><span class="kw">theme_light</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-342-1.png" width="1050" /></p>
+</div>
+<div id="cruzar-datos-espaciales" class="section level2">
+<h2><span class="header-section-number">4.3</span> Cruzar datos espaciales</h2>
+<p>Muchas veces nos vamos a encontrar con que queremos unir 2 dataset pero no tienen columnas en común y es imposible generarlas; pero hay <strong>algo que si tienen en común y que nos permitirá unirlos: la ubicación en el espacio</strong>. A esto nos referimos cuando hablamos de “Spatial Join” o “Unión Espacial” y en R lo haremos a partir de la función <code>st_join()</code> que forma parte del paquete <code>sf</code>.</p>
+<p>Pero antes de seguir, nos está faltando un segundo dataset espacial ya que hasta ahora solo tenemos uno. Como primer paso vamos a tener que transformar nuestro dataset tradicional “datos_amba” a un dataset espacial utilizando la función <code>st_as_sf()</code> de la siguiente forma:</p>
+<div class="sourceCode" id="cb186"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb186-1"><a href="mapear.html#cb186-1"></a>datos_amba_geo &lt;-<span class="st"> </span>datos_amba <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb186-2"><a href="mapear.html#cb186-2"></a><span class="st">    </span><span class="kw">st_as_sf</span>(<span class="dt">coords =</span> <span class="kw">c</span>(<span class="st">&quot;lon&quot;</span>, <span class="st">&quot;lat&quot;</span>), <span class="dt">crs =</span> <span class="dv">4326</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb187"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb187-1"><a href="mapear.html#cb187-1"></a><span class="kw">head</span>(datos_amba_geo)</span></code></pre></div>
+<pre><code>## Simple feature collection with 6 features and 11 fields
+## geometry type:  POINT
+## dimension:      XY
+## bbox:           xmin: -58.52914 ymin: -34.66253 xmax: -58.3609 ymax: -34.53344
+## CRS:            EPSG:4326
+##   created_on provincia       partido rooms surface_total surface_covered
+## 1     202006      CABA      Comuna 7     1            40              37
+## 2     202006      CABA     Comuna 13     1            30              30
+## 3     202006      CABA     Comuna 13     1            31              29
+## 4     202006      CABA      Comuna 1     1            35              35
+## 5     202006       GBA Vicente López     1            36              27
+## 6     202006       GBA    La Matanza     2            24              24
+##   price currency
+## 1 22500      ARS
+## 2 18000      ARS
+## 3 17900      ARS
+## 4 42000      ARS
+## 5 19000      ARS
+## 6 12000      ARS
+##                                                                           title
+## 1                                                         Departamento - Flores
+## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
+## 3                                                       Departamento - Belgrano
+## 4                              Monoambiente con cochera. Zencity. Puerto Madero
+## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
+## 6                                                        PH - Lomas Del Mirador
+##   property_type operation_type                    geometry
+## 1  Departamento       Alquiler POINT (-58.46222 -34.61917)
+## 2  Departamento       Alquiler  POINT (-58.46652 -34.5546)
+## 3  Departamento       Alquiler POINT (-58.46461 -34.56318)
+## 4  Departamento       Alquiler  POINT (-58.3609 -34.61836)
+## 5  Departamento       Alquiler POINT (-58.49345 -34.53344)
+## 6            PH       Alquiler POINT (-58.52914 -34.66253)</code></pre>
+<p>Ahora si, nuestro dataset datos_amba se transformó en espacial y eso lo vemos con el reemplazo de sus columnas X e Y por una única columna llamada “geometry”. Hagamos un mapa y veamos que pasa:</p>
+<div class="sourceCode" id="cb189"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb189-1"><a href="mapear.html#cb189-1"></a><span class="kw">ggplot</span>(datos_amba_geo)<span class="op">+</span></span>
+<span id="cb189-2"><a href="mapear.html#cb189-2"></a><span class="st">  </span><span class="kw">geom_sf</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-345-1.png" width="1050" /></p>
+<p>A simple vista son iguales que cuando hicimos el <code>geom_point()</code> pero la diferencia es que ahora son espaciales y ya estamos en condiciones de unirlos con otro dataset espacial. En este caso, como queremos generar información nueva, vamos a unirlos con un SHP que contenga información nueva que nuestros datos no tienen como por ejemplo los barrios de CABA a los que corresponde cada publicación.</p>
+<p>Para esto vamos a descargar el SHP de <a href="https://data.world/angie-scetta/barrios-caba" class="uri">https://data.world/angie-scetta/barrios-caba</a>, guardarlo en la carpeta “data” y luego cargarlo de la siguiente forma:</p>
+<div class="sourceCode" id="cb190"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb190-1"><a href="mapear.html#cb190-1"></a>barrios_caba &lt;-<span class="st"> </span><span class="kw">st_read</span>(<span class="st">&quot;data/barrios_caba.shp&quot;</span>)</span></code></pre></div>
+<pre><code>## Reading layer `barrios_caba&#39; from data source `E:\03-OTROS\SCA-CURSOS-2020\sca-big-data-urbana\data\barrios_caba.shp&#39; using driver `ESRI Shapefile&#39;
+## Simple feature collection with 48 features and 1 field
+## geometry type:  POLYGON
+## dimension:      XY
+## bbox:           xmin: -58.53152 ymin: -34.70529 xmax: -58.33515 ymax: -34.52649
+## CRS:            4326</code></pre>
+<p>Veamos los polígonos:</p>
+<div class="sourceCode" id="cb192"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb192-1"><a href="mapear.html#cb192-1"></a><span class="kw">ggplot</span>(barrios_caba)<span class="op">+</span></span>
+<span id="cb192-2"><a href="mapear.html#cb192-2"></a><span class="st">  </span><span class="kw">geom_sf</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-347-1.png" width="1050" /></p>
+<p>Efectivamente tienen forma de los 48 barrios de CABA. Superpongamos los datos de Properati que convertimos en el paso anterior para ver cuanto se “solapan” con el SHP de barrios:</p>
+<div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb193-1"><a href="mapear.html#cb193-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb193-2"><a href="mapear.html#cb193-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>barrios_caba)<span class="op">+</span></span>
+<span id="cb193-3"><a href="mapear.html#cb193-3"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>datos_amba_geo, <span class="dt">alpha=</span><span class="fl">0.1</span>)</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-348-1.png" width="1050" /></p>
+<p>Como mi SHP solo contiene los barrios de CABA, obviamente solo se solapa con los puntos que corresponden a propiedades ubicadas en CABA.</p>
+<p>Ahora si, hagamos nuestra unión espacial con <code>st_join()</code> para que, cada registro de datos_amba_geo sume una nueva columna que indique a que barrio pertenece:</p>
+<div class="sourceCode" id="cb194"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb194-1"><a href="mapear.html#cb194-1"></a>datos_caba_geo &lt;-<span class="st"> </span><span class="kw">st_join</span>(datos_amba_geo, barrios_caba)</span></code></pre></div>
+<div class="sourceCode" id="cb195"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb195-1"><a href="mapear.html#cb195-1"></a><span class="kw">head</span>(datos_caba_geo)</span></code></pre></div>
+<pre><code>## Simple feature collection with 6 features and 12 fields
+## geometry type:  POINT
+## dimension:      XY
+## bbox:           xmin: -58.52914 ymin: -34.66253 xmax: -58.3609 ymax: -34.53344
+## CRS:            EPSG:4326
+##   created_on provincia       partido rooms surface_total surface_covered
+## 1     202006      CABA      Comuna 7     1            40              37
+## 2     202006      CABA     Comuna 13     1            30              30
+## 3     202006      CABA     Comuna 13     1            31              29
+## 4     202006      CABA      Comuna 1     1            35              35
+## 5     202006       GBA Vicente López     1            36              27
+## 6     202006       GBA    La Matanza     2            24              24
+##   price currency
+## 1 22500      ARS
+## 2 18000      ARS
+## 3 17900      ARS
+## 4 42000      ARS
+## 5 19000      ARS
+## 6 12000      ARS
+##                                                                           title
+## 1                                                         Departamento - Flores
+## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
+## 3                                                       Departamento - Belgrano
+## 4                              Monoambiente con cochera. Zencity. Puerto Madero
+## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
+## 6                                                        PH - Lomas Del Mirador
+##   property_type operation_type        BARRIO                    geometry
+## 1  Departamento       Alquiler        FLORES POINT (-58.46222 -34.61917)
+## 2  Departamento       Alquiler         NUÑEZ  POINT (-58.46652 -34.5546)
+## 3  Departamento       Alquiler      BELGRANO POINT (-58.46461 -34.56318)
+## 4  Departamento       Alquiler PUERTO MADERO  POINT (-58.3609 -34.61836)
+## 5  Departamento       Alquiler          &lt;NA&gt; POINT (-58.49345 -34.53344)
+## 6            PH       Alquiler          &lt;NA&gt; POINT (-58.52914 -34.66253)</code></pre>
+<p>Como verán, a cada registro se le unió una columna con el nombre del barrio con el que solapan, y a aquellas propiedades ubicadas fuera de CABA se les asignó un valor nulo o NA. Veamos esto en un mapa:</p>
+<div class="sourceCode" id="cb197"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb197-1"><a href="mapear.html#cb197-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb197-2"><a href="mapear.html#cb197-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>barrios_caba)<span class="op">+</span></span>
+<span id="cb197-3"><a href="mapear.html#cb197-3"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>datos_caba_geo, <span class="kw">aes</span>(<span class="dt">color=</span>BARRIO), <span class="dt">alpha=</span><span class="fl">0.5</span>, <span class="dt">show.legend =</span> <span class="ot">FALSE</span>)</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-351-1.png" width="1050" /></p>
+<p>Se ve como todos los puntos que se ubican en CABA tienen color según sus barrios, pero los puntos fuera de CABA quedaron grises porque su valor es NA. Para “limpiar” esto filtremos todos los registros que tienen barrio asignado:</p>
+<div class="sourceCode" id="cb198"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb198-1"><a href="mapear.html#cb198-1"></a>datos_caba_geo &lt;-<span class="st"> </span>datos_caba_geo <span class="op">%&gt;%</span></span>
+<span id="cb198-2"><a href="mapear.html#cb198-2"></a><span class="st">  </span><span class="kw">filter</span>(<span class="op">!</span><span class="kw">is.na</span>(BARRIO))</span></code></pre></div>
+<div class="sourceCode" id="cb199"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb199-1"><a href="mapear.html#cb199-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb199-2"><a href="mapear.html#cb199-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>barrios_caba)<span class="op">+</span></span>
+<span id="cb199-3"><a href="mapear.html#cb199-3"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span>datos_caba_geo, <span class="kw">aes</span>(<span class="dt">color=</span>BARRIO), <span class="dt">alpha=</span><span class="fl">0.5</span>, <span class="dt">show.legend =</span> <span class="ot">FALSE</span>)</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-353-1.png" width="1050" /></p>
+<p>Ya tenemos solo los registros de CABA. ¿Y ahora cómo hacemos si queremos realizar un mapa coroplético como los anteriores pero coloreando los barrios según valor del m2? Nuevamente manipulamos el set de datos con <code>group_by()</code> y luego utilizamos <code>left_join()</code>:</p>
+<div class="sourceCode" id="cb200"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb200-1"><a href="mapear.html#cb200-1"></a>datos_caba_geo &lt;-<span class="st"> </span>datos_caba_geo <span class="op">%&gt;%</span></span>
+<span id="cb200-2"><a href="mapear.html#cb200-2"></a><span class="st">  </span><span class="kw">group_by</span>(BARRIO, operation_type) <span class="op">%&gt;%</span></span>
+<span id="cb200-3"><a href="mapear.html#cb200-3"></a><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">valor_m2=</span><span class="kw">mean</span>(price<span class="op">/</span>surface_covered))</span></code></pre></div>
+<div class="sourceCode" id="cb201"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb201-1"><a href="mapear.html#cb201-1"></a><span class="kw">head</span>(datos_caba_geo)</span></code></pre></div>
+<pre><code>## Simple feature collection with 6 features and 3 fields
+## geometry type:  MULTIPOINT
+## dimension:      XY
+## bbox:           xmin: -58.50249 ymin: -34.62174 xmax: -58.39217 ymax: -34.58573
+## CRS:            EPSG:4326
+## # A tibble: 6 x 4
+## # Groups:   BARRIO [3]
+##   BARRIO  operation_type valor_m2                                  geometry
+##   &lt;fct&gt;   &lt;fct&gt;             &lt;dbl&gt;                         &lt;MULTIPOINT [Â°]&gt;
+## 1 AGRONO~ Alquiler           471. ((-58.50249 -34.59347), (-58.49966 -34.5~
+## 2 AGRONO~ Venta             2869. ((-58.49994 -34.59319), (-58.49984 -34.5~
+## 3 ALMAGRO Alquiler           488. ((-58.43224 -34.60375), (-58.43216 -34.6~
+## 4 ALMAGRO Venta             2714. ((-58.43277 -34.60322), (-58.43229 -34.6~
+## 5 BALVAN~ Alquiler           478. ((-58.4128 -34.6028), (-58.41252 -34.609~
+## 6 BALVAN~ Venta             2211. ((-58.41409 -34.61113), (-58.41314 -34.6~</code></pre>
+<p>Pero como vimos al principio de la clase, si usamos <code>left_join()</code>, uno de los dataset no tiene que ser espacial. Para esto, transformemos nuestro dataset espacial data_caba_geo a un dataset tradicional, quitándole la geometría con <code>st_set_geometry()</code>:</p>
+<div class="sourceCode" id="cb203"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb203-1"><a href="mapear.html#cb203-1"></a>datos_caba_geo &lt;-<span class="st"> </span>datos_caba_geo <span class="op">%&gt;%</span></span>
+<span id="cb203-2"><a href="mapear.html#cb203-2"></a><span class="st">  </span><span class="kw">st_set_geometry</span>(<span class="ot">NULL</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb204"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb204-1"><a href="mapear.html#cb204-1"></a><span class="kw">head</span>(datos_caba_geo)</span></code></pre></div>
+<pre><code>## # A tibble: 6 x 3
+## # Groups:   BARRIO [3]
+##   BARRIO    operation_type valor_m2
+##   &lt;fct&gt;     &lt;fct&gt;             &lt;dbl&gt;
+## 1 AGRONOMIA Alquiler           471.
+## 2 AGRONOMIA Venta             2869.
+## 3 ALMAGRO   Alquiler           488.
+## 4 ALMAGRO   Venta             2714.
+## 5 BALVANERA Alquiler           478.
+## 6 BALVANERA Venta             2211.</code></pre>
+<p>Ahora si, solo tiene 3 columnas con el nombre del barrio, la operación inmobiliaria y el valor del m2 pero ya no tiene geometría. Procedamos a realizar la unión:</p>
+<div class="sourceCode" id="cb206"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb206-1"><a href="mapear.html#cb206-1"></a>barrios_caba &lt;-<span class="st"> </span><span class="kw">left_join</span>(barrios_caba, datos_caba_geo, <span class="dt">by=</span><span class="st">&quot;BARRIO&quot;</span>)</span></code></pre></div>
+<p>Y a mapear el valor de Venta:</p>
+<div class="sourceCode" id="cb207"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb207-1"><a href="mapear.html#cb207-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb207-2"><a href="mapear.html#cb207-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span><span class="kw">filter</span>(barrios_caba, operation_type<span class="op">==</span><span class="st">&quot;Venta&quot;</span>), <span class="kw">aes</span>(<span class="dt">fill=</span>valor_m2))</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-359-1.png" width="1050" /></p>
+<p>Ya tenemos un mapa de valor del m2 en Venta por Barrio, y como siempre Puerto Madero presenta el valor más alto. Mejoremos su estética:</p>
+<div class="sourceCode" id="cb208"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb208-1"><a href="mapear.html#cb208-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb208-2"><a href="mapear.html#cb208-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span><span class="kw">filter</span>(barrios_caba, operation_type<span class="op">==</span><span class="st">&quot;Venta&quot;</span>), <span class="kw">aes</span>(<span class="dt">fill=</span>valor_m2), <span class="dt">color=</span><span class="ot">NA</span>)<span class="op">+</span></span>
+<span id="cb208-3"><a href="mapear.html#cb208-3"></a><span class="st">    </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Valor del m2 de Venta&quot;</span>,</span>
+<span id="cb208-4"><a href="mapear.html#cb208-4"></a>         <span class="dt">subtitle =</span> <span class="st">&quot;CABA - Junio y Julio 2020&quot;</span>,</span>
+<span id="cb208-5"><a href="mapear.html#cb208-5"></a>         <span class="dt">fill =</span> <span class="st">&quot;USD/m2&quot;</span>,</span>
+<span id="cb208-6"><a href="mapear.html#cb208-6"></a>         <span class="dt">caption=</span> <span class="st">&quot;Fuente: Properati&quot;</span>) <span class="op">+</span></span>
+<span id="cb208-7"><a href="mapear.html#cb208-7"></a><span class="st">  </span><span class="kw">scale_fill_distiller</span>(<span class="dt">palette =</span> <span class="st">&quot;YlOrRd&quot;</span>, <span class="dt">direction =</span> <span class="dv">1</span>) <span class="op">+</span></span>
+<span id="cb208-8"><a href="mapear.html#cb208-8"></a><span class="st">  </span><span class="kw">theme_light</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-360-1.png" width="1050" /></p>
+<p>Y el de valor del m2 en alquiler:</p>
+<div class="sourceCode" id="cb209"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb209-1"><a href="mapear.html#cb209-1"></a><span class="kw">ggplot</span>()<span class="op">+</span></span>
+<span id="cb209-2"><a href="mapear.html#cb209-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span><span class="kw">filter</span>(barrios_caba, operation_type<span class="op">==</span><span class="st">&quot;Alquiler&quot;</span>), <span class="kw">aes</span>(<span class="dt">fill=</span>valor_m2), <span class="dt">color=</span><span class="ot">NA</span>)<span class="op">+</span></span>
+<span id="cb209-3"><a href="mapear.html#cb209-3"></a><span class="st">    </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Valor del m2 de Alquiler&quot;</span>,</span>
+<span id="cb209-4"><a href="mapear.html#cb209-4"></a>         <span class="dt">subtitle =</span> <span class="st">&quot;CABA - Junio y Julio 2020&quot;</span>,</span>
+<span id="cb209-5"><a href="mapear.html#cb209-5"></a>         <span class="dt">fill =</span> <span class="st">&quot;ARS/m2&quot;</span>,</span>
+<span id="cb209-6"><a href="mapear.html#cb209-6"></a>         <span class="dt">caption=</span> <span class="st">&quot;Fuente: Properati&quot;</span>) <span class="op">+</span></span>
+<span id="cb209-7"><a href="mapear.html#cb209-7"></a><span class="st">  </span><span class="kw">scale_fill_distiller</span>(<span class="dt">palette =</span> <span class="st">&quot;YlOrRd&quot;</span>, <span class="dt">direction =</span> <span class="dv">1</span>) <span class="op">+</span></span>
+<span id="cb209-8"><a href="mapear.html#cb209-8"></a><span class="st">  </span><span class="kw">theme_light</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-361-1.png" width="1050" /></p>
+<p>En el mapa anterior se puede observar que hay barrios en el sur de la Ciudad que directamente no tienen propiedades en alquiler.</p>
+</div>
+<div id="agregar-mapa-base" class="section level2">
+<h2><span class="header-section-number">4.4</span> Agregar mapa base</h2>
+<p>Si bien hasta aquí hemos hecho mapas bastante completos, nunca está de más agregarles un fondo que nos ayude a interpretar el contexto. Para lograr esto utilizaremos la librería <code>ggmap()</code> que cómo ya sabemos, primero debemos instalarla y luego activarla:</p>
+<div class="sourceCode" id="cb210"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb210-1"><a href="mapear.html#cb210-1"></a><span class="co">#install.packages(ggmap)</span></span>
+<span id="cb210-2"><a href="mapear.html#cb210-2"></a><span class="kw">library</span>(ggmap)</span></code></pre></div>
+<p>Para poder obtener un mapa de fondo con ggmap, primero tengo que delimintar cuál es mi “bounding box”, que hace referencia a los límites de un cuadro en el cual se encuentran todos mis datos. Esto lo haremos de la siguiente forma:</p>
+<div class="sourceCode" id="cb211"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb211-1"><a href="mapear.html#cb211-1"></a>bbox_barrios &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(<span class="kw">st_bbox</span>(barrios_caba))</span></code></pre></div>
+<p>Una vez que ya tenemos el bbox, vamos a usar get_stamenmap() para descargar de internet el mapa. En este caso utilizaremos un mapa de tipo “toner-lite” pero hay otras opciones que pueden verse aquí: <a href="http://maps.stamen.com/" class="uri">http://maps.stamen.com/</a></p>
+<div class="sourceCode" id="cb212"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb212-1"><a href="mapear.html#cb212-1"></a>mapa_caba &lt;-<span class="st"> </span><span class="kw">get_stamenmap</span>(<span class="dt">bbox =</span> bbox_barrios,</span>
+<span id="cb212-2"><a href="mapear.html#cb212-2"></a>                      <span class="dt">maptype =</span> <span class="st">&quot;toner-lite&quot;</span>,</span>
+<span id="cb212-3"><a href="mapear.html#cb212-3"></a>                      <span class="dt">zoom=</span><span class="dv">12</span>)</span></code></pre></div>
+<p>Con <code>ggmap()</code> veamos que nos hemos descargado:</p>
+<div class="sourceCode" id="cb213"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb213-1"><a href="mapear.html#cb213-1"></a><span class="kw">ggmap</span>(mapa_caba)</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-365-1.png" width="1050" /></p>
+<p>Ahora podemos reutilizar el código del ejemplo de mapa del valor de m2 de venta por barrio, simplemente reemplazando la primera línea, donde inicializamos un objeto ggplot por una línea que llame a nuestro mapa base de la siguiente forma:</p>
+<div class="sourceCode" id="cb214"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb214-1"><a href="mapear.html#cb214-1"></a><span class="kw">ggmap</span>(mapa_caba)<span class="op">+</span></span>
+<span id="cb214-2"><a href="mapear.html#cb214-2"></a><span class="st">  </span><span class="kw">geom_sf</span>(<span class="dt">data=</span><span class="kw">filter</span>(barrios_caba, operation_type<span class="op">==</span><span class="st">&quot;Venta&quot;</span>), <span class="kw">aes</span>(<span class="dt">fill=</span>valor_m2), <span class="dt">alpha=</span><span class="fl">0.75</span>, <span class="dt">inherit.aes =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
+<span id="cb214-3"><a href="mapear.html#cb214-3"></a><span class="st">    </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Valor del m2 de Venta&quot;</span>,</span>
+<span id="cb214-4"><a href="mapear.html#cb214-4"></a>         <span class="dt">subtitle =</span> <span class="st">&quot;CABA - Junio y Julio 2020&quot;</span>,</span>
+<span id="cb214-5"><a href="mapear.html#cb214-5"></a>         <span class="dt">fill =</span> <span class="st">&quot;USD/m2&quot;</span>,</span>
+<span id="cb214-6"><a href="mapear.html#cb214-6"></a>         <span class="dt">caption=</span> <span class="st">&quot;Fuente: Properati&quot;</span>) <span class="op">+</span></span>
+<span id="cb214-7"><a href="mapear.html#cb214-7"></a><span class="st">  </span><span class="kw">scale_fill_distiller</span>(<span class="dt">palette =</span> <span class="st">&quot;YlOrRd&quot;</span>, <span class="dt">direction =</span> <span class="dv">1</span>) <span class="op">+</span></span>
+<span id="cb214-8"><a href="mapear.html#cb214-8"></a><span class="st">  </span><span class="kw">theme_light</span>()</span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-366-1.png" width="1050" /></p>
+<p>Además de cambiar la primer línea de código, nótese que agregamos un inherit.aes=FALSE dentro del geom_sf() para anular la estética predeterminada del objeto ggmap.</p>
+<p>Y listo! Ya tenemos un mapa con fondo y con información que generamos nosotros a partir de un cruce espacial.</p>
 
+</div>
 </div>
             </section>
 
