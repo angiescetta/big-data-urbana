@@ -1,6 +1,6 @@
-# MAPEAR
+# INFORMACIÓN GEOGRÁFICA Y MAPAS
 
-Llegamos al final del curso y ahora nos toca **visualizar en un mapa toda la información** que estuvimos analizando las clases anteriores. Para esto, vamos a trabajar con la información geográfica que contiene nuestro dataset y vamos agregar otras fuentes de datos geográficos.
+Ahora nos toca **visualizar en un mapa toda la información** que estuvimos analizando en los módulos anteriores. Para esto, vamos a trabajar con la información geográfica que contiene nuestro dataset y vamos agregar otras fuentes de datos geográficos.
 
 Pero antes de empezar, ¿A que nos referimos cuando hablamos de **Sistemas de Información Geográfica** o **SIG**? Bueno, nos referimos a las herramientas informáticas que nos permiten ubicar y analizar un conjunto de datos en lugares específicos del territorio (georreferenciar).
 
@@ -8,7 +8,7 @@ Para poder hacer uso de los SIG necesitamos contar con información geográfica 
 
 Las herramientas que nos permitirán visualizar toda esta información serán los **mapas**, que son nada más y nada menos que representaciones planas, reducidas y simplificadas de la tierra que nos dan la posibilidad cruzar y relacionar datos en el espacio. Es decir que, mantienen una relación ordenada en el traspaso de puntos ubicados en la superficie curva de la tierra a puntos ubicados en la superficie plana de los mapas. Esto es posible a partir del uso de sistemas de coordenadas proyectadas.
 
-En R hay varios paquetes de funciones que nos permiten manipular este tipo de información, entre los que se encuentra `sf`, que lo aprenderemos hoy. Para comenzar a utilizarlo vamos a tener que instalarlo y luego activarlo con *library()* al igual que lo veníamos haciendo con `tidyverse`:
+En R hay varios paquetes de funciones que nos permiten manipular este tipo de información, entre los que se encuentra `sf`, que lo aprenderemos hoy. Para comenzar a utilizarlo vamos a tener que instalarlo y luego activarlo con `library()` al igual que lo veníamos haciendo con `tidyverse`:
 
 ```{r}
 library(tidyverse)

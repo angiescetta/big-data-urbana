@@ -1,10 +1,10 @@
-# MANIPULAR
+# MANIPULACIÓN DE DATOS
 
-Ahora que ya sabemos abrir un dataset y conocer que información tiene, vamos a aprender a manipular y transformar los datos. Para esto vamos a trabajar con uno de los paquetes más usados y más útiles de R que se llama `tidyverse`.
+Ahora que ya sabemos abrir un dataset y conocer que información tiene, vamos a aprender a manipular, limpiar, normalizar y transformar los datos, o lo que se conoce como *data wrangling*. Para esto vamos a trabajar con uno de los paquetes más usados y más útiles de R que se llama `tidyverse`.
 
 Pero, **¿Qué es un paquete?**
 
-Cuando instalamos R ya viene con múltiples funciones básicas para manipular datos, sin embargo el potencial de R surge con la posibilidad de incorporar constantemente nuevas funciones que nos permitan realizar nuevas tareas o mejorar el resultado de las ya existentes.
+Cuando instalamos R ya viene con múltiples funciones básicas para manipular datos, sin embargo el potencial de la herramienta surge con la posibilidad de incorporar constantemente nuevas funciones que nos permitan realizar nuevas tareas o mejorar el resultado de las ya existentes.
 
 Estos grupos de funciones son a los que llamamos paquetes o packages y para poder utilizarlos es necesario **instalarlos por única vez en la computadora**, y luego **activarlos cada vez que vayamos a usarlos**.
 
@@ -34,7 +34,7 @@ A continuación veremos como el paquete `tidyverse` nos va a permitir manipular 
 
 Aprender a utilizar todas estas funciones es muy importante ya que la **comprensión, transformación y limpieza de los datos** es la etapa que más tiempo nos llevará a la hora de encarar cualquier proyecto de Ciencia de Datos.
 
-## Filtrar
+## Filtrar registros que cumplan condiciones
 
 Como su nombre lo indica, esta función hace referencia a realizar un filtro determinado sobre los registros/filas de toda la base de datos, es decir, quedarnos solo con las filas que cumplan cierta condición establecida. Gráficamente se vería como algo así:
 
@@ -147,7 +147,7 @@ head(filtro)
 
 ¿Y si en vez de quitar filas queremos quitar columnas? Bueno, aquí tenemos que usar la función de "seleccionar" que veremos a continuación.
 
-## Seleccionar
+## Seleccionar columnas de interés
 
 La función `select()` nos permite elegir u ordenar columnas de nuestro dataset. Esto se puede hacer indicando los nombres completos de las columnas, palabras que contienen, o la letra con la que empiezan o terminan.
 
@@ -219,7 +219,7 @@ seleccion <- select(datos_amba, contains("surface"))
 head(seleccion)
 ```
 
-## Modificar
+## Modificar o agregar columnas
 
 Ahora veamos como mutar nuestro dataset agregando nuevas columnas o cambiando el contenido de las existentes. Gráficamente sería algo así:
 
@@ -243,10 +243,10 @@ head(modificar)
 
 Como verán, para hacer cálculos entre columnas numéricas podemos utilizar:
 
-- **A/B** A dividido B
-- **A*B** A multiplicado por B
-- **A+B** Suma de A y B
-- **A-B** Resta de A menos B
+- A / B **A dividido B**
+- A * B **A multiplicado por B**
+- A + B **Suma de A y B**
+- A - B **Resta de A menos B**
 
 También podríamos agregar una columna que refleje un cálculo entre una columna existente y un valor extra, por ejemplo pasemos la superficie total de m2 a cm2:
 
@@ -298,7 +298,7 @@ modificar <- mutate(datos_amba, prov_partido=paste(provincia, partido, sep="_"))
 head(modificar)
 ```
 
-## Ordenar
+## Ordenar registros
 
 Esta función nos permitirá ordenar las columnas en orden ascendente o descendente como se ve a continuación:
 
@@ -334,7 +334,7 @@ ordenar <- arrange(datos_amba, partido, desc(rooms))
 head(ordenar)
 ```
 
-## Renombrar
+## Renombrar columnas
 
 Ahora veamos como cambiar los nombres a una o más columnas existentes en nuestro dataset:
 
@@ -358,7 +358,7 @@ renombrar <- rename(datos_amba, ambientes=rooms, m2_cubierto=surface_covered, m2
 head(renombrar)
 ```
 
-## Resumir y Agrupar
+## Resumir y agrupar datos
 
 Esta función es súper útil cuando manipulamos datos ya que nos permitirá realizar resumenes/sumarios de la data completa, obteniendo por ejemplo valores promedio, máximos o mínimos de una o más columnas.
 
@@ -480,3 +480,69 @@ A partir de la agrupación y resumen por ejemplo podemos ver que:
 - En ambas zonas (CABA y GBA), entre Junio y Julio 2020 hubo una caída en la cantidad de propiedades publicadas y en el valor promedio del m2.
 
 Como verán, en ambos casos llegamos al mismo resultado, pero sin dudas, la segunda opción es la recomendable porque nos ahorramos varias líneas de código y resultados intermedios.
+
+## Transformar la estructura de los datos
+
+El paquete `tidyverse` también nos permite realizar transformaciones en la estructura de nuestro dataset. Pero, ¿A qué nos referimos con esto? A continuación analizaremos 2 casos:
+
+Tipo 1. Nuestro dataset tiene **diferentes categorías** que están **separadas en muchas filas**. Por ejemplo:
+
+[<img src="data/opcion2.jpg" width="300"/>](images/opcion2.jpg)
+
+Tipo 2. Nuestro dataset tiene **diferentes categorías** que están **separadas en muchas columnas**. Por ejemplo:
+
+[<img src="data/opcion1.jpg" width="400"/>](images/opcion1.jpg)
+
+Como verán, en ambos casos la información es la misma, lo que cambia es la estructura.
+
+Es muy probable que al analizar bases de datos nos encontramos con algunas estructuras similares a estas y querramos cambiarlas. Para pasar del Tipo 1 de estructura al Tipo 2 y viceversa utilizaremos las funciones `spread()` y `gather()` respectivamente.
+
+![](images/spread_gather.jpg)
+
+Sigamos utilizando nuestro dataset de Properati, pero para trabajar con menos volumen de datos y que sea más sencillo comprender el ejemplo, hagamos una agrupación por provincia y tipo de operación y calculemos el valor del m2:
+
+```{r message=FALSE, warning=FALSE}
+transformar <- datos_amba %>%
+  group_by(provincia, operation_type) %>%
+  summarise(valor_m2=mean(price/surface_covered))
+```
+
+```{r message=FALSE, warning=FALSE}
+head(transformar)
+```
+
+Bien, ya tenemos un pequeño dataset de 3 columnas y 4 filas que presentan una estructura similar a la que se muestra al inicio como "Tipo 1".
+
+### Extender la estructura de los datos: spread()
+
+Si necesitamos pasar el dataset al otro formato extendido, debemos usar `spread()` indicando el dataset que quiero modificar (datos_amba), la columna que quiero separar (key=operation_type) y la columna que contiene lo valores que quiero mantener en la tabla (value=valor_m2):
+
+```{r message=FALSE, warning=FALSE}
+extender <- spread(transformar, key=operation_type, value=valor_m2)
+```
+
+El resultado es el siguiente:
+
+```{r message=FALSE, warning=FALSE}
+head(extender)
+```
+
+Se ve como ahora tenemos un dataset extendido, donde las categorías incluidas en columna operation_type se dividieron en 2 columnas: "Alquiler" y "Venta". Pero, ¿Cómo hacemos si queremos volver al dataset original?
+
+Esto lo hacemos con la función `gather()`.
+
+### Unificar los datos: gather()
+
+Esta función que une múltiples columnas en una sola, se suele utilizar cuando todas las columnas representan valores de una variable. Por ejemplo, en nuestro caso, tanto "Alquiler" como "Venta" pueden ser categorías de una variable llamada operation_type.
+
+Para utilizar `gather()` debemos indicar el dataset que queremos modificar (datos_amba), la nueva columna donde queremos agrupar múltiples columnas (key="operation_type"), la nueva columna donde queremos agrupar los valores de toda la tabla (value="valor_m2"), y por último debemos indicar que rango de columnas son las que queremos incluir en la key (Alquiler:Venta).
+
+```{r message=FALSE, warning=FALSE}
+unificar <- gather(extender, key="operation_type", value="valor_m2", Alquiler:Venta)
+```
+
+```{r message=FALSE, warning=FALSE}
+head(unificar)
+```
+
+Y ahora si, volvimos al otro formato de tabla.

@@ -1,4 +1,4 @@
-# GRAFICAR
+# ANÁLISIS Y VISUALIZACIÓN DE DATOS
 
 El paquete `tidyverse` incluye diversos paquetes, entre los que se encuentra `ggplot2`, que nos permite realizar diferentes tipos de gráficos a partir de nuestros datos.
 

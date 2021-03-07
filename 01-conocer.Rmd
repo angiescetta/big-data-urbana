@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, dpi = 150)
 ```
 
-# CONOCER
+# PRESENTACIÓN
 
 **¿Qué es R y RStudio?**
 
@@ -17,11 +17,11 @@ RStudio es una **interfaz libre y gratuita** que nos permite **explotar todo el 
 
 R es un lenguaje que ofrece una gran variedad de funciones para realizar cálculos estadísticos y generar diversos gráficos a partir de los datos. Sin embargo, el gran potencial está en que, al ser libre y colaborativo, **constantemente los usuarios están actualizando y ampliando la cantidad de funciones que presenta**. Hoy en día podemos realizar desde operaciones básicas sobre los datos hasta aplicar algoritmos de inteligencia artificial.
 
-A su vez, dentro de RStudio, hay diferentes formatos de archivos (RMarkdown, RScript, RNotebook, etc) que su elección depende del objetivo que tengamos. En nuestro caso, a lo largo del curso trabajaremos con el formato **RMarkdown**, un tipo de documento de RStudio que integra texto con código de R y nos permite generar informes a partir de los datos.
+A su vez, dentro de RStudio, hay diferentes formatos de archivos (RMarkdown, RScript, RNotebook, etc) y su elección depende del objetivo que tengamos. En nuestro caso, a lo largo del manual trabajaremos con el formato **RMarkdown**, un tipo de documento de RStudio que integra texto con código de R y nos permite generar informes a partir de los datos.
 
 Empecemos de a poco:
 
-Primero tenemos que crear un **nuevo proyecto y un nuevo RMarkdown**. Los pasos a seguir pueden encontrarlos en el siguiente tutorial: **https://rpubs.com/angiescetta/conociendo-R**
+Lo primero que tenemos que hacer es crear un **nuevo proyecto y un nuevo RMarkdown**. Los pasos a seguir pueden encontrarlos en el siguiente tutorial: **https://rpubs.com/angiescetta/conociendo-R**
 
 ## Interfaz Gráfica de RStudio
 
@@ -85,7 +85,7 @@ Y se inserta haciendo click en **Insert/R** o con el siguiente atajo en el tecla
 
 ## Nuestro primer dataset
 
-A lo largo del curso vamos a trabajar con los datos de Properati, un portal web de compra, venta y alquiler de inmuebles en toda América Latina.
+En los primeros capítulos del manual vamos a trabajar con los datos de Properati, un portal web de compra, venta y alquiler de inmuebles en toda América Latina.
 Estos datos son públicos y pueden encontrarlos en https://properati.com.ar/data.
 
 En este caso, para facilitar la manipulación de la información, usaremos un set de datos (en formato csv) previamente procesado que contiene datos de propiedades publicadas en AMBA en Junio y Julio del 2020. Pueden descargarlo de https://data.world/angie-scetta/amba-properati.
@@ -124,6 +124,7 @@ Esto podemos verlo con `names()`:
 ```{r}
 names(datos_amba)
 ```
+
 Bien, las columnas tienen fecha de publicación de la propiedad, provincia y partido donde se ubica, cantidad de ambientes, superficie total y superficie cubierta, precio publicado, tipo de moneda (ARS o USD), el título que el usuario escribió al publicar su propiedad, el tipo de propiedad, el tipo de operación, y finalmente la ubicación del inmueble con sus coordenadas: latitud y longitud.
 
 Parece que cada fila/registro de la base corresponde a una propiedad publicada, pero veamos una pequeña muestra de la data con `head()` para estar seguros:
@@ -131,6 +132,7 @@ Parece que cada fila/registro de la base corresponde a una propiedad publicada, 
 ```{r}
 head(datos_amba)
 ```
+
 Y un **resumen estadístico de la información**:
 
 ```{r}

@@ -18,23 +18,22 @@ output:
 
 ¡Hola a todos!
 
-**¡Bienvenidos a BIG DATA URBANA!**
+**¡Bienvenidos al mundo de los datos!**
 
-Estamos en un momento en que las Ciudades producen millones y millones de datos por segundo y hoy tenemos la posibilidad de aprovecharlos desde nuestra profesión para poder trabajar y tomar decisiones en base a evidencia real.
+En la actualidad las Ciudades producen millones de datos por segundo y hoy tenemos la oportunidad de aprovecharlos desde nuestra profesión para poder trabajar y tomar decisiones en base a evidencia real.
 
-El objetivo del curso es presentar a los profesionales interesados en analizar diversas variables territoriales (sociodemográficas, mercado inmobiliario, actividad económica, transporte, movilidad, salud, educación, etc), la importancia de conocer herramientas analíticas que les permitan manipular y extraer conocimiento de grandes volúmenes de datos para tomar mejores decisiones a la hora de diagnosticar, comprender e intervenir el territorio.
+El objetivo del manual es presentarle a los profesionales interesados en analizar diversas variables territoriales (sociodemográficas, mercado inmobiliario, actividad económica, transporte, movilidad, salud, educación, etc), la importancia de conocer herramientas analíticas que les permitan manipular y extraer conocimiento de grandes volúmenes de datos para tomar mejores decisiones a la hora de diagnosticar, comprender e intervenir el territorio.
 
-El curso será práctico y se enseñarán los conocimientos básicos del lenguaje de programación R y del software libre RStudio, y su potencialidad para el análisis de datos urbanos.
+Concretamente, el manual introducirá los conocimientos básicos del lenguaje de programación R y del software libre RStudio, y su potencialidad para el análisis de datos urbanos.
 
 ![](images/logos.jpg)
 
-A lo largo de 4 clases aplicaremos la herramienta a un ejemplo real, con el fin de analizar, describir, interpretar, visualizar y extraer conocimiento de datos existentes. El caso de estudio será el mercado inmobiliario en CABA y se utilizarán datos provenientes de fuentes públicas.
+A lo largo de cada módulo se aplicará la herramienta a datos reales, con el fin de analizar, describir, interpretar, visualizar y extraer conocimiento de datos existentes.
 
-Será un curso de 4 clases de 3hs donde se estima un 90% práctico y un 10% teórico.
 
-## Programa {-}
+## Indice {-}
 
-**Clase 1: CONOCER**
+**Módulo 1: INTRODUCCIÓN BIG DATA Y CIUDAD**
 
 ¿Qué es la Ciencia de Datos? ¿Cómo utilizar grandes volúmenes de datos para analizar dinámicas urbanas? ¿Qué datos existen? ¿Qué información contienen las bases de datos? ¿Cómo se estructuran?
 
@@ -44,18 +43,53 @@ Para esta clase será necesario tener previamente instalado el lenguaje de progr
 
 En el caso de no poder instalar correctamente el programa, se recomienda utilizar RStudio Cloud (https://rstudio.cloud/).
 
-**Clase 2: MANIPULAR**
+**Módulo 2: MANIPULACIÓN DE DATOS**
 
-Las funciones de *tidyverse* para interpretar, manipular y transformar los datos: Extraer información útil a partir de Seleccionar, Filtrar, Ordenar, Modificar, Resumir, Agrupar y Renombrar los datos.
+Manipular y transformar los datos: Técnicas de *data wrangling*.
 
-**Clase 3: GRAFICAR**
+¿Cómo extraer información útil de los datos? ¿Cómo encontrar información específica?
 
-¿Qué dicen los datos? ¿Cómo puedo facilitar la comprensión de la información?
+Análisis exploratorio de datos. Las funciones de *tidyverse*: Seleccionar, Filtrar, Ordenar, Modificar, Resumir, Agrupar y Renombrar los datos.
 
-Extraer conocimiento de los datos a partir de la visualización de los mismos. Comunicar resultados a partir de gráficos.
+**Módulo 3: ANÁLISIS Y VISUALIZACIÓN DE DATOS**
 
-**Clase 4: MAPEAR**
+Análisis y Visualización de Información.
 
+¿Por qué representar gráficamente los datos? ¿Qué tipo de visualización conviene usar?
+
+Extraer conocimiento de los datos a partir de la correcta visualización de los mismos. Comunicar resultados desarrollando gráficos con *ggplot*.
+
+**Módulo 4: INFORMACIÓN GEOGRÁFICA Y MAPAS**
+
+Análisis y Visualización de Información Geográfica.
+
+¿Qué son los Sistemas de Información Geográfica (SIG)? ¿Por qué mapear datos?
 ¿Dónde se ubican los datos? ¿Cómo se distribuyen en el territorio? ¿Presentan algún patrón espacial?
 
-Análisis espacial de los datos. Visualización e interpretación a partir de mapas.
+Análisis exploratorio de datos espaciales. Adquirir conocimiento de las herramientas básicas del paquete *sf* para manipular información geográfica teniendo en cuenta formatos, sistemas de coordenadas y proyecciones. Generación de mapas temáticos con *ggplot*.
+
+**Módulo 5: GEOPROCESAMIENTO**
+
+Procesamiento, manipulación y transformación de datos geoespaciales.
+
+Realizar múltiples operaciones para generar información: medir distancias o superficies, calcular áreas de influencia, superponer capas, etc.
+
+Descarga de mapas base y visualización interactiva de datos espaciales.
+
+**Módulo 6: CONEXIÓN A NUEVOS DATOS**
+
+Obtener nuevos datos a partir de la conexión a repositorios online que permiten descargar información espacial: el caso de Open Street Map (OSM).
+
+Generación de información a partir del procesamiento de los datos. Visualización y análisis de resultados.
+
+**Módulo 7: DINÁMICAS ESPACIO TEMPORAL**
+
+Procesar y manipular datos espaciales y temporales con el paquete *lubridate*.
+
+¿Cómo cambian los datos en el tiempo? Detectar dinámicas y patrones a partir de la incorporación del factor tiempo.
+
+**Módulo 8: PREDICCIÓN DE FENÓMENOS**
+
+¿Qué es Machine Learning? ¿Para qué sirve?
+
+Introducción al aprendizaje automático supervisado para predecir fenómenos urbanos a partir del análisis de datos históricos. El paquete *randomForest*.
