@@ -487,11 +487,11 @@ El paquete `tidyverse` también nos permite realizar transformaciones en la estr
 
 Tipo 1. Nuestro dataset tiene **diferentes categorías** que están **separadas en muchas filas**. Por ejemplo:
 
-[<img src="data/opcion2.jpg" width="300"/>](images/opcion2.jpg)
+![](images/opcion2.jpg)
 
 Tipo 2. Nuestro dataset tiene **diferentes categorías** que están **separadas en muchas columnas**. Por ejemplo:
 
-[<img src="data/opcion1.jpg" width="400"/>](images/opcion1.jpg)
+![](images/opcion1.jpg)
 
 Como verán, en ambos casos la información es la misma, lo que cambia es la estructura.
 
