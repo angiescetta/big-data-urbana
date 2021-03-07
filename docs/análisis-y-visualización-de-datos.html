@@ -156,12 +156,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html"><i class="fa fa-check"></i><b>3</b> ANÁLISIS Y VISUALIZACIÓN DE DATOS</a><ul>
-<li class="chapter" data-level="3.1" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#histograma"><i class="fa fa-check"></i><b>3.1</b> Histograma</a></li>
-<li class="chapter" data-level="3.2" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#gráfico-de-densidad"><i class="fa fa-check"></i><b>3.2</b> Gráfico de Densidad</a></li>
-<li class="chapter" data-level="3.3" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#gráfico-de-cajas"><i class="fa fa-check"></i><b>3.3</b> Gráfico de Cajas</a></li>
-<li class="chapter" data-level="3.4" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#gráfico-de-dispersión"><i class="fa fa-check"></i><b>3.4</b> Gráfico de Dispersión</a></li>
-<li class="chapter" data-level="3.5" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#gráfico-de-matriz"><i class="fa fa-check"></i><b>3.5</b> Gráfico de Matriz</a></li>
-<li class="chapter" data-level="3.6" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#gráfico-de-barras"><i class="fa fa-check"></i><b>3.6</b> Gráfico de Barras</a></li>
+<li class="chapter" data-level="3.1" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#distribución-de-una-variable-continua"><i class="fa fa-check"></i><b>3.1</b> Distribución de una variable continua</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#histograma"><i class="fa fa-check"></i><b>3.1.1</b> Histograma</a></li>
+<li class="chapter" data-level="3.1.2" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#gráfico-de-densidad"><i class="fa fa-check"></i><b>3.1.2</b> Gráfico de Densidad</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#distribución-de-valores-continuos-asociados-a-una-variable-categórica-gráfico-de-cajas"><i class="fa fa-check"></i><b>3.2</b> Distribución de valores continuos asociados a una variable categórica: Gráfico de Cajas</a></li>
+<li class="chapter" data-level="3.3" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#relación-entre-variables-numéricas-gráfico-de-dispersión"><i class="fa fa-check"></i><b>3.3</b> Relación entre variables numéricas: Gráfico de Dispersión</a></li>
+<li class="chapter" data-level="3.4" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#relación-entre-variables-categóricas-gráfico-de-matriz"><i class="fa fa-check"></i><b>3.4</b> Relación entre variables categóricas: Gráfico de Matriz</a></li>
+<li class="chapter" data-level="3.5" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#relación-entre-variable-numérica-y-categórica-gráfico-de-barras"><i class="fa fa-check"></i><b>3.5</b> Relación entre variable numérica y categórica: Gráfico de Barras</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="información-geográfica-y-mapas.html"><a href="información-geográfica-y-mapas.html"><i class="fa fa-check"></i><b>4</b> INFORMACIÓN GEOGRÁFICA Y MAPAS</a><ul>
 <li class="chapter" data-level="4.1" data-path="información-geográfica-y-mapas.html"><a href="información-geográfica-y-mapas.html#analizar-datos-espaciales"><i class="fa fa-check"></i><b>4.1</b> Analizar datos espaciales</a></li>
@@ -215,9 +217,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="análisis-y-visualización-de-datos.html#cb116-1"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
 <p>Y volvamos a cargar nuestro dataset:</p>
 <div class="sourceCode" id="cb117"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb117-1"><a href="análisis-y-visualización-de-datos.html#cb117-1"></a>datos_amba &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/amba_properati.csv&quot;</span>)</span></code></pre></div>
-<div id="histograma" class="section level2">
-<h2><span class="header-section-number">3.1</span> Histograma</h2>
-<p><strong>Distribución de una variable continua</strong></p>
+<div id="distribución-de-una-variable-continua" class="section level2">
+<h2><span class="header-section-number">3.1</span> Distribución de una variable continua</h2>
+<div id="histograma" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> Histograma</h3>
 <p>Los histogramas muestran gráficamente, a partir de barras, la distribución de una variable continua, es decir la frecuencia con la que aparece cada valor numérico en una determinada columna del dataset. En el eje X se representa la variable continua y en el eje Y la frecuencia de la misma.</p>
 <p>Para generar este tipo de visualización utilizaremos <code>ggplot()</code> + <code>geom_histogram()</code>. Veamos por ejemplo como se distribuyen las superficies cubiertas (surface_covered) de las propiedades publicadas:</p>
 <div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="análisis-y-visualización-de-datos.html#cb118-1"></a><span class="kw">ggplot</span>(datos_amba)<span class="op">+</span></span>
@@ -247,7 +250,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li><p>Las ya establecidas (listas para usar): Brewer, Viridis. Recomiendo utilizar estas que en <code>ggplot2</code> las van a encontrar como scale_fill_viridis_c(), scale_fill_brewer() y demás variantes.</p></li>
 <li><p>Las personalizadas, donde nosotros elegimos todos los colores: Gradiente (scale_fill_gradient()), Manual (scale_fill_manual())
-<em>Para obtener un listado de colores pueden ver este link: <a href="http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf" class="uri">http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf</a></em></p></li>
+<em>Para obtener un listado de colores pueden ver <a href="http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf">este link</a></em></p></li>
 </ul>
 <div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="análisis-y-visualización-de-datos.html#cb122-1"></a><span class="kw">ggplot</span>(datos_amba)<span class="op">+</span></span>
 <span id="cb122-2"><a href="análisis-y-visualización-de-datos.html#cb122-2"></a><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="kw">aes</span>(<span class="dt">x=</span>surface_covered, <span class="dt">fill=</span>provincia), <span class="dt">bins=</span><span class="dv">75</span>)<span class="op">+</span></span>
@@ -262,9 +265,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-69-1.png" width="1050" /></p>
 <p>En el histograma anterior se puede ver que si bien en ambos meses las distribuciones se mantienen, en Junio hay mayor cantidad de publicaciones que en Julio.</p>
 </div>
-<div id="gráfico-de-densidad" class="section level2">
-<h2><span class="header-section-number">3.2</span> Gráfico de Densidad</h2>
-<p><strong>Distribución de una variable continua</strong></p>
+<div id="gráfico-de-densidad" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Gráfico de Densidad</h3>
 <p>Este tipo de gráfico cumple la misma función que el Histograma, pero se caracteriza por generar una versión más “suavizada” en la que muestra la densidad de kernel a lo largo de toda la variable continua y no conteos por bins. Estos gráficos nos permiten ver cuales son los intervalos de la variable continua donde hay mayor probabilidad de encontrar registros.</p>
 <p>Para generar esta visualización utilizaremos <code>ggplot()</code> + <code>geom_density()</code>. Veamos por ejemplo como se distribuyen los valores por m2 (price/surface_covered) de las propiedades publicadas:</p>
 <div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="análisis-y-visualización-de-datos.html#cb123-1"></a><span class="kw">ggplot</span>(datos_amba)<span class="op">+</span></span>
@@ -317,9 +319,9 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-76-1.png" width="1050" /></p>
 <p>En las 3 tipologías se ve que Vicente López tiene los precios más elevados por m2, y a su vez que los departamentos de La Matanza superan en precio a los de La Plata. Sin embargo, para casas y PHs, La Matanza y La Plata tienen precios muy similares.</p>
 </div>
-<div id="gráfico-de-cajas" class="section level2">
-<h2><span class="header-section-number">3.3</span> Gráfico de Cajas</h2>
-<p><strong>Distribución de valores continuos asociados a una variable categórica</strong></p>
+</div>
+<div id="distribución-de-valores-continuos-asociados-a-una-variable-categórica-gráfico-de-cajas" class="section level2">
+<h2><span class="header-section-number">3.2</span> Distribución de valores continuos asociados a una variable categórica: Gráfico de Cajas</h2>
 <p>Un Gráfico de Cajas sirve para comparar la distribución y tendencia central de varias categorías de una variable.</p>
 <p>Veamos como luce un gráfico de este tipo:</p>
 <p><img src="images/geom_boxplot.jpg" /></p>
@@ -398,9 +400,8 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb135-12"><a href="análisis-y-visualización-de-datos.html#cb135-12"></a><span class="st">  coord_flip()</span></span></code></pre></div>
 <p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-82-1.png" width="1050" /></p>
 </div>
-<div id="gráfico-de-dispersión" class="section level2">
-<h2><span class="header-section-number">3.4</span> Gráfico de Dispersión</h2>
-<p><strong>Relación entre variables numéricas</strong></p>
+<div id="relación-entre-variables-numéricas-gráfico-de-dispersión" class="section level2">
+<h2><span class="header-section-number">3.3</span> Relación entre variables numéricas: Gráfico de Dispersión</h2>
 <p>Ahora veamos el clásico gráfico de puntos o scatter plot que muestra la dispersión que existe entre 2 variables numéricas representadas en los 2 ejes X e Y, y que permite identificar si existe o no una relación entre ambas.</p>
 <p>Veamos por ejemplo, si existe relación entre la superficie cubierta (surface_covered) y el precio total (price) de las propiedades:</p>
 <div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb136-1"><a href="análisis-y-visualización-de-datos.html#cb136-1"></a><span class="kw">ggplot</span>(datos_amba)<span class="op">+</span></span>
@@ -433,9 +434,8 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb141-2"><a href="análisis-y-visualización-de-datos.html#cb141-2"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">data=</span>datos_amba, <span class="kw">aes</span>(<span class="dt">x=</span>lon, <span class="dt">y=</span>lat, <span class="dt">color=</span>provincia))</span></code></pre></div>
 <p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-88-1.png" width="1050" /></p>
 </div>
-<div id="gráfico-de-matriz" class="section level2">
-<h2><span class="header-section-number">3.5</span> Gráfico de Matriz</h2>
-<p><strong>Relación entre variables categóricas</strong></p>
+<div id="relación-entre-variables-categóricas-gráfico-de-matriz" class="section level2">
+<h2><span class="header-section-number">3.4</span> Relación entre variables categóricas: Gráfico de Matriz</h2>
 <p>Este tipo de gráfico representa un mapa de calor bidimensional que muestra la frecuencia que existe entre 2 variables dentro de la base de datos.</p>
 <p>Para poder desarrollar la visualización es necesario elegir 3 variables:</p>
 <p><strong>x</strong>: variable a ubicar en el eje X</p>
@@ -483,9 +483,8 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-92-1.png" width="1050" /></p>
 <p>En GBA la mayor cantidad se ve en Tigre con 3 ambientes, seguida por 2 y 4. También hay varias propiedades de 2 y 3 ambientes en La Plata.</p>
 </div>
-<div id="gráfico-de-barras" class="section level2">
-<h2><span class="header-section-number">3.6</span> Gráfico de Barras</h2>
-<p><strong>Relación entre variable numérica y categórica</strong></p>
+<div id="relación-entre-variable-numérica-y-categórica-gráfico-de-barras" class="section level2">
+<h2><span class="header-section-number">3.5</span> Relación entre variable numérica y categórica: Gráfico de Barras</h2>
 <p>El gráfico de barras representa, a partir de la longitud de las barras, el valor numérico (eje Y) asociado a cada entidad de la variable categórica (eje X).</p>
 <p>Al igual que en el resto de visualizaciones, es necesario elegir una variable para el eje X y otra para el eje Y (acá se llama weight). Sin embargo, si no asignamos ninguna variable numérica a weight, el gráfico automáticamente va a calcular cuantas veces aparece cada categoría en la base de datos.</p>
 <p>Por ejemplo, veamos cuantas observaciones hay por tipo de operación:</p>

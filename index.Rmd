@@ -67,29 +67,3 @@ Análisis y Visualización de Información Geográfica.
 ¿Dónde se ubican los datos? ¿Cómo se distribuyen en el territorio? ¿Presentan algún patrón espacial?
 
 Análisis exploratorio de datos espaciales. Adquirir conocimiento de las herramientas básicas del paquete *sf* para manipular información geográfica teniendo en cuenta formatos, sistemas de coordenadas y proyecciones. Generación de mapas temáticos con *ggplot*.
-
-**Módulo 5: GEOPROCESAMIENTO**
-
-Procesamiento, manipulación y transformación de datos geoespaciales.
-
-Realizar múltiples operaciones para generar información: medir distancias o superficies, calcular áreas de influencia, superponer capas, etc.
-
-Descarga de mapas base y visualización interactiva de datos espaciales.
-
-**Módulo 6: CONEXIÓN A NUEVOS DATOS**
-
-Obtener nuevos datos a partir de la conexión a repositorios online que permiten descargar información espacial: el caso de Open Street Map (OSM).
-
-Generación de información a partir del procesamiento de los datos. Visualización y análisis de resultados.
-
-**Módulo 7: DINÁMICAS ESPACIO TEMPORAL**
-
-Procesar y manipular datos espaciales y temporales con el paquete *lubridate*.
-
-¿Cómo cambian los datos en el tiempo? Detectar dinámicas y patrones a partir de la incorporación del factor tiempo.
-
-**Módulo 8: PREDICCIÓN DE FENÓMENOS**
-
-¿Qué es Machine Learning? ¿Para qué sirve?
-
-Introducción al aprendizaje automático supervisado para predecir fenómenos urbanos a partir del análisis de datos históricos. El paquete *randomForest*.
