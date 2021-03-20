@@ -1,27 +1,110 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.23)  23 SEP 2020 20:10
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.3.20)  20 MAR 2021 17:15
 entering extended mode
-**./manual-big-data-urbana.tex
-(manual-big-data-urbana.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-06-18> (C:\Users\27356214477\AppData\Local\Programs\
-MiKTeX\tex/latex/base\book.cls
-Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
-(C:\Users\27356214477\AppData\Local\Programs\MiKTeX\tex/latex/base\bk10.clo
-File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**manual-big-data-urbana.tex
+(./manual-big-data-urbana.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/book.cl
+s
+Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/bk10.cl
+o
+File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count163
-\c@chapter=\count164
-\c@section=\count165
-\c@subsection=\count166
-\c@subsubsection=\count167
-\c@paragraph=\count168
-\c@subparagraph=\count169
-\c@figure=\count170
-\c@table=\count171
+\c@part=\count175
+\c@chapter=\count176
+\c@section=\count177
+\c@subsection=\count178
+\c@subsubsection=\count179
+\c@paragraph=\count180
+\c@subparagraph=\count181
+\c@figure=\count182
+\c@table=\count183
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen134
-) (C:\Users\27356214477\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+\bibindent=\dimen138
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsm
+ath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip49
+For additional information on amsmath, use the `?' option.
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amst
+ext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsg
+en.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen139
+))
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsb
+sy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amso
+pn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count184
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count185
+\leftroot@=\count186
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count187
+\DOTSCASE@=\count188
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count189
+\c@MaxMatrixCols=\count190
+\dotsspace@=\muskip16
+\c@parentequation=\count191
+\dspbrk@lvl=\count192
+\tag@help=\toks16
+\row@=\count193
+\column@=\count194
+\maxfields@=\count195
+\andhelp@=\toks17
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks18
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/ams
+symb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/ams
+fonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.s
+ty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -56,98 +139,4344 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-(C:\Users\27356214477\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.
-sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(C:\Users\27356214477\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts
-.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks15
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(C:\Users\27356214477\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.s
-ty
-Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip49
-For additional information on amsmath, use the `?' option.
-
-(C:\Users\27356214477\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.s
-ty
-Package: amstext 2000/06/29 v2.01 AMS text
-
-(C:\Users\27356214477\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.st
-y
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
-\ex@=\dimen135
-))
-(C:\Users\27356214477\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.st
-y
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen136
-)
-(C:\Users\27356214477\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.st
-y
-Package: amsopn 2016/03/08 v2.02 operator names
-)
-\inf@bad=\count172
-LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count173
-\leftroot@=\count174
-LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count175
-\DOTSCASE@=\count176
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box45
-\strutbox@=\box46
-\big@size=\dimen137
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count177
-\c@MaxMatrixCols=\count178
-\dotsspace@=\muskip16
-\c@parentequation=\count179
-\dspbrk@lvl=\count180
-\tag@help=\toks17
-\row@=\count181
-\column@=\count182
-\maxfields@=\count183
-\andhelp@=\toks18
-\eqnshift@=\dimen138
-\alignsep@=\dimen139
-\tagshift@=\dimen140
-\tagwidth@=\dimen141
-\totwidth@=\dimen142
-\lineht@=\dimen143
-\@envbody=\toks19
-\multlinegap=\skip50
-\multlinetaggap=\skip51
-\mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2859.
-LaTeX Info: Redefining \] on input line 2860.
-)
-(C:\Users\27356214477\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.s
-ty
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifxe
+tex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 
-(C:\Users\27356214477\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifte
+x.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-(C:\Users\27356214477\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.
-sty
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iflu
+atex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math
+/unicode-math.sty
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/exp
+l3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
 
-! Sorry, but C:\Users\273562~1\AppData\Local\Programs\MiKTeX\miktex\bin\x64\xelatex.exe did not succeed.
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3
+backend-xetex.def
+File: l3backend-xetex.def 2021-03-18 L3 backend support: XeTeX
+(|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count196
+\l__color_backend_stack_int=\count197
+\g__color_backend_stack_int=\count198
+\g__graphics_track_int=\count199
+\l__pdf_internal_box=\box49
+\g__pdf_backend_object_int=\count266
+\g__pdf_backend_annotation_int=\count267
+\g__pdf_backend_link_int=\count268
+))
+Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
 
-! The log file hopefully contains the information to get MiKTeX going again:
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math
+/unicode-math-xetex.sty
+Package: unicode-math-xetex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLa
+TeX
 
-!   C:\Users\27356214477\AppData\Local\MiKTeX\miktex\log\xelatex.log
-! xelatex: major issue: So far, you have not checked for MiKTeX updates.
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/x
+parse/xparse.sty
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/x
+parse/xparse-2020-10-01.sty
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/x
+parse/xparse-generic.tex)))
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l
+3keys2e/l3keys2e.sty
+Package: l3keys2e 2021-03-12 LaTeX2e option processing using LaTeX3 keys
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fon
+tspec.sty
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fon
+tspec-xetex.sty
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count269
+\l__fontspec_language_int=\count270
+\l__fontspec_strnum_int=\count271
+\l__fontspec_tmp_int=\count272
+\l__fontspec_tmpa_int=\count273
+\l__fontspec_tmpb_int=\count274
+\l__fontspec_tmpc_int=\count275
+\l__fontspec_em_int=\count276
+\l__fontspec_emdef_int=\count277
+\l__fontspec_strong_int=\count278
+\l__fontspec_strongdef_int=\count279
+\l__fontspec_tmpa_dim=\dimen148
+\l__fontspec_tmpb_dim=\dimen149
+\l__fontspec_tmpc_dim=\dimen150
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc
+.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fon
+tspec.cfg)))
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.
+sty
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.
+def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+\g__um_fam_int=\count280
+\g__um_fonts_used_int=\count281
+\l__um_primecount_int=\count282
+\g__um_primekern_muskip=\muskip17
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math
+/unicode-math-table.tex)))
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolo
+r.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg
+/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def
+/xetex.def
+File: xetex.def 2020/08/26 v5.0i Graphics/color driver for xetex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyp
+erref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/lt
+xcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds
+/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/
+infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/key
+val.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/
+kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefineke
+ys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/
+pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hyco
+lor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/
+letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxh
+ook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kv
+options.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen151
+\Hy@linkcounter=\count283
+\Hy@pagecounter=\count284
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1
+enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyp
+erref-langpatches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+nguages
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/in
+tcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/e
+texcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count285
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pue
+nc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count286
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen152
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bit
+set.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc
+/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count287
+\Field@Width=\dimen153
+\Fld@charsize=\dimen154
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegsh
+i-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count288
+\c@Item=\count289
+\c@Hfootnote=\count290
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxe
+tex.def
+File: hxetex.def 2021-02-27 v7.00k Hyperref driver for XeTeX
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/
+stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box50
+\c@Hy@AnnotLevel=\count291
+\HyField@AnnotCount=\count292
+\Fld@listcount=\count293
+\c@bookmark@seq@number=\count294
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfileche
+ck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atverye
+nd-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecoun
+ter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip52
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fan
+cyvrb.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count295
+\FV@InFile=\read2
+\FV@TabBox=\box51
+\c@FancyVerbLine=\count296
+\FV@StepNumber=\count297
+\FV@OutFile=\write3
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/frame
+d.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip53
+\fb@frw=\dimen155
+\fb@frh=\dimen156
+\FrameRule=\dimen157
+\FrameSep=\dimen158
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longta
+ble.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip54
+\LTright=\skip55
+\LTpre=\skip56
+\LTpost=\skip57
+\LTchunksize=\count298
+\LTcapwidth=\dimen159
+\LT@head=\box52
+\LT@firsthead=\box53
+\LT@foot=\box54
+\LT@lastfoot=\box55
+\LT@cols=\count299
+\LT@rows=\count300
+\c@LT@tables=\count301
+\c@LT@chunks=\count302
+\LT@p@ftn=\toks21
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/boo
+ktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen160
+\lightrulewidth=\dimen161
+\cmidrulewidth=\dimen162
+\belowrulesep=\dimen163
+\belowbottomsep=\dimen164
+\aboverulesep=\dimen165
+\abovetopsep=\dimen166
+\cmidrulesep=\dimen167
+\cmidrulekern=\dimen168
+\defaultaddspace=\dimen169
+\@cmidla=\count303
+\@cmidlb=\count304
+\@aboverulesep=\dimen170
+\@belowrulesep=\dimen171
+\@thisruleclass=\count305
+\@lastruleclass=\count306
+\@thisrulewidth=\dimen172
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.
+sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen173
+\ar@mcellbox=\box56
+\extrarowheight=\dimen174
+\NC@list=\toks22
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box57
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.s
+ty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count307
+\calc@Bcount=\count308
+\calc@Adimen=\dimen175
+\calc@Bdimen=\dimen176
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count309
+\calc@Cskip=\skip62
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/eto
+olbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count310
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtools/foo
+tnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box58
+\fn@width=\dimen177
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/gra
+phicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/gra
+phics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/tri
+g.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg
+/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 105.
+)
+\Gin@req@height=\dimen178
+\Gin@req@width=\dimen179
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/
+polyglossia.sty
+Package: polyglossia 2021/03/16 v1.52 Modern multilingual typesetting with XeLa
+TeX and LuaLaTeX
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecmds/mak
+ecmds.sty
+Package: makecmds 2009/09/03 v1.0a extra command making commands
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xkeyval/xkey
+val.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xk
+eyval.tex
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xk
+vutils.tex
+\XKV@toks=\toks23
+\XKV@tempa@toks=\toks24
+)
+\XKV@depth=\count311
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\xpg@normalclass=\XeTeXcharclass1
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/
+gloss-latex.ldf
+File: gloss-latex.ldf polyglossia: module for default language
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}.
+)
+Package polyglossia Info: Default language is latex.
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/polyglossia/
+gloss-spanish.ldf
+File: gloss-spanish.ldf polyglossia: module for spanish
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {spanish/script}  =>  {latin}
+>  {spanish/lcscript}  =>  {latin}
+>  {spanish/scripttag}  =>  {}
+>  {spanish/language}  =>  {Spanish}
+>  {spanish/langtag}  =>  {ESP}
+>  {spanish/bcp47}  =>  {es-ES}
+>  {spanish/hyphennames}  =>  {spanish}
+>  {spanish/direction}  =>  {LR}
+>  {spanish/hyphenmins}  =>  {2,2}
+>  {spanish/frenchspacing}  =>  {true}
+>  {spanish/indentfirst}  =>  {true}
+>  {spanish/fontsetup}  =>  {true}
+>  {spanish/envname}  =>  {spanish}
+>  {spanish/babelname}  =>  {spanish}
+>  {spanish/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {spanish/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {spanish/totalhyphenmin}  =>  {5}.
+
+Package polyglossia Warning: No hyphenation patterns were loaded for `spanish'
+(polyglossia)                I will use \language=\l@nohyphenation instead on i
+nput line 13.
+
+\l@spanish = a dialect from \language\l@nohyphenation 
+Package polyglossia Info: Option: spanish, variant=spanish.
+Package polyglossia Info: Option: Spanish, spanishoperators=none.
+)
+Package polyglossia Info: Default language is spanish.
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/natbib/natbi
+b.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip63
+\bibsep=\skip64
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count312
+) (./manual-big-data-urbana.aux
+LaTeX Info: Redefining \rmfamily on input line 20.
+LaTeX Info: Redefining \sffamily on input line 20.
+LaTeX Info: Redefining \ttfamily on input line 20.
+)
+\openout1 = `manual-big-data-urbana.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 141.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 141.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 141.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 141.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 141.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 141.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 141.
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:scri
+pt=math;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:scri
+pt=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 141.
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmode
+rn-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:s
+cript=math;language=dflt;"<6-8.5>s*[0.9999964596882403]"[latinmodern-math.otf]/
+OT:script=math;language=dflt;+ssty=0;"<-6>s*[0.9999964596882403]"[latinmodern-m
+ath.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:scri
+pt=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 141.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 141.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
+ line 141.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 141.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
+t line 141.
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 1.000096459334209.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmode
+rn-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustment={\f
+ontdimen
+(fontspec)             8\font =6.77pt\relax \fontdimen 9\font =3.94pt\relax
+(fontspec)             \fontdimen 10\font =4.44pt\relax \fontdimen 11\font
+(fontspec)             =6.86pt\relax \fontdimen 12\font =3.45pt\relax
+(fontspec)             \fontdimen 13\font =3.63pt\relax \fontdimen 14\font
+(fontspec)             =3.63pt\relax \fontdimen 15\font =2.89pt\relax
+(fontspec)             \fontdimen 16\font =2.47pt\relax \fontdimen 17\font
+(fontspec)             =2.47pt\relax \fontdimen 18\font =2.5pt\relax
+(fontspec)             \fontdimen 19\font =2.0pt\relax \fontdimen 22\font
+(fontspec)             =2.5pt\relax \fontdimen 20\font =0pt\relax \fontdimen
+(fontspec)             21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[1.000096459334209]"[latinmodern-math.otf]/OT:sc
+ript=math;language=dflt;"<6-8.5>s*[1.000096459334209]"[latinmodern-math.otf]/OT
+:script=math;language=dflt;+ssty=0;"<-6>s*[1.000096459334209]"[latinmodern-math
+.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =6.77pt\relax \fontdimen 9\font
+(fontspec)             =3.94pt\relax \fontdimen 10\font =4.44pt\relax
+(fontspec)             \fontdimen 11\font =6.86pt\relax \fontdimen 12\font
+(fontspec)             =3.45pt\relax \fontdimen 13\font =3.63pt\relax
+(fontspec)             \fontdimen 14\font =3.63pt\relax \fontdimen 15\font
+(fontspec)             =2.89pt\relax \fontdimen 16\font =2.47pt\relax
+(fontspec)             \fontdimen 17\font =2.47pt\relax \fontdimen 18\font
+(fontspec)             =2.5pt\relax \fontdimen 19\font =2.0pt\relax \fontdimen
+(fontspec)             22\font =2.5pt\relax \fontdimen 20\font =0pt\relax
+(fontspec)             \fontdimen 21\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.000096459334209]"[latinmodern-math.otf]/OT:scrip
+t=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =6.77pt\relax \fontdimen 9\font
+(fontspec)             =3.94pt\relax \fontdimen 10\font =4.44pt\relax
+(fontspec)             \fontdimen 11\font =6.86pt\relax \fontdimen 12\font
+(fontspec)             =3.45pt\relax \fontdimen 13\font =3.63pt\relax
+(fontspec)             \fontdimen 14\font =3.63pt\relax \fontdimen 15\font
+(fontspec)             =2.89pt\relax \fontdimen 16\font =2.47pt\relax
+(fontspec)             \fontdimen 17\font =2.47pt\relax \fontdimen 18\font
+(fontspec)             =2.5pt\relax \fontdimen 19\font =2.0pt\relax \fontdimen
+(fontspec)             22\font =2.5pt\relax \fontdimen 20\font =0pt\relax
+(fontspec)             \fontdimen 21\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 141.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
+t line 141.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 141.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
+t line 141.
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9999964596882403.
+
+
+Package fontspec Info: latinmodern-math scale = 0.9998964600422715.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},Sm
+allCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmode
+rn-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScri
+ptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\f
+ontdimen
+(fontspec)             8\font =0.4pt\relax \fontdimen 9\font =2.0pt\relax
+(fontspec)             \fontdimen 10\font =1.67pt\relax \fontdimen 11\font
+(fontspec)             =1.11pt\relax \fontdimen 12\font =6.0pt\relax
+(fontspec)             \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[0.9998964600422715]"[latinmodern-math.otf]/OT:s
+cript=math;language=dflt;"<6-8.5>s*[0.9998964600422715]"[latinmodern-math.otf]/
+OT:script=math;language=dflt;+ssty=0;"<-6>s*[0.9998964600422715]"[latinmodern-m
+ath.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.4pt\relax \fontdimen 9\font
+(fontspec)             =2.0pt\relax \fontdimen 10\font =1.67pt\relax
+(fontspec)             \fontdimen 11\font =1.11pt\relax \fontdimen 12\font
+(fontspec)             =6.0pt\relax \fontdimen 13\font =0pt\relax 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9998964600422715]"[latinmodern-math.otf]/OT:scri
+pt=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 8\font =0.4pt\relax \fontdimen 9\font
+(fontspec)             =2.0pt\relax \fontdimen 10\font =1.67pt\relax
+(fontspec)             \fontdimen 11\font =1.11pt\relax \fontdimen 12\font
+(fontspec)             =6.0pt\relax \fontdimen 13\font =0pt\relax 
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 1
+41.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
+t line 141.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 141
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
+t line 141.
+Package hyperref Info: Link coloring OFF on input line 141.
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nam
+eref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/ref
+count.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlest
+ring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count313
+)
+LaTeX Info: Redefining \ref on input line 141.
+LaTeX Info: Redefining \pageref on input line 141.
+LaTeX Info: Redefining \nameref on input line 141.
+(./manual-big-data-urbana.out) (./manual-big-data-urbana.out)
+\@outlinefile=\write4
+\openout4 = `manual-big-data-urbana.out'.
+
+LaTeX Info: Redefining \rmfamily on input line 141.
+LaTeX Info: Redefining \sffamily on input line 141.
+LaTeX Info: Redefining \ttfamily on input line 141.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 143.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 143.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 143.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+43.
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 12.0011pt on input line 143.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.00073pt on input line 143.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00055pt on input line 143.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 11.99872pt on input line 143.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.99915pt on input line 143.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 143.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 143
+.
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/ums
+a.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 143
+.
+
+(c:/Users/27356214477/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/ums
+b.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+
+] [2
+
+] (./manual-big-data-urbana.toc
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 3.
+
+Underfull \hbox (badness 1253) in paragraph at lines 23--23
+ [][] [][]\TU/lmr/m/n/10 Distribución de valores continuos asociados a una vari
+able 
+ []
+
+[3])
+\tf@toc=\write5
+\openout5 = `manual-big-data-urbana.toc'.
+
+[4]
+Underfull \hbox (badness 4048) in paragraph at lines 158--159
+\TU/lmr/m/n/10 diversas variables territoriales (sociodemográficas, mercado inm
+obiliario,
+ []
+
+
+Underfull \hbox (badness 4492) in paragraph at lines 158--159
+\TU/lmr/m/n/10 actividad económica, transporte, movilidad, salud, educación, et
+c), la
+ []
+
+File: images/logos.jpg Graphic file (type bmp)
+<images/logos.jpg>
+[5
+
+]
+Underfull \hbox (badness 2142) in paragraph at lines 203--204
+[]\TU/lmr/m/n/10 Análisis exploratorio de datos espaciales. Adquirir conocimien
+to de las
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 203--204
+\TU/lmr/m/n/10 teniendo en cuenta formatos, sistemas de coordenadas y proyeccio
+nes.
+ []
+
+[6]
+Capítulo 1.
+File: images/000_0.jpg Graphic file (type bmp)
+<images/000_0.jpg>
+[7
+
+]
+Underfull \hbox (badness 1082) in paragraph at lines 236--237
+[]\TU/lmr/m/n/10 Este panel es en el que vamos a estar creando y modificando nu
+estro
+ []
+
+[8]
+File: images/000.jpg Graphic file (type bmp)
+<images/000.jpg>
+File: images/000_1.jpg Graphic file (type bmp)
+<images/000_1.jpg>
+[9]
+File: images/001.jpg Graphic file (type bmp)
+<images/001.jpg>
+File: images/002.jpg Graphic file (type bmp)
+<images/002.jpg>
+
+Underfull \hbox (badness 1033) in paragraph at lines 323--325
+\TU/lmr/m/n/10 Properati, un portal web de compra, venta y alquiler de inmueble
+s en
+ []
+
+[10]
+Overfull \hbox (17.25pt too wide) in paragraph at lines 391--391
+[]\TU/lmtt/m/n/10 ##  [1] "created_on"      "provincia"       "partido"        
+ "rooms"[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 391--391
+[]\TU/lmtt/m/n/10 ##  [5] "surface_total"   "surface_covered" "price"          
+ "currency"[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 391--391
+[]\TU/lmtt/m/n/10 ##  [9] "title"           "property_type"   "operation_type" 
+ "lat"[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 432--432
+[]\TU/lmtt/m/n/10 ##   created_on provincia       partido rooms surface_total s
+urface_covered price[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 432--432
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA      Comuna 7     1            40  
+            37 22500[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 432--432
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA     Comuna 13     1            30  
+            30 18000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 432--432
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA     Comuna 13     1            31  
+            29 17900[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 432--432
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA      Comuna 1     1            35  
+            35 42000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 432--432
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA Vicente López     1            36  
+            27 19000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 432--432
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA    La Matanza     2            24  
+            24 12000[] 
+ []
+
+[11]
+Overfull \hbox (85.5pt too wide) in paragraph at lines 432--432
+[]\TU/lmtt/m/n/10 ##                                                           
+                title[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 432--432
+[]\TU/lmtt/m/n/10 ## 1                                                         
+Departamento - Flores[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 432--432
+[]\TU/lmtt/m/n/10 ## 2                         Retasado! Monoambiente en Nuñez,
+ excelente ubicación![] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 432--432
+[]\TU/lmtt/m/n/10 ## 3                                                       De
+partamento - Belgrano[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 432--432
+[]\TU/lmtt/m/n/10 ## 4                              Monoambiente con cochera. Z
+encity. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 432--432
+[]\TU/lmtt/m/n/10 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y v
+ista cochera optativa[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 432--432
+[]\TU/lmtt/m/n/10 ## 6                                                        P
+H - Lomas Del Mirador[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 475--475
+[]\TU/lmtt/m/n/10 ##    created_on     provincia        partido         rooms  
+      surface_total[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 475--475
+[]\TU/lmtt/m/n/10 ##  Min.   :202006   CABA:8896   Comuna 14:2001   Min.   : 1.
+000   Min.   :  10[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 475--475
+[]\TU/lmtt/m/n/10 ##  1st Qu.:202006   GBA :6033   Tigre    :1222   1st Qu.: 2.
+000   1st Qu.:  51[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 475--475
+[]\TU/lmtt/m/n/10 ##  Median :202006               Comuna 13:1193   Median : 3.
+000   Median :  75[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 475--475
+[]\TU/lmtt/m/n/10 ##  Mean   :202006               Comuna 15:1077   Mean   : 3.
+057   Mean   : 117[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 475--475
+[]\TU/lmtt/m/n/10 ##  3rd Qu.:202007               Comuna 2 : 853   3rd Qu.: 4.
+000   3rd Qu.: 130[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 475--475
+[]\TU/lmtt/m/n/10 ##  Max.   :202007               Comuna 1 : 765   Max.   :10.
+000   Max.   :5000[] 
+ []
+
+[12]
+Overfull \hbox (6.75pt too wide) in paragraph at lines 475--475
+[]\TU/lmtt/m/n/10 ##       property_type    operation_type       lat           
+   lon[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 475--475
+[]\TU/lmtt/m/n/10 ##  Casa        : 2297   Alquiler: 3251   Min.   :-35.12   Mi
+n.   :-59.04[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 475--475
+[]\TU/lmtt/m/n/10 ##  Departamento:11344   Venta   :11678   1st Qu.:-34.61   1s
+t Qu.:-58.53[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 475--475
+[]\TU/lmtt/m/n/10 ##  PH          : 1288                    Median :-34.59   Me
+dian :-58.45[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 475--475
+[]\TU/lmtt/m/n/10 ##                                        Mean   :-34.59   Me
+an   :-58.47[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 475--475
+[]\TU/lmtt/m/n/10 ##                                        3rd Qu.:-34.55   3r
+d Qu.:-58.41[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 475--475
+[]\TU/lmtt/m/n/10 ##                                        Max.   :-34.26   Ma
+x.   :-57.83[] 
+ []
+
+
+Overfull \hbox (185.25pt too wide) in paragraph at lines 515--515
+[]\TU/lmtt/m/n/10 ##  $ created_on     : int  202006 202006 202006 202006 20200
+6 202006 202006 202006 202006 202006 ...[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 515--515
+[]\TU/lmtt/m/n/10 ##  $ provincia      : Factor w/ 2 levels "CABA","GBA": 1 1 1
+ 1 2 2 2 1 1 1 ...[] 
+ []
+
+
+Overfull \hbox (159.0pt too wide) in paragraph at lines 515--515
+[]\TU/lmtt/m/n/10 ##  $ partido        : Factor w/ 50 levels "Almirante Brown",
+..: 18 10 10 6 50 31 27 10 10 6 ...[] 
+ []
+
+
+Overfull \hbox (132.75pt too wide) in paragraph at lines 515--515
+[]\TU/lmtt/m/n/10 ##  $ price          : int  22500 18000 17900 42000 19000 120
+00 15000 32000 26000 14000 ...[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 515--515
+[]\TU/lmtt/m/n/10 ##  $ currency       : Factor w/ 2 levels "ARS","USD": 1 1 1 
+1 1 1 1 1 1 1 ...[] 
+ []
+
+
+Overfull \hbox (526.5pt too wide) in paragraph at lines 515--515
+[]\TU/lmtt/m/n/10 ##  $ title          : Factor w/ 10634 levels "- Casa Venta T
+ipo Chalet 5 Amb con Cochera - Villa Pueyrredo",..: 2864 8265 2810 7014 1091 76
+46 7622 4885 8682 2741 ...[] 
+ []
+
+
+Overfull \hbox (132.75pt too wide) in paragraph at lines 515--515
+[]\TU/lmtt/m/n/10 ##  $ property_type  : Factor w/ 3 levels "Casa","Departament
+o",..: 2 2 2 2 2 3 3 2 2 2 ...[] 
+ []
+
+[13]
+Overfull \hbox (101.25pt too wide) in paragraph at lines 515--515
+[]\TU/lmtt/m/n/10 ##  $ operation_type : Factor w/ 2 levels "Alquiler","Venta":
+ 1 1 1 1 1 1 1 1 1 1 ...[] 
+ []
+
+
+Underfull \hbox (badness 1540) in paragraph at lines 523--525
+\TU/lmr/m/n/10 sin decimales como por ejemplo cantidad de habitaciones de una
+ []
+
+
+Underfull \hbox (badness 3536) in paragraph at lines 527--528
+[]\TU/lmr/bx/n/10 Factor \TU/lmr/m/n/10 son categorías, por ejemplo Barrios, Pa
+rtidos, Tipos de
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 555--555
+[]\TU/lmtt/m/n/10 ##  Factor w/ 3 levels "Casa","Departamento",..: 2 2 2 2 2 3 
+3 2 2 2 ...[] 
+ []
+
+File: images/004.jpg Graphic file (type bmp)
+<images/004.jpg>
+[14] [15] [16
+
+]
+Capítulo 2.
+File: images/005.jpg Graphic file (type bmp)
+<images/005.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[17]
+File: images/tidyverse_filtrar.jpg Graphic file (type bmp)
+<images/tidyverse_filtrar.jpg>
+[18]
+Overfull \hbox (59.25pt too wide) in paragraph at lines 660--660
+[]\TU/lmtt/m/n/10 ##   created_on provincia   partido rooms surface_total surfa
+ce_covered price[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 660--660
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA  Comuna 7     1            40      
+        37 22500[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 660--660
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA Comuna 13     1            30      
+        30 18000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 660--660
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA Comuna 13     1            31      
+        29 17900[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 660--660
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA  Comuna 1     1            35      
+        35 42000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 660--660
+[]\TU/lmtt/m/n/10 ## 5     202006      CABA Comuna 13     2            60      
+        50 32000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 660--660
+[]\TU/lmtt/m/n/10 ## 6     202006      CABA Comuna 13     2            53      
+        44 26000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 660--660
+[]\TU/lmtt/m/n/10 ##   currency                                                
+           title[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 660--660
+[]\TU/lmtt/m/n/10 ## 1      ARS                                           Depar
+tamento - Flores[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 660--660
+[]\TU/lmtt/m/n/10 ## 2      ARS           Retasado! Monoambiente en Nuñez, exce
+lente ubicación![] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 660--660
+[]\TU/lmtt/m/n/10 ## 3      ARS                                         Departa
+mento - Belgrano[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 660--660
+[]\TU/lmtt/m/n/10 ## 4      ARS                Monoambiente con cochera. Zencit
+y. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 660--660
+[]\TU/lmtt/m/n/10 ## 5      ARS Depto 2AMB c/ Suite y Toilette  - Deheza 1600 -
+ Incluye Cochera[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 660--660
+[]\TU/lmtt/m/n/10 ## 6      ARS       Unico 2 ambientes A Estrenar! Posesion in
+mediata! - Nuñez[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 694--694
+[]\TU/lmtt/m/n/10 ##   created_on provincia   partido rooms surface_total surfa
+ce_covered price[] 
+ []
+
+[19]
+Overfull \hbox (59.25pt too wide) in paragraph at lines 694--694
+[]\TU/lmtt/m/n/10 ## 1     202007       GBA     Tigre     2           108      
+        69 20000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 694--694
+[]\TU/lmtt/m/n/10 ## 2     202007       GBA     Tigre     2            57      
+        45 27500[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 694--694
+[]\TU/lmtt/m/n/10 ## 3     202007      CABA Comuna 14     1            45      
+        40 23000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 694--694
+[]\TU/lmtt/m/n/10 ## 4     202007      CABA Comuna 14     2            48      
+        48 30000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 694--694
+[]\TU/lmtt/m/n/10 ## 5     202007      CABA Comuna 14     2            42      
+        37 26000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 694--694
+[]\TU/lmtt/m/n/10 ## 6     202007      CABA Comuna 15     2            41      
+        38 21000[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 694--694
+[]\TU/lmtt/m/n/10 ##   currency                                                
+            title[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 694--694
+[]\TU/lmtt/m/n/10 ## 1      ARS DEPARTAMENTO EN ALQUILER EN NORDELTA 2 AMB CON 
+TERRAZA Y JACUZZI[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 694--694
+[]\TU/lmtt/m/n/10 ## 2      ARS        2 ambientes con cochera y baulera - Vist
+a al Lago Central[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 694--694
+[]\TU/lmtt/m/n/10 ## 3      ARS                  Departamento en Alquiler con B
+alcón y Amenities[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 694--694
+[]\TU/lmtt/m/n/10 ## 4      ARS   Botánico - 2 ambientes amueblado con vista a 
+Boulevard Cerviño[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 694--694
+[]\TU/lmtt/m/n/10 ## 5      ARS                                           Depar
+tamento - Palermo[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 694--694
+[]\TU/lmtt/m/n/10 ## 6      ARS               Departamento de 2 ambientes en Al
+quiler en Palermo[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 761--761
+[]\TU/lmtt/m/n/10 ##   created_on provincia   partido rooms surface_total surfa
+ce_covered  price[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 761--761
+[]\TU/lmtt/m/n/10 ## 1     202006       GBA Ituzaingó     3            75      
+        75  19000[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 761--761
+[]\TU/lmtt/m/n/10 ## 2     202006       GBA     Tigre     3            95      
+        80  42000[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 761--761
+[]\TU/lmtt/m/n/10 ## 3     202006       GBA     Tigre     3            98      
+        90  42000[] 
+ []
+
+[20]
+Overfull \hbox (64.5pt too wide) in paragraph at lines 761--761
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA Comuna 13     3           109      
+        94  90000[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 761--761
+[]\TU/lmtt/m/n/10 ## 5     202006      CABA Comuna 14     3           152      
+       152 240000[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 761--761
+[]\TU/lmtt/m/n/10 ## 6     202006      CABA Comuna 14     3            90      
+        85  80000[] 
+ []
+
+
+Overfull \hbox (185.25pt too wide) in paragraph at lines 761--761
+[]\TU/lmtt/m/n/10 ##                                                           
+                                   title[] 
+ []
+
+
+Overfull \hbox (185.25pt too wide) in paragraph at lines 761--761
+[]\TU/lmtt/m/n/10 ## 1                                            Americana a 6
+ cuadras de la estacion de S.A. de Padua[] 
+ []
+
+
+Overfull \hbox (185.25pt too wide) in paragraph at lines 761--761
+[]\TU/lmtt/m/n/10 ## 2                                   3 AMBIENTES EN EDIFICI
+O MIRADORES DE LA BAHIA CON COCHERA FIJA[] 
+ []
+
+
+Overfull \hbox (185.25pt too wide) in paragraph at lines 761--761
+[]\TU/lmtt/m/n/10 ## 3 ¡EN EXCLUSIVA! Departamento en alquiler de 3 ambientes M
+iradores de La Bahía, Bahía de Nordelta.[] 
+ []
+
+
+Overfull \hbox (185.25pt too wide) in paragraph at lines 761--761
+[]\TU/lmtt/m/n/10 ## 4                                                  Alquile
+r Depto 3 Amb a Estrenar Nuñez C/Cochera[] 
+ []
+
+
+Overfull \hbox (185.25pt too wide) in paragraph at lines 761--761
+[]\TU/lmtt/m/n/10 ## 5           ALQUILER en TORRES DE GELLY 152 m2 con 2 dorm 
+dep y 1 coch ALTO vista Rio  SIN muebles[] 
+ []
+
+
+Overfull \hbox (185.25pt too wide) in paragraph at lines 761--761
+[]\TU/lmtt/m/n/10 ## 6                                    ALQUILER 3 AMB CON DE
+PENDENCIA! - Y COCHERA TORRE AMENITIES!![] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 795--795
+[]\TU/lmtt/m/n/10 ##   created_on provincia            partido rooms surface_to
+tal surface_covered[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 795--795
+[]\TU/lmtt/m/n/10 ## 1     202006       GBA         La Matanza     2           
+ 24              24[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 795--795
+[]\TU/lmtt/m/n/10 ## 2     202006       GBA General San Martín     2           
+ 40              40[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 795--795
+[]\TU/lmtt/m/n/10 ## 3     202006       GBA          Ituzaingó     3           
+ 75              75[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 795--795
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA          Comuna 14     4           
+125             105[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 795--795
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA              Merlo     4           
+180             140[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 795--795
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA              Pilar     4           
+267             267[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 795--795
+[]\TU/lmtt/m/n/10 ##   price currency                                          
+       title[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 795--795
+[]\TU/lmtt/m/n/10 ## 1 12000      ARS                                PH - Lomas
+ Del Mirador[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 795--795
+[]\TU/lmtt/m/n/10 ## 2 15000      ARS                                        PH
+ - Chilavert[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 795--795
+[]\TU/lmtt/m/n/10 ## 3 19000      ARS Americana a 6 cuadras de la estacion de S
+.A. de Padua[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 795--795
+[]\TU/lmtt/m/n/10 ## 4 85000      ARS              PH en alquiler 4 ambientes -
+ Las Cañitas[] 
+ []
+
+[21]
+Overfull \hbox (38.25pt too wide) in paragraph at lines 795--795
+[]\TU/lmtt/m/n/10 ## 5 27000      ARS               Casa en Padua 3 dormitorios
+ en alquiler[] 
+ []
+
+
+Overfull \hbox (38.25pt too wide) in paragraph at lines 795--795
+[]\TU/lmtt/m/n/10 ## 6 50000      ARS              Casa en venta o alquiler en 
+La Peregrina[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 829--829
+[]\TU/lmtt/m/n/10 ##   created_on provincia            partido rooms surface_to
+tal surface_covered[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 829--829
+[]\TU/lmtt/m/n/10 ## 1     202006       GBA         La Matanza     2           
+ 24              24[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 829--829
+[]\TU/lmtt/m/n/10 ## 2     202006       GBA General San Martín     2           
+ 40              40[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 829--829
+[]\TU/lmtt/m/n/10 ## 3     202006       GBA           La Plata     2           
+ 50              50[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 829--829
+[]\TU/lmtt/m/n/10 ## 4     202006       GBA           La Plata     2           
+ 35              35[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 829--829
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA General San Martín     2           
+ 56              48[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 829--829
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA           La Plata     3           
+ 40              40[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 829--829
+[]\TU/lmtt/m/n/10 ##   price currency                                          
+             title[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 829--829
+[]\TU/lmtt/m/n/10 ## 1 12000      ARS                                      PH -
+ Lomas Del Mirador[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 829--829
+[]\TU/lmtt/m/n/10 ## 2 15000      ARS                                          
+    PH - Chilavert[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 829--829
+[]\TU/lmtt/m/n/10 ## 3 18000      ARS Alquiler, depto de un domitorio frente al
+ parque San Martin[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 829--829
+[]\TU/lmtt/m/n/10 ## 4 13500      ARS                                     Depar
+tamento - La Plata[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 829--829
+[]\TU/lmtt/m/n/10 ## 5 14000      ARS                     Departamento céntrico
+ - Villa Ballester[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 829--829
+[]\TU/lmtt/m/n/10 ## 6 10000      ARS                               Departament
+o - José Hernández[] 
+ []
+
+[22]
+Overfull \hbox (80.25pt too wide) in paragraph at lines 870--870
+[]\TU/lmtt/m/n/10 ##   created_on provincia       partido rooms surface_total s
+urface_covered price[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 870--870
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA      Comuna 7     1            40  
+            37 22500[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 870--870
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA     Comuna 13     1            30  
+            30 18000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 870--870
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA     Comuna 13     1            31  
+            29 17900[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 870--870
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA      Comuna 1     1            35  
+            35 42000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 870--870
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA Vicente López     1            36  
+            27 19000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 870--870
+[]\TU/lmtt/m/n/10 ## 6     202006      CABA     Comuna 13     2            60  
+            50 32000[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 870--870
+[]\TU/lmtt/m/n/10 ##                                                           
+                title[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 870--870
+[]\TU/lmtt/m/n/10 ## 1                                                         
+Departamento - Flores[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 870--870
+[]\TU/lmtt/m/n/10 ## 2                         Retasado! Monoambiente en Nuñez,
+ excelente ubicación![] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 870--870
+[]\TU/lmtt/m/n/10 ## 3                                                       De
+partamento - Belgrano[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 870--870
+[]\TU/lmtt/m/n/10 ## 4                              Monoambiente con cochera. Z
+encity. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 870--870
+[]\TU/lmtt/m/n/10 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y v
+ista cochera optativa[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 870--870
+[]\TU/lmtt/m/n/10 ## 6               Depto 2AMB c/ Suite y Toilette  - Deheza 1
+600 - Incluye Cochera[] 
+ []
+
+[23]
+Overfull \hbox (59.25pt too wide) in paragraph at lines 940--940
+[]\TU/lmtt/m/n/10 ##   created_on provincia   partido rooms surface_total surfa
+ce_covered price[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 940--940
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA Comuna 13     1            30      
+        30 18000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 940--940
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA Comuna 13     1            31      
+        29 17900[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 940--940
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA Comuna 13     2            60      
+        50 32000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 940--940
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA Comuna 13     2            53      
+        44 26000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 940--940
+[]\TU/lmtt/m/n/10 ## 5     202006      CABA  Comuna 5     2            45      
+        38 20000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 940--940
+[]\TU/lmtt/m/n/10 ## 6     202006      CABA Comuna 13     2            55      
+        55 45000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 940--940
+[]\TU/lmtt/m/n/10 ##   currency                                                
+           title[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 940--940
+[]\TU/lmtt/m/n/10 ## 1      ARS           Retasado! Monoambiente en Nuñez, exce
+lente ubicación![] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 940--940
+[]\TU/lmtt/m/n/10 ## 2      ARS                                         Departa
+mento - Belgrano[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 940--940
+[]\TU/lmtt/m/n/10 ## 3      ARS Depto 2AMB c/ Suite y Toilette  - Deheza 1600 -
+ Incluye Cochera[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 940--940
+[]\TU/lmtt/m/n/10 ## 4      ARS       Unico 2 ambientes A Estrenar! Posesion in
+mediata! - Nuñez[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 940--940
+[]\TU/lmtt/m/n/10 ## 5      ARS              Departamento de 2 ambientes en Alq
+uiler en Almagro[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 940--940
+[]\TU/lmtt/m/n/10 ## 6      ARS                              BLANCO ENCALADA AL
+ 3000 A ESTRENAR[] 
+ []
+
+[24]
+Overfull \hbox (59.25pt too wide) in paragraph at lines 981--981
+[]\TU/lmtt/m/n/10 ##   created_on provincia   partido rooms surface_total surfa
+ce_covered price[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 981--981
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA Comuna 13     2            60      
+        50 32000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 981--981
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA Comuna 13     2            55      
+        55 45000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 981--981
+[]\TU/lmtt/m/n/10 ## 3     202006       GBA  La Plata     2            50      
+        50 18000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 981--981
+[]\TU/lmtt/m/n/10 ## 4     202006       GBA Ituzaingó     3            75      
+        75 19000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 981--981
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA     Tigre     3            95      
+        80 42000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 981--981
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA     Tigre     3            98      
+        90 42000[] 
+ []
+
+
+Overfull \hbox (185.25pt too wide) in paragraph at lines 981--981
+[]\TU/lmtt/m/n/10 ##                                                           
+                                   title[] 
+ []
+
+
+Overfull \hbox (185.25pt too wide) in paragraph at lines 981--981
+[]\TU/lmtt/m/n/10 ## 1                                  Depto 2AMB c/ Suite y T
+oilette  - Deheza 1600 - Incluye Cochera[] 
+ []
+
+
+Overfull \hbox (185.25pt too wide) in paragraph at lines 981--981
+[]\TU/lmtt/m/n/10 ## 2                                                         
+      BLANCO ENCALADA AL 3000 A ESTRENAR[] 
+ []
+
+
+Overfull \hbox (185.25pt too wide) in paragraph at lines 981--981
+[]\TU/lmtt/m/n/10 ## 3                                      Alquiler, depto de 
+un domitorio frente al parque San Martin[] 
+ []
+
+
+Overfull \hbox (185.25pt too wide) in paragraph at lines 981--981
+[]\TU/lmtt/m/n/10 ## 4                                            Americana a 6
+ cuadras de la estacion de S.A. de Padua[] 
+ []
+
+
+Overfull \hbox (185.25pt too wide) in paragraph at lines 981--981
+[]\TU/lmtt/m/n/10 ## 5                                   3 AMBIENTES EN EDIFICI
+O MIRADORES DE LA BAHIA CON COCHERA FIJA[] 
+ []
+
+
+Overfull \hbox (185.25pt too wide) in paragraph at lines 981--981
+[]\TU/lmtt/m/n/10 ## 6 ¡EN EXCLUSIVA! Departamento en alquiler de 3 ambientes M
+iradores de La Bahía, Bahía de Nordelta.[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1015--1015
+[]\TU/lmtt/m/n/10 ##   created_on provincia   partido rooms surface_total surfa
+ce_covered price[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1015--1015
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA Comuna 13     2            60      
+        50 32000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1015--1015
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA Comuna 13     2            53      
+        44 26000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1015--1015
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA Comuna 12     2            42      
+        37 22000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1015--1015
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA Comuna 14     2            43      
+        33 27000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1015--1015
+[]\TU/lmtt/m/n/10 ## 5     202006      CABA Comuna 13     2            55      
+        55 45000[] 
+ []
+
+[25]
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1015--1015
+[]\TU/lmtt/m/n/10 ## 6     202006      CABA Comuna 14     2            48      
+        48 23000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1015--1015
+[]\TU/lmtt/m/n/10 ##   currency                                                
+           title[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1015--1015
+[]\TU/lmtt/m/n/10 ## 1      ARS Depto 2AMB c/ Suite y Toilette  - Deheza 1600 -
+ Incluye Cochera[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1015--1015
+[]\TU/lmtt/m/n/10 ## 2      ARS       Unico 2 ambientes A Estrenar! Posesion in
+mediata! - Nuñez[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1015--1015
+[]\TU/lmtt/m/n/10 ## 3      ARS                         Depto 2AMB - Av. Balbin
+ 3400 - ALQUILER[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1015--1015
+[]\TU/lmtt/m/n/10 ## 4      ARS                     Dos ambientes con Balcón a 
+Demaría y Patio.[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1015--1015
+[]\TU/lmtt/m/n/10 ## 5      ARS                              BLANCO ENCALADA AL
+ 3000 A ESTRENAR[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1015--1015
+[]\TU/lmtt/m/n/10 ## 6      ARS                                         Departa
+mento - Belgrano[] 
+ []
+
+File: images/tidyverse_seleccionar.jpg Graphic file (type bmp)
+<images/tidyverse_seleccionar.jpg>
+[26]
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1075--1075
+[]\TU/lmtt/m/n/10 ##   created_on provincia       partido rooms surface_total s
+urface_covered price[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1075--1075
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA      Comuna 7     1            40  
+            37 22500[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1075--1075
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA     Comuna 13     1            30  
+            30 18000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1075--1075
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA     Comuna 13     1            31  
+            29 17900[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1075--1075
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA      Comuna 1     1            35  
+            35 42000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1075--1075
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA Vicente López     1            36  
+            27 19000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1075--1075
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA    La Matanza     2            24  
+            24 12000[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1109--1109
+[]\TU/lmtt/m/n/10 ##                                                           
+                title[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1109--1109
+[]\TU/lmtt/m/n/10 ## 1                                                         
+Departamento - Flores[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1109--1109
+[]\TU/lmtt/m/n/10 ## 2                         Retasado! Monoambiente en Nuñez,
+ excelente ubicación![] 
+ []
+
+[27]
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1109--1109
+[]\TU/lmtt/m/n/10 ## 3                                                       De
+partamento - Belgrano[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1109--1109
+[]\TU/lmtt/m/n/10 ## 4                              Monoambiente con cochera. Z
+encity. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1109--1109
+[]\TU/lmtt/m/n/10 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y v
+ista cochera optativa[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1109--1109
+[]\TU/lmtt/m/n/10 ## 6                                                        P
+H - Lomas Del Mirador[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1143--1143
+[]\TU/lmtt/m/n/10 ##                                                           
+                title[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1143--1143
+[]\TU/lmtt/m/n/10 ## 1                                                         
+Departamento - Flores[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1143--1143
+[]\TU/lmtt/m/n/10 ## 2                         Retasado! Monoambiente en Nuñez,
+ excelente ubicación![] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1143--1143
+[]\TU/lmtt/m/n/10 ## 3                                                       De
+partamento - Belgrano[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1143--1143
+[]\TU/lmtt/m/n/10 ## 4                              Monoambiente con cochera. Z
+encity. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1143--1143
+[]\TU/lmtt/m/n/10 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y v
+ista cochera optativa[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1143--1143
+[]\TU/lmtt/m/n/10 ## 6                                                        P
+H - Lomas Del Mirador[] 
+ []
+
+[28]
+Overfull \hbox (48.75pt too wide) in paragraph at lines 1170--1170
+[]\TU/lmtt/m/n/10 ##   created_on provincia       partido rooms surface_total s
+urface_covered[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 1170--1170
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA      Comuna 7     1            40  
+            37[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 1170--1170
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA     Comuna 13     1            30  
+            30[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 1170--1170
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA     Comuna 13     1            31  
+            29[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 1170--1170
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA      Comuna 1     1            35  
+            35[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 1170--1170
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA Vicente López     1            36  
+            27[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 1170--1170
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA    La Matanza     2            24  
+            24[] 
+ []
+
+[29]
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1224--1224
+[]\TU/lmtt/m/n/10 ##                                                           
+                title[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1224--1224
+[]\TU/lmtt/m/n/10 ## 1                                                         
+Departamento - Flores[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1224--1224
+[]\TU/lmtt/m/n/10 ## 2                         Retasado! Monoambiente en Nuñez,
+ excelente ubicación![] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1224--1224
+[]\TU/lmtt/m/n/10 ## 3                                                       De
+partamento - Belgrano[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1224--1224
+[]\TU/lmtt/m/n/10 ## 4                              Monoambiente con cochera. Z
+encity. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1224--1224
+[]\TU/lmtt/m/n/10 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y v
+ista cochera optativa[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1224--1224
+[]\TU/lmtt/m/n/10 ## 6                                                        P
+H - Lomas Del Mirador[] 
+ []
+
+File: images/tidyverse_modificar.jpg Graphic file (type bmp)
+<images/tidyverse_modificar.jpg>
+
+Underfull \vbox (badness 4846) has occurred while \output is active []
+
+[30]
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1292--1292
+[]\TU/lmtt/m/n/10 ##   created_on provincia       partido rooms surface_total s
+urface_covered price[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1292--1292
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA      Comuna 7     1            40  
+            37 22500[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1292--1292
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA     Comuna 13     1            30  
+            30 18000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1292--1292
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA     Comuna 13     1            31  
+            29 17900[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1292--1292
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA      Comuna 1     1            35  
+            35 42000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1292--1292
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA Vicente López     1            36  
+            27 19000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1292--1292
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA    La Matanza     2            24  
+            24 12000[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1292--1292
+[]\TU/lmtt/m/n/10 ##                                                           
+                title[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1292--1292
+[]\TU/lmtt/m/n/10 ## 1                                                         
+Departamento - Flores[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1292--1292
+[]\TU/lmtt/m/n/10 ## 2                         Retasado! Monoambiente en Nuñez,
+ excelente ubicación![] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1292--1292
+[]\TU/lmtt/m/n/10 ## 3                                                       De
+partamento - Belgrano[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1292--1292
+[]\TU/lmtt/m/n/10 ## 4                              Monoambiente con cochera. Z
+encity. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1292--1292
+[]\TU/lmtt/m/n/10 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y v
+ista cochera optativa[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1292--1292
+[]\TU/lmtt/m/n/10 ## 6                                                        P
+H - Lomas Del Mirador[] 
+ []
+
+[31]
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1333--1333
+[]\TU/lmtt/m/n/10 ##   created_on provincia       partido rooms surface_total s
+urface_covered price[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1333--1333
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA      Comuna 7     1            40  
+            37 22500[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1333--1333
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA     Comuna 13     1            30  
+            30 18000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1333--1333
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA     Comuna 13     1            31  
+            29 17900[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1333--1333
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA      Comuna 1     1            35  
+            35 42000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1333--1333
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA Vicente López     1            36  
+            27 19000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1333--1333
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA    La Matanza     2            24  
+            24 12000[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1333--1333
+[]\TU/lmtt/m/n/10 ##                                                           
+                title[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1333--1333
+[]\TU/lmtt/m/n/10 ## 1                                                         
+Departamento - Flores[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1333--1333
+[]\TU/lmtt/m/n/10 ## 2                         Retasado! Monoambiente en Nuñez,
+ excelente ubicación![] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1333--1333
+[]\TU/lmtt/m/n/10 ## 3                                                       De
+partamento - Belgrano[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1333--1333
+[]\TU/lmtt/m/n/10 ## 4                              Monoambiente con cochera. Z
+encity. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1333--1333
+[]\TU/lmtt/m/n/10 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y v
+ista cochera optativa[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1333--1333
+[]\TU/lmtt/m/n/10 ## 6                                                        P
+H - Lomas Del Mirador[] 
+ []
+
+[32]
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ##   created_on provincia       partido rooms surface_total s
+urface_covered price[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA      Comuna 7     1            40  
+            37 22500[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA     Comuna 13     1            30  
+            30 18000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA     Comuna 13     1            31  
+            29 17900[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA      Comuna 1     1            35  
+            35 42000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA Vicente López     1            36  
+            27 19000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA    La Matanza     2            24  
+            24 12000[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ##                                                           
+                title[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 1                                                         
+Departamento - Flores[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 2                         Retasado! Monoambiente en Nuñez,
+ excelente ubicación![] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 3                                                       De
+partamento - Belgrano[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 4                              Monoambiente con cochera. Z
+encity. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y v
+ista cochera optativa[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 6                                                        P
+H - Lomas Del Mirador[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ##   property_type operation_type       lat       lon surface
+_total_cm2[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 1  Departamento       Alquiler -34.61917 -58.46222        
+    400000[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 2  Departamento       Alquiler -34.55460 -58.46652        
+    300000[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 3  Departamento       Alquiler -34.56318 -58.46461        
+    310000[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 4  Departamento       Alquiler -34.61836 -58.36090        
+    350000[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 5  Departamento       Alquiler -34.53344 -58.49345        
+    360000[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 1388--1388
+[]\TU/lmtt/m/n/10 ## 6            PH       Alquiler -34.66253 -58.52914        
+    240000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1431--1431
+[]\TU/lmtt/m/n/10 ##   created_on provincia       partido rooms surface_total s
+urface_covered price[] 
+ []
+
+[33]
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1431--1431
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA      Comuna 7     1            40  
+            37 22500[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1431--1431
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA     Comuna 13     1            30  
+            30 18000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1431--1431
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA     Comuna 13     1            31  
+            29 17900[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1431--1431
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA      Comuna 1     1            35  
+            35 42000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1431--1431
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA Vicente López     1            36  
+            27 19000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1431--1431
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA    La Matanza     2            24  
+            24 12000[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1431--1431
+[]\TU/lmtt/m/n/10 ##                                                           
+                title[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1431--1431
+[]\TU/lmtt/m/n/10 ## 1                                                         
+Departamento - Flores[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1431--1431
+[]\TU/lmtt/m/n/10 ## 2                         Retasado! Monoambiente en Nuñez,
+ excelente ubicación![] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1431--1431
+[]\TU/lmtt/m/n/10 ## 3                                                       De
+partamento - Belgrano[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1431--1431
+[]\TU/lmtt/m/n/10 ## 4                              Monoambiente con cochera. Z
+encity. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1431--1431
+[]\TU/lmtt/m/n/10 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y v
+ista cochera optativa[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1431--1431
+[]\TU/lmtt/m/n/10 ## 6                                                        P
+H - Lomas Del Mirador[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1472--1472
+[]\TU/lmtt/m/n/10 ##   created_on provincia       partido rooms surface_total s
+urface_covered price[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1472--1472
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA      Comuna 7     1            40  
+            37 22500[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1472--1472
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA     Comuna 13     1            30  
+            30 18000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1472--1472
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA     Comuna 13     1            31  
+            29 17900[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1472--1472
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA      Comuna 1     1            35  
+            35 42000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1472--1472
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA Vicente López     1            36  
+            27 19000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1472--1472
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA    La Matanza     2            24  
+            24 12000[] 
+ []
+
+[34]
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1472--1472
+[]\TU/lmtt/m/n/10 ##                                                           
+                title[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1472--1472
+[]\TU/lmtt/m/n/10 ## 1                                                         
+Departamento - Flores[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1472--1472
+[]\TU/lmtt/m/n/10 ## 2                         Retasado! Monoambiente en Nuñez,
+ excelente ubicación![] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1472--1472
+[]\TU/lmtt/m/n/10 ## 3                                                       De
+partamento - Belgrano[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1472--1472
+[]\TU/lmtt/m/n/10 ## 4                              Monoambiente con cochera. Z
+encity. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1472--1472
+[]\TU/lmtt/m/n/10 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y v
+ista cochera optativa[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1472--1472
+[]\TU/lmtt/m/n/10 ## 6                                                        P
+H - Lomas Del Mirador[] 
+ []
+
+[35]
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ##   created_on provincia       partido rooms surface_total s
+urface_covered price[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA      Comuna 7     1            40  
+            37 22500[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA     Comuna 13     1            30  
+            30 18000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA     Comuna 13     1            31  
+            29 17900[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA      Comuna 1     1            35  
+            35 42000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA Vicente López     1            36  
+            27 19000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA    La Matanza     2            24  
+            24 12000[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ##                                                           
+                title[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 1                                                         
+Departamento - Flores[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 2                         Retasado! Monoambiente en Nuñez,
+ excelente ubicación![] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 3                                                       De
+partamento - Belgrano[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 4                              Monoambiente con cochera. Z
+encity. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y v
+ista cochera optativa[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 6                                                        P
+H - Lomas Del Mirador[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ##   property_type operation_type       lat       lon      pr
+ov_partido[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 1  Departamento       Alquiler -34.61917 -58.46222     CAB
+A_Comuna 7[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 2  Departamento       Alquiler -34.55460 -58.46652    CABA
+_Comuna 13[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 3  Departamento       Alquiler -34.56318 -58.46461    CABA
+_Comuna 13[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 4  Departamento       Alquiler -34.61836 -58.36090     CAB
+A_Comuna 1[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 5  Departamento       Alquiler -34.53344 -58.49345 GBA_Vic
+ente López[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 1541--1541
+[]\TU/lmtt/m/n/10 ## 6            PH       Alquiler -34.66253 -58.52914    GBA_
+La Matanza[] 
+ []
+
+File: images/tidyverse_ordenar.jpg Graphic file (type bmp)
+<images/tidyverse_ordenar.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[36]
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1589--1589
+[]\TU/lmtt/m/n/10 ##   created_on provincia   partido rooms surface_total surfa
+ce_covered price[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1589--1589
+[]\TU/lmtt/m/n/10 ## 1     202007      CABA Comuna 15     1            10      
+        10 25000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1589--1589
+[]\TU/lmtt/m/n/10 ## 2     202006       GBA     Tigre     2            12      
+        12 10500[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1589--1589
+[]\TU/lmtt/m/n/10 ## 3     202007      CABA  Comuna 1     1            14      
+        14 35000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1589--1589
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA  Comuna 2     1            15      
+        15 12900[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1589--1589
+[]\TU/lmtt/m/n/10 ## 5     202007      CABA Comuna 15     1            18      
+        18 48000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1589--1589
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA     Morón     1            18      
+        17 35000[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1589--1589
+[]\TU/lmtt/m/n/10 ##                                                           
+           title[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1589--1589
+[]\TU/lmtt/m/n/10 ## 1                             Garage - Cochera Descubierta
+ en Villa Crespo[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1589--1589
+[]\TU/lmtt/m/n/10 ## 2                    Departamento de 2 ambientes en Prader
+a, Santa Barbara[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1589--1589
+[]\TU/lmtt/m/n/10 ## 3                                   VENTA PH 13,84 M2 PANT
+A BAJA BALVANERA[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1589--1589
+[]\TU/lmtt/m/n/10 ## 4                                 Departamento en Alquiler
+ en Barrio Norte[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1589--1589
+[]\TU/lmtt/m/n/10 ## 5                       Venta Monoambiente estudio con ame
+nities Chacarita[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1589--1589
+[]\TU/lmtt/m/n/10 ## 6 Lindo monoambiente en 2do piso por escalera al frente. B
+AJAS EXPENSAS!!![] 
+ []
+
+[37]
+Overfull \hbox (75.0pt too wide) in paragraph at lines 1623--1623
+[]\TU/lmtt/m/n/10 ##   created_on provincia     partido rooms surface_total sur
+face_covered  price[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 1623--1623
+[]\TU/lmtt/m/n/10 ## 1     202007       GBA       Pilar     5          5000    
+         300 120000[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 1623--1623
+[]\TU/lmtt/m/n/10 ## 2     202006       GBA San Vicente     3          4356    
+         150  85000[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 1623--1623
+[]\TU/lmtt/m/n/10 ## 3     202007       GBA       Pilar     6          3780    
+         320 220000[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 1623--1623
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA   Comuna 13     2          3650    
+          35 109500[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 1623--1623
+[]\TU/lmtt/m/n/10 ## 5     202007       GBA       Luján     4          2703    
+         182 370000[] 
+ []
+
+
+Overfull \hbox (75.0pt too wide) in paragraph at lines 1623--1623
+[]\TU/lmtt/m/n/10 ## 6     202007       GBA       Pilar     3          2500    
+          70 121000[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 1623--1623
+[]\TU/lmtt/m/n/10 ##   currency                                                
+         title[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 1623--1623
+[]\TU/lmtt/m/n/10 ## 1      USD                                          Venta 
+de Casa Quinta[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 1623--1623
+[]\TU/lmtt/m/n/10 ## 2      USD España entre Buchard y Esmeralda. Casa en venta
+, San Viciente[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 1623--1623
+[]\TU/lmtt/m/n/10 ## 3      USD            Venta casaquinta Del Viso Residencia
+l Los Jazmines[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 1623--1623
+[]\TU/lmtt/m/n/10 ## 4      USD            Acogedor Departamento de dos ambient
+es en Belgrano[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 1623--1623
+[]\TU/lmtt/m/n/10 ## 5      USD                Casa 3 dormitorios estilo campo 
+Estancias Golf[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 1623--1623
+[]\TU/lmtt/m/n/10 ## 6      USD              VENTA CASA 2 AMBIENTES PILAR 2500 
+M2 DE PARQUE!![] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1664--1664
+[]\TU/lmtt/m/n/10 ##   created_on provincia         partido rooms surface_total
+ surface_covered[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1664--1664
+[]\TU/lmtt/m/n/10 ## 1     202006       GBA Almirante Brown     2            40
+              40[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1664--1664
+[]\TU/lmtt/m/n/10 ## 2     202006       GBA Almirante Brown     2            60
+              60[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1664--1664
+[]\TU/lmtt/m/n/10 ## 3     202006       GBA Almirante Brown     2            50
+              50[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1664--1664
+[]\TU/lmtt/m/n/10 ## 4     202007       GBA Almirante Brown     2            52
+              48[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1664--1664
+[]\TU/lmtt/m/n/10 ## 5     202007       GBA Almirante Brown     2            47
+              47[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1664--1664
+[]\TU/lmtt/m/n/10 ## 6     202007       GBA Almirante Brown     2            50
+              50[] 
+ []
+
+[38]
+Overfull \hbox (143.25pt too wide) in paragraph at lines 1664--1664
+[]\TU/lmtt/m/n/10 ##                                                           
+                           title[] 
+ []
+
+
+Overfull \hbox (143.25pt too wide) in paragraph at lines 1664--1664
+[]\TU/lmtt/m/n/10 ## 1                                                         
+        Departamento en alquiler[] 
+ []
+
+
+Overfull \hbox (143.25pt too wide) in paragraph at lines 1664--1664
+[]\TU/lmtt/m/n/10 ## 2                                                         
+          Departamento - Adrogue[] 
+ []
+
+
+Overfull \hbox (143.25pt too wide) in paragraph at lines 1664--1664
+[]\TU/lmtt/m/n/10 ## 3                                                         
+          Departamento - Adrogue[] 
+ []
+
+
+Overfull \hbox (143.25pt too wide) in paragraph at lines 1664--1664
+[]\TU/lmtt/m/n/10 ## 4 Venta de Departamento 2 ambientes en Hermoso Edificio a 
+metros de Plaza Brown de Adrogué[] 
+ []
+
+
+Overfull \hbox (143.25pt too wide) in paragraph at lines 1664--1664
+[]\TU/lmtt/m/n/10 ## 5                                             DEPARTAMENTO
+ 2 AMBIENTES EN AV ESPORA AL 800[] 
+ []
+
+
+Overfull \hbox (143.25pt too wide) in paragraph at lines 1664--1664
+[]\TU/lmtt/m/n/10 ## 6                                                         
+          Departamento - Adrogue[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1703--1703
+[]\TU/lmtt/m/n/10 ##   created_on provincia         partido rooms surface_total
+ surface_covered[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1703--1703
+[]\TU/lmtt/m/n/10 ## 1     202007       GBA Almirante Brown     8           447
+             189[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1703--1703
+[]\TU/lmtt/m/n/10 ## 2     202006       GBA Almirante Brown     7           670
+             590[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1703--1703
+[]\TU/lmtt/m/n/10 ## 3     202006       GBA Almirante Brown     5           239
+             112[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1703--1703
+[]\TU/lmtt/m/n/10 ## 4     202006       GBA Almirante Brown     5           260
+             120[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1703--1703
+[]\TU/lmtt/m/n/10 ## 5     202007       GBA Almirante Brown     5           370
+             220[] 
+ []
+
+
+Overfull \hbox (59.25pt too wide) in paragraph at lines 1703--1703
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA Almirante Brown     5           180
+             180[] 
+ []
+
+
+Overfull \hbox (153.75pt too wide) in paragraph at lines 1703--1703
+[]\TU/lmtt/m/n/10 ##                                                           
+                             title[] 
+ []
+
+
+Overfull \hbox (153.75pt too wide) in paragraph at lines 1703--1703
+[]\TU/lmtt/m/n/10 ## 1                                         Casa c/2 dptos, 
+local y galpón - Lomas del Mirador[] 
+ []
+
+
+Overfull \hbox (153.75pt too wide) in paragraph at lines 1703--1703
+[]\TU/lmtt/m/n/10 ## 2                                                         
+                    Casa - Adrogue[] 
+ []
+
+
+Overfull \hbox (153.75pt too wide) in paragraph at lines 1703--1703
+[]\TU/lmtt/m/n/10 ## 3 A REFACCIONAR! Casona colonial con gran lote, fondo libr
+e, parrilla, 3 dormitorios 2 baños[] 
+ []
+
+
+Overfull \hbox (153.75pt too wide) in paragraph at lines 1703--1703
+[]\TU/lmtt/m/n/10 ## 4                                         Hermoso Duplex 3
+ dormitorios gran patio 4 cocheras[] 
+ []
+
+
+Overfull \hbox (153.75pt too wide) in paragraph at lines 1703--1703
+[]\TU/lmtt/m/n/10 ## 5                                            Chalet en ven
+ta Barrio Santa Rita -  Longchamps[] 
+ []
+
+
+Overfull \hbox (153.75pt too wide) in paragraph at lines 1703--1703
+[]\TU/lmtt/m/n/10 ## 6                        Casa en Construccion en Venta en 
+Barrio Privado 'Brisas de Adrogue'[] 
+ []
+
+[39]
+File: images/tidyverse_renombrar.jpg Graphic file (type bmp)
+<images/tidyverse_renombrar.jpg>
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 1751--1751
+[]\TU/lmtt/m/n/10 ##   created_on provincia       partido ambientes surface_tot
+al surface_covered[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 1751--1751
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA      Comuna 7         1            
+40              37[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 1751--1751
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA     Comuna 13         1            
+30              30[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 1751--1751
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA     Comuna 13         1            
+31              29[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 1751--1751
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA      Comuna 1         1            
+35              35[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 1751--1751
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA Vicente López         1            
+36              27[] 
+ []
+
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 1751--1751
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA    La Matanza         2            
+24              24[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1751--1751
+[]\TU/lmtt/m/n/10 ##                                                           
+                title[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1751--1751
+[]\TU/lmtt/m/n/10 ## 1                                                         
+Departamento - Flores[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1751--1751
+[]\TU/lmtt/m/n/10 ## 2                         Retasado! Monoambiente en Nuñez,
+ excelente ubicación![] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1751--1751
+[]\TU/lmtt/m/n/10 ## 3                                                       De
+partamento - Belgrano[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1751--1751
+[]\TU/lmtt/m/n/10 ## 4                              Monoambiente con cochera. Z
+encity. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1751--1751
+[]\TU/lmtt/m/n/10 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y v
+ista cochera optativa[] 
+ []
+
+[40]
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1751--1751
+[]\TU/lmtt/m/n/10 ## 6                                                        P
+H - Lomas Del Mirador[] 
+ []
+
+
+Overfull \hbox (54.0pt too wide) in paragraph at lines 1794--1794
+[]\TU/lmtt/m/n/10 ##   created_on provincia       partido ambientes m2_total m2
+_cubierto price[] 
+ []
+
+
+Overfull \hbox (54.0pt too wide) in paragraph at lines 1794--1794
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA      Comuna 7         1       40   
+       37 22500[] 
+ []
+
+
+Overfull \hbox (54.0pt too wide) in paragraph at lines 1794--1794
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA     Comuna 13         1       30   
+       30 18000[] 
+ []
+
+
+Overfull \hbox (54.0pt too wide) in paragraph at lines 1794--1794
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA     Comuna 13         1       31   
+       29 17900[] 
+ []
+
+
+Overfull \hbox (54.0pt too wide) in paragraph at lines 1794--1794
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA      Comuna 1         1       35   
+       35 42000[] 
+ []
+
+
+Overfull \hbox (54.0pt too wide) in paragraph at lines 1794--1794
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA Vicente López         1       36   
+       27 19000[] 
+ []
+
+
+Overfull \hbox (54.0pt too wide) in paragraph at lines 1794--1794
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA    La Matanza         2       24   
+       24 12000[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1794--1794
+[]\TU/lmtt/m/n/10 ##                                                           
+                title[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1794--1794
+[]\TU/lmtt/m/n/10 ## 1                                                         
+Departamento - Flores[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1794--1794
+[]\TU/lmtt/m/n/10 ## 2                         Retasado! Monoambiente en Nuñez,
+ excelente ubicación![] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1794--1794
+[]\TU/lmtt/m/n/10 ## 3                                                       De
+partamento - Belgrano[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1794--1794
+[]\TU/lmtt/m/n/10 ## 4                              Monoambiente con cochera. Z
+encity. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1794--1794
+[]\TU/lmtt/m/n/10 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y v
+ista cochera optativa[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 1794--1794
+[]\TU/lmtt/m/n/10 ## 6                                                        P
+H - Lomas Del Mirador[] 
+ []
+
+[41]
+File: images/tidyverse_agrupar.jpg Graphic file (type bmp)
+<images/tidyverse_agrupar.jpg>
+[42] [43] [44]
+Overfull \hbox (6.75pt too wide) in paragraph at lines 1988--1988
+[]\TU/lmtt/m/n/10 ##   created_on provincia cantidad   price surface_covered pr
+ice_m2[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 1988--1988
+[]\TU/lmtt/m/n/10 ##        <int> <fct>        <int>   <dbl>           <dbl>   
+ <dbl>[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 1988--1988
+[]\TU/lmtt/m/n/10 ## 1     202006 CABA          3986 291547.            85.3   
+ 3420.[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 1988--1988
+[]\TU/lmtt/m/n/10 ## 2     202006 GBA           2772 231074.           121.    
+ 1903.[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 1988--1988
+[]\TU/lmtt/m/n/10 ## 3     202007 CABA          3110 251563.            80.5   
+ 3124.[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 1988--1988
+[]\TU/lmtt/m/n/10 ## 4     202007 GBA           1810 206180.           116.    
+ 1783.[] 
+ []
+
+[45]
+Overfull \hbox (6.75pt too wide) in paragraph at lines 2016--2016
+[]\TU/lmtt/m/n/10 ##   created_on provincia cantidad   price surface_covered pr
+ice_m2[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 2016--2016
+[]\TU/lmtt/m/n/10 ##        <int> <fct>        <int>   <dbl>           <dbl>   
+ <dbl>[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 2016--2016
+[]\TU/lmtt/m/n/10 ## 1     202006 CABA          3986 291547.            85.3   
+ 3420.[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 2016--2016
+[]\TU/lmtt/m/n/10 ## 2     202006 GBA           2772 231074.           121.    
+ 1903.[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 2016--2016
+[]\TU/lmtt/m/n/10 ## 3     202007 CABA          3110 251563.            80.5   
+ 3124.[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 2016--2016
+[]\TU/lmtt/m/n/10 ## 4     202007 GBA           1810 206180.           116.    
+ 1783.[] 
+ []
+
+File: images/opcion2.jpg Graphic file (type bmp)
+<images/opcion2.jpg>
+[46]
+File: images/opcion1.jpg Graphic file (type bmp)
+<images/opcion1.jpg>
+File: images/opcion1.jpg Graphic file (type bmp)
+<images/opcion1.jpg>
+File: images/spread_gather.jpg Graphic file (type bmp)
+<images/spread_gather.jpg>
+[47] [48] [49] [50
+
+]
+Capítulo 3.
+
+Underfull \hbox (badness 1132) in paragraph at lines 2161--2163
+\TU/lmr/m/n/10 matriz, histograma, densidad, etc. Estos elementos funcionan com
+o
+ []
+
+[51]
+Overfull \hbox (16.69pt too wide) in paragraph at lines 2214--2215
+[]\TU/lmr/m/n/10 Para generar este tipo de visualización utilizaremos \TU/lmtt/
+m/n/10 ggplot() \TU/lmr/m/n/10 + \TU/lmtt/m/n/10 geom_histogram()\TU/lmr/m/n/10
+ .
+ []
+
+
+Overfull \hbox (11.14003pt too wide) in paragraph at lines 2214--2215
+\TU/lmr/m/n/10 Veamos por ejemplo como se distribuyen las superficies cubiertas
+ (surface_covered)
+ []
+
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-65-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-65-1.pdf>
+[52]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-66-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-66-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[53]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-67-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-67-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[54]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-68-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-68-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[55]
+Overfull \vbox (1.27399pt too high) detected at line 2295
+ []
+
+[56]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-69-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-69-1.pdf>
+
+Overfull \hbox (13.00003pt too wide) in paragraph at lines 2306--2307
+\TU/lmr/m/n/10 Veamos por ejemplo como se distribuyen los valores por m2 (price
+/surface_covered)
+ []
+
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-70-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-70-1.pdf>
+
+Underfull \vbox (badness 2285) has occurred while \output is active []
+
+[57]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-72-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-72-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[58]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-73-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-73-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[59]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-74-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-74-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[60]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-75-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-75-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[61]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-76-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-76-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[62]
+File: images/geom_boxplot.jpg Graphic file (type bmp)
+<images/geom_boxplot.jpg>
+
+Overfull \hbox (220.60905pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.2.  DISTRIBUCIÓN DE VALORES CONTINUOS ASOCIADOS A UNA VARIABL
+E CATEGÓRICA: GRÁFICO DE CAJAS \TU/lmr/m/n/10 63
+ []
+
+[63]
+Overfull \hbox (13.00003pt too wide) in paragraph at lines 2427--2428
+\TU/lmr/m/n/10 Veamos por ejemplo como se distribuyen los valores por m2 (price
+/surface_covered)
+ []
+
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-77-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-77-1.pdf>
+[64]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-78-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-78-1.pdf>
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-79-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-79-1.pdf>
+
+Underfull \vbox (badness 2644) has occurred while \output is active []
+
+
+Overfull \hbox (220.60905pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.2.  DISTRIBUCIÓN DE VALORES CONTINUOS ASOCIADOS A UNA VARIABL
+E CATEGÓRICA: GRÁFICO DE CAJAS \TU/lmr/m/n/10 65
+ []
+
+[65]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-80-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-80-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[66]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-81-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-81-1.pdf>
+
+Overfull \hbox (220.60905pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.2.  DISTRIBUCIÓN DE VALORES CONTINUOS ASOCIADOS A UNA VARIABL
+E CATEGÓRICA: GRÁFICO DE CAJAS \TU/lmr/m/n/10 67
+ []
+
+[67]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-82-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-82-1.pdf>
+
+Underfull \vbox (badness 2326) has occurred while \output is active []
+
+[68]
+Overfull \hbox (11.56113pt too wide) in paragraph at lines 2557--2558
+[]\TU/lmr/m/n/10 Veamos por ejemplo, si existe relación entre la superficie cub
+ierta (surface_covered)
+ []
+
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-83-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-83-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (37.22453pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.3.  RELACIÓN ENTRE VARIABLES NUMÉRICAS: GRÁFICO DE DISPERSIÓN
+ \TU/lmr/m/n/10 69
+ []
+
+[69]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-84-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-84-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[70]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-85-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-85-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (37.22453pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.3.  RELACIÓN ENTRE VARIABLES NUMÉRICAS: GRÁFICO DE DISPERSIÓN
+ \TU/lmr/m/n/10 71
+ []
+
+[71]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-86-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-86-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[72]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-87-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-87-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (37.22453pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.3.  RELACIÓN ENTRE VARIABLES NUMÉRICAS: GRÁFICO DE DISPERSIÓN
+ \TU/lmr/m/n/10 73
+ []
+
+[73]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-88-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-88-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[74]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-89-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-89-1.pdf>
+
+Overfull \hbox (27.69452pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.4.  RELACIÓN ENTRE VARIABLES CATEGÓRICAS: GRÁFICO DE MATRIZ \
+TU/lmr/m/n/10 75
+ []
+
+[75]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-90-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-90-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[76]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-91-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-91-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (27.69452pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.4.  RELACIÓN ENTRE VARIABLES CATEGÓRICAS: GRÁFICO DE MATRIZ \
+TU/lmr/m/n/10 77
+ []
+
+[77]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-92-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-92-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[78]
+Overfull \hbox (9.38391pt too wide) in paragraph at lines 2715--2715
+[]\TU/lmr/bx/n/14.4 Relación entre variable numérica y categórica:
+ []
+
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-93-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-93-1.pdf>
+
+Underfull \vbox (badness 7030) has occurred while \output is active []
+
+
+Overfull \hbox (87.40233pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.5.  RELACIÓN ENTRE VARIABLE NUMÉRICA Y CATEGÓRICA: GRÁFICO DE
+ BARRAS \TU/lmr/m/n/10 79
+ []
+
+[79]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-94-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-94-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[80]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-95-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-95-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (87.40233pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.5.  RELACIÓN ENTRE VARIABLE NUMÉRICA Y CATEGÓRICA: GRÁFICO DE
+ BARRAS \TU/lmr/m/n/10 81
+ []
+
+[81]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-96-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-96-1.pdf>
+[82]
+Underfull \hbox (badness 1616) in paragraph at lines 2791--2792
+[]\TU/lmr/m/n/10 Este tipo de gráfico se utiliza cuando los datos absolutos se 
+agrupan
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 2791--2792
+\TU/lmr/m/n/10 en 2 o más categorías dentro del mismo eje. Con \TU/lmtt/m/n/10 
+ggplot() \TU/lmr/m/n/10 usaremos
+ []
+
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-97-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-97-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (87.40233pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.5.  RELACIÓN ENTRE VARIABLE NUMÉRICA Y CATEGÓRICA: GRÁFICO DE
+ BARRAS \TU/lmr/m/n/10 83
+ []
+
+[83]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-98-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-98-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[84]
+Overfull \hbox (87.40233pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.5.  RELACIÓN ENTRE VARIABLE NUMÉRICA Y CATEGÓRICA: GRÁFICO DE
+ BARRAS \TU/lmr/m/n/10 85
+ []
+
+[85]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-99-1.pdf Graphic 
+file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-99-1.pdf>
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-100-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-100-1.pdf>
+
+Underfull \vbox (badness 3364) has occurred while \output is active []
+
+[86]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-101-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-101-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (87.40233pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.5.  RELACIÓN ENTRE VARIABLE NUMÉRICA Y CATEGÓRICA: GRÁFICO DE
+ BARRAS \TU/lmr/m/n/10 87
+ []
+
+[87] [88]
+Capítulo 4.
+[89
+
+]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-104-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-104-1.pdf>
+[90]
+Overfull \hbox (453.0pt too wide) in paragraph at lines 2979--2979
+[]\TU/lmtt/m/n/10 ## Reading layer `partidos_amba' from data source `E:\03-OTRO
+S\SCA-CURSOS-2020\sca-big-data-urbana\data\partidos_amba.shp' using driver `ESR
+I Shapefile'[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 2979--2979
+[]\TU/lmtt/m/n/10 ## bbox:           xmin: -59.3392 ymin: -35.23893 xmax: -57.7
+0946 ymax: -34.23007[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3002--3002
+[]\TU/lmtt/m/n/10 ## bbox:           xmin: -59.05579 ymin: -34.91331 xmax: -58.
+27953 ymax: -34.26732[] 
+ []
+
+[91]
+Underfull \hbox (badness 1655) in paragraph at lines 3030--3031
+\TU/lmr/m/n/10 hace referencia a “simple features” por estar compuesto de geome
+trías
+ []
+
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-109-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-109-1.pdf>
+[92]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-110-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-110-1.pdf>
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-111-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-111-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[93]
+Underfull \hbox (badness 1122) in paragraph at lines 3068--3069
+[]\TU/lmr/m/n/10 Y ahora si queremos visualizar en un mismo mapa el dataset esp
+acial
+ []
+
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-112-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-112-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[94]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-113-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-113-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[95]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-114-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-114-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[96]
+Underfull \hbox (badness 2057) in paragraph at lines 3117--3118
+[]\TU/lmr/m/n/10 Claramente los patrones de ambos meses son muy parecidos, así 
+que
+ []
+
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-115-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-115-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[97]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-116-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-116-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[98] [99]
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3224--3224
+[]\TU/lmtt/m/n/10 ## bbox:           xmin: -59.05579 ymin: -34.91331 xmax: -58.
+27953 ymax: -34.26732[] 
+ []
+
+[100]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-121-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-121-1.pdf>
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-122-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-122-1.pdf>
+[101]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-123-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-123-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[102]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-124-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-124-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[103]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-125-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-125-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[104]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-126-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-126-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[105]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-127-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-127-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[106] [107]
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3414--3414
+[]\TU/lmtt/m/n/10 ## bbox:           xmin: -59.05579 ymin: -34.91331 xmax: -58.
+27953 ymax: -34.26732[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 3414--3414
+[]\TU/lmtt/m/n/10 ##       nombre provincia area_km2 cantidad valor_m2 property
+_type cant_max[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 3414--3414
+[]\TU/lmtt/m/n/10 ## 1 Avellaneda       GBA    57.25       67 1486.522  Departa
+mento       47[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 3414--3414
+[]\TU/lmtt/m/n/10 ## 2      Tigre       GBA   381.99      887 2674.501  Departa
+mento      898[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 3414--3414
+[]\TU/lmtt/m/n/10 ## 3      Pilar       GBA   382.95      493 1680.706         
+ Casa      353[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 3414--3414
+[]\TU/lmtt/m/n/10 ## 4     Moreno       GBA   186.36       64 1202.036         
+ Casa       50[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 3414--3414
+[]\TU/lmtt/m/n/10 ## 5      Merlo       GBA   173.97       83 1146.151         
+ Casa       54[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 3414--3414
+[]\TU/lmtt/m/n/10 ## 6 La Matanza       GBA   328.26      110 1592.995  Departa
+mento       73[] 
+ []
+
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-132-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-132-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[108]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-133-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-133-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[109]
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3498--3498
+[]\TU/lmtt/m/n/10 ## bbox:           xmin: -58.52914 ymin: -34.66253 xmax: -58.
+3609 ymax: -34.53344[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3498--3498
+[]\TU/lmtt/m/n/10 ##   created_on provincia       partido rooms surface_total s
+urface_covered price[] 
+ []
+
+[110]
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3498--3498
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA      Comuna 7     1            40  
+            37 22500[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3498--3498
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA     Comuna 13     1            30  
+            30 18000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3498--3498
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA     Comuna 13     1            31  
+            29 17900[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3498--3498
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA      Comuna 1     1            35  
+            35 42000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3498--3498
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA Vicente López     1            36  
+            27 19000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3498--3498
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA    La Matanza     2            24  
+            24 12000[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3498--3498
+[]\TU/lmtt/m/n/10 ##                                                           
+                title[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3498--3498
+[]\TU/lmtt/m/n/10 ## 1                                                         
+Departamento - Flores[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3498--3498
+[]\TU/lmtt/m/n/10 ## 2                         Retasado! Monoambiente en Nuñez,
+ excelente ubicación![] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3498--3498
+[]\TU/lmtt/m/n/10 ## 3                                                       De
+partamento - Belgrano[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3498--3498
+[]\TU/lmtt/m/n/10 ## 4                              Monoambiente con cochera. Z
+encity. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3498--3498
+[]\TU/lmtt/m/n/10 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y v
+ista cochera optativa[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3498--3498
+[]\TU/lmtt/m/n/10 ## 6                                                        P
+H - Lomas Del Mirador[] 
+ []
+
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-136-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-136-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[111]
+Overfull \hbox (442.5pt too wide) in paragraph at lines 3528--3528
+[]\TU/lmtt/m/n/10 ## Reading layer `barrios_caba' from data source `E:\03-OTROS
+\SCA-CURSOS-2020\sca-big-data-urbana\data\barrios_caba.shp' using driver `ESRI 
+Shapefile'[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3528--3528
+[]\TU/lmtt/m/n/10 ## bbox:           xmin: -58.53152 ymin: -34.70529 xmax: -58.
+33515 ymax: -34.52649[] 
+ []
+
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-138-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-138-1.pdf>
+[112]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-139-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-139-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[113]
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## bbox:           xmin: -58.52914 ymin: -34.66253 xmax: -58.
+3609 ymax: -34.53344[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ##   created_on provincia       partido rooms surface_total s
+urface_covered price[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 1     202006      CABA      Comuna 7     1            40  
+            37 22500[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 2     202006      CABA     Comuna 13     1            30  
+            30 18000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 3     202006      CABA     Comuna 13     1            31  
+            29 17900[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 4     202006      CABA      Comuna 1     1            35  
+            35 42000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 5     202006       GBA Vicente López     1            36  
+            27 19000[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 6     202006       GBA    La Matanza     2            24  
+            24 12000[] 
+ []
+
+[114]
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ##                                                           
+                title[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 1                                                         
+Departamento - Flores[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 2                         Retasado! Monoambiente en Nuñez,
+ excelente ubicación![] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 3                                                       De
+partamento - Belgrano[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 4                              Monoambiente con cochera. Z
+encity. Puerto Madero[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y v
+ista cochera optativa[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 6                                                        P
+H - Lomas Del Mirador[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ##   property_type operation_type        BARRIO              
+      geometry[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 1  Departamento       Alquiler        FLORES POINT (-58.46
+222 -34.61917)[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 2  Departamento       Alquiler         NUÑEZ  POINT (-58.4
+6652 -34.5546)[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 3  Departamento       Alquiler      BELGRANO POINT (-58.46
+461 -34.56318)[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 4  Departamento       Alquiler PUERTO MADERO  POINT (-58.3
+609 -34.61836)[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 5  Departamento       Alquiler          <NA> POINT (-58.49
+345 -34.53344)[] 
+ []
+
+
+Overfull \hbox (48.75pt too wide) in paragraph at lines 3603--3603
+[]\TU/lmtt/m/n/10 ## 6            PH       Alquiler          <NA> POINT (-58.52
+914 -34.66253)[] 
+ []
+
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-142-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-142-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[115]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-144-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-144-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[116]
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3668--3668
+[]\TU/lmtt/m/n/10 ## bbox:           xmin: -58.50249 ymin: -34.62174 xmax: -58.
+39217 ymax: -34.58573[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3668--3668
+[]\TU/lmtt/m/n/10 ##   BARRIO   operation_type valor_m2                        
+              geometry[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3668--3668
+[]\TU/lmtt/m/n/10 ##   <fct>    <fct>             <dbl>                        
+      <MULTIPOINT [°]>[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3668--3668
+[]\TU/lmtt/m/n/10 ## 1 AGRONOM~ Alquiler           471. ((-58.50249 -34.59347),
+ (-58.49966 -34.59564~[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3668--3668
+[]\TU/lmtt/m/n/10 ## 2 AGRONOM~ Venta             2869. ((-58.49994 -34.59319),
+ (-58.49984 -34.59559~[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3668--3668
+[]\TU/lmtt/m/n/10 ## 3 ALMAGRO  Alquiler           488. ((-58.43224 -34.60375),
+ (-58.43216 -34.60207~[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3668--3668
+[]\TU/lmtt/m/n/10 ## 4 ALMAGRO  Venta             2714. ((-58.43277 -34.60322),
+ (-58.43229 -34.60277~[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3668--3668
+[]\TU/lmtt/m/n/10 ## 5 BALVANE~ Alquiler           478. ((-58.4128 -34.6028), (
+-58.41252 -34.60927),~[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3668--3668
+[]\TU/lmtt/m/n/10 ## 6 BALVANE~ Venta             2211. ((-58.41409 -34.61113),
+ (-58.41314 -34.61122~[] 
+ []
+
+[117]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-150-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-150-1.pdf>
+
+Underfull \vbox (badness 6575) has occurred while \output is active []
+
+[118]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-151-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-151-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[119]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-152-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-152-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[120] [121]
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-156-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-156-1.pdf>
+File: manual-big-data-urbana_files/figure-latex/unnamed-chunk-157-1.pdf Graphic
+ file (type pdf)
+<use manual-big-data-urbana_files/figure-latex/unnamed-chunk-157-1.pdf>
+
+Underfull \vbox (badness 3088) has occurred while \output is active []
+
+[122]
+No file manual-big-data-urbana.bbl.
+The property list \polyglossia@langsetup contains the pairs (without outer
+braces):
+>  {latex/script}  =>  {latin}
+>  {latex/lcscript}  =>  {latin}
+>  {latex/scripttag}  =>  {}
+>  {latex/language}  =>  {Latex}
+>  {latex/langtag}  =>  {ENG}
+>  {latex/bcp47}  =>  {}
+>  {latex/hyphennames}  =>  {english}
+>  {latex/direction}  =>  {LR}
+>  {latex/hyphenmins}  =>  {2,3}
+>  {latex/frenchspacing}  =>  {false}
+>  {latex/indentfirst}  =>  {false}
+>  {latex/fontsetup}  =>  {true}
+>  {latex/envname}  =>  {latex}
+>  {latex/babelname}  =>  {latex}
+>  {latex/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {latex/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {spanish/script}  =>  {latin}
+>  {spanish/lcscript}  =>  {latin}
+>  {spanish/scripttag}  =>  {}
+>  {spanish/language}  =>  {Spanish}
+>  {spanish/langtag}  =>  {ESP}
+>  {spanish/bcp47}  =>  {es-ES}
+>  {spanish/hyphennames}  =>  {spanish}
+>  {spanish/direction}  =>  {LR}
+>  {spanish/hyphenmins}  =>  {2,2}
+>  {spanish/frenchspacing}  =>  {true}
+>  {spanish/indentfirst}  =>  {true}
+>  {spanish/fontsetup}  =>  {true}
+>  {spanish/envname}  =>  {spanish}
+>  {spanish/babelname}  =>  {spanish}
+>  {spanish/localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {spanish/Localnumeral}  =>  {polyglossia@C@localnumeral}
+>  {spanish/totalhyphenmin}  =>  {5}.
+[123] (./manual-big-data-urbana.aux
+LaTeX Info: Redefining \rmfamily on input line 20.
+LaTeX Info: Redefining \sffamily on input line 20.
+LaTeX Info: Redefining \ttfamily on input line 20.
+)
+Package rerunfilecheck Info: File `manual-big-data-urbana.out' has not changed.
+
+(rerunfilecheck)             Checksum: 80AC6502857C19A5B6416750BF94DE46;5727.
+ ) 
+Here is how much of TeX's memory you used:
+ 18012 strings out of 478922
+ 342286 string characters out of 5864876
+ 808776 words of memory out of 5000000
+ 37521 multiletter control sequences out of 15000+600000
+ 409897 words of font info for 82 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 98i,6n,122p,589b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on manual-big-data-urbana.pdf (123 pages).

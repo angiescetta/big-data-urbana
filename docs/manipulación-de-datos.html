@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Clase 2 MANIPULACIÓN DE DATOS | BIG DATA URBANA</title>
-  <meta name="description" content="Clase 2 MANIPULACIÓN DE DATOS | BIG DATA URBANA" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <title>Clase 2 MANIPULACIÓN DE DATOS | 01-conocer.Rmd</title>
+  <meta name="description" content="Clase 2 MANIPULACIÓN DE DATOS | 01-conocer.Rmd" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Clase 2 MANIPULACIÓN DE DATOS | BIG DATA URBANA" />
+  <meta property="og:title" content="Clase 2 MANIPULACIÓN DE DATOS | 01-conocer.Rmd" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Clase 2 MANIPULACIÓN DE DATOS | BIG DATA URBANA" />
+  <meta name="twitter:title" content="Clase 2 MANIPULACIÓN DE DATOS | 01-conocer.Rmd" />
   
   
   
@@ -24,7 +24,6 @@
 <meta name="author" content="Angie Scetta" />
 
 
-<meta name="date" content="2021-03-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,6 +32,7 @@
   
 <link rel="prev" href="presentación.html"/>
 <link rel="next" href="análisis-y-visualización-de-datos.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,22 +50,21 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -85,7 +84,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -134,15 +133,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Big Data Urbana</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>INTRODUCCIÓN</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>INTRODUCCIÓN</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#indice"><i class="fa fa-check"></i>Indice</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="presentación.html"><a href="presentación.html"><i class="fa fa-check"></i><b>1</b> PRESENTACIÓN</a><ul>
+<li class="chapter" data-level="1" data-path="presentación.html"><a href="presentación.html"><i class="fa fa-check"></i><b>1</b> PRESENTACIÓN</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="presentación.html"><a href="presentación.html#interfaz-gráfica-de-rstudio"><i class="fa fa-check"></i><b>1.1</b> Interfaz Gráfica de RStudio</a></li>
 <li class="chapter" data-level="1.2" data-path="presentación.html"><a href="presentación.html#formato-rmarkdown"><i class="fa fa-check"></i><b>1.2</b> Formato RMarkdown</a></li>
 <li class="chapter" data-level="1.3" data-path="presentación.html"><a href="presentación.html#nuestro-primer-dataset"><i class="fa fa-check"></i><b>1.3</b> Nuestro primer dataset</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="manipulación-de-datos.html"><a href="manipulación-de-datos.html"><i class="fa fa-check"></i><b>2</b> MANIPULACIÓN DE DATOS</a><ul>
+<li class="chapter" data-level="2" data-path="manipulación-de-datos.html"><a href="manipulación-de-datos.html"><i class="fa fa-check"></i><b>2</b> MANIPULACIÓN DE DATOS</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="manipulación-de-datos.html"><a href="manipulación-de-datos.html#filtrar-registros-que-cumplan-condiciones"><i class="fa fa-check"></i><b>2.1</b> Filtrar registros que cumplan condiciones</a></li>
 <li class="chapter" data-level="2.2" data-path="manipulación-de-datos.html"><a href="manipulación-de-datos.html#seleccionar-columnas-de-interés"><i class="fa fa-check"></i><b>2.2</b> Seleccionar columnas de interés</a></li>
 <li class="chapter" data-level="2.3" data-path="manipulación-de-datos.html"><a href="manipulación-de-datos.html#modificar-o-agregar-columnas"><i class="fa fa-check"></i><b>2.3</b> Modificar o agregar columnas</a></li>
@@ -150,13 +152,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.5" data-path="manipulación-de-datos.html"><a href="manipulación-de-datos.html#renombrar-columnas"><i class="fa fa-check"></i><b>2.5</b> Renombrar columnas</a></li>
 <li class="chapter" data-level="2.6" data-path="manipulación-de-datos.html"><a href="manipulación-de-datos.html#resumir-y-agrupar-datos"><i class="fa fa-check"></i><b>2.6</b> Resumir y agrupar datos</a></li>
 <li class="chapter" data-level="2.7" data-path="manipulación-de-datos.html"><a href="manipulación-de-datos.html#concatenar-funciones"><i class="fa fa-check"></i><b>2.7</b> Concatenar funciones (%&gt;%)</a></li>
-<li class="chapter" data-level="2.8" data-path="manipulación-de-datos.html"><a href="manipulación-de-datos.html#transformar-la-estructura-de-los-datos"><i class="fa fa-check"></i><b>2.8</b> Transformar la estructura de los datos</a><ul>
+<li class="chapter" data-level="2.8" data-path="manipulación-de-datos.html"><a href="manipulación-de-datos.html#transformar-la-estructura-de-los-datos"><i class="fa fa-check"></i><b>2.8</b> Transformar la estructura de los datos</a>
+<ul>
 <li class="chapter" data-level="2.8.1" data-path="manipulación-de-datos.html"><a href="manipulación-de-datos.html#extender-la-estructura-de-los-datos-spread"><i class="fa fa-check"></i><b>2.8.1</b> Extender la estructura de los datos: spread()</a></li>
 <li class="chapter" data-level="2.8.2" data-path="manipulación-de-datos.html"><a href="manipulación-de-datos.html#unificar-los-datos-gather"><i class="fa fa-check"></i><b>2.8.2</b> Unificar los datos: gather()</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html"><i class="fa fa-check"></i><b>3</b> ANÁLISIS Y VISUALIZACIÓN DE DATOS</a><ul>
-<li class="chapter" data-level="3.1" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#distribución-de-una-variable-continua"><i class="fa fa-check"></i><b>3.1</b> Distribución de una variable continua</a><ul>
+<li class="chapter" data-level="3" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html"><i class="fa fa-check"></i><b>3</b> ANÁLISIS Y VISUALIZACIÓN DE DATOS</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#distribución-de-una-variable-continua"><i class="fa fa-check"></i><b>3.1</b> Distribución de una variable continua</a>
+<ul>
 <li class="chapter" data-level="3.1.1" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#histograma"><i class="fa fa-check"></i><b>3.1.1</b> Histograma</a></li>
 <li class="chapter" data-level="3.1.2" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#gráfico-de-densidad"><i class="fa fa-check"></i><b>3.1.2</b> Gráfico de Densidad</a></li>
 </ul></li>
@@ -165,7 +170,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.4" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#relación-entre-variables-categóricas-gráfico-de-matriz"><i class="fa fa-check"></i><b>3.4</b> Relación entre variables categóricas: Gráfico de Matriz</a></li>
 <li class="chapter" data-level="3.5" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#relación-entre-variable-numérica-y-categórica-gráfico-de-barras"><i class="fa fa-check"></i><b>3.5</b> Relación entre variable numérica y categórica: Gráfico de Barras</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="información-geográfica-y-mapas.html"><a href="información-geográfica-y-mapas.html"><i class="fa fa-check"></i><b>4</b> INFORMACIÓN GEOGRÁFICA Y MAPAS</a><ul>
+<li class="chapter" data-level="4" data-path="información-geográfica-y-mapas.html"><a href="información-geográfica-y-mapas.html"><i class="fa fa-check"></i><b>4</b> INFORMACIÓN GEOGRÁFICA Y MAPAS</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="información-geográfica-y-mapas.html"><a href="información-geográfica-y-mapas.html#analizar-datos-espaciales"><i class="fa fa-check"></i><b>4.1</b> Analizar datos espaciales</a></li>
 <li class="chapter" data-level="4.2" data-path="información-geográfica-y-mapas.html"><a href="información-geográfica-y-mapas.html#cruzar-datos-tradicionales-y-espaciales"><i class="fa fa-check"></i><b>4.2</b> Cruzar datos tradicionales y espaciales</a></li>
 <li class="chapter" data-level="4.3" data-path="información-geográfica-y-mapas.html"><a href="información-geográfica-y-mapas.html#cruzar-datos-espaciales"><i class="fa fa-check"></i><b>4.3</b> Cruzar datos espaciales</a></li>
@@ -183,7 +189,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">BIG DATA URBANA</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">01-conocer.Rmd</a>
           </h1>
         </div>
 
@@ -191,7 +197,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="manipulación-de-datos" class="section level1">
+<div id="manipulación-de-datos" class="section level1" number="2">
 <h1><span class="header-section-number">Clase 2</span> MANIPULACIÓN DE DATOS</h1>
 <p>Ahora que ya sabemos abrir un dataset y conocer que información tiene, vamos a aprender a manipular, limpiar, normalizar y transformar los datos, o lo que se conoce como <em>data wrangling</em>. Para esto vamos a trabajar con uno de los paquetes más usados y más útiles de R que se llama <code>tidyverse</code>.</p>
 <p>Pero, <strong>¿Qué es un paquete?</strong></p>
@@ -200,74 +206,67 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Comencemos instalándolo. Esto podemos hacerlo manualmente en Tools/Install packages:</p>
 <p><img src="images/005.jpg" /></p>
 <p>O directamente escribiendo <code>install.packages()</code> adentro de un chunk:</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="manipulación-de-datos.html#cb20-1"></a><span class="co">#install.packages(&quot;tidyverse&quot;)</span></span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="manipulación-de-datos.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages(&quot;tidyverse&quot;)</span></span></code></pre></div>
 <p>Una vez que instalamos el paquete, no vamos a tener que volver a hacerlo. Solamente vamos a tener que “activarlo” cada vez que queramos usarlo. Esta activación se hace con <code>library()</code> así:</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="manipulación-de-datos.html#cb21-1"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="manipulación-de-datos.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
 <p>Ahora volvamos a cargar nuestro dataset (el mismo de la clase anterior):</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="manipulación-de-datos.html#cb22-1"></a>datos_amba &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/amba_properati.csv&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="manipulación-de-datos.html#cb22-1" aria-hidden="true" tabindex="-1"></a>datos_amba <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/amba_properati.csv&quot;</span>)</span></code></pre></div>
 <p>A continuación veremos como el paquete <code>tidyverse</code> nos va a permitir manipular nuestros datos a partir de las funciones: <strong>filtrar</strong>, <strong>modificar</strong>, <strong>seleccionar</strong>, <strong>ordenar</strong>, <strong>renombrar</strong>, <strong>resumir</strong> y <strong>agrupar</strong>.</p>
 <p>Aprender a utilizar todas estas funciones es muy importante ya que la <strong>comprensión, transformación y limpieza de los datos</strong> es la etapa que más tiempo nos llevará a la hora de encarar cualquier proyecto de Ciencia de Datos.</p>
-<div id="filtrar-registros-que-cumplan-condiciones" class="section level2">
+<div id="filtrar-registros-que-cumplan-condiciones" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> Filtrar registros que cumplan condiciones</h2>
 <p>Como su nombre lo indica, esta función hace referencia a realizar un filtro determinado sobre los registros/filas de toda la base de datos, es decir, quedarnos solo con las filas que cumplan cierta condición establecida. Gráficamente se vería como algo así:</p>
 <p><img src="images/tidyverse_filtrar.jpg" /></p>
 <p>Esto nos será muy útil si por algún motivo queremos dejar de lado registros y utilizar solo una parte de la base. Por ejemplo, en el caso de nuestro dataset, que ya vimos que incluye datos de AMBA y CABA, podríamos filtrar la data y quedarnos solo con los registros ubicados en CABA:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="manipulación-de-datos.html#cb23-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, provincia<span class="op">==</span><span class="st">&quot;CABA&quot;</span>)</span>
-<span id="cb23-2"><a href="manipulación-de-datos.html#cb23-2"></a></span>
-<span id="cb23-3"><a href="manipulación-de-datos.html#cb23-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
-<pre><code>##   created_on provincia   partido rooms surface_total surface_covered price
-## 1     202006      CABA  Comuna 7     1            40              37 22500
-## 2     202006      CABA Comuna 13     1            30              30 18000
-## 3     202006      CABA Comuna 13     1            31              29 17900
-## 4     202006      CABA  Comuna 1     1            35              35 42000
-## 5     202006      CABA Comuna 13     2            60              50 32000
-## 6     202006      CABA Comuna 13     2            53              44 26000
-##   currency                                                           title
-## 1      ARS                                           Departamento - Flores
-## 2      ARS           Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3      ARS                                         Departamento - Belgrano
-## 4      ARS                Monoambiente con cochera. Zencity. Puerto Madero
-## 5      ARS Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera
-## 6      ARS       Unico 2 ambientes A Estrenar! Posesion inmediata! - Nuñez
-##   property_type operation_type       lat       lon
-## 1  Departamento       Alquiler -34.61917 -58.46222
-## 2  Departamento       Alquiler -34.55460 -58.46652
-## 3  Departamento       Alquiler -34.56318 -58.46461
-## 4  Departamento       Alquiler -34.61836 -58.36090
-## 5  Departamento       Alquiler -34.53795 -58.46671
-## 6  Departamento       Alquiler -34.54756 -58.47037</code></pre>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="manipulación-de-datos.html#cb23-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, provincia<span class="sc">==</span><span class="st">&quot;CABA&quot;</span>)</span>
+<span id="cb23-2"><a href="manipulación-de-datos.html#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-3"><a href="manipulación-de-datos.html#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(filtro)</span></code></pre></div>
+<pre><code>##   created_on provincia   partido rooms surface_total surface_covered price currency
+## 1     202006      CABA  Comuna 7     1            40              37 22500      ARS
+## 2     202006      CABA Comuna 13     1            30              30 18000      ARS
+## 3     202006      CABA Comuna 13     1            31              29 17900      ARS
+## 4     202006      CABA  Comuna 1     1            35              35 42000      ARS
+## 5     202006      CABA Comuna 13     2            60              50 32000      ARS
+## 6     202006      CABA Comuna 13     2            53              44 26000      ARS
+##                                                             title property_type
+## 1                                           Departamento - Flores  Departamento
+## 2           Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento
+## 3                                         Departamento - Belgrano  Departamento
+## 4                Monoambiente con cochera. Zencity. Puerto Madero  Departamento
+## 5 Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera  Departamento
+## 6       Unico 2 ambientes A Estrenar! Posesion inmediata! - Nuñez  Departamento
+##   operation_type       lat       lon
+## 1       Alquiler -34.61917 -58.46222
+## 2       Alquiler -34.55460 -58.46652
+## 3       Alquiler -34.56318 -58.46461
+## 4       Alquiler -34.61836 -58.36090
+## 5       Alquiler -34.53795 -58.46671
+## 6       Alquiler -34.54756 -58.47037</code></pre>
 <p>O los del mes de Julio 2020:</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="manipulación-de-datos.html#cb25-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, created_on<span class="op">==</span><span class="dv">202007</span>)</span>
-<span id="cb25-2"><a href="manipulación-de-datos.html#cb25-2"></a></span>
-<span id="cb25-3"><a href="manipulación-de-datos.html#cb25-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
-<pre><code>##   created_on provincia   partido rooms surface_total surface_covered price
-## 1     202007       GBA     Tigre     2           108              69 20000
-## 2     202007       GBA     Tigre     2            57              45 27500
-## 3     202007      CABA Comuna 14     1            45              40 23000
-## 4     202007      CABA Comuna 14     2            48              48 30000
-## 5     202007      CABA Comuna 14     2            42              37 26000
-## 6     202007      CABA Comuna 15     2            41              38 21000
-##   currency
-## 1      ARS
-## 2      ARS
-## 3      ARS
-## 4      ARS
-## 5      ARS
-## 6      ARS
-##                                                              title
-## 1 DEPARTAMENTO EN ALQUILER EN NORDELTA 2 AMB CON TERRAZA Y JACUZZI
-## 2        2 ambientes con cochera y baulera - Vista al Lago Central
-## 3                  Departamento en Alquiler con Balcón y Amenities
-## 4   Botánico - 2 ambientes amueblado con vista a Boulevard Cerviño
-## 5                                           Departamento - Palermo
-## 6               Departamento de 2 ambientes en Alquiler en Palermo
-##   property_type operation_type       lat       lon
-## 1  Departamento       Alquiler -34.39437 -58.64925
-## 2  Departamento       Alquiler -34.40910 -58.63129
-## 3  Departamento       Alquiler -34.59274 -58.42749
-## 4  Departamento       Alquiler -34.57914 -58.41289
-## 5  Departamento       Alquiler -34.59571 -58.41587
-## 6  Departamento       Alquiler -34.59856 -58.43026</code></pre>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="manipulación-de-datos.html#cb25-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, created_on<span class="sc">==</span><span class="dv">202007</span>)</span>
+<span id="cb25-2"><a href="manipulación-de-datos.html#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="manipulación-de-datos.html#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(filtro)</span></code></pre></div>
+<pre><code>##   created_on provincia   partido rooms surface_total surface_covered price currency
+## 1     202007       GBA     Tigre     2           108              69 20000      ARS
+## 2     202007       GBA     Tigre     2            57              45 27500      ARS
+## 3     202007      CABA Comuna 14     1            45              40 23000      ARS
+## 4     202007      CABA Comuna 14     2            48              48 30000      ARS
+## 5     202007      CABA Comuna 14     2            42              37 26000      ARS
+## 6     202007      CABA Comuna 15     2            41              38 21000      ARS
+##                                                              title property_type
+## 1 DEPARTAMENTO EN ALQUILER EN NORDELTA 2 AMB CON TERRAZA Y JACUZZI  Departamento
+## 2        2 ambientes con cochera y baulera - Vista al Lago Central  Departamento
+## 3                  Departamento en Alquiler con Balcón y Amenities  Departamento
+## 4   Botánico - 2 ambientes amueblado con vista a Boulevard Cerviño  Departamento
+## 5                                           Departamento - Palermo  Departamento
+## 6               Departamento de 2 ambientes en Alquiler en Palermo  Departamento
+##   operation_type       lat       lon
+## 1       Alquiler -34.39437 -58.64925
+## 2       Alquiler -34.40910 -58.63129
+## 3       Alquiler -34.59274 -58.42749
+## 4       Alquiler -34.57914 -58.41289
+## 5       Alquiler -34.59571 -58.41587
+## 6       Alquiler -34.59856 -58.43026</code></pre>
 <p>Nótese que para filtrar bajo la condición de “igual” utilicé “==”, pero también podría haber utilizado otras condiciones como:</p>
 <ul>
 <li><strong>A==B</strong> -&gt; A igual a B</li>
@@ -282,23 +281,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><strong>!(A%in%B)</strong>-&gt; A no incluye el valor de B</li>
 </ul>
 <p>Entonces, por ejemplo si quiero quedarme solo con las propiedades que tienen una superficie cubierta mayor o igual a 75m2 debería escribirlo así:</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="manipulación-de-datos.html#cb27-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, surface_covered<span class="op">&gt;=</span><span class="dv">75</span>)</span>
-<span id="cb27-2"><a href="manipulación-de-datos.html#cb27-2"></a></span>
-<span id="cb27-3"><a href="manipulación-de-datos.html#cb27-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
-<pre><code>##   created_on provincia   partido rooms surface_total surface_covered
-## 1     202006       GBA Ituzaingó     3            75              75
-## 2     202006       GBA     Tigre     3            95              80
-## 3     202006       GBA     Tigre     3            98              90
-## 4     202006      CABA Comuna 13     3           109              94
-## 5     202006      CABA Comuna 14     3           152             152
-## 6     202006      CABA Comuna 14     3            90              85
-##    price currency
-## 1  19000      ARS
-## 2  42000      ARS
-## 3  42000      ARS
-## 4  90000      ARS
-## 5 240000      ARS
-## 6  80000      ARS
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="manipulación-de-datos.html#cb27-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, surface_covered<span class="sc">&gt;=</span><span class="dv">75</span>)</span>
+<span id="cb27-2"><a href="manipulación-de-datos.html#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="manipulación-de-datos.html#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(filtro)</span></code></pre></div>
+<pre><code>##   created_on provincia   partido rooms surface_total surface_covered  price currency
+## 1     202006       GBA Ituzaingó     3            75              75  19000      ARS
+## 2     202006       GBA     Tigre     3            95              80  42000      ARS
+## 3     202006       GBA     Tigre     3            98              90  42000      ARS
+## 4     202006      CABA Comuna 13     3           109              94  90000      ARS
+## 5     202006      CABA Comuna 14     3           152             152 240000      ARS
+## 6     202006      CABA Comuna 14     3            90              85  80000      ARS
 ##                                                                                              title
 ## 1                                            Americana a 6 cuadras de la estacion de S.A. de Padua
 ## 2                                   3 AMBIENTES EN EDIFICIO MIRADORES DE LA BAHIA CON COCHERA FIJA
@@ -314,30 +306,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5  Departamento       Alquiler -34.57760 -58.40499
 ## 6  Departamento       Alquiler -34.59353 -58.41462</code></pre>
 <p>O si quiero eliminar los registros que corresponden a departamentos debería hacer el siguiente chunk:</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="manipulación-de-datos.html#cb29-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, property_type<span class="op">!=</span><span class="st">&quot;Departamento&quot;</span>)</span>
-<span id="cb29-2"><a href="manipulación-de-datos.html#cb29-2"></a></span>
-<span id="cb29-3"><a href="manipulación-de-datos.html#cb29-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
-<pre><code>##   created_on provincia            partido rooms surface_total
-## 1     202006       GBA         La Matanza     2            24
-## 2     202006       GBA General San Martín     2            40
-## 3     202006       GBA          Ituzaingó     3            75
-## 4     202006      CABA          Comuna 14     4           125
-## 5     202006       GBA              Merlo     4           180
-## 6     202006       GBA              Pilar     4           267
-##   surface_covered price currency
-## 1              24 12000      ARS
-## 2              40 15000      ARS
-## 3              75 19000      ARS
-## 4             105 85000      ARS
-## 5             140 27000      ARS
-## 6             267 50000      ARS
-##                                                   title property_type
-## 1                                PH - Lomas Del Mirador            PH
-## 2                                        PH - Chilavert            PH
-## 3 Americana a 6 cuadras de la estacion de S.A. de Padua          Casa
-## 4              PH en alquiler 4 ambientes - Las Cañitas            PH
-## 5               Casa en Padua 3 dormitorios en alquiler          Casa
-## 6              Casa en venta o alquiler en La Peregrina          Casa
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="manipulación-de-datos.html#cb29-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, property_type<span class="sc">!=</span><span class="st">&quot;Departamento&quot;</span>)</span>
+<span id="cb29-2"><a href="manipulación-de-datos.html#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="manipulación-de-datos.html#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(filtro)</span></code></pre></div>
+<pre><code>##   created_on provincia            partido rooms surface_total surface_covered price
+## 1     202006       GBA         La Matanza     2            24              24 12000
+## 2     202006       GBA General San Martín     2            40              40 15000
+## 3     202006       GBA          Ituzaingó     3            75              75 19000
+## 4     202006      CABA          Comuna 14     4           125             105 85000
+## 5     202006       GBA              Merlo     4           180             140 27000
+## 6     202006       GBA              Pilar     4           267             267 50000
+##   currency                                                 title property_type
+## 1      ARS                                PH - Lomas Del Mirador            PH
+## 2      ARS                                        PH - Chilavert            PH
+## 3      ARS Americana a 6 cuadras de la estacion de S.A. de Padua          Casa
+## 4      ARS              PH en alquiler 4 ambientes - Las Cañitas            PH
+## 5      ARS               Casa en Padua 3 dormitorios en alquiler          Casa
+## 6      ARS              Casa en venta o alquiler en La Peregrina          Casa
 ##   operation_type       lat       lon
 ## 1       Alquiler -34.66253 -58.52914
 ## 2       Alquiler -34.54301 -58.57573
@@ -346,55 +331,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5       Alquiler -34.66154 -58.71565
 ## 6       Alquiler -34.47091 -58.82270</code></pre>
 <p>Si queremos filtrar todas las propiedades ubicadas en 3 partidos diferentes como por ejempo La Plata, General San Martín y La Matanza debemos utilizar %in% de la siguiente forma:</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="manipulación-de-datos.html#cb31-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, partido <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;La Plata&quot;</span>, <span class="st">&quot;General San Martín&quot;</span>, <span class="st">&quot;La Matanza&quot;</span>))</span>
-<span id="cb31-2"><a href="manipulación-de-datos.html#cb31-2"></a></span>
-<span id="cb31-3"><a href="manipulación-de-datos.html#cb31-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
-<pre><code>##   created_on provincia            partido rooms surface_total
-## 1     202006       GBA         La Matanza     2            24
-## 2     202006       GBA General San Martín     2            40
-## 3     202006       GBA           La Plata     2            50
-## 4     202006       GBA           La Plata     2            35
-## 5     202006       GBA General San Martín     2            56
-## 6     202006       GBA           La Plata     3            40
-##   surface_covered price currency
-## 1              24 12000      ARS
-## 2              40 15000      ARS
-## 3              50 18000      ARS
-## 4              35 13500      ARS
-## 5              48 14000      ARS
-## 6              40 10000      ARS
-##                                                         title
-## 1                                      PH - Lomas Del Mirador
-## 2                                              PH - Chilavert
-## 3 Alquiler, depto de un domitorio frente al parque San Martin
-## 4                                     Departamento - La Plata
-## 5                     Departamento céntrico - Villa Ballester
-## 6                               Departamento - José Hernández
-##   property_type operation_type       lat       lon
-## 1            PH       Alquiler -34.66253 -58.52914
-## 2            PH       Alquiler -34.54301 -58.57573
-## 3  Departamento       Alquiler -34.93415 -57.96605
-## 4  Departamento       Alquiler -34.90645 -57.97335
-## 5  Departamento       Alquiler -34.55038 -58.55512
-## 6  Departamento       Alquiler -34.89768 -58.02787</code></pre>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="manipulación-de-datos.html#cb31-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, partido <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;La Plata&quot;</span>, <span class="st">&quot;General San Martín&quot;</span>, <span class="st">&quot;La Matanza&quot;</span>))</span>
+<span id="cb31-2"><a href="manipulación-de-datos.html#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="manipulación-de-datos.html#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(filtro)</span></code></pre></div>
+<pre><code>##   created_on provincia            partido rooms surface_total surface_covered price
+## 1     202006       GBA         La Matanza     2            24              24 12000
+## 2     202006       GBA General San Martín     2            40              40 15000
+## 3     202006       GBA           La Plata     2            50              50 18000
+## 4     202006       GBA           La Plata     2            35              35 13500
+## 5     202006       GBA General San Martín     2            56              48 14000
+## 6     202006       GBA           La Plata     3            40              40 10000
+##   currency                                                       title property_type
+## 1      ARS                                      PH - Lomas Del Mirador            PH
+## 2      ARS                                              PH - Chilavert            PH
+## 3      ARS Alquiler, depto de un domitorio frente al parque San Martin  Departamento
+## 4      ARS                                     Departamento - La Plata  Departamento
+## 5      ARS                     Departamento céntrico - Villa Ballester  Departamento
+## 6      ARS                               Departamento - José Hernández  Departamento
+##   operation_type       lat       lon
+## 1       Alquiler -34.66253 -58.52914
+## 2       Alquiler -34.54301 -58.57573
+## 3       Alquiler -34.93415 -57.96605
+## 4       Alquiler -34.90645 -57.97335
+## 5       Alquiler -34.55038 -58.55512
+## 6       Alquiler -34.89768 -58.02787</code></pre>
 <p>En cambio, si queremos filtrar todas las propiedades que no estén ubicadas en 3 partidos diferentes como por ejempo La Plata, General San Martín y La Matanza debemos utilizar ! + %in% de la siguiente forma:</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="manipulación-de-datos.html#cb33-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, <span class="op">!</span>(partido <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;La Plata&quot;</span>, <span class="st">&quot;General San Martín&quot;</span>, <span class="st">&quot;La Matanza&quot;</span>)))</span>
-<span id="cb33-2"><a href="manipulación-de-datos.html#cb33-2"></a></span>
-<span id="cb33-3"><a href="manipulación-de-datos.html#cb33-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
-<pre><code>##   created_on provincia       partido rooms surface_total surface_covered
-## 1     202006      CABA      Comuna 7     1            40              37
-## 2     202006      CABA     Comuna 13     1            30              30
-## 3     202006      CABA     Comuna 13     1            31              29
-## 4     202006      CABA      Comuna 1     1            35              35
-## 5     202006       GBA Vicente López     1            36              27
-## 6     202006      CABA     Comuna 13     2            60              50
-##   price currency
-## 1 22500      ARS
-## 2 18000      ARS
-## 3 17900      ARS
-## 4 42000      ARS
-## 5 19000      ARS
-## 6 32000      ARS
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="manipulación-de-datos.html#cb33-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, <span class="sc">!</span>(partido <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;La Plata&quot;</span>, <span class="st">&quot;General San Martín&quot;</span>, <span class="st">&quot;La Matanza&quot;</span>)))</span>
+<span id="cb33-2"><a href="manipulación-de-datos.html#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-3"><a href="manipulación-de-datos.html#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(filtro)</span></code></pre></div>
+<pre><code>##   created_on provincia       partido rooms surface_total surface_covered price currency
+## 1     202006      CABA      Comuna 7     1            40              37 22500      ARS
+## 2     202006      CABA     Comuna 13     1            30              30 18000      ARS
+## 3     202006      CABA     Comuna 13     1            31              29 17900      ARS
+## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
+## 5     202006       GBA Vicente López     1            36              27 19000      ARS
+## 6     202006      CABA     Comuna 13     2            60              50 32000      ARS
 ##                                                                           title
 ## 1                                                         Departamento - Flores
 ## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
@@ -419,57 +390,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><strong>!</strong>(condición 1 <strong>&amp;</strong> condición 2) -&gt; no se cumple ninguna de las 2 condiciones</li>
 </ul>
 <p>Por ejemplo, si queremos filtrar todos los registros pertenecientes a la Comuna 5 y a la Comuna 13:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="manipulación-de-datos.html#cb35-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, partido<span class="op">==</span><span class="st">&quot;Comuna 5&quot;</span> <span class="op">&amp;</span><span class="st"> </span>partido<span class="op">==</span><span class="st">&quot;Comuna 13&quot;</span>)</span>
-<span id="cb35-2"><a href="manipulación-de-datos.html#cb35-2"></a></span>
-<span id="cb35-3"><a href="manipulación-de-datos.html#cb35-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
-<pre><code>##  [1] created_on      provincia       partido         rooms          
-##  [5] surface_total   surface_covered price           currency       
-##  [9] title           property_type   operation_type  lat            
-## [13] lon            
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="manipulación-de-datos.html#cb35-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, partido<span class="sc">==</span><span class="st">&quot;Comuna 5&quot;</span> <span class="sc">&amp;</span> partido<span class="sc">==</span><span class="st">&quot;Comuna 13&quot;</span>)</span>
+<span id="cb35-2"><a href="manipulación-de-datos.html#cb35-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-3"><a href="manipulación-de-datos.html#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(filtro)</span></code></pre></div>
+<pre><code>##  [1] created_on      provincia       partido         rooms           surface_total  
+##  [6] surface_covered price           currency        title           property_type  
+## [11] operation_type  lat             lon            
 ## &lt;0 rows&gt; (or 0-length row.names)</code></pre>
 <p>El resultado es 0 porque un registro no puede pertenecer a ambas comunas al mismo tiempo, sin embargo si queremos filtrar aquellos que pertenecen a una u otra podemos hacerlo así:</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="manipulación-de-datos.html#cb37-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, partido<span class="op">==</span><span class="st">&quot;Comuna 5&quot;</span> <span class="op">|</span><span class="st"> </span>partido<span class="op">==</span><span class="st">&quot;Comuna 13&quot;</span>)</span>
-<span id="cb37-2"><a href="manipulación-de-datos.html#cb37-2"></a></span>
-<span id="cb37-3"><a href="manipulación-de-datos.html#cb37-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
-<pre><code>##   created_on provincia   partido rooms surface_total surface_covered price
-## 1     202006      CABA Comuna 13     1            30              30 18000
-## 2     202006      CABA Comuna 13     1            31              29 17900
-## 3     202006      CABA Comuna 13     2            60              50 32000
-## 4     202006      CABA Comuna 13     2            53              44 26000
-## 5     202006      CABA  Comuna 5     2            45              38 20000
-## 6     202006      CABA Comuna 13     2            55              55 45000
-##   currency                                                           title
-## 1      ARS           Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 2      ARS                                         Departamento - Belgrano
-## 3      ARS Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera
-## 4      ARS       Unico 2 ambientes A Estrenar! Posesion inmediata! - Nuñez
-## 5      ARS              Departamento de 2 ambientes en Alquiler en Almagro
-## 6      ARS                              BLANCO ENCALADA AL 3000 A ESTRENAR
-##   property_type operation_type       lat       lon
-## 1  Departamento       Alquiler -34.55460 -58.46652
-## 2  Departamento       Alquiler -34.56318 -58.46461
-## 3  Departamento       Alquiler -34.53795 -58.46671
-## 4  Departamento       Alquiler -34.54756 -58.47037
-## 5  Departamento       Alquiler -34.60613 -58.42947
-## 6  Departamento       Alquiler -34.56313 -58.46550</code></pre>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="manipulación-de-datos.html#cb37-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, partido<span class="sc">==</span><span class="st">&quot;Comuna 5&quot;</span> <span class="sc">|</span> partido<span class="sc">==</span><span class="st">&quot;Comuna 13&quot;</span>)</span>
+<span id="cb37-2"><a href="manipulación-de-datos.html#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="manipulación-de-datos.html#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(filtro)</span></code></pre></div>
+<pre><code>##   created_on provincia   partido rooms surface_total surface_covered price currency
+## 1     202006      CABA Comuna 13     1            30              30 18000      ARS
+## 2     202006      CABA Comuna 13     1            31              29 17900      ARS
+## 3     202006      CABA Comuna 13     2            60              50 32000      ARS
+## 4     202006      CABA Comuna 13     2            53              44 26000      ARS
+## 5     202006      CABA  Comuna 5     2            45              38 20000      ARS
+## 6     202006      CABA Comuna 13     2            55              55 45000      ARS
+##                                                             title property_type
+## 1           Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento
+## 2                                         Departamento - Belgrano  Departamento
+## 3 Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera  Departamento
+## 4       Unico 2 ambientes A Estrenar! Posesion inmediata! - Nuñez  Departamento
+## 5              Departamento de 2 ambientes en Alquiler en Almagro  Departamento
+## 6                              BLANCO ENCALADA AL 3000 A ESTRENAR  Departamento
+##   operation_type       lat       lon
+## 1       Alquiler -34.55460 -58.46652
+## 2       Alquiler -34.56318 -58.46461
+## 3       Alquiler -34.53795 -58.46671
+## 4       Alquiler -34.54756 -58.47037
+## 5       Alquiler -34.60613 -58.42947
+## 6       Alquiler -34.56313 -58.46550</code></pre>
 <p>También podemos quedarnos con aquellas propiedades que estén en alquiler y que tengan más de 50m2:</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="manipulación-de-datos.html#cb39-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, operation_type<span class="op">==</span><span class="st">&quot;Alquiler&quot;</span> <span class="op">&amp;</span><span class="st"> </span>surface_covered<span class="op">&gt;=</span><span class="dv">50</span>)</span>
-<span id="cb39-2"><a href="manipulación-de-datos.html#cb39-2"></a></span>
-<span id="cb39-3"><a href="manipulación-de-datos.html#cb39-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
-<pre><code>##   created_on provincia   partido rooms surface_total surface_covered price
-## 1     202006      CABA Comuna 13     2            60              50 32000
-## 2     202006      CABA Comuna 13     2            55              55 45000
-## 3     202006       GBA  La Plata     2            50              50 18000
-## 4     202006       GBA Ituzaingó     3            75              75 19000
-## 5     202006       GBA     Tigre     3            95              80 42000
-## 6     202006       GBA     Tigre     3            98              90 42000
-##   currency
-## 1      ARS
-## 2      ARS
-## 3      ARS
-## 4      ARS
-## 5      ARS
-## 6      ARS
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="manipulación-de-datos.html#cb39-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, operation_type<span class="sc">==</span><span class="st">&quot;Alquiler&quot;</span> <span class="sc">&amp;</span> surface_covered<span class="sc">&gt;=</span><span class="dv">50</span>)</span>
+<span id="cb39-2"><a href="manipulación-de-datos.html#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-3"><a href="manipulación-de-datos.html#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(filtro)</span></code></pre></div>
+<pre><code>##   created_on provincia   partido rooms surface_total surface_covered price currency
+## 1     202006      CABA Comuna 13     2            60              50 32000      ARS
+## 2     202006      CABA Comuna 13     2            55              55 45000      ARS
+## 3     202006       GBA  La Plata     2            50              50 18000      ARS
+## 4     202006       GBA Ituzaingó     3            75              75 19000      ARS
+## 5     202006       GBA     Tigre     3            95              80 42000      ARS
+## 6     202006       GBA     Tigre     3            98              90 42000      ARS
 ##                                                                                              title
 ## 1                                  Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera
 ## 2                                                               BLANCO ENCALADA AL 3000 A ESTRENAR
@@ -485,42 +448,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5  Departamento       Alquiler -34.39642 -58.64665
 ## 6  Departamento       Alquiler -34.39512 -58.64665</code></pre>
 <p>O con aquellas propiedades que se ubiquen en la Comuna 12, 13 o 14 y que no sean monoambientes:</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="manipulación-de-datos.html#cb41-1"></a>filtro &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, partido <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Comuna 14&quot;</span>, <span class="st">&quot;Comuna 13&quot;</span>, <span class="st">&quot;Comuna 12&quot;</span>) <span class="op">&amp;</span><span class="st"> </span><span class="op">!</span><span class="st"> </span>rooms<span class="op">==</span><span class="dv">1</span>)</span>
-<span id="cb41-2"><a href="manipulación-de-datos.html#cb41-2"></a></span>
-<span id="cb41-3"><a href="manipulación-de-datos.html#cb41-3"></a><span class="kw">head</span>(filtro)</span></code></pre></div>
-<pre><code>##   created_on provincia   partido rooms surface_total surface_covered price
-## 1     202006      CABA Comuna 13     2            60              50 32000
-## 2     202006      CABA Comuna 13     2            53              44 26000
-## 3     202006      CABA Comuna 12     2            42              37 22000
-## 4     202006      CABA Comuna 14     2            43              33 27000
-## 5     202006      CABA Comuna 13     2            55              55 45000
-## 6     202006      CABA Comuna 14     2            48              48 23000
-##   currency                                                           title
-## 1      ARS Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera
-## 2      ARS       Unico 2 ambientes A Estrenar! Posesion inmediata! - Nuñez
-## 3      ARS                         Depto 2AMB - Av. Balbin 3400 - ALQUILER
-## 4      ARS                     Dos ambientes con Balcón a Demaría y Patio.
-## 5      ARS                              BLANCO ENCALADA AL 3000 A ESTRENAR
-## 6      ARS                                         Departamento - Belgrano
-##   property_type operation_type       lat       lon
-## 1  Departamento       Alquiler -34.53795 -58.46671
-## 2  Departamento       Alquiler -34.54756 -58.47037
-## 3  Departamento       Alquiler -34.55700 -58.47898
-## 4  Departamento       Alquiler -34.57421 -58.42243
-## 5  Departamento       Alquiler -34.56313 -58.46550
-## 6  Departamento       Alquiler -34.56456 -58.43559</code></pre>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="manipulación-de-datos.html#cb41-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, partido <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Comuna 14&quot;</span>, <span class="st">&quot;Comuna 13&quot;</span>, <span class="st">&quot;Comuna 12&quot;</span>) <span class="sc">&amp;</span> <span class="sc">!</span> rooms<span class="sc">==</span><span class="dv">1</span>)</span>
+<span id="cb41-2"><a href="manipulación-de-datos.html#cb41-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-3"><a href="manipulación-de-datos.html#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(filtro)</span></code></pre></div>
+<pre><code>##   created_on provincia   partido rooms surface_total surface_covered price currency
+## 1     202006      CABA Comuna 13     2            60              50 32000      ARS
+## 2     202006      CABA Comuna 13     2            53              44 26000      ARS
+## 3     202006      CABA Comuna 12     2            42              37 22000      ARS
+## 4     202006      CABA Comuna 14     2            43              33 27000      ARS
+## 5     202006      CABA Comuna 13     2            55              55 45000      ARS
+## 6     202006      CABA Comuna 14     2            48              48 23000      ARS
+##                                                             title property_type
+## 1 Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera  Departamento
+## 2       Unico 2 ambientes A Estrenar! Posesion inmediata! - Nuñez  Departamento
+## 3                         Depto 2AMB - Av. Balbin 3400 - ALQUILER  Departamento
+## 4                     Dos ambientes con Balcón a Demaría y Patio.  Departamento
+## 5                              BLANCO ENCALADA AL 3000 A ESTRENAR  Departamento
+## 6                                         Departamento - Belgrano  Departamento
+##   operation_type       lat       lon
+## 1       Alquiler -34.53795 -58.46671
+## 2       Alquiler -34.54756 -58.47037
+## 3       Alquiler -34.55700 -58.47898
+## 4       Alquiler -34.57421 -58.42243
+## 5       Alquiler -34.56313 -58.46550
+## 6       Alquiler -34.56456 -58.43559</code></pre>
 <p>¡Y así se pueden hacer todas las combinaciones de filtros que querramos!</p>
 <p>¿Y si en vez de quitar filas queremos quitar columnas? Bueno, aquí tenemos que usar la función de “seleccionar” que veremos a continuación.</p>
 </div>
-<div id="seleccionar-columnas-de-interés" class="section level2">
+<div id="seleccionar-columnas-de-interés" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> Seleccionar columnas de interés</h2>
 <p>La función <code>select()</code> nos permite elegir u ordenar columnas de nuestro dataset. Esto se puede hacer indicando los nombres completos de las columnas, palabras que contienen, o la letra con la que empiezan o terminan.</p>
 <p>Graficamente sería algo así:</p>
 <p><img src="images/tidyverse_seleccionar.jpg" /></p>
 <p>Por ejemplo, de la siguiente forma podríamos quedarnos solo con las columnas created_on, provincia, price y currency:</p>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="manipulación-de-datos.html#cb43-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, created_on, provincia, price, currency)</span>
-<span id="cb43-2"><a href="manipulación-de-datos.html#cb43-2"></a></span>
-<span id="cb43-3"><a href="manipulación-de-datos.html#cb43-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="manipulación-de-datos.html#cb43-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, created_on, provincia, price, currency)</span>
+<span id="cb43-2"><a href="manipulación-de-datos.html#cb43-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-3"><a href="manipulación-de-datos.html#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
 <pre><code>##   created_on provincia price currency
 ## 1     202006      CABA 22500      ARS
 ## 2     202006      CABA 18000      ARS
@@ -529,27 +492,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5     202006       GBA 19000      ARS
 ## 6     202006       GBA 12000      ARS</code></pre>
 <p>También podríamos elegir que columna/s no queremos tener más en nuestro dataset agregando un “-” antes de su nombre:</p>
-<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="manipulación-de-datos.html#cb45-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="op">-</span>title)</span>
-<span id="cb45-2"><a href="manipulación-de-datos.html#cb45-2"></a></span>
-<span id="cb45-3"><a href="manipulación-de-datos.html#cb45-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
-<pre><code>##   created_on provincia       partido rooms surface_total surface_covered
-## 1     202006      CABA      Comuna 7     1            40              37
-## 2     202006      CABA     Comuna 13     1            30              30
-## 3     202006      CABA     Comuna 13     1            31              29
-## 4     202006      CABA      Comuna 1     1            35              35
-## 5     202006       GBA Vicente López     1            36              27
-## 6     202006       GBA    La Matanza     2            24              24
-##   price currency property_type operation_type       lat       lon
-## 1 22500      ARS  Departamento       Alquiler -34.61917 -58.46222
-## 2 18000      ARS  Departamento       Alquiler -34.55460 -58.46652
-## 3 17900      ARS  Departamento       Alquiler -34.56318 -58.46461
-## 4 42000      ARS  Departamento       Alquiler -34.61836 -58.36090
-## 5 19000      ARS  Departamento       Alquiler -34.53344 -58.49345
-## 6 12000      ARS            PH       Alquiler -34.66253 -58.52914</code></pre>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="manipulación-de-datos.html#cb45-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, <span class="sc">-</span>title)</span>
+<span id="cb45-2"><a href="manipulación-de-datos.html#cb45-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-3"><a href="manipulación-de-datos.html#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
+<pre><code>##   created_on provincia       partido rooms surface_total surface_covered price currency
+## 1     202006      CABA      Comuna 7     1            40              37 22500      ARS
+## 2     202006      CABA     Comuna 13     1            30              30 18000      ARS
+## 3     202006      CABA     Comuna 13     1            31              29 17900      ARS
+## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
+## 5     202006       GBA Vicente López     1            36              27 19000      ARS
+## 6     202006       GBA    La Matanza     2            24              24 12000      ARS
+##   property_type operation_type       lat       lon
+## 1  Departamento       Alquiler -34.61917 -58.46222
+## 2  Departamento       Alquiler -34.55460 -58.46652
+## 3  Departamento       Alquiler -34.56318 -58.46461
+## 4  Departamento       Alquiler -34.61836 -58.36090
+## 5  Departamento       Alquiler -34.53344 -58.49345
+## 6            PH       Alquiler -34.66253 -58.52914</code></pre>
 <p>Con “:” podríamos indicar que queremos seleccionar un rango de columnas. Desde price hasta operation_type:</p>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="manipulación-de-datos.html#cb47-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, price<span class="op">:</span>operation_type)</span>
-<span id="cb47-2"><a href="manipulación-de-datos.html#cb47-2"></a></span>
-<span id="cb47-3"><a href="manipulación-de-datos.html#cb47-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="manipulación-de-datos.html#cb47-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, price<span class="sc">:</span>operation_type)</span>
+<span id="cb47-2"><a href="manipulación-de-datos.html#cb47-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-3"><a href="manipulación-de-datos.html#cb47-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
 <pre><code>##   price currency
 ## 1 22500      ARS
 ## 2 18000      ARS
@@ -572,9 +535,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5  Departamento       Alquiler
 ## 6            PH       Alquiler</code></pre>
 <p>O con las que ocupan de la posición 7 a la 10:</p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="manipulación-de-datos.html#cb49-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="dv">7</span><span class="op">:</span><span class="dv">10</span>)</span>
-<span id="cb49-2"><a href="manipulación-de-datos.html#cb49-2"></a></span>
-<span id="cb49-3"><a href="manipulación-de-datos.html#cb49-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="manipulación-de-datos.html#cb49-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, <span class="dv">7</span><span class="sc">:</span><span class="dv">10</span>)</span>
+<span id="cb49-2"><a href="manipulación-de-datos.html#cb49-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-3"><a href="manipulación-de-datos.html#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
 <pre><code>##   price currency
 ## 1 22500      ARS
 ## 2 18000      ARS
@@ -597,27 +560,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5  Departamento
 ## 6            PH</code></pre>
 <p>O agregando un “-” adelante podríamos quedarnos con aquellas que no ocupan de la posición 7 a 10:</p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="manipulación-de-datos.html#cb51-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="op">-</span>(<span class="dv">7</span><span class="op">:</span><span class="dv">10</span>))</span>
-<span id="cb51-2"><a href="manipulación-de-datos.html#cb51-2"></a></span>
-<span id="cb51-3"><a href="manipulación-de-datos.html#cb51-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
-<pre><code>##   created_on provincia       partido rooms surface_total surface_covered
-## 1     202006      CABA      Comuna 7     1            40              37
-## 2     202006      CABA     Comuna 13     1            30              30
-## 3     202006      CABA     Comuna 13     1            31              29
-## 4     202006      CABA      Comuna 1     1            35              35
-## 5     202006       GBA Vicente López     1            36              27
-## 6     202006       GBA    La Matanza     2            24              24
-##   operation_type       lat       lon
-## 1       Alquiler -34.61917 -58.46222
-## 2       Alquiler -34.55460 -58.46652
-## 3       Alquiler -34.56318 -58.46461
-## 4       Alquiler -34.61836 -58.36090
-## 5       Alquiler -34.53344 -58.49345
-## 6       Alquiler -34.66253 -58.52914</code></pre>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="manipulación-de-datos.html#cb51-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, <span class="sc">-</span>(<span class="dv">7</span><span class="sc">:</span><span class="dv">10</span>))</span>
+<span id="cb51-2"><a href="manipulación-de-datos.html#cb51-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-3"><a href="manipulación-de-datos.html#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
+<pre><code>##   created_on provincia       partido rooms surface_total surface_covered operation_type
+## 1     202006      CABA      Comuna 7     1            40              37       Alquiler
+## 2     202006      CABA     Comuna 13     1            30              30       Alquiler
+## 3     202006      CABA     Comuna 13     1            31              29       Alquiler
+## 4     202006      CABA      Comuna 1     1            35              35       Alquiler
+## 5     202006       GBA Vicente López     1            36              27       Alquiler
+## 6     202006       GBA    La Matanza     2            24              24       Alquiler
+##         lat       lon
+## 1 -34.61917 -58.46222
+## 2 -34.55460 -58.46652
+## 3 -34.56318 -58.46461
+## 4 -34.61836 -58.36090
+## 5 -34.53344 -58.49345
+## 6 -34.66253 -58.52914</code></pre>
 <p>Otra opción es seleccionar columnas de acuerdo a la primer letra de los nombres. Por ejemplo aquellas que comienzan con la letra “p”:</p>
-<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="manipulación-de-datos.html#cb53-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="kw">starts_with</span>(<span class="st">&quot;p&quot;</span>))</span>
-<span id="cb53-2"><a href="manipulación-de-datos.html#cb53-2"></a></span>
-<span id="cb53-3"><a href="manipulación-de-datos.html#cb53-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="manipulación-de-datos.html#cb53-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, <span class="fu">starts_with</span>(<span class="st">&quot;p&quot;</span>))</span>
+<span id="cb53-2"><a href="manipulación-de-datos.html#cb53-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-3"><a href="manipulación-de-datos.html#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
 <pre><code>##   provincia       partido price property_type
 ## 1      CABA      Comuna 7 22500  Departamento
 ## 2      CABA     Comuna 13 18000  Departamento
@@ -626,23 +589,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5       GBA Vicente López 19000  Departamento
 ## 6       GBA    La Matanza 12000            PH</code></pre>
 <p>O aquellas que sus nombres terminan con la letra “e”:</p>
-<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="manipulación-de-datos.html#cb55-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="kw">ends_with</span>(<span class="st">&quot;e&quot;</span>))</span>
-<span id="cb55-2"><a href="manipulación-de-datos.html#cb55-2"></a></span>
-<span id="cb55-3"><a href="manipulación-de-datos.html#cb55-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
-<pre><code>##   price
-## 1 22500
-## 2 18000
-## 3 17900
-## 4 42000
-## 5 19000
-## 6 12000
-##                                                                           title
-## 1                                                         Departamento - Flores
-## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3                                                       Departamento - Belgrano
-## 4                              Monoambiente con cochera. Zencity. Puerto Madero
-## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
-## 6                                                        PH - Lomas Del Mirador
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="manipulación-de-datos.html#cb55-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, <span class="fu">ends_with</span>(<span class="st">&quot;e&quot;</span>))</span>
+<span id="cb55-2"><a href="manipulación-de-datos.html#cb55-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-3"><a href="manipulación-de-datos.html#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
+<pre><code>##   price                                                                         title
+## 1 22500                                                         Departamento - Flores
+## 2 18000                         Retasado! Monoambiente en Nuñez, excelente ubicación!
+## 3 17900                                                       Departamento - Belgrano
+## 4 42000                              Monoambiente con cochera. Zencity. Puerto Madero
+## 5 19000 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
+## 6 12000                                                        PH - Lomas Del Mirador
 ##   property_type operation_type
 ## 1  Departamento       Alquiler
 ## 2  Departamento       Alquiler
@@ -651,9 +607,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5  Departamento       Alquiler
 ## 6            PH       Alquiler</code></pre>
 <p>O que sus nombres contengan la palabra “surface”:</p>
-<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="manipulación-de-datos.html#cb57-1"></a>seleccion &lt;-<span class="st"> </span><span class="kw">select</span>(datos_amba, <span class="kw">contains</span>(<span class="st">&quot;surface&quot;</span>))</span>
-<span id="cb57-2"><a href="manipulación-de-datos.html#cb57-2"></a></span>
-<span id="cb57-3"><a href="manipulación-de-datos.html#cb57-3"></a><span class="kw">head</span>(seleccion)</span></code></pre></div>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="manipulación-de-datos.html#cb57-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, <span class="fu">contains</span>(<span class="st">&quot;surface&quot;</span>))</span>
+<span id="cb57-2"><a href="manipulación-de-datos.html#cb57-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-3"><a href="manipulación-de-datos.html#cb57-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
 <pre><code>##   surface_total surface_covered
 ## 1            40              37
 ## 2            30              30
@@ -662,28 +618,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5            36              27
 ## 6            24              24</code></pre>
 </div>
-<div id="modificar-o-agregar-columnas" class="section level2">
+<div id="modificar-o-agregar-columnas" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> Modificar o agregar columnas</h2>
 <p>Ahora veamos como mutar nuestro dataset agregando nuevas columnas o cambiando el contenido de las existentes. Gráficamente sería algo así:</p>
 <p><img src="images/tidyverse_modificar.jpg" /></p>
 <p>Aprovechando que tenemos los datos del precio total (price) y superficie cubierta (surface_covered) de cada una de las propiedades, agreguemos una nueva columna a nuestro dataset que incluya el valor del m2:</p>
-<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="manipulación-de-datos.html#cb59-1"></a>modificar &lt;-<span class="st"> </span><span class="kw">mutate</span>(datos_amba, <span class="dt">price_m2=</span>price<span class="op">/</span>surface_covered)</span>
-<span id="cb59-2"><a href="manipulación-de-datos.html#cb59-2"></a></span>
-<span id="cb59-3"><a href="manipulación-de-datos.html#cb59-3"></a><span class="kw">head</span>(modificar)</span></code></pre></div>
-<pre><code>##   created_on provincia       partido rooms surface_total surface_covered
-## 1     202006      CABA      Comuna 7     1            40              37
-## 2     202006      CABA     Comuna 13     1            30              30
-## 3     202006      CABA     Comuna 13     1            31              29
-## 4     202006      CABA      Comuna 1     1            35              35
-## 5     202006       GBA Vicente López     1            36              27
-## 6     202006       GBA    La Matanza     2            24              24
-##   price currency
-## 1 22500      ARS
-## 2 18000      ARS
-## 3 17900      ARS
-## 4 42000      ARS
-## 5 19000      ARS
-## 6 12000      ARS
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="manipulación-de-datos.html#cb59-1" aria-hidden="true" tabindex="-1"></a>modificar <span class="ot">&lt;-</span> <span class="fu">mutate</span>(datos_amba, <span class="at">price_m2=</span>price<span class="sc">/</span>surface_covered)</span>
+<span id="cb59-2"><a href="manipulación-de-datos.html#cb59-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb59-3"><a href="manipulación-de-datos.html#cb59-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(modificar)</span></code></pre></div>
+<pre><code>##   created_on provincia       partido rooms surface_total surface_covered price currency
+## 1     202006      CABA      Comuna 7     1            40              37 22500      ARS
+## 2     202006      CABA     Comuna 13     1            30              30 18000      ARS
+## 3     202006      CABA     Comuna 13     1            31              29 17900      ARS
+## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
+## 5     202006       GBA Vicente López     1            36              27 19000      ARS
+## 6     202006       GBA    La Matanza     2            24              24 12000      ARS
 ##                                                                           title
 ## 1                                                         Departamento - Flores
 ## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
@@ -699,23 +648,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5  Departamento       Alquiler -34.53344 -58.49345  703.7037
 ## 6            PH       Alquiler -34.66253 -58.52914  500.0000</code></pre>
 <p>Si queremos redondear el resultado obtenido, principalmente cuando es una división y por default nos pone varios decimales, tenemos que usar <code>round()</code> y asignar la cantidad de decimales deseados, en este caso usaré 2:</p>
-<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="manipulación-de-datos.html#cb61-1"></a>modificar &lt;-<span class="st"> </span><span class="kw">mutate</span>(datos_amba, <span class="dt">price_m2=</span><span class="kw">round</span>(price<span class="op">/</span>surface_covered, <span class="dv">2</span>))</span>
-<span id="cb61-2"><a href="manipulación-de-datos.html#cb61-2"></a></span>
-<span id="cb61-3"><a href="manipulación-de-datos.html#cb61-3"></a><span class="kw">head</span>(modificar)</span></code></pre></div>
-<pre><code>##   created_on provincia       partido rooms surface_total surface_covered
-## 1     202006      CABA      Comuna 7     1            40              37
-## 2     202006      CABA     Comuna 13     1            30              30
-## 3     202006      CABA     Comuna 13     1            31              29
-## 4     202006      CABA      Comuna 1     1            35              35
-## 5     202006       GBA Vicente López     1            36              27
-## 6     202006       GBA    La Matanza     2            24              24
-##   price currency
-## 1 22500      ARS
-## 2 18000      ARS
-## 3 17900      ARS
-## 4 42000      ARS
-## 5 19000      ARS
-## 6 12000      ARS
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="manipulación-de-datos.html#cb61-1" aria-hidden="true" tabindex="-1"></a>modificar <span class="ot">&lt;-</span> <span class="fu">mutate</span>(datos_amba, <span class="at">price_m2=</span><span class="fu">round</span>(price<span class="sc">/</span>surface_covered, <span class="dv">2</span>))</span>
+<span id="cb61-2"><a href="manipulación-de-datos.html#cb61-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-3"><a href="manipulación-de-datos.html#cb61-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(modificar)</span></code></pre></div>
+<pre><code>##   created_on provincia       partido rooms surface_total surface_covered price currency
+## 1     202006      CABA      Comuna 7     1            40              37 22500      ARS
+## 2     202006      CABA     Comuna 13     1            30              30 18000      ARS
+## 3     202006      CABA     Comuna 13     1            31              29 17900      ARS
+## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
+## 5     202006       GBA Vicente López     1            36              27 19000      ARS
+## 6     202006       GBA    La Matanza     2            24              24 12000      ARS
 ##                                                                           title
 ## 1                                                         Departamento - Flores
 ## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
@@ -738,23 +680,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>A - B <strong>Resta de A menos B</strong></li>
 </ul>
 <p>También podríamos agregar una columna que refleje un cálculo entre una columna existente y un valor extra, por ejemplo pasemos la superficie total de m2 a cm2:</p>
-<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="manipulación-de-datos.html#cb63-1"></a>modificar &lt;-<span class="st"> </span><span class="kw">mutate</span>(datos_amba, <span class="dt">surface_total_cm2=</span>surface_total<span class="op">*</span><span class="dv">10000</span>)</span>
-<span id="cb63-2"><a href="manipulación-de-datos.html#cb63-2"></a></span>
-<span id="cb63-3"><a href="manipulación-de-datos.html#cb63-3"></a><span class="kw">head</span>(modificar)</span></code></pre></div>
-<pre><code>##   created_on provincia       partido rooms surface_total surface_covered
-## 1     202006      CABA      Comuna 7     1            40              37
-## 2     202006      CABA     Comuna 13     1            30              30
-## 3     202006      CABA     Comuna 13     1            31              29
-## 4     202006      CABA      Comuna 1     1            35              35
-## 5     202006       GBA Vicente López     1            36              27
-## 6     202006       GBA    La Matanza     2            24              24
-##   price currency
-## 1 22500      ARS
-## 2 18000      ARS
-## 3 17900      ARS
-## 4 42000      ARS
-## 5 19000      ARS
-## 6 12000      ARS
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="manipulación-de-datos.html#cb63-1" aria-hidden="true" tabindex="-1"></a>modificar <span class="ot">&lt;-</span> <span class="fu">mutate</span>(datos_amba, <span class="at">surface_total_cm2=</span>surface_total<span class="sc">*</span><span class="dv">10000</span>)</span>
+<span id="cb63-2"><a href="manipulación-de-datos.html#cb63-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb63-3"><a href="manipulación-de-datos.html#cb63-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(modificar)</span></code></pre></div>
+<pre><code>##   created_on provincia       partido rooms surface_total surface_covered price currency
+## 1     202006      CABA      Comuna 7     1            40              37 22500      ARS
+## 2     202006      CABA     Comuna 13     1            30              30 18000      ARS
+## 3     202006      CABA     Comuna 13     1            31              29 17900      ARS
+## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
+## 5     202006       GBA Vicente López     1            36              27 19000      ARS
+## 6     202006       GBA    La Matanza     2            24              24 12000      ARS
 ##                                                                           title
 ## 1                                                         Departamento - Flores
 ## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
@@ -770,25 +705,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5  Departamento       Alquiler -34.53344 -58.49345            360000
 ## 6            PH       Alquiler -34.66253 -58.52914            240000</code></pre>
 <p>Dejando de lado los cálculos, otra posibilidad que tenemos es separar el contenido de una columna en 2, por ejemplo dividamos en año y mes la data que aparece en created_on. Para esto utilizaremos <code>substr()</code>:</p>
-<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="manipulación-de-datos.html#cb65-1"></a>modificar &lt;-<span class="st"> </span><span class="kw">mutate</span>(datos_amba,</span>
-<span id="cb65-2"><a href="manipulación-de-datos.html#cb65-2"></a>                    <span class="dt">year =</span> <span class="kw">substr</span>(created_on, <span class="dv">1</span>, <span class="dv">4</span>),</span>
-<span id="cb65-3"><a href="manipulación-de-datos.html#cb65-3"></a>                    <span class="dt">month =</span> <span class="kw">substr</span>(created_on, <span class="dv">5</span>, <span class="dv">6</span>))</span>
-<span id="cb65-4"><a href="manipulación-de-datos.html#cb65-4"></a></span>
-<span id="cb65-5"><a href="manipulación-de-datos.html#cb65-5"></a><span class="kw">head</span>(modificar)</span></code></pre></div>
-<pre><code>##   created_on provincia       partido rooms surface_total surface_covered
-## 1     202006      CABA      Comuna 7     1            40              37
-## 2     202006      CABA     Comuna 13     1            30              30
-## 3     202006      CABA     Comuna 13     1            31              29
-## 4     202006      CABA      Comuna 1     1            35              35
-## 5     202006       GBA Vicente López     1            36              27
-## 6     202006       GBA    La Matanza     2            24              24
-##   price currency
-## 1 22500      ARS
-## 2 18000      ARS
-## 3 17900      ARS
-## 4 42000      ARS
-## 5 19000      ARS
-## 6 12000      ARS
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="manipulación-de-datos.html#cb65-1" aria-hidden="true" tabindex="-1"></a>modificar <span class="ot">&lt;-</span> <span class="fu">mutate</span>(datos_amba,</span>
+<span id="cb65-2"><a href="manipulación-de-datos.html#cb65-2" aria-hidden="true" tabindex="-1"></a>                    <span class="at">year =</span> <span class="fu">substr</span>(created_on, <span class="dv">1</span>, <span class="dv">4</span>),</span>
+<span id="cb65-3"><a href="manipulación-de-datos.html#cb65-3" aria-hidden="true" tabindex="-1"></a>                    <span class="at">month =</span> <span class="fu">substr</span>(created_on, <span class="dv">5</span>, <span class="dv">6</span>))</span>
+<span id="cb65-4"><a href="manipulación-de-datos.html#cb65-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb65-5"><a href="manipulación-de-datos.html#cb65-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(modificar)</span></code></pre></div>
+<pre><code>##   created_on provincia       partido rooms surface_total surface_covered price currency
+## 1     202006      CABA      Comuna 7     1            40              37 22500      ARS
+## 2     202006      CABA     Comuna 13     1            30              30 18000      ARS
+## 3     202006      CABA     Comuna 13     1            31              29 17900      ARS
+## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
+## 5     202006       GBA Vicente López     1            36              27 19000      ARS
+## 6     202006       GBA    La Matanza     2            24              24 12000      ARS
 ##                                                                           title
 ## 1                                                         Departamento - Flores
 ## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
@@ -804,23 +732,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5  Departamento       Alquiler -34.53344 -58.49345 2020    06
 ## 6            PH       Alquiler -34.66253 -58.52914 2020    06</code></pre>
 <p>Otra aplicación que tiene <code>mutate()</code> es la de agregar columnas con algun contenido que elijamos nosotros, como por ejemplo sumemos una nueva columna que indique la fuente de donde descargamos toda esta información:</p>
-<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="manipulación-de-datos.html#cb67-1"></a>modificar &lt;-<span class="st"> </span><span class="kw">mutate</span>(datos_amba, <span class="dt">fuente=</span><span class="st">&quot;Properati&quot;</span>)</span>
-<span id="cb67-2"><a href="manipulación-de-datos.html#cb67-2"></a></span>
-<span id="cb67-3"><a href="manipulación-de-datos.html#cb67-3"></a><span class="kw">head</span>(modificar)</span></code></pre></div>
-<pre><code>##   created_on provincia       partido rooms surface_total surface_covered
-## 1     202006      CABA      Comuna 7     1            40              37
-## 2     202006      CABA     Comuna 13     1            30              30
-## 3     202006      CABA     Comuna 13     1            31              29
-## 4     202006      CABA      Comuna 1     1            35              35
-## 5     202006       GBA Vicente López     1            36              27
-## 6     202006       GBA    La Matanza     2            24              24
-##   price currency
-## 1 22500      ARS
-## 2 18000      ARS
-## 3 17900      ARS
-## 4 42000      ARS
-## 5 19000      ARS
-## 6 12000      ARS
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="manipulación-de-datos.html#cb67-1" aria-hidden="true" tabindex="-1"></a>modificar <span class="ot">&lt;-</span> <span class="fu">mutate</span>(datos_amba, <span class="at">fuente=</span><span class="st">&quot;Properati&quot;</span>)</span>
+<span id="cb67-2"><a href="manipulación-de-datos.html#cb67-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-3"><a href="manipulación-de-datos.html#cb67-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(modificar)</span></code></pre></div>
+<pre><code>##   created_on provincia       partido rooms surface_total surface_covered price currency
+## 1     202006      CABA      Comuna 7     1            40              37 22500      ARS
+## 2     202006      CABA     Comuna 13     1            30              30 18000      ARS
+## 3     202006      CABA     Comuna 13     1            31              29 17900      ARS
+## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
+## 5     202006       GBA Vicente López     1            36              27 19000      ARS
+## 6     202006       GBA    La Matanza     2            24              24 12000      ARS
 ##                                                                           title
 ## 1                                                         Departamento - Flores
 ## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
@@ -836,32 +757,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5  Departamento       Alquiler -34.53344 -58.49345 Properati
 ## 6            PH       Alquiler -34.66253 -58.52914 Properati</code></pre>
 <p>Ahora veamos como modificar el tipo de dato dentro de una columna:</p>
-<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="manipulación-de-datos.html#cb69-1"></a><span class="kw">class</span>(datos_amba<span class="op">$</span>title)</span></code></pre></div>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="manipulación-de-datos.html#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(datos_amba<span class="sc">$</span>title)</span></code></pre></div>
 <pre><code>## [1] &quot;factor&quot;</code></pre>
 <p>Vemos que la variable “title” es de tipo factor, así que cambiemos su formato a character:</p>
-<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="manipulación-de-datos.html#cb71-1"></a>modificar &lt;-<span class="st"> </span><span class="kw">mutate</span>(datos_amba, <span class="dt">title=</span><span class="kw">as.character</span>(title))</span>
-<span id="cb71-2"><a href="manipulación-de-datos.html#cb71-2"></a></span>
-<span id="cb71-3"><a href="manipulación-de-datos.html#cb71-3"></a><span class="kw">class</span>(modificar<span class="op">$</span>title)</span></code></pre></div>
+<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="manipulación-de-datos.html#cb71-1" aria-hidden="true" tabindex="-1"></a>modificar <span class="ot">&lt;-</span> <span class="fu">mutate</span>(datos_amba, <span class="at">title=</span><span class="fu">as.character</span>(title))</span>
+<span id="cb71-2"><a href="manipulación-de-datos.html#cb71-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-3"><a href="manipulación-de-datos.html#cb71-3" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(modificar<span class="sc">$</span>title)</span></code></pre></div>
 <pre><code>## [1] &quot;character&quot;</code></pre>
 <p>En el ejemplo anterior utilizamos <code>as.character()</code> pero si quisiesemos convertir una variable a factor utilizariamos <code>as.factor()</code>, a numérica <code>as.numeric()</code> o a número entero <code>as.integer()</code>,</p>
 <p>Por último, veamos como unir 2 columnas de texto en una con <code>paste()</code>:</p>
-<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="manipulación-de-datos.html#cb73-1"></a>modificar &lt;-<span class="st"> </span><span class="kw">mutate</span>(datos_amba, <span class="dt">prov_partido=</span><span class="kw">paste</span>(provincia, partido, <span class="dt">sep=</span><span class="st">&quot;_&quot;</span>))</span>
-<span id="cb73-2"><a href="manipulación-de-datos.html#cb73-2"></a></span>
-<span id="cb73-3"><a href="manipulación-de-datos.html#cb73-3"></a><span class="kw">head</span>(modificar)</span></code></pre></div>
-<pre><code>##   created_on provincia       partido rooms surface_total surface_covered
-## 1     202006      CABA      Comuna 7     1            40              37
-## 2     202006      CABA     Comuna 13     1            30              30
-## 3     202006      CABA     Comuna 13     1            31              29
-## 4     202006      CABA      Comuna 1     1            35              35
-## 5     202006       GBA Vicente López     1            36              27
-## 6     202006       GBA    La Matanza     2            24              24
-##   price currency
-## 1 22500      ARS
-## 2 18000      ARS
-## 3 17900      ARS
-## 4 42000      ARS
-## 5 19000      ARS
-## 6 12000      ARS
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="manipulación-de-datos.html#cb73-1" aria-hidden="true" tabindex="-1"></a>modificar <span class="ot">&lt;-</span> <span class="fu">mutate</span>(datos_amba, <span class="at">prov_partido=</span><span class="fu">paste</span>(provincia, partido, <span class="at">sep=</span><span class="st">&quot;_&quot;</span>))</span>
+<span id="cb73-2"><a href="manipulación-de-datos.html#cb73-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb73-3"><a href="manipulación-de-datos.html#cb73-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(modificar)</span></code></pre></div>
+<pre><code>##   created_on provincia       partido rooms surface_total surface_covered price currency
+## 1     202006      CABA      Comuna 7     1            40              37 22500      ARS
+## 2     202006      CABA     Comuna 13     1            30              30 18000      ARS
+## 3     202006      CABA     Comuna 13     1            31              29 17900      ARS
+## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
+## 5     202006       GBA Vicente López     1            36              27 19000      ARS
+## 6     202006       GBA    La Matanza     2            24              24 12000      ARS
 ##                                                                           title
 ## 1                                                         Departamento - Flores
 ## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
@@ -877,92 +791,71 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5  Departamento       Alquiler -34.53344 -58.49345 GBA_Vicente López
 ## 6            PH       Alquiler -34.66253 -58.52914    GBA_La Matanza</code></pre>
 </div>
-<div id="ordenar-registros" class="section level2">
+<div id="ordenar-registros" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Ordenar registros</h2>
 <p>Esta función nos permitirá ordenar las columnas en orden ascendente o descendente como se ve a continuación:</p>
 <p><img src="images/tidyverse_ordenar.jpg" /></p>
 <p>Probemos ordenar las filas de nuestro data frame en función de los valores de una o más columnas. Por defecto se ordena en forma ascendente:</p>
-<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="manipulación-de-datos.html#cb75-1"></a>ordenar &lt;-<span class="st"> </span><span class="kw">arrange</span>(datos_amba, surface_total)</span>
-<span id="cb75-2"><a href="manipulación-de-datos.html#cb75-2"></a></span>
-<span id="cb75-3"><a href="manipulación-de-datos.html#cb75-3"></a><span class="kw">head</span>(ordenar)</span></code></pre></div>
-<pre><code>##   created_on provincia   partido rooms surface_total surface_covered price
-## 1     202007      CABA Comuna 15     1            10              10 25000
-## 2     202006       GBA     Tigre     2            12              12 10500
-## 3     202007      CABA  Comuna 1     1            14              14 35000
-## 4     202006      CABA  Comuna 2     1            15              15 12900
-## 5     202007      CABA Comuna 15     1            18              18 48000
-## 6     202006       GBA     Morón     1            18              17 35000
-##   currency
-## 1      USD
-## 2      ARS
-## 3      USD
-## 4      ARS
-## 5      USD
-## 6      USD
-##                                                                      title
-## 1                             Garage - Cochera Descubierta en Villa Crespo
-## 2                    Departamento de 2 ambientes en Pradera, Santa Barbara
-## 3                                   VENTA PH 13,84 M2 PANTA BAJA BALVANERA
-## 4                                 Departamento en Alquiler en Barrio Norte
-## 5                       Venta Monoambiente estudio con amenities Chacarita
-## 6 Lindo monoambiente en 2do piso por escalera al frente. BAJAS EXPENSAS!!!
-##   property_type operation_type       lat       lon
-## 1  Departamento          Venta -34.60330 -58.45547
-## 2  Departamento       Alquiler -34.44604 -58.63236
-## 3            PH          Venta -34.61566 -58.39221
-## 4  Departamento       Alquiler -34.59092 -58.40632
-## 5  Departamento          Venta -34.59043 -58.44666
-## 6  Departamento          Venta -34.64390 -58.63221</code></pre>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="manipulación-de-datos.html#cb75-1" aria-hidden="true" tabindex="-1"></a>ordenar <span class="ot">&lt;-</span> <span class="fu">arrange</span>(datos_amba, surface_total)</span>
+<span id="cb75-2"><a href="manipulación-de-datos.html#cb75-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb75-3"><a href="manipulación-de-datos.html#cb75-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(ordenar)</span></code></pre></div>
+<pre><code>##   created_on provincia   partido rooms surface_total surface_covered price currency
+## 1     202007      CABA Comuna 15     1            10              10 25000      USD
+## 2     202006       GBA     Tigre     2            12              12 10500      ARS
+## 3     202007      CABA  Comuna 1     1            14              14 35000      USD
+## 4     202006      CABA  Comuna 2     1            15              15 12900      ARS
+## 5     202007      CABA Comuna 15     1            18              18 48000      USD
+## 6     202006       GBA     Morón     1            18              17 35000      USD
+##                                                                      title property_type
+## 1                             Garage - Cochera Descubierta en Villa Crespo  Departamento
+## 2                    Departamento de 2 ambientes en Pradera, Santa Barbara  Departamento
+## 3                                   VENTA PH 13,84 M2 PANTA BAJA BALVANERA            PH
+## 4                                 Departamento en Alquiler en Barrio Norte  Departamento
+## 5                       Venta Monoambiente estudio con amenities Chacarita  Departamento
+## 6 Lindo monoambiente en 2do piso por escalera al frente. BAJAS EXPENSAS!!!  Departamento
+##   operation_type       lat       lon
+## 1          Venta -34.60330 -58.45547
+## 2       Alquiler -34.44604 -58.63236
+## 3          Venta -34.61566 -58.39221
+## 4       Alquiler -34.59092 -58.40632
+## 5          Venta -34.59043 -58.44666
+## 6          Venta -34.64390 -58.63221</code></pre>
 <p>Pero si queremos ordenar en forma descendente debemos aclararlo con <code>desc()</code>:</p>
-<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="manipulación-de-datos.html#cb77-1"></a>ordenar &lt;-<span class="st"> </span><span class="kw">arrange</span>(datos_amba, <span class="kw">desc</span>(surface_total))</span>
-<span id="cb77-2"><a href="manipulación-de-datos.html#cb77-2"></a></span>
-<span id="cb77-3"><a href="manipulación-de-datos.html#cb77-3"></a><span class="kw">head</span>(ordenar)</span></code></pre></div>
-<pre><code>##   created_on provincia     partido rooms surface_total surface_covered
-## 1     202007       GBA       Pilar     5          5000             300
-## 2     202006       GBA San Vicente     3          4356             150
-## 3     202007       GBA       Pilar     6          3780             320
-## 4     202006      CABA   Comuna 13     2          3650              35
-## 5     202007       GBA       Luján     4          2703             182
-## 6     202007       GBA       Pilar     3          2500              70
-##    price currency
-## 1 120000      USD
-## 2  85000      USD
-## 3 220000      USD
-## 4 109500      USD
-## 5 370000      USD
-## 6 121000      USD
-##                                                           title
-## 1                                          Venta de Casa Quinta
-## 2 España entre Buchard y Esmeralda. Casa en venta, San Viciente
-## 3            Venta casaquinta Del Viso Residencial Los Jazmines
-## 4            Acogedor Departamento de dos ambientes en Belgrano
-## 5                Casa 3 dormitorios estilo campo Estancias Golf
-## 6              VENTA CASA 2 AMBIENTES PILAR 2500 M2 DE PARQUE!!
-##   property_type operation_type       lat       lon
-## 1          Casa          Venta -34.40066 -58.86919
-## 2          Casa          Venta -35.02984 -58.40594
-## 3          Casa          Venta -34.45687 -58.79651
-## 4  Departamento          Venta -34.55398 -58.44853
-## 5          Casa          Venta -34.49543 -59.00930
-## 6          Casa          Venta -34.41586 -58.85729</code></pre>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="manipulación-de-datos.html#cb77-1" aria-hidden="true" tabindex="-1"></a>ordenar <span class="ot">&lt;-</span> <span class="fu">arrange</span>(datos_amba, <span class="fu">desc</span>(surface_total))</span>
+<span id="cb77-2"><a href="manipulación-de-datos.html#cb77-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-3"><a href="manipulación-de-datos.html#cb77-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(ordenar)</span></code></pre></div>
+<pre><code>##   created_on provincia     partido rooms surface_total surface_covered  price currency
+## 1     202007       GBA       Pilar     5          5000             300 120000      USD
+## 2     202006       GBA San Vicente     3          4356             150  85000      USD
+## 3     202007       GBA       Pilar     6          3780             320 220000      USD
+## 4     202006      CABA   Comuna 13     2          3650              35 109500      USD
+## 5     202007       GBA       Luján     4          2703             182 370000      USD
+## 6     202007       GBA       Pilar     3          2500              70 121000      USD
+##                                                           title property_type
+## 1                                          Venta de Casa Quinta          Casa
+## 2 España entre Buchard y Esmeralda. Casa en venta, San Viciente          Casa
+## 3            Venta casaquinta Del Viso Residencial Los Jazmines          Casa
+## 4            Acogedor Departamento de dos ambientes en Belgrano  Departamento
+## 5                Casa 3 dormitorios estilo campo Estancias Golf          Casa
+## 6              VENTA CASA 2 AMBIENTES PILAR 2500 M2 DE PARQUE!!          Casa
+##   operation_type       lat       lon
+## 1          Venta -34.40066 -58.86919
+## 2          Venta -35.02984 -58.40594
+## 3          Venta -34.45687 -58.79651
+## 4          Venta -34.55398 -58.44853
+## 5          Venta -34.49543 -59.00930
+## 6          Venta -34.41586 -58.85729</code></pre>
 <p>También podemos ordenar por 2 o más columnas. En este caso, R priorizará ordenar la primera, luego la segunda, y asi sucesivamente. Veamos un ejemplo:</p>
-<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="manipulación-de-datos.html#cb79-1"></a>ordenar &lt;-<span class="st"> </span><span class="kw">arrange</span>(datos_amba, partido, rooms)</span>
-<span id="cb79-2"><a href="manipulación-de-datos.html#cb79-2"></a></span>
-<span id="cb79-3"><a href="manipulación-de-datos.html#cb79-3"></a><span class="kw">head</span>(ordenar)</span></code></pre></div>
-<pre><code>##   created_on provincia         partido rooms surface_total surface_covered
-## 1     202006       GBA Almirante Brown     2            40              40
-## 2     202006       GBA Almirante Brown     2            60              60
-## 3     202006       GBA Almirante Brown     2            50              50
-## 4     202007       GBA Almirante Brown     2            52              48
-## 5     202007       GBA Almirante Brown     2            47              47
-## 6     202007       GBA Almirante Brown     2            50              50
-##    price currency
-## 1  14500      ARS
-## 2  20000      ARS
-## 3 125000      USD
-## 4  18000      ARS
-## 5  16000      ARS
-## 6  96000      USD
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="manipulación-de-datos.html#cb79-1" aria-hidden="true" tabindex="-1"></a>ordenar <span class="ot">&lt;-</span> <span class="fu">arrange</span>(datos_amba, partido, rooms)</span>
+<span id="cb79-2"><a href="manipulación-de-datos.html#cb79-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb79-3"><a href="manipulación-de-datos.html#cb79-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(ordenar)</span></code></pre></div>
+<pre><code>##   created_on provincia         partido rooms surface_total surface_covered  price currency
+## 1     202006       GBA Almirante Brown     2            40              40  14500      ARS
+## 2     202006       GBA Almirante Brown     2            60              60  20000      ARS
+## 3     202006       GBA Almirante Brown     2            50              50 125000      USD
+## 4     202007       GBA Almirante Brown     2            52              48  18000      ARS
+## 5     202007       GBA Almirante Brown     2            47              47  16000      ARS
+## 6     202007       GBA Almirante Brown     2            50              50  96000      USD
 ##                                                                                      title
 ## 1                                                                 Departamento en alquiler
 ## 2                                                                   Departamento - Adrogue
@@ -977,23 +870,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4  Departamento       Alquiler -34.79720 -58.38280
 ## 5  Departamento       Alquiler -34.79880 -58.38863
 ## 6  Departamento          Venta -34.79913 -58.38364</code></pre>
-<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="manipulación-de-datos.html#cb81-1"></a>ordenar &lt;-<span class="st"> </span><span class="kw">arrange</span>(datos_amba, partido, <span class="kw">desc</span>(rooms))</span>
-<span id="cb81-2"><a href="manipulación-de-datos.html#cb81-2"></a></span>
-<span id="cb81-3"><a href="manipulación-de-datos.html#cb81-3"></a><span class="kw">head</span>(ordenar)</span></code></pre></div>
-<pre><code>##   created_on provincia         partido rooms surface_total surface_covered
-## 1     202007       GBA Almirante Brown     8           447             189
-## 2     202006       GBA Almirante Brown     7           670             590
-## 3     202006       GBA Almirante Brown     5           239             112
-## 4     202006       GBA Almirante Brown     5           260             120
-## 5     202007       GBA Almirante Brown     5           370             220
-## 6     202006       GBA Almirante Brown     5           180             180
-##     price currency
-## 1  230000      USD
-## 2 1500000      USD
-## 3  169000      USD
-## 4  248000      USD
-## 5  230000      USD
-## 6  390000      USD
+<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="manipulación-de-datos.html#cb81-1" aria-hidden="true" tabindex="-1"></a>ordenar <span class="ot">&lt;-</span> <span class="fu">arrange</span>(datos_amba, partido, <span class="fu">desc</span>(rooms))</span>
+<span id="cb81-2"><a href="manipulación-de-datos.html#cb81-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb81-3"><a href="manipulación-de-datos.html#cb81-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(ordenar)</span></code></pre></div>
+<pre><code>##   created_on provincia         partido rooms surface_total surface_covered   price
+## 1     202007       GBA Almirante Brown     8           447             189  230000
+## 2     202006       GBA Almirante Brown     7           670             590 1500000
+## 3     202006       GBA Almirante Brown     5           239             112  169000
+## 4     202006       GBA Almirante Brown     5           260             120  248000
+## 5     202007       GBA Almirante Brown     5           370             220  230000
+## 6     202006       GBA Almirante Brown     5           180             180  390000
+##   currency
+## 1      USD
+## 2      USD
+## 3      USD
+## 4      USD
+## 5      USD
+## 6      USD
 ##                                                                                        title
 ## 1                                         Casa c/2 dptos, local y galpón - Lomas del Mirador
 ## 2                                                                             Casa - Adrogue
@@ -1009,35 +902,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5          Casa          Venta -34.86473 -58.39129
 ## 6          Casa          Venta -34.81368 -58.40300</code></pre>
 </div>
-<div id="renombrar-columnas" class="section level2">
+<div id="renombrar-columnas" class="section level2" number="2.5">
 <h2><span class="header-section-number">2.5</span> Renombrar columnas</h2>
 <p>Ahora veamos como cambiar los nombres a una o más columnas existentes en nuestro dataset:</p>
 <p><img src="images/tidyverse_renombrar.jpg" /></p>
 <p>Empecemos cambiando el nombre de la variable “rooms” por “ambientes”:</p>
-<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="manipulación-de-datos.html#cb83-1"></a>renombrar &lt;-<span class="st"> </span><span class="kw">rename</span>(datos_amba, <span class="dt">ambientes=</span>rooms)</span>
-<span id="cb83-2"><a href="manipulación-de-datos.html#cb83-2"></a></span>
-<span id="cb83-3"><a href="manipulación-de-datos.html#cb83-3"></a><span class="kw">head</span>(renombrar)</span></code></pre></div>
-<pre><code>##   created_on provincia       partido ambientes surface_total
-## 1     202006      CABA      Comuna 7         1            40
-## 2     202006      CABA     Comuna 13         1            30
-## 3     202006      CABA     Comuna 13         1            31
-## 4     202006      CABA      Comuna 1         1            35
-## 5     202006       GBA Vicente López         1            36
-## 6     202006       GBA    La Matanza         2            24
-##   surface_covered price currency
-## 1              37 22500      ARS
-## 2              30 18000      ARS
-## 3              29 17900      ARS
-## 4              35 42000      ARS
-## 5              27 19000      ARS
-## 6              24 12000      ARS
-##                                                                           title
-## 1                                                         Departamento - Flores
-## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3                                                       Departamento - Belgrano
-## 4                              Monoambiente con cochera. Zencity. Puerto Madero
-## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
-## 6                                                        PH - Lomas Del Mirador
+<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="manipulación-de-datos.html#cb83-1" aria-hidden="true" tabindex="-1"></a>renombrar <span class="ot">&lt;-</span> <span class="fu">rename</span>(datos_amba, <span class="at">ambientes=</span>rooms)</span>
+<span id="cb83-2"><a href="manipulación-de-datos.html#cb83-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb83-3"><a href="manipulación-de-datos.html#cb83-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(renombrar)</span></code></pre></div>
+<pre><code>##   created_on provincia       partido ambientes surface_total surface_covered price
+## 1     202006      CABA      Comuna 7         1            40              37 22500
+## 2     202006      CABA     Comuna 13         1            30              30 18000
+## 3     202006      CABA     Comuna 13         1            31              29 17900
+## 4     202006      CABA      Comuna 1         1            35              35 42000
+## 5     202006       GBA Vicente López         1            36              27 19000
+## 6     202006       GBA    La Matanza         2            24              24 12000
+##   currency                                                                         title
+## 1      ARS                                                         Departamento - Flores
+## 2      ARS                         Retasado! Monoambiente en Nuñez, excelente ubicación!
+## 3      ARS                                                       Departamento - Belgrano
+## 4      ARS                              Monoambiente con cochera. Zencity. Puerto Madero
+## 5      ARS Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
+## 6      ARS                                                        PH - Lomas Del Mirador
 ##   property_type operation_type       lat       lon
 ## 1  Departamento       Alquiler -34.61917 -58.46222
 ## 2  Departamento       Alquiler -34.55460 -58.46652
@@ -1047,23 +933,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 6            PH       Alquiler -34.66253 -58.52914</code></pre>
 <p>Como habrán notado, primero hay que poner el nombre de la nueva columna y luego el de la columna actual. Esto es muy importante, porque si lo hacemos al revés nos dará un error.</p>
 <p>Ahora veamos un ejemplo y cambiemos los nombres de 3 columnas:</p>
-<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="manipulación-de-datos.html#cb85-1"></a>renombrar &lt;-<span class="st"> </span><span class="kw">rename</span>(datos_amba, <span class="dt">ambientes=</span>rooms, <span class="dt">m2_cubierto=</span>surface_covered, <span class="dt">m2_total=</span>surface_total)</span>
-<span id="cb85-2"><a href="manipulación-de-datos.html#cb85-2"></a></span>
-<span id="cb85-3"><a href="manipulación-de-datos.html#cb85-3"></a><span class="kw">head</span>(renombrar)</span></code></pre></div>
-<pre><code>##   created_on provincia       partido ambientes m2_total m2_cubierto price
-## 1     202006      CABA      Comuna 7         1       40          37 22500
-## 2     202006      CABA     Comuna 13         1       30          30 18000
-## 3     202006      CABA     Comuna 13         1       31          29 17900
-## 4     202006      CABA      Comuna 1         1       35          35 42000
-## 5     202006       GBA Vicente López         1       36          27 19000
-## 6     202006       GBA    La Matanza         2       24          24 12000
-##   currency
-## 1      ARS
-## 2      ARS
-## 3      ARS
-## 4      ARS
-## 5      ARS
-## 6      ARS
+<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="manipulación-de-datos.html#cb85-1" aria-hidden="true" tabindex="-1"></a>renombrar <span class="ot">&lt;-</span> <span class="fu">rename</span>(datos_amba, <span class="at">ambientes=</span>rooms, <span class="at">m2_cubierto=</span>surface_covered, <span class="at">m2_total=</span>surface_total)</span>
+<span id="cb85-2"><a href="manipulación-de-datos.html#cb85-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-3"><a href="manipulación-de-datos.html#cb85-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(renombrar)</span></code></pre></div>
+<pre><code>##   created_on provincia       partido ambientes m2_total m2_cubierto price currency
+## 1     202006      CABA      Comuna 7         1       40          37 22500      ARS
+## 2     202006      CABA     Comuna 13         1       30          30 18000      ARS
+## 3     202006      CABA     Comuna 13         1       31          29 17900      ARS
+## 4     202006      CABA      Comuna 1         1       35          35 42000      ARS
+## 5     202006       GBA Vicente López         1       36          27 19000      ARS
+## 6     202006       GBA    La Matanza         2       24          24 12000      ARS
 ##                                                                           title
 ## 1                                                         Departamento - Flores
 ## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
@@ -1079,23 +958,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5  Departamento       Alquiler -34.53344 -58.49345
 ## 6            PH       Alquiler -34.66253 -58.52914</code></pre>
 </div>
-<div id="resumir-y-agrupar-datos" class="section level2">
+<div id="resumir-y-agrupar-datos" class="section level2" number="2.6">
 <h2><span class="header-section-number">2.6</span> Resumir y agrupar datos</h2>
 <p>Esta función es súper útil cuando manipulamos datos ya que nos permitirá realizar resumenes/sumarios de la data completa, obteniendo por ejemplo valores promedio, máximos o mínimos de una o más columnas.</p>
 <p><img src="images/tidyverse_agrupar.jpg" /></p>
 <p>Probemos calculando la mediana de todos los valores que aparecen en la columna surface_covered:</p>
-<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="manipulación-de-datos.html#cb87-1"></a><span class="kw">summarise</span>(datos_amba, <span class="dt">surface_covered=</span><span class="kw">median</span>(surface_covered))</span></code></pre></div>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="manipulación-de-datos.html#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summarise</span>(datos_amba, <span class="at">surface_covered=</span><span class="fu">median</span>(surface_covered))</span></code></pre></div>
 <pre><code>##   surface_covered
 ## 1              66</code></pre>
 <p>O calculemos un promedio de toda la columna surface_total:</p>
-<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="manipulación-de-datos.html#cb89-1"></a><span class="kw">summarise</span>(datos_amba, <span class="dt">surface_covered=</span><span class="kw">mean</span>(surface_covered))</span></code></pre></div>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="manipulación-de-datos.html#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summarise</span>(datos_amba, <span class="at">surface_covered=</span><span class="fu">mean</span>(surface_covered))</span></code></pre></div>
 <pre><code>##   surface_covered
 ## 1        91.98151</code></pre>
 <p>También podemos averiguar el valor máximo o mínimo de alguna variable:</p>
-<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb91-1"><a href="manipulación-de-datos.html#cb91-1"></a><span class="kw">summarise</span>(datos_amba, <span class="dt">surface_covered=</span><span class="kw">max</span>(rooms))</span></code></pre></div>
+<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb91-1"><a href="manipulación-de-datos.html#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summarise</span>(datos_amba, <span class="at">surface_covered=</span><span class="fu">max</span>(rooms))</span></code></pre></div>
 <pre><code>##   surface_covered
 ## 1              10</code></pre>
-<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb93-1"><a href="manipulación-de-datos.html#cb93-1"></a><span class="kw">summarise</span>(datos_amba, <span class="dt">surface_covered=</span><span class="kw">min</span>(rooms))</span></code></pre></div>
+<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb93-1"><a href="manipulación-de-datos.html#cb93-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summarise</span>(datos_amba, <span class="at">surface_covered=</span><span class="fu">min</span>(rooms))</span></code></pre></div>
 <pre><code>##   surface_covered
 ## 1               1</code></pre>
 <p>Como verán, esta función resulta útil para ver valores agregados de toda la base, sin embargo, también podemos agrupar los datos previo a calular los resumenes, y así obtener resumenes por agrupaciones en vez de uno solo para toda la base. Para esto vamos a utilizar <code>summarise()</code> junto a <code>group_by()</code>. Veamos un ejemplo:</p>
@@ -1103,11 +982,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Primero agrupemos los datos por la variable “operation_type”.</p></li>
 <li><p>Luego calculemos el promedio de superficie cubierta sobre la agrupación realizada previamente.</p></li>
 </ul>
-<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="manipulación-de-datos.html#cb95-1"></a>agrupar &lt;-<span class="st"> </span><span class="kw">group_by</span>(datos_amba, operation_type)</span>
-<span id="cb95-2"><a href="manipulación-de-datos.html#cb95-2"></a></span>
-<span id="cb95-3"><a href="manipulación-de-datos.html#cb95-3"></a>resumir &lt;-<span class="st"> </span><span class="kw">summarise</span>(agrupar, <span class="dt">surface_covered=</span><span class="kw">mean</span>(surface_covered))</span>
-<span id="cb95-4"><a href="manipulación-de-datos.html#cb95-4"></a></span>
-<span id="cb95-5"><a href="manipulación-de-datos.html#cb95-5"></a><span class="kw">head</span>(resumir)</span></code></pre></div>
+<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="manipulación-de-datos.html#cb95-1" aria-hidden="true" tabindex="-1"></a>agrupar <span class="ot">&lt;-</span> <span class="fu">group_by</span>(datos_amba, operation_type)</span>
+<span id="cb95-2"><a href="manipulación-de-datos.html#cb95-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb95-3"><a href="manipulación-de-datos.html#cb95-3" aria-hidden="true" tabindex="-1"></a>resumir <span class="ot">&lt;-</span> <span class="fu">summarise</span>(agrupar, <span class="at">surface_covered=</span><span class="fu">mean</span>(surface_covered))</span>
+<span id="cb95-4"><a href="manipulación-de-datos.html#cb95-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb95-5"><a href="manipulación-de-datos.html#cb95-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(resumir)</span></code></pre></div>
 <pre><code>## # A tibble: 2 x 2
 ##   operation_type surface_covered
 ##   &lt;fct&gt;                    &lt;dbl&gt;
@@ -1115,11 +994,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 2 Venta                     97.3</code></pre>
 <p>Con la agrupación y el resumen podemos ver que la superficie cubierta promedio de las propiedades en alquiler es 72,93m2 y la de las propiedades en venta es 97,28m2.</p>
 <p>Probemos agrupando por 3 columnas:</p>
-<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="manipulación-de-datos.html#cb97-1"></a>agrupar &lt;-<span class="st"> </span><span class="kw">group_by</span>(datos_amba, operation_type, currency)</span>
-<span id="cb97-2"><a href="manipulación-de-datos.html#cb97-2"></a></span>
-<span id="cb97-3"><a href="manipulación-de-datos.html#cb97-3"></a>resumir &lt;-<span class="st"> </span><span class="kw">summarise</span>(agrupar, <span class="dt">price_m2=</span><span class="kw">mean</span>(price<span class="op">/</span>surface_covered))</span>
-<span id="cb97-4"><a href="manipulación-de-datos.html#cb97-4"></a></span>
-<span id="cb97-5"><a href="manipulación-de-datos.html#cb97-5"></a><span class="kw">head</span>(resumir)</span></code></pre></div>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="manipulación-de-datos.html#cb97-1" aria-hidden="true" tabindex="-1"></a>agrupar <span class="ot">&lt;-</span> <span class="fu">group_by</span>(datos_amba, operation_type, currency)</span>
+<span id="cb97-2"><a href="manipulación-de-datos.html#cb97-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb97-3"><a href="manipulación-de-datos.html#cb97-3" aria-hidden="true" tabindex="-1"></a>resumir <span class="ot">&lt;-</span> <span class="fu">summarise</span>(agrupar, <span class="at">price_m2=</span><span class="fu">mean</span>(price<span class="sc">/</span>surface_covered))</span>
+<span id="cb97-4"><a href="manipulación-de-datos.html#cb97-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb97-5"><a href="manipulación-de-datos.html#cb97-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(resumir)</span></code></pre></div>
 <pre><code>## # A tibble: 2 x 3
 ## # Groups:   operation_type [2]
 ##   operation_type currency price_m2
@@ -1127,11 +1006,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 1 Alquiler       ARS          520.
 ## 2 Venta          USD         2689.</code></pre>
 <p>El valor del m2 promedio para las propiedades en Alquiler es de 520 $ARS mientras que para las propiedaes en venta es de 2.689 USD. Sin embargo, está claro que en el valor de CABA y GBA es diferente, así que calculemos el valor del m2 promedio para cada uno:</p>
-<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="manipulación-de-datos.html#cb99-1"></a>agrupar &lt;-<span class="st"> </span><span class="kw">group_by</span>(datos_amba, operation_type, currency, provincia)</span>
-<span id="cb99-2"><a href="manipulación-de-datos.html#cb99-2"></a></span>
-<span id="cb99-3"><a href="manipulación-de-datos.html#cb99-3"></a>resumir &lt;-<span class="st"> </span><span class="kw">summarise</span>(agrupar, <span class="dt">rooms=</span><span class="kw">mean</span>(price<span class="op">/</span>surface_covered))</span>
-<span id="cb99-4"><a href="manipulación-de-datos.html#cb99-4"></a></span>
-<span id="cb99-5"><a href="manipulación-de-datos.html#cb99-5"></a><span class="kw">head</span>(resumir)</span></code></pre></div>
+<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="manipulación-de-datos.html#cb99-1" aria-hidden="true" tabindex="-1"></a>agrupar <span class="ot">&lt;-</span> <span class="fu">group_by</span>(datos_amba, operation_type, currency, provincia)</span>
+<span id="cb99-2"><a href="manipulación-de-datos.html#cb99-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb99-3"><a href="manipulación-de-datos.html#cb99-3" aria-hidden="true" tabindex="-1"></a>resumir <span class="ot">&lt;-</span> <span class="fu">summarise</span>(agrupar, <span class="at">rooms=</span><span class="fu">mean</span>(price<span class="sc">/</span>surface_covered))</span>
+<span id="cb99-4"><a href="manipulación-de-datos.html#cb99-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb99-5"><a href="manipulación-de-datos.html#cb99-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(resumir)</span></code></pre></div>
 <pre><code>## # A tibble: 4 x 4
 ## # Groups:   operation_type, currency [2]
 ##   operation_type currency provincia rooms
@@ -1141,11 +1020,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 3 Venta          USD      CABA      3119.
 ## 4 Venta          USD      GBA       2024.</code></pre>
 <p>Se ve claramente que hay una diferencia entre CABA y GBA, siendo CABA más caro para ambos tipos de operación. Por último probemos desagregando esta información por partido:</p>
-<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="manipulación-de-datos.html#cb101-1"></a>agrupar &lt;-<span class="st"> </span><span class="kw">group_by</span>(datos_amba, operation_type, currency, partido)</span>
-<span id="cb101-2"><a href="manipulación-de-datos.html#cb101-2"></a></span>
-<span id="cb101-3"><a href="manipulación-de-datos.html#cb101-3"></a>resumir &lt;-<span class="st"> </span><span class="kw">summarise</span>(agrupar, <span class="dt">price_m2=</span><span class="kw">mean</span>(price<span class="op">/</span>surface_covered))</span>
-<span id="cb101-4"><a href="manipulación-de-datos.html#cb101-4"></a></span>
-<span id="cb101-5"><a href="manipulación-de-datos.html#cb101-5"></a><span class="kw">head</span>(resumir)</span></code></pre></div>
+<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="manipulación-de-datos.html#cb101-1" aria-hidden="true" tabindex="-1"></a>agrupar <span class="ot">&lt;-</span> <span class="fu">group_by</span>(datos_amba, operation_type, currency, partido)</span>
+<span id="cb101-2"><a href="manipulación-de-datos.html#cb101-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb101-3"><a href="manipulación-de-datos.html#cb101-3" aria-hidden="true" tabindex="-1"></a>resumir <span class="ot">&lt;-</span> <span class="fu">summarise</span>(agrupar, <span class="at">price_m2=</span><span class="fu">mean</span>(price<span class="sc">/</span>surface_covered))</span>
+<span id="cb101-4"><a href="manipulación-de-datos.html#cb101-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb101-5"><a href="manipulación-de-datos.html#cb101-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(resumir)</span></code></pre></div>
 <pre><code>## # A tibble: 6 x 4
 ## # Groups:   operation_type, currency [1]
 ##   operation_type currency partido         price_m2
@@ -1157,24 +1036,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 5 Alquiler       ARS      Comuna 10           381.
 ## 6 Alquiler       ARS      Comuna 11           444.</code></pre>
 </div>
-<div id="concatenar-funciones" class="section level2">
+<div id="concatenar-funciones" class="section level2" number="2.7">
 <h2><span class="header-section-number">2.7</span> Concatenar funciones (%&gt;%)</h2>
 <p>Llegamos al final de la clase, ya vimos varias funciones por separado, pero ¿Qué pasa si queremos aplicarlas todas a la vez? ¿Cómo podemos hacerlo?</p>
 <p>En este caso debemos usar el operador pipe (%&gt;%) <strong>Ctrl+Shift+M</strong> que sirve para encadenar funciones, y en vez de realizar una por una, poder realizar todas juntas.</p>
 <p>Veamos algunos ejemplos:</p>
 <p>Imaginemos que queremos calcular por mes y para cada provincia (CABA y GBA) cuantas propiedades hubo en venta, con que valor total promedio, con que valor del m2 promedio y con que superficie promedio. Así lo tenemos que hacer según lo aprendido hasta ahora:</p>
-<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="manipulación-de-datos.html#cb103-1"></a>concatenar &lt;-<span class="st"> </span><span class="kw">filter</span>(datos_amba, operation_type<span class="op">==</span><span class="st">&quot;Venta&quot;</span>)</span>
-<span id="cb103-2"><a href="manipulación-de-datos.html#cb103-2"></a></span>
-<span id="cb103-3"><a href="manipulación-de-datos.html#cb103-3"></a>concatenar &lt;-<span class="st"> </span><span class="kw">select</span>(concatenar, created_on, provincia, surface_covered, price)</span>
-<span id="cb103-4"><a href="manipulación-de-datos.html#cb103-4"></a></span>
-<span id="cb103-5"><a href="manipulación-de-datos.html#cb103-5"></a>concatenar &lt;-<span class="st"> </span><span class="kw">group_by</span>(concatenar, created_on, provincia)</span>
-<span id="cb103-6"><a href="manipulación-de-datos.html#cb103-6"></a></span>
-<span id="cb103-7"><a href="manipulación-de-datos.html#cb103-7"></a>concatenar &lt;-<span class="st"> </span><span class="kw">summarise</span>(concatenar, <span class="dt">cantidad=</span><span class="kw">n</span>(),</span>
-<span id="cb103-8"><a href="manipulación-de-datos.html#cb103-8"></a>                        <span class="dt">price=</span><span class="kw">mean</span>(price),</span>
-<span id="cb103-9"><a href="manipulación-de-datos.html#cb103-9"></a>                        <span class="dt">surface_covered=</span><span class="kw">mean</span>(surface_covered),</span>
-<span id="cb103-10"><a href="manipulación-de-datos.html#cb103-10"></a>                        <span class="dt">price_m2=</span>price<span class="op">/</span>surface_covered)</span>
-<span id="cb103-11"><a href="manipulación-de-datos.html#cb103-11"></a></span>
-<span id="cb103-12"><a href="manipulación-de-datos.html#cb103-12"></a><span class="kw">head</span>(concatenar)</span></code></pre></div>
+<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="manipulación-de-datos.html#cb103-1" aria-hidden="true" tabindex="-1"></a>concatenar <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, operation_type<span class="sc">==</span><span class="st">&quot;Venta&quot;</span>)</span>
+<span id="cb103-2"><a href="manipulación-de-datos.html#cb103-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb103-3"><a href="manipulación-de-datos.html#cb103-3" aria-hidden="true" tabindex="-1"></a>concatenar <span class="ot">&lt;-</span> <span class="fu">select</span>(concatenar, created_on, provincia, surface_covered, price)</span>
+<span id="cb103-4"><a href="manipulación-de-datos.html#cb103-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb103-5"><a href="manipulación-de-datos.html#cb103-5" aria-hidden="true" tabindex="-1"></a>concatenar <span class="ot">&lt;-</span> <span class="fu">group_by</span>(concatenar, created_on, provincia)</span>
+<span id="cb103-6"><a href="manipulación-de-datos.html#cb103-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb103-7"><a href="manipulación-de-datos.html#cb103-7" aria-hidden="true" tabindex="-1"></a>concatenar <span class="ot">&lt;-</span> <span class="fu">summarise</span>(concatenar, <span class="at">cantidad=</span><span class="fu">n</span>(),</span>
+<span id="cb103-8"><a href="manipulación-de-datos.html#cb103-8" aria-hidden="true" tabindex="-1"></a>                        <span class="at">price=</span><span class="fu">mean</span>(price),</span>
+<span id="cb103-9"><a href="manipulación-de-datos.html#cb103-9" aria-hidden="true" tabindex="-1"></a>                        <span class="at">surface_covered=</span><span class="fu">mean</span>(surface_covered),</span>
+<span id="cb103-10"><a href="manipulación-de-datos.html#cb103-10" aria-hidden="true" tabindex="-1"></a>                        <span class="at">price_m2=</span>price<span class="sc">/</span>surface_covered)</span>
+<span id="cb103-11"><a href="manipulación-de-datos.html#cb103-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb103-12"><a href="manipulación-de-datos.html#cb103-12" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(concatenar)</span></code></pre></div>
 <pre><code>## # A tibble: 4 x 6
 ## # Groups:   created_on [2]
 ##   created_on provincia cantidad   price surface_covered price_m2
@@ -1184,16 +1063,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 3     202007 CABA          3110 251563.            80.5    3124.
 ## 4     202007 GBA           1810 206180.           116.     1783.</code></pre>
 <p>Y así lo deberíamos hacer con pipe %&gt;%:</p>
-<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="manipulación-de-datos.html#cb105-1"></a>concatenar &lt;-<span class="st"> </span>datos_amba <span class="op">%&gt;%</span></span>
-<span id="cb105-2"><a href="manipulación-de-datos.html#cb105-2"></a><span class="st">  </span><span class="kw">filter</span>(operation_type<span class="op">==</span><span class="st">&quot;Venta&quot;</span>) <span class="op">%&gt;%</span></span>
-<span id="cb105-3"><a href="manipulación-de-datos.html#cb105-3"></a><span class="st">  </span><span class="kw">select</span>(created_on, provincia, surface_covered, price) <span class="op">%&gt;%</span></span>
-<span id="cb105-4"><a href="manipulación-de-datos.html#cb105-4"></a><span class="st">  </span><span class="kw">group_by</span>(created_on, provincia) <span class="op">%&gt;%</span></span>
-<span id="cb105-5"><a href="manipulación-de-datos.html#cb105-5"></a><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">cantidad=</span><span class="kw">n</span>(),</span>
-<span id="cb105-6"><a href="manipulación-de-datos.html#cb105-6"></a>            <span class="dt">price=</span><span class="kw">mean</span>(price),</span>
-<span id="cb105-7"><a href="manipulación-de-datos.html#cb105-7"></a>            <span class="dt">surface_covered=</span><span class="kw">mean</span>(surface_covered),</span>
-<span id="cb105-8"><a href="manipulación-de-datos.html#cb105-8"></a>            <span class="dt">price_m2=</span>price<span class="op">/</span>surface_covered)</span>
-<span id="cb105-9"><a href="manipulación-de-datos.html#cb105-9"></a></span>
-<span id="cb105-10"><a href="manipulación-de-datos.html#cb105-10"></a><span class="kw">head</span>(concatenar)</span></code></pre></div>
+<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="manipulación-de-datos.html#cb105-1" aria-hidden="true" tabindex="-1"></a>concatenar <span class="ot">&lt;-</span> datos_amba <span class="sc">%&gt;%</span></span>
+<span id="cb105-2"><a href="manipulación-de-datos.html#cb105-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(operation_type<span class="sc">==</span><span class="st">&quot;Venta&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb105-3"><a href="manipulación-de-datos.html#cb105-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(created_on, provincia, surface_covered, price) <span class="sc">%&gt;%</span></span>
+<span id="cb105-4"><a href="manipulación-de-datos.html#cb105-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(created_on, provincia) <span class="sc">%&gt;%</span></span>
+<span id="cb105-5"><a href="manipulación-de-datos.html#cb105-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">cantidad=</span><span class="fu">n</span>(),</span>
+<span id="cb105-6"><a href="manipulación-de-datos.html#cb105-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">price=</span><span class="fu">mean</span>(price),</span>
+<span id="cb105-7"><a href="manipulación-de-datos.html#cb105-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">surface_covered=</span><span class="fu">mean</span>(surface_covered),</span>
+<span id="cb105-8"><a href="manipulación-de-datos.html#cb105-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">price_m2=</span>price<span class="sc">/</span>surface_covered)</span>
+<span id="cb105-9"><a href="manipulación-de-datos.html#cb105-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb105-10"><a href="manipulación-de-datos.html#cb105-10" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(concatenar)</span></code></pre></div>
 <pre><code>## # A tibble: 4 x 6
 ## # Groups:   created_on [2]
 ##   created_on provincia cantidad   price surface_covered price_m2
@@ -1211,21 +1090,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>Como verán, en ambos casos llegamos al mismo resultado, pero sin dudas, la segunda opción es la recomendable porque nos ahorramos varias líneas de código y resultados intermedios.</p>
 </div>
-<div id="transformar-la-estructura-de-los-datos" class="section level2">
+<div id="transformar-la-estructura-de-los-datos" class="section level2" number="2.8">
 <h2><span class="header-section-number">2.8</span> Transformar la estructura de los datos</h2>
 <p>El paquete <code>tidyverse</code> también nos permite realizar transformaciones en la estructura de nuestro dataset. Pero, ¿A qué nos referimos con esto? A continuación analizaremos 2 casos:</p>
 <p>Tipo 1. Nuestro dataset tiene <strong>diferentes categorías</strong> que están <strong>separadas en muchas filas</strong>. Por ejemplo:</p>
 <p><img src="images/opcion2.JPG" /></p>
 <p>Tipo 2. Nuestro dataset tiene <strong>diferentes categorías</strong> que están <strong>separadas en muchas columnas</strong>. Por ejemplo:</p>
-<p><img src="images/opcion1.JPG" /></p>
+<p><img src="images/opcion1.JPG" />
+<img src="images/opcion1.JPG" /></p>
 <p>Como verán, en ambos casos la información es la misma, lo que cambia es la estructura.</p>
 <p>Es muy probable que al analizar bases de datos nos encontramos con algunas estructuras similares a estas y querramos cambiarlas. Para pasar del Tipo 1 de estructura al Tipo 2 y viceversa utilizaremos las funciones <code>spread()</code> y <code>gather()</code> respectivamente.</p>
 <p><img src="images/spread_gather.jpg" /></p>
 <p>Sigamos utilizando nuestro dataset de Properati, pero para trabajar con menos volumen de datos y que sea más sencillo comprender el ejemplo, hagamos una agrupación por provincia y tipo de operación y calculemos el valor del m2:</p>
-<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="manipulación-de-datos.html#cb107-1"></a>transformar &lt;-<span class="st"> </span>datos_amba <span class="op">%&gt;%</span></span>
-<span id="cb107-2"><a href="manipulación-de-datos.html#cb107-2"></a><span class="st">  </span><span class="kw">group_by</span>(provincia, operation_type) <span class="op">%&gt;%</span></span>
-<span id="cb107-3"><a href="manipulación-de-datos.html#cb107-3"></a><span class="st">  </span><span class="kw">summarise</span>(<span class="dt">valor_m2=</span><span class="kw">mean</span>(price<span class="op">/</span>surface_covered))</span></code></pre></div>
-<div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="manipulación-de-datos.html#cb108-1"></a><span class="kw">head</span>(transformar)</span></code></pre></div>
+<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="manipulación-de-datos.html#cb107-1" aria-hidden="true" tabindex="-1"></a>transformar <span class="ot">&lt;-</span> datos_amba <span class="sc">%&gt;%</span></span>
+<span id="cb107-2"><a href="manipulación-de-datos.html#cb107-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(provincia, operation_type) <span class="sc">%&gt;%</span></span>
+<span id="cb107-3"><a href="manipulación-de-datos.html#cb107-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">valor_m2=</span><span class="fu">mean</span>(price<span class="sc">/</span>surface_covered))</span></code></pre></div>
+<div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="manipulación-de-datos.html#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(transformar)</span></code></pre></div>
 <pre><code>## # A tibble: 4 x 3
 ## # Groups:   provincia [2]
 ##   provincia operation_type valor_m2
@@ -1235,12 +1115,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 3 GBA       Alquiler           399.
 ## 4 GBA       Venta             2024.</code></pre>
 <p>Bien, ya tenemos un pequeño dataset de 3 columnas y 4 filas que presentan una estructura similar a la que se muestra al inicio como “Tipo 1”.</p>
-<div id="extender-la-estructura-de-los-datos-spread" class="section level3">
+<div id="extender-la-estructura-de-los-datos-spread" class="section level3" number="2.8.1">
 <h3><span class="header-section-number">2.8.1</span> Extender la estructura de los datos: spread()</h3>
 <p>Si necesitamos pasar el dataset al otro formato extendido, debemos usar <code>spread()</code> indicando el dataset que quiero modificar (datos_amba), la columna que quiero separar (key=operation_type) y la columna que contiene lo valores que quiero mantener en la tabla (value=valor_m2):</p>
-<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="manipulación-de-datos.html#cb110-1"></a>extender &lt;-<span class="st"> </span><span class="kw">spread</span>(transformar, <span class="dt">key=</span>operation_type, <span class="dt">value=</span>valor_m2)</span></code></pre></div>
+<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="manipulación-de-datos.html#cb110-1" aria-hidden="true" tabindex="-1"></a>extender <span class="ot">&lt;-</span> <span class="fu">spread</span>(transformar, <span class="at">key=</span>operation_type, <span class="at">value=</span>valor_m2)</span></code></pre></div>
 <p>El resultado es el siguiente:</p>
-<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="manipulación-de-datos.html#cb111-1"></a><span class="kw">head</span>(extender)</span></code></pre></div>
+<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="manipulación-de-datos.html#cb111-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(extender)</span></code></pre></div>
 <pre><code>## # A tibble: 2 x 3
 ## # Groups:   provincia [2]
 ##   provincia Alquiler Venta
@@ -1250,12 +1130,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Se ve como ahora tenemos un dataset extendido, donde las categorías incluidas en columna operation_type se dividieron en 2 columnas: “Alquiler” y “Venta”. Pero, ¿Cómo hacemos si queremos volver al dataset original?</p>
 <p>Esto lo hacemos con la función <code>gather()</code>.</p>
 </div>
-<div id="unificar-los-datos-gather" class="section level3">
+<div id="unificar-los-datos-gather" class="section level3" number="2.8.2">
 <h3><span class="header-section-number">2.8.2</span> Unificar los datos: gather()</h3>
 <p>Esta función que une múltiples columnas en una sola, se suele utilizar cuando todas las columnas representan valores de una variable. Por ejemplo, en nuestro caso, tanto “Alquiler” como “Venta” pueden ser categorías de una variable llamada operation_type.</p>
 <p>Para utilizar <code>gather()</code> debemos indicar el dataset que queremos modificar (datos_amba), la nueva columna donde queremos agrupar múltiples columnas (key=“operation_type”), la nueva columna donde queremos agrupar los valores de toda la tabla (value=“valor_m2”), y por último debemos indicar que rango de columnas son las que queremos incluir en la key (Alquiler:Venta).</p>
-<div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="manipulación-de-datos.html#cb113-1"></a>unificar &lt;-<span class="st"> </span><span class="kw">gather</span>(extender, <span class="dt">key=</span><span class="st">&quot;operation_type&quot;</span>, <span class="dt">value=</span><span class="st">&quot;valor_m2&quot;</span>, Alquiler<span class="op">:</span>Venta)</span></code></pre></div>
-<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="manipulación-de-datos.html#cb114-1"></a><span class="kw">head</span>(unificar)</span></code></pre></div>
+<div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="manipulación-de-datos.html#cb113-1" aria-hidden="true" tabindex="-1"></a>unificar <span class="ot">&lt;-</span> <span class="fu">gather</span>(extender, <span class="at">key=</span><span class="st">&quot;operation_type&quot;</span>, <span class="at">value=</span><span class="st">&quot;valor_m2&quot;</span>, Alquiler<span class="sc">:</span>Venta)</span></code></pre></div>
+<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="manipulación-de-datos.html#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(unificar)</span></code></pre></div>
 <pre><code>## # A tibble: 4 x 3
 ## # Groups:   provincia [2]
 ##   provincia operation_type valor_m2
