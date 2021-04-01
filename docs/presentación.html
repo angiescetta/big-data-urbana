@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Clase 1 PRESENTACIÓN | 01-conocer.Rmd</title>
-  <meta name="description" content="Clase 1 PRESENTACIÓN | 01-conocer.Rmd" />
+  <title>Clase 1 PRESENTACIÓN | BIG DATA URBANA</title>
+  <meta name="description" content="Clase 1 PRESENTACIÓN | BIG DATA URBANA" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Clase 1 PRESENTACIÓN | 01-conocer.Rmd" />
+  <meta property="og:title" content="Clase 1 PRESENTACIÓN | BIG DATA URBANA" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Clase 1 PRESENTACIÓN | 01-conocer.Rmd" />
+  <meta name="twitter:title" content="Clase 1 PRESENTACIÓN | BIG DATA URBANA" />
   
   
   
@@ -169,6 +169,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.3" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#relación-entre-variables-numéricas-gráfico-de-dispersión"><i class="fa fa-check"></i><b>3.3</b> Relación entre variables numéricas: Gráfico de Dispersión</a></li>
 <li class="chapter" data-level="3.4" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#relación-entre-variables-categóricas-gráfico-de-matriz"><i class="fa fa-check"></i><b>3.4</b> Relación entre variables categóricas: Gráfico de Matriz</a></li>
 <li class="chapter" data-level="3.5" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#relación-entre-variable-numérica-y-categórica-gráfico-de-barras"><i class="fa fa-check"></i><b>3.5</b> Relación entre variable numérica y categórica: Gráfico de Barras</a></li>
+<li class="chapter" data-level="3.6" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#bonus-track-ajustes-estéticos"><i class="fa fa-check"></i><b>3.6</b> Bonus Track: Ajustes Estéticos</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="información-geográfica-y-mapas.html"><a href="información-geográfica-y-mapas.html"><i class="fa fa-check"></i><b>4</b> INFORMACIÓN GEOGRÁFICA Y MAPAS</a>
 <ul>
@@ -189,7 +190,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">01-conocer.Rmd</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">BIG DATA URBANA</a>
           </h1>
         </div>
 
@@ -274,9 +275,8 @@ Estos datos son públicos y pueden encontrarlos en <a href="https://properati.co
 <p>Pero <strong>¿Qué información contienen esas 13 columnas?</strong></p>
 <p>Esto podemos verlo con <code>names()</code>:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="presentación.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(datos_amba)</span></code></pre></div>
-<pre><code>##  [1] &quot;created_on&quot;      &quot;provincia&quot;       &quot;partido&quot;         &quot;rooms&quot;          
-##  [5] &quot;surface_total&quot;   &quot;surface_covered&quot; &quot;price&quot;           &quot;currency&quot;       
-##  [9] &quot;title&quot;           &quot;property_type&quot;   &quot;operation_type&quot;  &quot;lat&quot;            
+<pre><code>##  [1] &quot;created_on&quot;      &quot;provincia&quot;       &quot;partido&quot;         &quot;rooms&quot;           &quot;surface_total&quot;   &quot;surface_covered&quot;
+##  [7] &quot;price&quot;           &quot;currency&quot;        &quot;title&quot;           &quot;property_type&quot;   &quot;operation_type&quot;  &quot;lat&quot;            
 ## [13] &quot;lon&quot;</code></pre>
 <p>Bien, las columnas tienen fecha de publicación de la propiedad, provincia y partido donde se ubica, cantidad de ambientes, superficie total y superficie cubierta, precio publicado, tipo de moneda (ARS o USD), el título que el usuario escribió al publicar su propiedad, el tipo de propiedad, el tipo de operación, y finalmente la ubicación del inmueble con sus coordenadas: latitud y longitud.</p>
 <p>Parece que cada fila/registro de la base corresponde a una propiedad publicada, pero veamos una pequeña muestra de la data con <code>head()</code> para estar seguros:</p>
@@ -288,53 +288,45 @@ Estos datos son públicos y pueden encontrarlos en <a href="https://properati.co
 ## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
 ## 5     202006       GBA Vicente López     1            36              27 19000      ARS
 ## 6     202006       GBA    La Matanza     2            24              24 12000      ARS
-##                                                                           title
-## 1                                                         Departamento - Flores
-## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3                                                       Departamento - Belgrano
-## 4                              Monoambiente con cochera. Zencity. Puerto Madero
-## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
-## 6                                                        PH - Lomas Del Mirador
-##   property_type operation_type       lat       lon
-## 1  Departamento       Alquiler -34.61917 -58.46222
-## 2  Departamento       Alquiler -34.55460 -58.46652
-## 3  Departamento       Alquiler -34.56318 -58.46461
-## 4  Departamento       Alquiler -34.61836 -58.36090
-## 5  Departamento       Alquiler -34.53344 -58.49345
-## 6            PH       Alquiler -34.66253 -58.52914</code></pre>
+##                                                                           title property_type operation_type       lat
+## 1                                                         Departamento - Flores  Departamento       Alquiler -34.61917
+## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento       Alquiler -34.55460
+## 3                                                       Departamento - Belgrano  Departamento       Alquiler -34.56318
+## 4                              Monoambiente con cochera. Zencity. Puerto Madero  Departamento       Alquiler -34.61836
+## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa  Departamento       Alquiler -34.53344
+## 6                                                        PH - Lomas Del Mirador            PH       Alquiler -34.66253
+##         lon
+## 1 -58.46222
+## 2 -58.46652
+## 3 -58.46461
+## 4 -58.36090
+## 5 -58.49345
+## 6 -58.52914</code></pre>
 <p>Y un <strong>resumen estadístico de la información</strong>:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="presentación.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(datos_amba)</span></code></pre></div>
-<pre><code>##    created_on     provincia        partido         rooms        surface_total 
-##  Min.   :202006   CABA:8896   Comuna 14:2001   Min.   : 1.000   Min.   :  10  
-##  1st Qu.:202006   GBA :6033   Tigre    :1222   1st Qu.: 2.000   1st Qu.:  51  
-##  Median :202006               Comuna 13:1193   Median : 3.000   Median :  75  
-##  Mean   :202006               Comuna 15:1077   Mean   : 3.057   Mean   : 117  
-##  3rd Qu.:202007               Comuna 2 : 853   3rd Qu.: 4.000   3rd Qu.: 130  
-##  Max.   :202007               Comuna 1 : 765   Max.   :10.000   Max.   :5000  
-##                               (Other)  :7818                                  
-##  surface_covered      price         currency   
-##  Min.   : 10.00   Min.   :  10000   ARS: 3251  
-##  1st Qu.: 46.00   1st Qu.:  72000   USD:11678  
-##  Median : 66.00   Median : 140000              
-##  Mean   : 91.98   Mean   : 206342              
-##  3rd Qu.:108.00   3rd Qu.: 250000              
-##  Max.   :882.00   Max.   :3000000              
-##                                                
-##                                                   title            property_type  
-##  Departamento de 2 ambientes en Venta en Villa crespo:  182   Casa        : 2297  
-##  Departamento de 2 ambientes en Venta en Almagro     :  124   Departamento:11344  
-##  Departamento de 2 ambientes en Venta en Palermo     :  124   PH          : 1288  
-##  Departamento de 3 ambientes en Venta en Villa crespo:  121                       
-##  Departamento de 3 ambientes en Venta en Almagro     :  108                       
-##  Departamento de 3 ambientes en Venta en Palermo     :  108                       
-##  (Other)                                             :14162                       
-##   operation_type       lat              lon        
-##  Alquiler: 3251   Min.   :-35.12   Min.   :-59.04  
-##  Venta   :11678   1st Qu.:-34.61   1st Qu.:-58.53  
-##                   Median :-34.59   Median :-58.45  
-##                   Mean   :-34.59   Mean   :-58.47  
-##                   3rd Qu.:-34.55   3rd Qu.:-58.41  
-##                   Max.   :-34.26   Max.   :-57.83  
+<pre><code>##    created_on     provincia        partido         rooms        surface_total  surface_covered      price        
+##  Min.   :202006   CABA:8896   Comuna 14:2001   Min.   : 1.000   Min.   :  10   Min.   : 10.00   Min.   :  10000  
+##  1st Qu.:202006   GBA :6033   Tigre    :1222   1st Qu.: 2.000   1st Qu.:  51   1st Qu.: 46.00   1st Qu.:  72000  
+##  Median :202006               Comuna 13:1193   Median : 3.000   Median :  75   Median : 66.00   Median : 140000  
+##  Mean   :202006               Comuna 15:1077   Mean   : 3.057   Mean   : 117   Mean   : 91.98   Mean   : 206342  
+##  3rd Qu.:202007               Comuna 2 : 853   3rd Qu.: 4.000   3rd Qu.: 130   3rd Qu.:108.00   3rd Qu.: 250000  
+##  Max.   :202007               Comuna 1 : 765   Max.   :10.000   Max.   :5000   Max.   :882.00   Max.   :3000000  
+##                               (Other)  :7818                                                                     
+##  currency                                                     title            property_type    operation_type 
+##  ARS: 3251   Departamento de 2 ambientes en Venta en Villa crespo:  182   Casa        : 2297   Alquiler: 3251  
+##  USD:11678   Departamento de 2 ambientes en Venta en Almagro     :  124   Departamento:11344   Venta   :11678  
+##              Departamento de 2 ambientes en Venta en Palermo     :  124   PH          : 1288                   
+##              Departamento de 3 ambientes en Venta en Villa crespo:  121                                        
+##              Departamento de 3 ambientes en Venta en Almagro     :  108                                        
+##              Departamento de 3 ambientes en Venta en Palermo     :  108                                        
+##              (Other)                                             :14162                                        
+##       lat              lon        
+##  Min.   :-35.12   Min.   :-59.04  
+##  1st Qu.:-34.61   1st Qu.:-58.53  
+##  Median :-34.59   Median :-58.45  
+##  Mean   :-34.59   Mean   :-58.47  
+##  3rd Qu.:-34.55   3rd Qu.:-58.41  
+##  Max.   :-34.26   Max.   :-57.83  
 ## </code></pre>
 <p>A priori, en este resumen podemos entender varias cosas de la data. Por ejemplo:</p>
 <ul>

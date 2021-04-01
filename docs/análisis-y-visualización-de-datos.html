@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Clase 3 ANÁLISIS Y VISUALIZACIÓN DE DATOS | 01-conocer.Rmd</title>
-  <meta name="description" content="Clase 3 ANÁLISIS Y VISUALIZACIÓN DE DATOS | 01-conocer.Rmd" />
+  <title>Clase 3 ANÁLISIS Y VISUALIZACIÓN DE DATOS | BIG DATA URBANA</title>
+  <meta name="description" content="Clase 3 ANÁLISIS Y VISUALIZACIÓN DE DATOS | BIG DATA URBANA" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Clase 3 ANÁLISIS Y VISUALIZACIÓN DE DATOS | 01-conocer.Rmd" />
+  <meta property="og:title" content="Clase 3 ANÁLISIS Y VISUALIZACIÓN DE DATOS | BIG DATA URBANA" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Clase 3 ANÁLISIS Y VISUALIZACIÓN DE DATOS | 01-conocer.Rmd" />
+  <meta name="twitter:title" content="Clase 3 ANÁLISIS Y VISUALIZACIÓN DE DATOS | BIG DATA URBANA" />
   
   
   
@@ -169,6 +169,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.3" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#relación-entre-variables-numéricas-gráfico-de-dispersión"><i class="fa fa-check"></i><b>3.3</b> Relación entre variables numéricas: Gráfico de Dispersión</a></li>
 <li class="chapter" data-level="3.4" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#relación-entre-variables-categóricas-gráfico-de-matriz"><i class="fa fa-check"></i><b>3.4</b> Relación entre variables categóricas: Gráfico de Matriz</a></li>
 <li class="chapter" data-level="3.5" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#relación-entre-variable-numérica-y-categórica-gráfico-de-barras"><i class="fa fa-check"></i><b>3.5</b> Relación entre variable numérica y categórica: Gráfico de Barras</a></li>
+<li class="chapter" data-level="3.6" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#bonus-track-ajustes-estéticos"><i class="fa fa-check"></i><b>3.6</b> Bonus Track: Ajustes Estéticos</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="información-geográfica-y-mapas.html"><a href="información-geográfica-y-mapas.html"><i class="fa fa-check"></i><b>4</b> INFORMACIÓN GEOGRÁFICA Y MAPAS</a>
 <ul>
@@ -189,7 +190,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">01-conocer.Rmd</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">BIG DATA URBANA</a>
           </h1>
         </div>
 
@@ -231,25 +232,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Para generar este tipo de visualización utilizaremos <code>ggplot()</code> + <code>geom_histogram()</code>. Veamos por ejemplo como se distribuyen las superficies cubiertas (surface_covered) de las propiedades publicadas:</p>
 <div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="análisis-y-visualización-de-datos.html#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
 <span id="cb118-2"><a href="análisis-y-visualización-de-datos.html#cb118-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x=</span>surface_covered))</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-65-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-136-1.png" width="1050" /></p>
 <p>El eje X muestra la cantidad de m2 cubiertos que tienen las propiedades publicadas y el eje Y la cantidad de veces que aparece cada superficie. Por lo tanto, podemos ver que hay muchas propiedades con “poca” superficie cubierta y pocas propiedades con “mucha” superficie cubierta.</p>
 <p>Para facilitar la interpretación, podemos modificar el ancho de las barras (bins) que por defecto el valor es 30. Probemos con bins=75:</p>
 <div class="sourceCode" id="cb119"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb119-1"><a href="análisis-y-visualización-de-datos.html#cb119-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
 <span id="cb119-2"><a href="análisis-y-visualización-de-datos.html#cb119-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x=</span>surface_covered), <span class="at">bins=</span><span class="dv">75</span>)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-66-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-137-1.png" width="1050" /></p>
 <p>¿Notan el cambio? El eje Y disminuyó porque los conteos se agruparon en intervalos más pequeños sobre el eje X.</p>
 <p>Podemos observar que hay más propiedades por debajo de los 100m2 cubiertos que por encima, y que la mayor cantidad de observaciones se ubica alrededor de los 50m2. También podemos detectar algunos outliers que tienen alrededor de 800m2.</p>
 <p>Pero desagreguemos aún más nuestros datos y sumemos una variable categórica (tipo de operación) que nos permita facetar/dividir el gráfico. Para esto utilizaremos <code>facet_grid()</code>:</p>
 <div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="análisis-y-visualización-de-datos.html#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
 <span id="cb120-2"><a href="análisis-y-visualización-de-datos.html#cb120-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x=</span>surface_covered), <span class="at">bins=</span><span class="dv">75</span>) <span class="sc">+</span></span>
 <span id="cb120-3"><a href="análisis-y-visualización-de-datos.html#cb120-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(operation_type<span class="sc">~</span>.)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-67-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-138-1.png" width="1050" /></p>
 <p>La tendencia se mantiene similar en ambos casos, con una mayoría de propiedades de aproximadamente 50m2 cubiertos. Sin embargo, se detecta una gran diferencia en la cantidad de propiedades publicadas para cada tipo de operación.</p>
 <p>Incorporemos una variable más (provincia) que nos permita comprender si los comportamientos de la variable surface_covered cambian entre CABA y PBA. En este caso la agregaremos como un color de relleno (fill):</p>
 <div class="sourceCode" id="cb121"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb121-1"><a href="análisis-y-visualización-de-datos.html#cb121-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
 <span id="cb121-2"><a href="análisis-y-visualización-de-datos.html#cb121-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x=</span>surface_covered, <span class="at">fill=</span>provincia), <span class="at">bins=</span><span class="dv">75</span>)<span class="sc">+</span></span>
 <span id="cb121-3"><a href="análisis-y-visualización-de-datos.html#cb121-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(operation_type<span class="sc">~</span>.)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-68-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-139-1.png" width="1050" /></p>
 <p>Podemos ver que tanto en CABA como en AMBA, los comportamientos de la variable analizada son similares.</p>
 <p>Por último probemos sumar una variable más dentro del facetado (fecha de publicación), agreguemos etiquetas (labs) y elijamos los colores del gráfico (scale_fill y theme).</p>
 <p>Cabe destacar que hay 2 tipos de escalas de color:</p>
@@ -268,7 +269,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb122-8"><a href="análisis-y-visualización-de-datos.html#cb122-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption=</span><span class="st">&quot;Fuente: Properati Junio y Julio 2020&quot;</span>)<span class="sc">+</span></span>
 <span id="cb122-9"><a href="análisis-y-visualización-de-datos.html#cb122-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;goldenrod2&quot;</span>, <span class="st">&quot;indianred2&quot;</span>))<span class="sc">+</span></span>
 <span id="cb122-10"><a href="análisis-y-visualización-de-datos.html#cb122-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_light</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-69-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-140-1.png" width="1050" /></p>
 <p>En el histograma anterior se puede ver que si bien en ambos meses las distribuciones se mantienen, en Junio hay mayor cantidad de publicaciones que en Julio.</p>
 </div>
 <div id="gráfico-de-densidad" class="section level3" number="3.1.2">
@@ -277,25 +278,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Para generar esta visualización utilizaremos <code>ggplot()</code> + <code>geom_density()</code>. Veamos por ejemplo como se distribuyen los valores por m2 (price/surface_covered) de las propiedades publicadas:</p>
 <div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="análisis-y-visualización-de-datos.html#cb123-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
 <span id="cb123-2"><a href="análisis-y-visualización-de-datos.html#cb123-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">x=</span>price<span class="sc">/</span>surface_covered))</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-70-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-141-1.png" width="1050" /></p>
 <p>En primer lugar, tenemos los valores del eje Y en notación científica. Si queremos evitar esto es necesario que escribamos la siguiente línea de código:</p>
 <div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="análisis-y-visualización-de-datos.html#cb124-1" aria-hidden="true" tabindex="-1"></a><span class="fu">options</span>(<span class="at">scipen=</span><span class="dv">999</span>)</span></code></pre></div>
 <p>Y ahora si, ejecutar nuevamente el chunk anterior:</p>
 <div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="análisis-y-visualización-de-datos.html#cb125-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
 <span id="cb125-2"><a href="análisis-y-visualización-de-datos.html#cb125-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">x=</span>price<span class="sc">/</span>surface_covered))</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-72-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-143-1.png" width="1050" /></p>
 <p>En el gráfico se ven 2 “picos” muy pronunciados que indican en que partes del intervalo se concentran los valores. Esto podría deberse a que estamos trabajando con ambos tipos de operación (Alquiler y Venta), y como todos sabemos, los valores del m2 de ambos son muy diferentes, tanto por la moneda (ARS vs USD) como por los montos.
 Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al valor del m2 de cada una de las operaciones. Para poder desemascarar esto recurramos nuevamente al facetado:</p>
 <div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb126-1"><a href="análisis-y-visualización-de-datos.html#cb126-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
 <span id="cb126-2"><a href="análisis-y-visualización-de-datos.html#cb126-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">x=</span>price<span class="sc">/</span>surface_covered), <span class="at">fill=</span><span class="st">&quot;gray&quot;</span>) <span class="sc">+</span></span>
 <span id="cb126-3"><a href="análisis-y-visualización-de-datos.html#cb126-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(operation_type<span class="sc">~</span>.)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-73-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-144-1.png" width="1050" /></p>
 <p>Las operaciones tienen una distribución del valor del m2 muy diferentes entre sí. Se ve muy claro que los alquileres tienen un rango de precios que va desde 300 a 500$ARS aprox mientras que las ventas distribuyen sus publicaciones a lo largo de un rango bastante mayor entre 1.500USD y 3.500USD aproximadamente.</p>
 <p>Pero como los precios también deberían variar bastante de acuerdo a la zona geográfica, probemos agregar una variable categórica más que nos ayude a diferenciar CABA de GBA:</p>
 <div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="análisis-y-visualización-de-datos.html#cb127-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
 <span id="cb127-2"><a href="análisis-y-visualización-de-datos.html#cb127-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">x=</span>price<span class="sc">/</span>surface_covered, <span class="at">fill=</span>provincia), <span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
 <span id="cb127-3"><a href="análisis-y-visualización-de-datos.html#cb127-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(operation_type<span class="sc">~</span>.)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-74-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-145-1.png" width="1050" /></p>
 <p>Obviamente para cada partido, localidad y calle específica los valores van a variar, pero a simple vista podríamos notar que en ambos casos el valor del m2 de la mayoría de propiedades es mayor en CABA.</p>
 <p>Ahora analicemos como se comporta el valor del m2 de venta según el tipo de propiedad en CABA y GBA y aprovechemos para agregar etiquetas y colores a nuestro gráfico:</p>
 <div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="análisis-y-visualización-de-datos.html#cb128-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba <span class="sc">%&gt;%</span></span>
@@ -309,7 +310,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb128-9"><a href="análisis-y-visualización-de-datos.html#cb128-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption=</span><span class="st">&quot;Fuente: Properati Junio y Julio 2020&quot;</span>)<span class="sc">+</span></span>
 <span id="cb128-10"><a href="análisis-y-visualización-de-datos.html#cb128-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;goldenrod2&quot;</span>, <span class="st">&quot;indianred2&quot;</span>))<span class="sc">+</span></span>
 <span id="cb128-11"><a href="análisis-y-visualización-de-datos.html#cb128-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_light</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-75-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-146-1.png" width="1050" /></p>
 <p>En las 3 tipologías de vivienda los valores del m2 que predominan en CABA son mayores a los de GBA.</p>
 <p>Y ahora elijamos 3 partidos para comparar:</p>
 <div class="sourceCode" id="cb129"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb129-1"><a href="análisis-y-visualización-de-datos.html#cb129-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba <span class="sc">%&gt;%</span></span>
@@ -322,7 +323,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb129-8"><a href="análisis-y-visualización-de-datos.html#cb129-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y=</span><span class="st">&quot;Densidad&quot;</span>,</span>
 <span id="cb129-9"><a href="análisis-y-visualización-de-datos.html#cb129-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption=</span><span class="st">&quot;Fuente: Properati Junio y Julio 2020&quot;</span>)<span class="sc">+</span></span>
 <span id="cb129-10"><a href="análisis-y-visualización-de-datos.html#cb129-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_light</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-76-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-147-1.png" width="1050" /></p>
 <p>En las 3 tipologías se ve que Vicente López tiene los precios más elevados por m2, y a su vez que los departamentos de La Matanza superan en precio a los de La Plata. Sin embargo, para casas y PHs, La Matanza y La Plata tienen precios muy similares.</p>
 </div>
 </div>
@@ -339,12 +340,12 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <p>Para generar esta visualización utilizaremos <code>ggplot()</code> + <code>geom_boxplot()</code>. Veamos por ejemplo como se distribuyen los valores por m2 (price/surface_covered) por zona:</p>
 <div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="análisis-y-visualización-de-datos.html#cb130-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba) <span class="sc">+</span></span>
 <span id="cb130-2"><a href="análisis-y-visualización-de-datos.html#cb130-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> provincia, <span class="at">y =</span> price<span class="sc">/</span>surface_covered))</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-77-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-148-1.png" width="1050" /></p>
 <p>En el gráfico anterior podemos observar que la mediana del valor del m2 en CABA es superior al de GBA, pero estamos mezclando datos de ambos tipos de operaciones (alquileres y ventas), lo cual no es correcto. Para mejorar este aspecto facetemos el gráfico según tipo de operación:</p>
 <div class="sourceCode" id="cb131"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb131-1"><a href="análisis-y-visualización-de-datos.html#cb131-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba) <span class="sc">+</span></span>
 <span id="cb131-2"><a href="análisis-y-visualización-de-datos.html#cb131-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> provincia, <span class="at">y =</span> price<span class="sc">/</span>surface_covered)) <span class="sc">+</span></span>
 <span id="cb131-3"><a href="análisis-y-visualización-de-datos.html#cb131-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="sc">~</span>operation_type)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-78-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-149-1.png" width="1050" /></p>
 <p>Si bien los valores que se manejan en cada operación son muy diferentes entre sí, en ambos casos se mantiene que la <strong>mediana del valor del m2 en CABA es superior que en GBA</strong>. Sin embargo, como las 2 escalas son muy diferentes, casi no se ven las cajas correspondientes a los alquileres.</p>
 <p>Hagamos un filtro por Alquileres para ver mejor que ocurre ahí:</p>
 <div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb132-1"><a href="análisis-y-visualización-de-datos.html#cb132-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba <span class="sc">%&gt;%</span></span>
@@ -355,7 +356,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb132-6"><a href="análisis-y-visualización-de-datos.html#cb132-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Valor del m2&quot;</span>,</span>
 <span id="cb132-7"><a href="análisis-y-visualización-de-datos.html#cb132-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Zona&quot;</span>,</span>
 <span id="cb132-8"><a href="análisis-y-visualización-de-datos.html#cb132-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">&quot;Fuente: Properati&quot;</span>)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-79-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-150-1.png" width="1050" /></p>
 <p>La mediana de CABA está por encima pero claramente dentro de CABA hay muchas diferencias entre Comunas. Grafiquemos esto con datos de CABA desagregados por Comuna:</p>
 <div class="sourceCode" id="cb133"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb133-1"><a href="análisis-y-visualización-de-datos.html#cb133-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba <span class="sc">%&gt;%</span></span>
 <span id="cb133-2"><a href="análisis-y-visualización-de-datos.html#cb133-2" aria-hidden="true" tabindex="-1"></a>         <span class="fu">filter</span>(operation_type<span class="sc">==</span><span class="st">&quot;Alquiler&quot;</span> <span class="sc">&amp;</span> provincia<span class="sc">==</span><span class="st">&quot;CABA&quot;</span>)) <span class="sc">+</span></span>
@@ -366,7 +367,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb133-7"><a href="análisis-y-visualización-de-datos.html#cb133-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Comuna&quot;</span>,</span>
 <span id="cb133-8"><a href="análisis-y-visualización-de-datos.html#cb133-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">&quot;Fuente: Properati&quot;</span>)<span class="sc">+</span></span>
 <span id="cb133-9"><a href="análisis-y-visualización-de-datos.html#cb133-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-80-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-151-1.png" width="1050" /></p>
 <p>Se ve que:</p>
 <ul>
 <li>La Comuna 14 y la Comuna 1 tienen una mediana muy similar en el valor del m2 (el más alto de CABA).</li>
@@ -385,7 +386,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb134-7"><a href="análisis-y-visualización-de-datos.html#cb134-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Partido&quot;</span>,</span>
 <span id="cb134-8"><a href="análisis-y-visualización-de-datos.html#cb134-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">&quot;Fuente: Properati&quot;</span>)<span class="sc">+</span></span>
 <span id="cb134-9"><a href="análisis-y-visualización-de-datos.html#cb134-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-81-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-152-1.png" width="1050" /></p>
 <p>Acá vemos que:</p>
 <ul>
 <li>Vicente López presenta la mayor variación en el valor del m2 y la mediana más alta de los partidos incluidos en la base.</li>
@@ -404,7 +405,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb135-10"><a href="análisis-y-visualización-de-datos.html#cb135-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(created_on<span class="sc">~</span>.)<span class="sc">+</span></span>
 <span id="cb135-11"><a href="análisis-y-visualización-de-datos.html#cb135-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;Set3&quot;</span>)<span class="sc">+</span></span>
 <span id="cb135-12"><a href="análisis-y-visualización-de-datos.html#cb135-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-82-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-153-1.png" width="1050" /></p>
 </div>
 <div id="relación-entre-variables-numéricas-gráfico-de-dispersión" class="section level2" number="3.3">
 <h2><span class="header-section-number">3.3</span> Relación entre variables numéricas: Gráfico de Dispersión</h2>
@@ -412,17 +413,17 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <p>Veamos por ejemplo, si existe relación entre la superficie cubierta (surface_covered) y el precio total (price) de las propiedades:</p>
 <div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb136-1"><a href="análisis-y-visualización-de-datos.html#cb136-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
 <span id="cb136-2"><a href="análisis-y-visualización-de-datos.html#cb136-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x=</span>surface_covered, <span class="at">y=</span>price))</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-83-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-154-1.png" width="1050" /></p>
 <p>Tiene sentido, a mayor superficie cubierta, mayor valor. Pero veamos esto desagregado entre tipos de operaciones a ver que pasa:</p>
 <div class="sourceCode" id="cb137"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb137-1"><a href="análisis-y-visualización-de-datos.html#cb137-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
 <span id="cb137-2"><a href="análisis-y-visualización-de-datos.html#cb137-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x=</span>surface_covered, <span class="at">y=</span>price, <span class="at">color=</span>operation_type), <span class="at">alpha=</span><span class="fl">0.5</span>)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-84-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-155-1.png" width="1050" /></p>
 <p>A los gráficos de dispersión también se les puede agregar una tercer variable categórica o numérica que puede verse reflejada en la estética de los puntos (color, forma o tamaño).</p>
 <p>Agreguemos una tercer variable (categórica) a nuestro gráfico: la provincia</p>
 <div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb138-1"><a href="análisis-y-visualización-de-datos.html#cb138-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
 <span id="cb138-2"><a href="análisis-y-visualización-de-datos.html#cb138-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x=</span>surface_covered, <span class="at">y=</span>price, <span class="at">color=</span>operation_type), <span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
 <span id="cb138-3"><a href="análisis-y-visualización-de-datos.html#cb138-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(provincia<span class="sc">~</span>.)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-85-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-156-1.png" width="1050" /></p>
 <p>Podemos ver que en GBA no crece tan rápido la relación como en CABA.</p>
 <p>Quedemonos solo con las ventas y agreguemos una tercer variable numérica: el valor del m2</p>
 <div class="sourceCode" id="cb139"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb139-1"><a href="análisis-y-visualización-de-datos.html#cb139-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba <span class="sc">%&gt;%</span></span>
@@ -430,15 +431,15 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb139-3"><a href="análisis-y-visualización-de-datos.html#cb139-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x=</span>surface_covered, <span class="at">y=</span>price, <span class="at">color=</span>price<span class="sc">/</span>surface_covered), <span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
 <span id="cb139-4"><a href="análisis-y-visualización-de-datos.html#cb139-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(provincia<span class="sc">~</span>.) <span class="sc">+</span></span>
 <span id="cb139-5"><a href="análisis-y-visualización-de-datos.html#cb139-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_viridis_c</span>(<span class="at">option=</span><span class="st">&quot;magma&quot;</span>)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-86-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-157-1.png" width="1050" /></p>
 <p>Ahora aprovechemos que tenemos longitud y latitud de cada registro y hagamos un gráfico de puntos que nos permita ver la relación entre ambas variables:</p>
 <div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb140-1"><a href="análisis-y-visualización-de-datos.html#cb140-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>()<span class="sc">+</span></span>
 <span id="cb140-2"><a href="análisis-y-visualización-de-datos.html#cb140-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span>datos_amba, <span class="fu">aes</span>(<span class="at">x=</span>lon, <span class="at">y=</span>lat))</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-87-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-158-1.png" width="1050" /></p>
 <p>¿A qué se parece? ¿Tiene forma de AMBA? Probemos coloreando según la variable provincia.</p>
 <div class="sourceCode" id="cb141"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb141-1"><a href="análisis-y-visualización-de-datos.html#cb141-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>()<span class="sc">+</span></span>
 <span id="cb141-2"><a href="análisis-y-visualización-de-datos.html#cb141-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span>datos_amba, <span class="fu">aes</span>(<span class="at">x=</span>lon, <span class="at">y=</span>lat, <span class="at">color=</span>provincia))</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-88-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-159-1.png" width="1050" /></p>
 </div>
 <div id="relación-entre-variables-categóricas-gráfico-de-matriz" class="section level2" number="3.4">
 <h2><span class="header-section-number">3.4</span> Relación entre variables categóricas: Gráfico de Matriz</h2>
@@ -454,7 +455,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb142-4"><a href="análisis-y-visualización-de-datos.html#cb142-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_tile</span>(<span class="fu">aes</span>(<span class="at">x =</span> partido,</span>
 <span id="cb142-5"><a href="análisis-y-visualización-de-datos.html#cb142-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">y =</span> <span class="fu">as.factor</span>(rooms),</span>
 <span id="cb142-6"><a href="análisis-y-visualización-de-datos.html#cb142-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">fill =</span> cantidad))</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-89-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-160-1.png" width="1050" /></p>
 <p>Mejoremos con <code>coord_flip()</code> el aspecto de la visualización:</p>
 <div class="sourceCode" id="cb143"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb143-1"><a href="análisis-y-visualización-de-datos.html#cb143-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba <span class="sc">%&gt;%</span></span>
 <span id="cb143-2"><a href="análisis-y-visualización-de-datos.html#cb143-2" aria-hidden="true" tabindex="-1"></a>              <span class="fu">group_by</span>(partido, rooms) <span class="sc">%&gt;%</span></span>
@@ -464,7 +465,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb143-6"><a href="análisis-y-visualización-de-datos.html#cb143-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">fill =</span> cantidad)) <span class="sc">+</span></span>
 <span id="cb143-7"><a href="análisis-y-visualización-de-datos.html#cb143-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_c</span>() <span class="sc">+</span></span>
 <span id="cb143-8"><a href="análisis-y-visualización-de-datos.html#cb143-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-90-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-161-1.png" width="1050" /></p>
 <p>Se puede ver por ejemplo que la relación Comuna 14 + 2 ambientes, y Comuna 14 + 3 ambientes es la que más se repite (más de 600 veces cada una). Filtremos solo CABA:</p>
 <div class="sourceCode" id="cb144"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb144-1"><a href="análisis-y-visualización-de-datos.html#cb144-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba <span class="sc">%&gt;%</span></span>
 <span id="cb144-2"><a href="análisis-y-visualización-de-datos.html#cb144-2" aria-hidden="true" tabindex="-1"></a>              <span class="fu">filter</span>(provincia<span class="sc">==</span><span class="st">&quot;CABA&quot;</span>) <span class="sc">%&gt;%</span></span>
@@ -475,7 +476,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb144-7"><a href="análisis-y-visualización-de-datos.html#cb144-7" aria-hidden="true" tabindex="-1"></a>                <span class="at">fill =</span> cantidad)) <span class="sc">+</span></span>
 <span id="cb144-8"><a href="análisis-y-visualización-de-datos.html#cb144-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_c</span>() <span class="sc">+</span></span>
 <span id="cb144-9"><a href="análisis-y-visualización-de-datos.html#cb144-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-91-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-162-1.png" width="1050" /></p>
 <p>Obviamente se sigue viendo lo mismo de la Comuna 14 pero también se empieza a ver como la Comuna 13 y 15 también aparecen mucho con propiedades de 2 y 3 ambientes. Veamos el caso de GBA:</p>
 <div class="sourceCode" id="cb145"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb145-1"><a href="análisis-y-visualización-de-datos.html#cb145-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba <span class="sc">%&gt;%</span></span>
 <span id="cb145-2"><a href="análisis-y-visualización-de-datos.html#cb145-2" aria-hidden="true" tabindex="-1"></a>              <span class="fu">filter</span>(provincia<span class="sc">==</span><span class="st">&quot;GBA&quot;</span>) <span class="sc">%&gt;%</span></span>
@@ -486,7 +487,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb145-7"><a href="análisis-y-visualización-de-datos.html#cb145-7" aria-hidden="true" tabindex="-1"></a>                <span class="at">fill =</span> cantidad)) <span class="sc">+</span></span>
 <span id="cb145-8"><a href="análisis-y-visualización-de-datos.html#cb145-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_c</span>() <span class="sc">+</span></span>
 <span id="cb145-9"><a href="análisis-y-visualización-de-datos.html#cb145-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-92-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-163-1.png" width="1050" /></p>
 <p>En GBA la mayor cantidad se ve en Tigre con 3 ambientes, seguida por 2 y 4. También hay varias propiedades de 2 y 3 ambientes en La Plata.</p>
 </div>
 <div id="relación-entre-variable-numérica-y-categórica-gráfico-de-barras" class="section level2" number="3.5">
@@ -496,12 +497,12 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <p>Por ejemplo, veamos cuantas observaciones hay por tipo de operación:</p>
 <div class="sourceCode" id="cb146"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb146-1"><a href="análisis-y-visualización-de-datos.html#cb146-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
 <span id="cb146-2"><a href="análisis-y-visualización-de-datos.html#cb146-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">x=</span>operation_type))</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-93-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-164-1.png" width="1050" /></p>
 <p>En el gráfico anterior podemos ver que hay alrededor de 12.000 propiedades en venta y 3.000 en alquiler.</p>
 <p>Veamos esto desagregado por tipo de propiedad:</p>
 <div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="análisis-y-visualización-de-datos.html#cb147-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
 <span id="cb147-2"><a href="análisis-y-visualización-de-datos.html#cb147-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">x=</span>operation_type, <span class="at">fill=</span>property_type))</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-94-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-165-1.png" width="1050" /></p>
 <p>Como ya venimos viendo a lo largo de todo el capítulo, predominan los departamentos en ambos casos. Veamos esto también por zona y ajustemos cuestiones estéticas del gráfico:</p>
 <div class="sourceCode" id="cb148"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb148-1"><a href="análisis-y-visualización-de-datos.html#cb148-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
 <span id="cb148-2"><a href="análisis-y-visualización-de-datos.html#cb148-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">x=</span>operation_type, <span class="at">fill=</span>property_type)) <span class="sc">+</span></span>
@@ -512,7 +513,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb148-7"><a href="análisis-y-visualización-de-datos.html#cb148-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x=</span><span class="st">&quot;Operación&quot;</span>,</span>
 <span id="cb148-8"><a href="análisis-y-visualización-de-datos.html#cb148-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y=</span><span class="st">&quot;Cantidad&quot;</span>,</span>
 <span id="cb148-9"><a href="análisis-y-visualización-de-datos.html#cb148-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption=</span><span class="st">&quot;Fuente: Properati Junio y Julio 2020&quot;</span>)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-95-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-166-1.png" width="1050" /></p>
 <p>Siguen predominando los departamentos pero también se puede ver como la cantidad de casas en venta en GBA es muy similar a la de departamentos.</p>
 <p>Las <strong>barras apiladas con valores absolutos</strong> es una de las opciones a la hora de graficar y la que nos hace por defecto <code>ggplot2</code>, pero existen 2 más: las barras apiladas con valores relativos (%) y las barras agrupadas con valores absolutos.</p>
 <p>Veamos de que se trata cada una!</p>
@@ -527,7 +528,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb149-7"><a href="análisis-y-visualización-de-datos.html#cb149-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x=</span><span class="st">&quot;Operación&quot;</span>,</span>
 <span id="cb149-8"><a href="análisis-y-visualización-de-datos.html#cb149-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y=</span><span class="st">&quot;Porcentaje&quot;</span>,</span>
 <span id="cb149-9"><a href="análisis-y-visualización-de-datos.html#cb149-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption=</span><span class="st">&quot;Fuente: Properati Junio y Julio 2020&quot;</span>)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-96-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-167-1.png" width="1050" /></p>
 <p><strong>Barras agrupadas con valores absolutos</strong></p>
 <p>Este tipo de gráfico se utiliza cuando los datos absolutos se agrupan en 2 o más categorías dentro del mismo eje. Con <code>ggplot()</code> usaremos <code>position=position_dodge()</code>:</p>
 <div class="sourceCode" id="cb150"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb150-1"><a href="análisis-y-visualización-de-datos.html#cb150-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
@@ -539,7 +540,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb150-7"><a href="análisis-y-visualización-de-datos.html#cb150-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x=</span><span class="st">&quot;Operación&quot;</span>,</span>
 <span id="cb150-8"><a href="análisis-y-visualización-de-datos.html#cb150-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y=</span><span class="st">&quot;Cantidad&quot;</span>,</span>
 <span id="cb150-9"><a href="análisis-y-visualización-de-datos.html#cb150-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption=</span><span class="st">&quot;Fuente: Properati Junio y Julio 2020&quot;</span>)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-97-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-168-1.png" width="1050" /></p>
 <p>Ahora investiguemos otra variable de nuestro dataset, veamos <strong>de cuántos ambientes son las propiedades que predominan en cada zona para cada operación inmobiliaria</strong>:</p>
 <div class="sourceCode" id="cb151"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb151-1"><a href="análisis-y-visualización-de-datos.html#cb151-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba)<span class="sc">+</span></span>
 <span id="cb151-2"><a href="análisis-y-visualización-de-datos.html#cb151-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="fu">as.factor</span>(rooms), <span class="at">fill=</span>provincia), <span class="at">position=</span><span class="fu">position_dodge</span>()) <span class="sc">+</span></span>
@@ -551,7 +552,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb151-8"><a href="análisis-y-visualización-de-datos.html#cb151-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption=</span><span class="st">&quot;Fuente: Properati&quot;</span>) <span class="sc">+</span></span>
 <span id="cb151-9"><a href="análisis-y-visualización-de-datos.html#cb151-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;goldenrod2&quot;</span>, <span class="st">&quot;indianred2&quot;</span>)) <span class="sc">+</span></span>
 <span id="cb151-10"><a href="análisis-y-visualización-de-datos.html#cb151-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(operation_type<span class="sc">~</span>.)</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-98-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-169-1.png" width="1050" /></p>
 <p>Vemos que:</p>
 <ul>
 <li>Los monoambientes publicados en CABA triplican los publicados en GBA.</li>
@@ -575,7 +576,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb152-13"><a href="análisis-y-visualización-de-datos.html#cb152-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;goldenrod2&quot;</span>, <span class="st">&quot;indianred2&quot;</span>)) <span class="sc">+</span></span>
 <span id="cb152-14"><a href="análisis-y-visualización-de-datos.html#cb152-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_light</span>()<span class="sc">+</span></span>
 <span id="cb152-15"><a href="análisis-y-visualización-de-datos.html#cb152-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-99-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-170-1.png" width="1050" /></p>
 <p>Se ve un poco empastado y es difícil de leer. Probemos filtrando solo aquellos donde el valor del m2 es mayor a 2.000 USD:</p>
 <div class="sourceCode" id="cb153"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb153-1"><a href="análisis-y-visualización-de-datos.html#cb153-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba <span class="sc">%&gt;%</span></span>
 <span id="cb153-2"><a href="análisis-y-visualización-de-datos.html#cb153-2" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(provincia, partido, operation_type) <span class="sc">%&gt;%</span></span>
@@ -592,7 +593,7 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb153-13"><a href="análisis-y-visualización-de-datos.html#cb153-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;goldenrod2&quot;</span>, <span class="st">&quot;indianred2&quot;</span>)) <span class="sc">+</span></span>
 <span id="cb153-14"><a href="análisis-y-visualización-de-datos.html#cb153-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_light</span>() <span class="sc">+</span></span>
 <span id="cb153-15"><a href="análisis-y-visualización-de-datos.html#cb153-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-100-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-171-1.png" width="1050" /></p>
 <p>Agreguemos etiquetas con <code>geom_text()</code> que nos faciliten la lectura:</p>
 <div class="sourceCode" id="cb154"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb154-1"><a href="análisis-y-visualización-de-datos.html#cb154-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba <span class="sc">%&gt;%</span></span>
 <span id="cb154-2"><a href="análisis-y-visualización-de-datos.html#cb154-2" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(provincia, partido, operation_type) <span class="sc">%&gt;%</span></span>
@@ -610,7 +611,44 @@ Por lo tanto, es muy probable que cada uno de esos “picos” se corresponda al
 <span id="cb154-14"><a href="análisis-y-visualización-de-datos.html#cb154-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;goldenrod2&quot;</span>, <span class="st">&quot;indianred2&quot;</span>)) <span class="sc">+</span></span>
 <span id="cb154-15"><a href="análisis-y-visualización-de-datos.html#cb154-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_light</span>() <span class="sc">+</span></span>
 <span id="cb154-16"><a href="análisis-y-visualización-de-datos.html#cb154-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code></pre></div>
-<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-101-1.png" width="1050" /></p>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-172-1.png" width="1050" /></p>
+</div>
+<div id="bonus-track-ajustes-estéticos" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Bonus Track: Ajustes Estéticos</h2>
+<p>Los elementos que acompañan un gráfico (titulo, subtitulo, leyenda, pie de pagina, texto en ejes x e y, fondo, cuadrícula, etc) son esenciales para poder comunicar e interpretar correctamente los datos.</p>
+<p>Sin embargo, a la hora de utilizar <code>ggplot()</code>, vimos como estos elementos se asignan por defecto y a veces pueden no ajustarse a lo que realmente queremos o necesitamos mostrar. Pero no se preocupen porque esto tiene una solución: Podemos crear un theme o tema y personalizar sus componentes a nuestro gusto!</p>
+<p>Veamos un ejemplo a partir del último gráfico:</p>
+<div class="sourceCode" id="cb155"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb155-1"><a href="análisis-y-visualización-de-datos.html#cb155-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_amba <span class="sc">%&gt;%</span></span>
+<span id="cb155-2"><a href="análisis-y-visualización-de-datos.html#cb155-2" aria-hidden="true" tabindex="-1"></a>        <span class="fu">group_by</span>(provincia, partido, operation_type) <span class="sc">%&gt;%</span></span>
+<span id="cb155-3"><a href="análisis-y-visualización-de-datos.html#cb155-3" aria-hidden="true" tabindex="-1"></a>        <span class="fu">summarise</span>(<span class="at">cantidad=</span><span class="fu">n</span>(),</span>
+<span id="cb155-4"><a href="análisis-y-visualización-de-datos.html#cb155-4" aria-hidden="true" tabindex="-1"></a>                  <span class="at">price_m2=</span><span class="fu">median</span>(price<span class="sc">/</span>surface_covered)) <span class="sc">%&gt;%</span></span>
+<span id="cb155-5"><a href="análisis-y-visualización-de-datos.html#cb155-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">filter</span>(operation_type<span class="sc">==</span><span class="st">&quot;Venta&quot;</span> <span class="sc">&amp;</span> price_m2<span class="sc">&gt;=</span><span class="dv">2000</span>))<span class="sc">+</span></span>
+<span id="cb155-6"><a href="análisis-y-visualización-de-datos.html#cb155-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">x=</span><span class="fu">reorder</span>(partido, price_m2), <span class="at">weight=</span>price_m2, <span class="at">fill=</span>provincia)) <span class="sc">+</span></span>
+<span id="cb155-7"><a href="análisis-y-visualización-de-datos.html#cb155-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">x=</span>partido, <span class="at">y=</span>price_m2<span class="sc">+</span><span class="dv">150</span>, <span class="at">label=</span><span class="fu">as.integer</span>(price_m2)), <span class="at">size=</span><span class="fl">2.5</span>, <span class="at">color=</span><span class="st">&quot;gray14&quot;</span>)<span class="sc">+</span></span>
+<span id="cb155-8"><a href="análisis-y-visualización-de-datos.html#cb155-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">&quot;Valor del m2 de Propiedades en Venta&quot;</span>,</span>
+<span id="cb155-9"><a href="análisis-y-visualización-de-datos.html#cb155-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle=</span><span class="st">&quot;CABA + GBA&quot;</span>,</span>
+<span id="cb155-10"><a href="análisis-y-visualización-de-datos.html#cb155-10" aria-hidden="true" tabindex="-1"></a>       <span class="at">fill=</span><span class="st">&quot;Zona&quot;</span>,</span>
+<span id="cb155-11"><a href="análisis-y-visualización-de-datos.html#cb155-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">x=</span><span class="st">&quot;Partido&quot;</span>,</span>
+<span id="cb155-12"><a href="análisis-y-visualización-de-datos.html#cb155-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">y=</span><span class="st">&quot;Valor del m2 (USD)&quot;</span>,</span>
+<span id="cb155-13"><a href="análisis-y-visualización-de-datos.html#cb155-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption=</span><span class="st">&quot;Fuente: Properati&quot;</span>) <span class="sc">+</span></span>
+<span id="cb155-14"><a href="análisis-y-visualización-de-datos.html#cb155-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;goldenrod2&quot;</span>, <span class="st">&quot;indianred2&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb155-15"><a href="análisis-y-visualización-de-datos.html#cb155-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">plot.margin =</span> <span class="fu">margin</span>(<span class="fl">0.25</span>, <span class="dv">1</span>, <span class="fl">0.25</span>, <span class="fl">0.1</span>, <span class="st">&quot;cm&quot;</span>), <span class="co">#ajustar los margenes del gráfico</span></span>
+<span id="cb155-16"><a href="análisis-y-visualización-de-datos.html#cb155-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">&quot;gray100&quot;</span>, <span class="at">colour =</span> <span class="st">&quot;gray100&quot;</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">linetype =</span> <span class="st">&quot;solid&quot;</span>), <span class="co">#fondo del gráfico</span></span>
+<span id="cb155-17"><a href="análisis-y-visualización-de-datos.html#cb155-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">size =</span> <span class="fl">0.5</span>, <span class="at">linetype =</span> <span class="st">&#39;solid&#39;</span>, <span class="at">colour =</span> <span class="st">&quot;gray80&quot;</span>), <span class="co">#lineas del gráfico</span></span>
+<span id="cb155-18"><a href="análisis-y-visualización-de-datos.html#cb155-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.grid.minor =</span> <span class="fu">element_line</span>(<span class="at">size =</span> <span class="fl">0.25</span>, <span class="at">linetype =</span> <span class="st">&#39;solid&#39;</span>, <span class="at">colour =</span> <span class="st">&quot;gray90&quot;</span>), <span class="co">#líneas auxiliares</span></span>
+<span id="cb155-19"><a href="análisis-y-visualización-de-datos.html#cb155-19" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.title=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">12</span>, <span class="at">face =</span> <span class="st">&quot;bold&quot;</span>), <span class="co">#tamaño de titulo del mapa</span></span>
+<span id="cb155-20"><a href="análisis-y-visualización-de-datos.html#cb155-20" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.subtitle=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">9</span>, <span class="at">face =</span> <span class="st">&quot;bold&quot;</span>), <span class="co">#tamaño de subtitulo del mapa</span></span>
+<span id="cb155-21"><a href="análisis-y-visualización-de-datos.html#cb155-21" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.key.size =</span> <span class="fu">unit</span>(<span class="fl">0.4</span>, <span class="st">&quot;cm&quot;</span>), <span class="co">#alto de cuadrados de referencia</span></span>
+<span id="cb155-22"><a href="análisis-y-visualización-de-datos.html#cb155-22" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.key.width =</span> <span class="fu">unit</span>(<span class="fl">0.4</span>,<span class="st">&quot;cm&quot;</span>), <span class="co">#ancho de cuadrados de referencia </span></span>
+<span id="cb155-23"><a href="análisis-y-visualización-de-datos.html#cb155-23" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.position=</span><span class="st">&quot;top&quot;</span>, <span class="co">#ubicacion de leyenda</span></span>
+<span id="cb155-24"><a href="análisis-y-visualización-de-datos.html#cb155-24" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.direction =</span> <span class="st">&quot;horizontal&quot;</span>, <span class="co">#dirección de la leyenda</span></span>
+<span id="cb155-25"><a href="análisis-y-visualización-de-datos.html#cb155-25" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.title=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">8</span>, <span class="at">face =</span> <span class="st">&quot;bold&quot;</span>), <span class="co">#tamaño de titulo de leyenda</span></span>
+<span id="cb155-26"><a href="análisis-y-visualización-de-datos.html#cb155-26" aria-hidden="true" tabindex="-1"></a>        <span class="at">legend.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">8</span>), <span class="co">#tamaño de texto de leyenda</span></span>
+<span id="cb155-27"><a href="análisis-y-visualización-de-datos.html#cb155-27" aria-hidden="true" tabindex="-1"></a>        <span class="at">plot.caption=</span><span class="fu">element_text</span>(<span class="at">face =</span> <span class="st">&quot;italic&quot;</span>, <span class="at">colour =</span> <span class="st">&quot;gray35&quot;</span>,<span class="at">size=</span><span class="dv">6</span>), <span class="co">#tamaño de nota al pie</span></span>
+<span id="cb155-28"><a href="análisis-y-visualización-de-datos.html#cb155-28" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">colour =</span> <span class="st">&quot;gray35&quot;</span>,<span class="at">size =</span> <span class="dv">8</span>), <span class="co">#tamaño y color de referencias de ejes X e Y</span></span>
+<span id="cb155-29"><a href="análisis-y-visualización-de-datos.html#cb155-29" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">colour =</span> <span class="st">&quot;gray35&quot;</span>,<span class="at">size =</span> <span class="dv">6</span>, <span class="at">angle =</span> <span class="dv">90</span>), <span class="co">#tamaño y color del texto de eje X</span></span>
+<span id="cb155-30"><a href="análisis-y-visualización-de-datos.html#cb155-30" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.y =</span> <span class="fu">element_text</span>(<span class="at">colour =</span> <span class="st">&quot;gray35&quot;</span>,<span class="at">size =</span> <span class="dv">6</span>)) <span class="co">#tamaño y color del texto de eje Y</span></span></code></pre></div>
+<p><img src="manual-big-data-urbana_files/figure-html/unnamed-chunk-173-1.png" width="1050" /></p>
 
 </div>
 </div>

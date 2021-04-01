@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Clase 2 MANIPULACIÓN DE DATOS | 01-conocer.Rmd</title>
-  <meta name="description" content="Clase 2 MANIPULACIÓN DE DATOS | 01-conocer.Rmd" />
+  <title>Clase 2 MANIPULACIÓN DE DATOS | BIG DATA URBANA</title>
+  <meta name="description" content="Clase 2 MANIPULACIÓN DE DATOS | BIG DATA URBANA" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Clase 2 MANIPULACIÓN DE DATOS | 01-conocer.Rmd" />
+  <meta property="og:title" content="Clase 2 MANIPULACIÓN DE DATOS | BIG DATA URBANA" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Clase 2 MANIPULACIÓN DE DATOS | 01-conocer.Rmd" />
+  <meta name="twitter:title" content="Clase 2 MANIPULACIÓN DE DATOS | BIG DATA URBANA" />
   
   
   
@@ -169,6 +169,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.3" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#relación-entre-variables-numéricas-gráfico-de-dispersión"><i class="fa fa-check"></i><b>3.3</b> Relación entre variables numéricas: Gráfico de Dispersión</a></li>
 <li class="chapter" data-level="3.4" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#relación-entre-variables-categóricas-gráfico-de-matriz"><i class="fa fa-check"></i><b>3.4</b> Relación entre variables categóricas: Gráfico de Matriz</a></li>
 <li class="chapter" data-level="3.5" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#relación-entre-variable-numérica-y-categórica-gráfico-de-barras"><i class="fa fa-check"></i><b>3.5</b> Relación entre variable numérica y categórica: Gráfico de Barras</a></li>
+<li class="chapter" data-level="3.6" data-path="análisis-y-visualización-de-datos.html"><a href="análisis-y-visualización-de-datos.html#bonus-track-ajustes-estéticos"><i class="fa fa-check"></i><b>3.6</b> Bonus Track: Ajustes Estéticos</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="información-geográfica-y-mapas.html"><a href="información-geográfica-y-mapas.html"><i class="fa fa-check"></i><b>4</b> INFORMACIÓN GEOGRÁFICA Y MAPAS</a>
 <ul>
@@ -189,7 +190,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">01-conocer.Rmd</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">BIG DATA URBANA</a>
           </h1>
         </div>
 
@@ -228,20 +229,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006      CABA  Comuna 1     1            35              35 42000      ARS
 ## 5     202006      CABA Comuna 13     2            60              50 32000      ARS
 ## 6     202006      CABA Comuna 13     2            53              44 26000      ARS
-##                                                             title property_type
-## 1                                           Departamento - Flores  Departamento
-## 2           Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento
-## 3                                         Departamento - Belgrano  Departamento
-## 4                Monoambiente con cochera. Zencity. Puerto Madero  Departamento
-## 5 Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera  Departamento
-## 6       Unico 2 ambientes A Estrenar! Posesion inmediata! - Nuñez  Departamento
-##   operation_type       lat       lon
-## 1       Alquiler -34.61917 -58.46222
-## 2       Alquiler -34.55460 -58.46652
-## 3       Alquiler -34.56318 -58.46461
-## 4       Alquiler -34.61836 -58.36090
-## 5       Alquiler -34.53795 -58.46671
-## 6       Alquiler -34.54756 -58.47037</code></pre>
+##                                                             title property_type operation_type       lat       lon
+## 1                                           Departamento - Flores  Departamento       Alquiler -34.61917 -58.46222
+## 2           Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento       Alquiler -34.55460 -58.46652
+## 3                                         Departamento - Belgrano  Departamento       Alquiler -34.56318 -58.46461
+## 4                Monoambiente con cochera. Zencity. Puerto Madero  Departamento       Alquiler -34.61836 -58.36090
+## 5 Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera  Departamento       Alquiler -34.53795 -58.46671
+## 6       Unico 2 ambientes A Estrenar! Posesion inmediata! - Nuñez  Departamento       Alquiler -34.54756 -58.47037</code></pre>
 <p>O los del mes de Julio 2020:</p>
 <div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="manipulación-de-datos.html#cb25-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, created_on<span class="sc">==</span><span class="dv">202007</span>)</span>
 <span id="cb25-2"><a href="manipulación-de-datos.html#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -253,20 +247,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202007      CABA Comuna 14     2            48              48 30000      ARS
 ## 5     202007      CABA Comuna 14     2            42              37 26000      ARS
 ## 6     202007      CABA Comuna 15     2            41              38 21000      ARS
-##                                                              title property_type
-## 1 DEPARTAMENTO EN ALQUILER EN NORDELTA 2 AMB CON TERRAZA Y JACUZZI  Departamento
-## 2        2 ambientes con cochera y baulera - Vista al Lago Central  Departamento
-## 3                  Departamento en Alquiler con Balcón y Amenities  Departamento
-## 4   Botánico - 2 ambientes amueblado con vista a Boulevard Cerviño  Departamento
-## 5                                           Departamento - Palermo  Departamento
-## 6               Departamento de 2 ambientes en Alquiler en Palermo  Departamento
-##   operation_type       lat       lon
-## 1       Alquiler -34.39437 -58.64925
-## 2       Alquiler -34.40910 -58.63129
-## 3       Alquiler -34.59274 -58.42749
-## 4       Alquiler -34.57914 -58.41289
-## 5       Alquiler -34.59571 -58.41587
-## 6       Alquiler -34.59856 -58.43026</code></pre>
+##                                                              title property_type operation_type       lat       lon
+## 1 DEPARTAMENTO EN ALQUILER EN NORDELTA 2 AMB CON TERRAZA Y JACUZZI  Departamento       Alquiler -34.39437 -58.64925
+## 2        2 ambientes con cochera y baulera - Vista al Lago Central  Departamento       Alquiler -34.40910 -58.63129
+## 3                  Departamento en Alquiler con Balcón y Amenities  Departamento       Alquiler -34.59274 -58.42749
+## 4   Botánico - 2 ambientes amueblado con vista a Boulevard Cerviño  Departamento       Alquiler -34.57914 -58.41289
+## 5                                           Departamento - Palermo  Departamento       Alquiler -34.59571 -58.41587
+## 6               Departamento de 2 ambientes en Alquiler en Palermo  Departamento       Alquiler -34.59856 -58.43026</code></pre>
 <p>Nótese que para filtrar bajo la condición de “igual” utilicé “==”, pero también podría haber utilizado otras condiciones como:</p>
 <ul>
 <li><strong>A==B</strong> -&gt; A igual a B</li>
@@ -291,70 +278,56 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006      CABA Comuna 13     3           109              94  90000      ARS
 ## 5     202006      CABA Comuna 14     3           152             152 240000      ARS
 ## 6     202006      CABA Comuna 14     3            90              85  80000      ARS
-##                                                                                              title
-## 1                                            Americana a 6 cuadras de la estacion de S.A. de Padua
-## 2                                   3 AMBIENTES EN EDIFICIO MIRADORES DE LA BAHIA CON COCHERA FIJA
-## 3 ¡EN EXCLUSIVA! Departamento en alquiler de 3 ambientes Miradores de La Bahía, Bahía de Nordelta.
-## 4                                                  Alquiler Depto 3 Amb a Estrenar Nuñez C/Cochera
-## 5           ALQUILER en TORRES DE GELLY 152 m2 con 2 dorm dep y 1 coch ALTO vista Rio  SIN muebles
-## 6                                    ALQUILER 3 AMB CON DEPENDENCIA! - Y COCHERA TORRE AMENITIES!!
-##   property_type operation_type       lat       lon
-## 1          Casa       Alquiler -34.65957 -58.69712
-## 2  Departamento       Alquiler -34.39642 -58.64665
-## 3  Departamento       Alquiler -34.39512 -58.64665
-## 4  Departamento       Alquiler -34.54521 -58.46286
-## 5  Departamento       Alquiler -34.57760 -58.40499
-## 6  Departamento       Alquiler -34.59353 -58.41462</code></pre>
+##                                                                                              title property_type
+## 1                                            Americana a 6 cuadras de la estacion de S.A. de Padua          Casa
+## 2                                   3 AMBIENTES EN EDIFICIO MIRADORES DE LA BAHIA CON COCHERA FIJA  Departamento
+## 3 ¡EN EXCLUSIVA! Departamento en alquiler de 3 ambientes Miradores de La Bahía, Bahía de Nordelta.  Departamento
+## 4                                                  Alquiler Depto 3 Amb a Estrenar Nuñez C/Cochera  Departamento
+## 5           ALQUILER en TORRES DE GELLY 152 m2 con 2 dorm dep y 1 coch ALTO vista Rio  SIN muebles  Departamento
+## 6                                    ALQUILER 3 AMB CON DEPENDENCIA! - Y COCHERA TORRE AMENITIES!!  Departamento
+##   operation_type       lat       lon
+## 1       Alquiler -34.65957 -58.69712
+## 2       Alquiler -34.39642 -58.64665
+## 3       Alquiler -34.39512 -58.64665
+## 4       Alquiler -34.54521 -58.46286
+## 5       Alquiler -34.57760 -58.40499
+## 6       Alquiler -34.59353 -58.41462</code></pre>
 <p>O si quiero eliminar los registros que corresponden a departamentos debería hacer el siguiente chunk:</p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="manipulación-de-datos.html#cb29-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, property_type<span class="sc">!=</span><span class="st">&quot;Departamento&quot;</span>)</span>
 <span id="cb29-2"><a href="manipulación-de-datos.html#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb29-3"><a href="manipulación-de-datos.html#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(filtro)</span></code></pre></div>
-<pre><code>##   created_on provincia            partido rooms surface_total surface_covered price
-## 1     202006       GBA         La Matanza     2            24              24 12000
-## 2     202006       GBA General San Martín     2            40              40 15000
-## 3     202006       GBA          Ituzaingó     3            75              75 19000
-## 4     202006      CABA          Comuna 14     4           125             105 85000
-## 5     202006       GBA              Merlo     4           180             140 27000
-## 6     202006       GBA              Pilar     4           267             267 50000
-##   currency                                                 title property_type
-## 1      ARS                                PH - Lomas Del Mirador            PH
-## 2      ARS                                        PH - Chilavert            PH
-## 3      ARS Americana a 6 cuadras de la estacion de S.A. de Padua          Casa
-## 4      ARS              PH en alquiler 4 ambientes - Las Cañitas            PH
-## 5      ARS               Casa en Padua 3 dormitorios en alquiler          Casa
-## 6      ARS              Casa en venta o alquiler en La Peregrina          Casa
-##   operation_type       lat       lon
-## 1       Alquiler -34.66253 -58.52914
-## 2       Alquiler -34.54301 -58.57573
-## 3       Alquiler -34.65957 -58.69712
-## 4       Alquiler -34.57207 -58.43249
-## 5       Alquiler -34.66154 -58.71565
-## 6       Alquiler -34.47091 -58.82270</code></pre>
+<pre><code>##   created_on provincia            partido rooms surface_total surface_covered price currency
+## 1     202006       GBA         La Matanza     2            24              24 12000      ARS
+## 2     202006       GBA General San Martín     2            40              40 15000      ARS
+## 3     202006       GBA          Ituzaingó     3            75              75 19000      ARS
+## 4     202006      CABA          Comuna 14     4           125             105 85000      ARS
+## 5     202006       GBA              Merlo     4           180             140 27000      ARS
+## 6     202006       GBA              Pilar     4           267             267 50000      ARS
+##                                                   title property_type operation_type       lat       lon
+## 1                                PH - Lomas Del Mirador            PH       Alquiler -34.66253 -58.52914
+## 2                                        PH - Chilavert            PH       Alquiler -34.54301 -58.57573
+## 3 Americana a 6 cuadras de la estacion de S.A. de Padua          Casa       Alquiler -34.65957 -58.69712
+## 4              PH en alquiler 4 ambientes - Las Cañitas            PH       Alquiler -34.57207 -58.43249
+## 5               Casa en Padua 3 dormitorios en alquiler          Casa       Alquiler -34.66154 -58.71565
+## 6              Casa en venta o alquiler en La Peregrina          Casa       Alquiler -34.47091 -58.82270</code></pre>
 <p>Si queremos filtrar todas las propiedades ubicadas en 3 partidos diferentes como por ejempo La Plata, General San Martín y La Matanza debemos utilizar %in% de la siguiente forma:</p>
 <div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="manipulación-de-datos.html#cb31-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, partido <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;La Plata&quot;</span>, <span class="st">&quot;General San Martín&quot;</span>, <span class="st">&quot;La Matanza&quot;</span>))</span>
 <span id="cb31-2"><a href="manipulación-de-datos.html#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb31-3"><a href="manipulación-de-datos.html#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(filtro)</span></code></pre></div>
-<pre><code>##   created_on provincia            partido rooms surface_total surface_covered price
-## 1     202006       GBA         La Matanza     2            24              24 12000
-## 2     202006       GBA General San Martín     2            40              40 15000
-## 3     202006       GBA           La Plata     2            50              50 18000
-## 4     202006       GBA           La Plata     2            35              35 13500
-## 5     202006       GBA General San Martín     2            56              48 14000
-## 6     202006       GBA           La Plata     3            40              40 10000
-##   currency                                                       title property_type
-## 1      ARS                                      PH - Lomas Del Mirador            PH
-## 2      ARS                                              PH - Chilavert            PH
-## 3      ARS Alquiler, depto de un domitorio frente al parque San Martin  Departamento
-## 4      ARS                                     Departamento - La Plata  Departamento
-## 5      ARS                     Departamento céntrico - Villa Ballester  Departamento
-## 6      ARS                               Departamento - José Hernández  Departamento
-##   operation_type       lat       lon
-## 1       Alquiler -34.66253 -58.52914
-## 2       Alquiler -34.54301 -58.57573
-## 3       Alquiler -34.93415 -57.96605
-## 4       Alquiler -34.90645 -57.97335
-## 5       Alquiler -34.55038 -58.55512
-## 6       Alquiler -34.89768 -58.02787</code></pre>
+<pre><code>##   created_on provincia            partido rooms surface_total surface_covered price currency
+## 1     202006       GBA         La Matanza     2            24              24 12000      ARS
+## 2     202006       GBA General San Martín     2            40              40 15000      ARS
+## 3     202006       GBA           La Plata     2            50              50 18000      ARS
+## 4     202006       GBA           La Plata     2            35              35 13500      ARS
+## 5     202006       GBA General San Martín     2            56              48 14000      ARS
+## 6     202006       GBA           La Plata     3            40              40 10000      ARS
+##                                                         title property_type operation_type       lat       lon
+## 1                                      PH - Lomas Del Mirador            PH       Alquiler -34.66253 -58.52914
+## 2                                              PH - Chilavert            PH       Alquiler -34.54301 -58.57573
+## 3 Alquiler, depto de un domitorio frente al parque San Martin  Departamento       Alquiler -34.93415 -57.96605
+## 4                                     Departamento - La Plata  Departamento       Alquiler -34.90645 -57.97335
+## 5                     Departamento céntrico - Villa Ballester  Departamento       Alquiler -34.55038 -58.55512
+## 6                               Departamento - José Hernández  Departamento       Alquiler -34.89768 -58.02787</code></pre>
 <p>En cambio, si queremos filtrar todas las propiedades que no estén ubicadas en 3 partidos diferentes como por ejempo La Plata, General San Martín y La Matanza debemos utilizar ! + %in% de la siguiente forma:</p>
 <div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="manipulación-de-datos.html#cb33-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, <span class="sc">!</span>(partido <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;La Plata&quot;</span>, <span class="st">&quot;General San Martín&quot;</span>, <span class="st">&quot;La Matanza&quot;</span>)))</span>
 <span id="cb33-2"><a href="manipulación-de-datos.html#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -366,20 +339,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
 ## 5     202006       GBA Vicente López     1            36              27 19000      ARS
 ## 6     202006      CABA     Comuna 13     2            60              50 32000      ARS
-##                                                                           title
-## 1                                                         Departamento - Flores
-## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3                                                       Departamento - Belgrano
-## 4                              Monoambiente con cochera. Zencity. Puerto Madero
-## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
-## 6               Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera
-##   property_type operation_type       lat       lon
-## 1  Departamento       Alquiler -34.61917 -58.46222
-## 2  Departamento       Alquiler -34.55460 -58.46652
-## 3  Departamento       Alquiler -34.56318 -58.46461
-## 4  Departamento       Alquiler -34.61836 -58.36090
-## 5  Departamento       Alquiler -34.53344 -58.49345
-## 6  Departamento       Alquiler -34.53795 -58.46671</code></pre>
+##                                                                           title property_type operation_type       lat
+## 1                                                         Departamento - Flores  Departamento       Alquiler -34.61917
+## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento       Alquiler -34.55460
+## 3                                                       Departamento - Belgrano  Departamento       Alquiler -34.56318
+## 4                              Monoambiente con cochera. Zencity. Puerto Madero  Departamento       Alquiler -34.61836
+## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa  Departamento       Alquiler -34.53344
+## 6               Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera  Departamento       Alquiler -34.53795
+##         lon
+## 1 -58.46222
+## 2 -58.46652
+## 3 -58.46461
+## 4 -58.36090
+## 5 -58.49345
+## 6 -58.46671</code></pre>
 <p>Pero esto no es todo, ¿Cómo hago si quiero filtrar por <strong>2 o más condiciones a la vez</strong>?</p>
 <p>En este caso debemos utilizar los siguientes operadores lógicos:</p>
 <ul>
@@ -393,9 +366,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="manipulación-de-datos.html#cb35-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, partido<span class="sc">==</span><span class="st">&quot;Comuna 5&quot;</span> <span class="sc">&amp;</span> partido<span class="sc">==</span><span class="st">&quot;Comuna 13&quot;</span>)</span>
 <span id="cb35-2"><a href="manipulación-de-datos.html#cb35-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb35-3"><a href="manipulación-de-datos.html#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(filtro)</span></code></pre></div>
-<pre><code>##  [1] created_on      provincia       partido         rooms           surface_total  
-##  [6] surface_covered price           currency        title           property_type  
-## [11] operation_type  lat             lon            
+<pre><code>##  [1] created_on      provincia       partido         rooms           surface_total   surface_covered price          
+##  [8] currency        title           property_type   operation_type  lat             lon            
 ## &lt;0 rows&gt; (or 0-length row.names)</code></pre>
 <p>El resultado es 0 porque un registro no puede pertenecer a ambas comunas al mismo tiempo, sin embargo si queremos filtrar aquellos que pertenecen a una u otra podemos hacerlo así:</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="manipulación-de-datos.html#cb37-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, partido<span class="sc">==</span><span class="st">&quot;Comuna 5&quot;</span> <span class="sc">|</span> partido<span class="sc">==</span><span class="st">&quot;Comuna 13&quot;</span>)</span>
@@ -408,20 +380,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006      CABA Comuna 13     2            53              44 26000      ARS
 ## 5     202006      CABA  Comuna 5     2            45              38 20000      ARS
 ## 6     202006      CABA Comuna 13     2            55              55 45000      ARS
-##                                                             title property_type
-## 1           Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento
-## 2                                         Departamento - Belgrano  Departamento
-## 3 Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera  Departamento
-## 4       Unico 2 ambientes A Estrenar! Posesion inmediata! - Nuñez  Departamento
-## 5              Departamento de 2 ambientes en Alquiler en Almagro  Departamento
-## 6                              BLANCO ENCALADA AL 3000 A ESTRENAR  Departamento
-##   operation_type       lat       lon
-## 1       Alquiler -34.55460 -58.46652
-## 2       Alquiler -34.56318 -58.46461
-## 3       Alquiler -34.53795 -58.46671
-## 4       Alquiler -34.54756 -58.47037
-## 5       Alquiler -34.60613 -58.42947
-## 6       Alquiler -34.56313 -58.46550</code></pre>
+##                                                             title property_type operation_type       lat       lon
+## 1           Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento       Alquiler -34.55460 -58.46652
+## 2                                         Departamento - Belgrano  Departamento       Alquiler -34.56318 -58.46461
+## 3 Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera  Departamento       Alquiler -34.53795 -58.46671
+## 4       Unico 2 ambientes A Estrenar! Posesion inmediata! - Nuñez  Departamento       Alquiler -34.54756 -58.47037
+## 5              Departamento de 2 ambientes en Alquiler en Almagro  Departamento       Alquiler -34.60613 -58.42947
+## 6                              BLANCO ENCALADA AL 3000 A ESTRENAR  Departamento       Alquiler -34.56313 -58.46550</code></pre>
 <p>También podemos quedarnos con aquellas propiedades que estén en alquiler y que tengan más de 50m2:</p>
 <div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="manipulación-de-datos.html#cb39-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, operation_type<span class="sc">==</span><span class="st">&quot;Alquiler&quot;</span> <span class="sc">&amp;</span> surface_covered<span class="sc">&gt;=</span><span class="dv">50</span>)</span>
 <span id="cb39-2"><a href="manipulación-de-datos.html#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -433,20 +398,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006       GBA Ituzaingó     3            75              75 19000      ARS
 ## 5     202006       GBA     Tigre     3            95              80 42000      ARS
 ## 6     202006       GBA     Tigre     3            98              90 42000      ARS
-##                                                                                              title
-## 1                                  Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera
-## 2                                                               BLANCO ENCALADA AL 3000 A ESTRENAR
-## 3                                      Alquiler, depto de un domitorio frente al parque San Martin
-## 4                                            Americana a 6 cuadras de la estacion de S.A. de Padua
-## 5                                   3 AMBIENTES EN EDIFICIO MIRADORES DE LA BAHIA CON COCHERA FIJA
-## 6 ¡EN EXCLUSIVA! Departamento en alquiler de 3 ambientes Miradores de La Bahía, Bahía de Nordelta.
-##   property_type operation_type       lat       lon
-## 1  Departamento       Alquiler -34.53795 -58.46671
-## 2  Departamento       Alquiler -34.56313 -58.46550
-## 3  Departamento       Alquiler -34.93415 -57.96605
-## 4          Casa       Alquiler -34.65957 -58.69712
-## 5  Departamento       Alquiler -34.39642 -58.64665
-## 6  Departamento       Alquiler -34.39512 -58.64665</code></pre>
+##                                                                                              title property_type
+## 1                                  Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera  Departamento
+## 2                                                               BLANCO ENCALADA AL 3000 A ESTRENAR  Departamento
+## 3                                      Alquiler, depto de un domitorio frente al parque San Martin  Departamento
+## 4                                            Americana a 6 cuadras de la estacion de S.A. de Padua          Casa
+## 5                                   3 AMBIENTES EN EDIFICIO MIRADORES DE LA BAHIA CON COCHERA FIJA  Departamento
+## 6 ¡EN EXCLUSIVA! Departamento en alquiler de 3 ambientes Miradores de La Bahía, Bahía de Nordelta.  Departamento
+##   operation_type       lat       lon
+## 1       Alquiler -34.53795 -58.46671
+## 2       Alquiler -34.56313 -58.46550
+## 3       Alquiler -34.93415 -57.96605
+## 4       Alquiler -34.65957 -58.69712
+## 5       Alquiler -34.39642 -58.64665
+## 6       Alquiler -34.39512 -58.64665</code></pre>
 <p>O con aquellas propiedades que se ubiquen en la Comuna 12, 13 o 14 y que no sean monoambientes:</p>
 <div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="manipulación-de-datos.html#cb41-1" aria-hidden="true" tabindex="-1"></a>filtro <span class="ot">&lt;-</span> <span class="fu">filter</span>(datos_amba, partido <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;Comuna 14&quot;</span>, <span class="st">&quot;Comuna 13&quot;</span>, <span class="st">&quot;Comuna 12&quot;</span>) <span class="sc">&amp;</span> <span class="sc">!</span> rooms<span class="sc">==</span><span class="dv">1</span>)</span>
 <span id="cb41-2"><a href="manipulación-de-datos.html#cb41-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -458,20 +423,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006      CABA Comuna 14     2            43              33 27000      ARS
 ## 5     202006      CABA Comuna 13     2            55              55 45000      ARS
 ## 6     202006      CABA Comuna 14     2            48              48 23000      ARS
-##                                                             title property_type
-## 1 Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera  Departamento
-## 2       Unico 2 ambientes A Estrenar! Posesion inmediata! - Nuñez  Departamento
-## 3                         Depto 2AMB - Av. Balbin 3400 - ALQUILER  Departamento
-## 4                     Dos ambientes con Balcón a Demaría y Patio.  Departamento
-## 5                              BLANCO ENCALADA AL 3000 A ESTRENAR  Departamento
-## 6                                         Departamento - Belgrano  Departamento
-##   operation_type       lat       lon
-## 1       Alquiler -34.53795 -58.46671
-## 2       Alquiler -34.54756 -58.47037
-## 3       Alquiler -34.55700 -58.47898
-## 4       Alquiler -34.57421 -58.42243
-## 5       Alquiler -34.56313 -58.46550
-## 6       Alquiler -34.56456 -58.43559</code></pre>
+##                                                             title property_type operation_type       lat       lon
+## 1 Depto 2AMB c/ Suite y Toilette  - Deheza 1600 - Incluye Cochera  Departamento       Alquiler -34.53795 -58.46671
+## 2       Unico 2 ambientes A Estrenar! Posesion inmediata! - Nuñez  Departamento       Alquiler -34.54756 -58.47037
+## 3                         Depto 2AMB - Av. Balbin 3400 - ALQUILER  Departamento       Alquiler -34.55700 -58.47898
+## 4                     Dos ambientes con Balcón a Demaría y Patio.  Departamento       Alquiler -34.57421 -58.42243
+## 5                              BLANCO ENCALADA AL 3000 A ESTRENAR  Departamento       Alquiler -34.56313 -58.46550
+## 6                                         Departamento - Belgrano  Departamento       Alquiler -34.56456 -58.43559</code></pre>
 <p>¡Y así se pueden hacer todas las combinaciones de filtros que querramos!</p>
 <p>¿Y si en vez de quitar filas queremos quitar columnas? Bueno, aquí tenemos que usar la función de “seleccionar” que veremos a continuación.</p>
 </div>
@@ -495,81 +453,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="manipulación-de-datos.html#cb45-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, <span class="sc">-</span>title)</span>
 <span id="cb45-2"><a href="manipulación-de-datos.html#cb45-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb45-3"><a href="manipulación-de-datos.html#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
-<pre><code>##   created_on provincia       partido rooms surface_total surface_covered price currency
-## 1     202006      CABA      Comuna 7     1            40              37 22500      ARS
-## 2     202006      CABA     Comuna 13     1            30              30 18000      ARS
-## 3     202006      CABA     Comuna 13     1            31              29 17900      ARS
-## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
-## 5     202006       GBA Vicente López     1            36              27 19000      ARS
-## 6     202006       GBA    La Matanza     2            24              24 12000      ARS
-##   property_type operation_type       lat       lon
-## 1  Departamento       Alquiler -34.61917 -58.46222
-## 2  Departamento       Alquiler -34.55460 -58.46652
-## 3  Departamento       Alquiler -34.56318 -58.46461
-## 4  Departamento       Alquiler -34.61836 -58.36090
-## 5  Departamento       Alquiler -34.53344 -58.49345
-## 6            PH       Alquiler -34.66253 -58.52914</code></pre>
-<p>Con “:” podríamos indicar que queremos seleccionar un rango de columnas. Desde price hasta operation_type:</p>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="manipulación-de-datos.html#cb47-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, price<span class="sc">:</span>operation_type)</span>
-<span id="cb47-2"><a href="manipulación-de-datos.html#cb47-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-3"><a href="manipulación-de-datos.html#cb47-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
-<pre><code>##   price currency
-## 1 22500      ARS
-## 2 18000      ARS
-## 3 17900      ARS
-## 4 42000      ARS
-## 5 19000      ARS
-## 6 12000      ARS
-##                                                                           title
-## 1                                                         Departamento - Flores
-## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3                                                       Departamento - Belgrano
-## 4                              Monoambiente con cochera. Zencity. Puerto Madero
-## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
-## 6                                                        PH - Lomas Del Mirador
-##   property_type operation_type
-## 1  Departamento       Alquiler
-## 2  Departamento       Alquiler
-## 3  Departamento       Alquiler
-## 4  Departamento       Alquiler
-## 5  Departamento       Alquiler
-## 6            PH       Alquiler</code></pre>
-<p>O con las que ocupan de la posición 7 a la 10:</p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="manipulación-de-datos.html#cb49-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, <span class="dv">7</span><span class="sc">:</span><span class="dv">10</span>)</span>
-<span id="cb49-2"><a href="manipulación-de-datos.html#cb49-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb49-3"><a href="manipulación-de-datos.html#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
-<pre><code>##   price currency
-## 1 22500      ARS
-## 2 18000      ARS
-## 3 17900      ARS
-## 4 42000      ARS
-## 5 19000      ARS
-## 6 12000      ARS
-##                                                                           title
-## 1                                                         Departamento - Flores
-## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3                                                       Departamento - Belgrano
-## 4                              Monoambiente con cochera. Zencity. Puerto Madero
-## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
-## 6                                                        PH - Lomas Del Mirador
-##   property_type
-## 1  Departamento
-## 2  Departamento
-## 3  Departamento
-## 4  Departamento
-## 5  Departamento
-## 6            PH</code></pre>
-<p>O agregando un “-” adelante podríamos quedarnos con aquellas que no ocupan de la posición 7 a 10:</p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="manipulación-de-datos.html#cb51-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, <span class="sc">-</span>(<span class="dv">7</span><span class="sc">:</span><span class="dv">10</span>))</span>
-<span id="cb51-2"><a href="manipulación-de-datos.html#cb51-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb51-3"><a href="manipulación-de-datos.html#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
-<pre><code>##   created_on provincia       partido rooms surface_total surface_covered operation_type
-## 1     202006      CABA      Comuna 7     1            40              37       Alquiler
-## 2     202006      CABA     Comuna 13     1            30              30       Alquiler
-## 3     202006      CABA     Comuna 13     1            31              29       Alquiler
-## 4     202006      CABA      Comuna 1     1            35              35       Alquiler
-## 5     202006       GBA Vicente López     1            36              27       Alquiler
-## 6     202006       GBA    La Matanza     2            24              24       Alquiler
+<pre><code>##   created_on provincia       partido rooms surface_total surface_covered price currency property_type operation_type
+## 1     202006      CABA      Comuna 7     1            40              37 22500      ARS  Departamento       Alquiler
+## 2     202006      CABA     Comuna 13     1            30              30 18000      ARS  Departamento       Alquiler
+## 3     202006      CABA     Comuna 13     1            31              29 17900      ARS  Departamento       Alquiler
+## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS  Departamento       Alquiler
+## 5     202006       GBA Vicente López     1            36              27 19000      ARS  Departamento       Alquiler
+## 6     202006       GBA    La Matanza     2            24              24 12000      ARS            PH       Alquiler
 ##         lat       lon
 ## 1 -34.61917 -58.46222
 ## 2 -34.55460 -58.46652
@@ -577,6 +467,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4 -34.61836 -58.36090
 ## 5 -34.53344 -58.49345
 ## 6 -34.66253 -58.52914</code></pre>
+<p>Con “:” podríamos indicar que queremos seleccionar un rango de columnas. Desde price hasta operation_type:</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="manipulación-de-datos.html#cb47-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, price<span class="sc">:</span>operation_type)</span>
+<span id="cb47-2"><a href="manipulación-de-datos.html#cb47-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-3"><a href="manipulación-de-datos.html#cb47-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
+<pre><code>##   price currency                                                                         title property_type
+## 1 22500      ARS                                                         Departamento - Flores  Departamento
+## 2 18000      ARS                         Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento
+## 3 17900      ARS                                                       Departamento - Belgrano  Departamento
+## 4 42000      ARS                              Monoambiente con cochera. Zencity. Puerto Madero  Departamento
+## 5 19000      ARS Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa  Departamento
+## 6 12000      ARS                                                        PH - Lomas Del Mirador            PH
+##   operation_type
+## 1       Alquiler
+## 2       Alquiler
+## 3       Alquiler
+## 4       Alquiler
+## 5       Alquiler
+## 6       Alquiler</code></pre>
+<p>O con las que ocupan de la posición 7 a la 10:</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="manipulación-de-datos.html#cb49-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, <span class="dv">7</span><span class="sc">:</span><span class="dv">10</span>)</span>
+<span id="cb49-2"><a href="manipulación-de-datos.html#cb49-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-3"><a href="manipulación-de-datos.html#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
+<pre><code>##   price currency                                                                         title property_type
+## 1 22500      ARS                                                         Departamento - Flores  Departamento
+## 2 18000      ARS                         Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento
+## 3 17900      ARS                                                       Departamento - Belgrano  Departamento
+## 4 42000      ARS                              Monoambiente con cochera. Zencity. Puerto Madero  Departamento
+## 5 19000      ARS Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa  Departamento
+## 6 12000      ARS                                                        PH - Lomas Del Mirador            PH</code></pre>
+<p>O agregando un “-” adelante podríamos quedarnos con aquellas que no ocupan de la posición 7 a 10:</p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="manipulación-de-datos.html#cb51-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, <span class="sc">-</span>(<span class="dv">7</span><span class="sc">:</span><span class="dv">10</span>))</span>
+<span id="cb51-2"><a href="manipulación-de-datos.html#cb51-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-3"><a href="manipulación-de-datos.html#cb51-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
+<pre><code>##   created_on provincia       partido rooms surface_total surface_covered operation_type       lat       lon
+## 1     202006      CABA      Comuna 7     1            40              37       Alquiler -34.61917 -58.46222
+## 2     202006      CABA     Comuna 13     1            30              30       Alquiler -34.55460 -58.46652
+## 3     202006      CABA     Comuna 13     1            31              29       Alquiler -34.56318 -58.46461
+## 4     202006      CABA      Comuna 1     1            35              35       Alquiler -34.61836 -58.36090
+## 5     202006       GBA Vicente López     1            36              27       Alquiler -34.53344 -58.49345
+## 6     202006       GBA    La Matanza     2            24              24       Alquiler -34.66253 -58.52914</code></pre>
 <p>Otra opción es seleccionar columnas de acuerdo a la primer letra de los nombres. Por ejemplo aquellas que comienzan con la letra “p”:</p>
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="manipulación-de-datos.html#cb53-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, <span class="fu">starts_with</span>(<span class="st">&quot;p&quot;</span>))</span>
 <span id="cb53-2"><a href="manipulación-de-datos.html#cb53-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -592,20 +522,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="manipulación-de-datos.html#cb55-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, <span class="fu">ends_with</span>(<span class="st">&quot;e&quot;</span>))</span>
 <span id="cb55-2"><a href="manipulación-de-datos.html#cb55-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb55-3"><a href="manipulación-de-datos.html#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(seleccion)</span></code></pre></div>
-<pre><code>##   price                                                                         title
-## 1 22500                                                         Departamento - Flores
-## 2 18000                         Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3 17900                                                       Departamento - Belgrano
-## 4 42000                              Monoambiente con cochera. Zencity. Puerto Madero
-## 5 19000 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
-## 6 12000                                                        PH - Lomas Del Mirador
-##   property_type operation_type
-## 1  Departamento       Alquiler
-## 2  Departamento       Alquiler
-## 3  Departamento       Alquiler
-## 4  Departamento       Alquiler
-## 5  Departamento       Alquiler
-## 6            PH       Alquiler</code></pre>
+<pre><code>##   price                                                                         title property_type operation_type
+## 1 22500                                                         Departamento - Flores  Departamento       Alquiler
+## 2 18000                         Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento       Alquiler
+## 3 17900                                                       Departamento - Belgrano  Departamento       Alquiler
+## 4 42000                              Monoambiente con cochera. Zencity. Puerto Madero  Departamento       Alquiler
+## 5 19000 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa  Departamento       Alquiler
+## 6 12000                                                        PH - Lomas Del Mirador            PH       Alquiler</code></pre>
 <p>O que sus nombres contengan la palabra “surface”:</p>
 <div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="manipulación-de-datos.html#cb57-1" aria-hidden="true" tabindex="-1"></a>seleccion <span class="ot">&lt;-</span> <span class="fu">select</span>(datos_amba, <span class="fu">contains</span>(<span class="st">&quot;surface&quot;</span>))</span>
 <span id="cb57-2"><a href="manipulación-de-datos.html#cb57-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -633,20 +556,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
 ## 5     202006       GBA Vicente López     1            36              27 19000      ARS
 ## 6     202006       GBA    La Matanza     2            24              24 12000      ARS
-##                                                                           title
-## 1                                                         Departamento - Flores
-## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3                                                       Departamento - Belgrano
-## 4                              Monoambiente con cochera. Zencity. Puerto Madero
-## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
-## 6                                                        PH - Lomas Del Mirador
-##   property_type operation_type       lat       lon  price_m2
-## 1  Departamento       Alquiler -34.61917 -58.46222  608.1081
-## 2  Departamento       Alquiler -34.55460 -58.46652  600.0000
-## 3  Departamento       Alquiler -34.56318 -58.46461  617.2414
-## 4  Departamento       Alquiler -34.61836 -58.36090 1200.0000
-## 5  Departamento       Alquiler -34.53344 -58.49345  703.7037
-## 6            PH       Alquiler -34.66253 -58.52914  500.0000</code></pre>
+##                                                                           title property_type operation_type       lat
+## 1                                                         Departamento - Flores  Departamento       Alquiler -34.61917
+## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento       Alquiler -34.55460
+## 3                                                       Departamento - Belgrano  Departamento       Alquiler -34.56318
+## 4                              Monoambiente con cochera. Zencity. Puerto Madero  Departamento       Alquiler -34.61836
+## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa  Departamento       Alquiler -34.53344
+## 6                                                        PH - Lomas Del Mirador            PH       Alquiler -34.66253
+##         lon  price_m2
+## 1 -58.46222  608.1081
+## 2 -58.46652  600.0000
+## 3 -58.46461  617.2414
+## 4 -58.36090 1200.0000
+## 5 -58.49345  703.7037
+## 6 -58.52914  500.0000</code></pre>
 <p>Si queremos redondear el resultado obtenido, principalmente cuando es una división y por default nos pone varios decimales, tenemos que usar <code>round()</code> y asignar la cantidad de decimales deseados, en este caso usaré 2:</p>
 <div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="manipulación-de-datos.html#cb61-1" aria-hidden="true" tabindex="-1"></a>modificar <span class="ot">&lt;-</span> <span class="fu">mutate</span>(datos_amba, <span class="at">price_m2=</span><span class="fu">round</span>(price<span class="sc">/</span>surface_covered, <span class="dv">2</span>))</span>
 <span id="cb61-2"><a href="manipulación-de-datos.html#cb61-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -658,20 +581,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
 ## 5     202006       GBA Vicente López     1            36              27 19000      ARS
 ## 6     202006       GBA    La Matanza     2            24              24 12000      ARS
-##                                                                           title
-## 1                                                         Departamento - Flores
-## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3                                                       Departamento - Belgrano
-## 4                              Monoambiente con cochera. Zencity. Puerto Madero
-## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
-## 6                                                        PH - Lomas Del Mirador
-##   property_type operation_type       lat       lon price_m2
-## 1  Departamento       Alquiler -34.61917 -58.46222   608.11
-## 2  Departamento       Alquiler -34.55460 -58.46652   600.00
-## 3  Departamento       Alquiler -34.56318 -58.46461   617.24
-## 4  Departamento       Alquiler -34.61836 -58.36090  1200.00
-## 5  Departamento       Alquiler -34.53344 -58.49345   703.70
-## 6            PH       Alquiler -34.66253 -58.52914   500.00</code></pre>
+##                                                                           title property_type operation_type       lat
+## 1                                                         Departamento - Flores  Departamento       Alquiler -34.61917
+## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento       Alquiler -34.55460
+## 3                                                       Departamento - Belgrano  Departamento       Alquiler -34.56318
+## 4                              Monoambiente con cochera. Zencity. Puerto Madero  Departamento       Alquiler -34.61836
+## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa  Departamento       Alquiler -34.53344
+## 6                                                        PH - Lomas Del Mirador            PH       Alquiler -34.66253
+##         lon price_m2
+## 1 -58.46222   608.11
+## 2 -58.46652   600.00
+## 3 -58.46461   617.24
+## 4 -58.36090  1200.00
+## 5 -58.49345   703.70
+## 6 -58.52914   500.00</code></pre>
 <p>Como verán, para hacer cálculos entre columnas numéricas podemos utilizar:</p>
 <ul>
 <li>A / B <strong>A dividido B</strong></li>
@@ -690,20 +613,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
 ## 5     202006       GBA Vicente López     1            36              27 19000      ARS
 ## 6     202006       GBA    La Matanza     2            24              24 12000      ARS
-##                                                                           title
-## 1                                                         Departamento - Flores
-## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3                                                       Departamento - Belgrano
-## 4                              Monoambiente con cochera. Zencity. Puerto Madero
-## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
-## 6                                                        PH - Lomas Del Mirador
-##   property_type operation_type       lat       lon surface_total_cm2
-## 1  Departamento       Alquiler -34.61917 -58.46222            400000
-## 2  Departamento       Alquiler -34.55460 -58.46652            300000
-## 3  Departamento       Alquiler -34.56318 -58.46461            310000
-## 4  Departamento       Alquiler -34.61836 -58.36090            350000
-## 5  Departamento       Alquiler -34.53344 -58.49345            360000
-## 6            PH       Alquiler -34.66253 -58.52914            240000</code></pre>
+##                                                                           title property_type operation_type       lat
+## 1                                                         Departamento - Flores  Departamento       Alquiler -34.61917
+## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento       Alquiler -34.55460
+## 3                                                       Departamento - Belgrano  Departamento       Alquiler -34.56318
+## 4                              Monoambiente con cochera. Zencity. Puerto Madero  Departamento       Alquiler -34.61836
+## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa  Departamento       Alquiler -34.53344
+## 6                                                        PH - Lomas Del Mirador            PH       Alquiler -34.66253
+##         lon surface_total_cm2
+## 1 -58.46222            400000
+## 2 -58.46652            300000
+## 3 -58.46461            310000
+## 4 -58.36090            350000
+## 5 -58.49345            360000
+## 6 -58.52914            240000</code></pre>
 <p>Dejando de lado los cálculos, otra posibilidad que tenemos es separar el contenido de una columna en 2, por ejemplo dividamos en año y mes la data que aparece en created_on. Para esto utilizaremos <code>substr()</code>:</p>
 <div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="manipulación-de-datos.html#cb65-1" aria-hidden="true" tabindex="-1"></a>modificar <span class="ot">&lt;-</span> <span class="fu">mutate</span>(datos_amba,</span>
 <span id="cb65-2"><a href="manipulación-de-datos.html#cb65-2" aria-hidden="true" tabindex="-1"></a>                    <span class="at">year =</span> <span class="fu">substr</span>(created_on, <span class="dv">1</span>, <span class="dv">4</span>),</span>
@@ -717,20 +640,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
 ## 5     202006       GBA Vicente López     1            36              27 19000      ARS
 ## 6     202006       GBA    La Matanza     2            24              24 12000      ARS
-##                                                                           title
-## 1                                                         Departamento - Flores
-## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3                                                       Departamento - Belgrano
-## 4                              Monoambiente con cochera. Zencity. Puerto Madero
-## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
-## 6                                                        PH - Lomas Del Mirador
-##   property_type operation_type       lat       lon year month
-## 1  Departamento       Alquiler -34.61917 -58.46222 2020    06
-## 2  Departamento       Alquiler -34.55460 -58.46652 2020    06
-## 3  Departamento       Alquiler -34.56318 -58.46461 2020    06
-## 4  Departamento       Alquiler -34.61836 -58.36090 2020    06
-## 5  Departamento       Alquiler -34.53344 -58.49345 2020    06
-## 6            PH       Alquiler -34.66253 -58.52914 2020    06</code></pre>
+##                                                                           title property_type operation_type       lat
+## 1                                                         Departamento - Flores  Departamento       Alquiler -34.61917
+## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento       Alquiler -34.55460
+## 3                                                       Departamento - Belgrano  Departamento       Alquiler -34.56318
+## 4                              Monoambiente con cochera. Zencity. Puerto Madero  Departamento       Alquiler -34.61836
+## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa  Departamento       Alquiler -34.53344
+## 6                                                        PH - Lomas Del Mirador            PH       Alquiler -34.66253
+##         lon year month
+## 1 -58.46222 2020    06
+## 2 -58.46652 2020    06
+## 3 -58.46461 2020    06
+## 4 -58.36090 2020    06
+## 5 -58.49345 2020    06
+## 6 -58.52914 2020    06</code></pre>
 <p>Otra aplicación que tiene <code>mutate()</code> es la de agregar columnas con algun contenido que elijamos nosotros, como por ejemplo sumemos una nueva columna que indique la fuente de donde descargamos toda esta información:</p>
 <div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="manipulación-de-datos.html#cb67-1" aria-hidden="true" tabindex="-1"></a>modificar <span class="ot">&lt;-</span> <span class="fu">mutate</span>(datos_amba, <span class="at">fuente=</span><span class="st">&quot;Properati&quot;</span>)</span>
 <span id="cb67-2"><a href="manipulación-de-datos.html#cb67-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -742,20 +665,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
 ## 5     202006       GBA Vicente López     1            36              27 19000      ARS
 ## 6     202006       GBA    La Matanza     2            24              24 12000      ARS
-##                                                                           title
-## 1                                                         Departamento - Flores
-## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3                                                       Departamento - Belgrano
-## 4                              Monoambiente con cochera. Zencity. Puerto Madero
-## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
-## 6                                                        PH - Lomas Del Mirador
-##   property_type operation_type       lat       lon    fuente
-## 1  Departamento       Alquiler -34.61917 -58.46222 Properati
-## 2  Departamento       Alquiler -34.55460 -58.46652 Properati
-## 3  Departamento       Alquiler -34.56318 -58.46461 Properati
-## 4  Departamento       Alquiler -34.61836 -58.36090 Properati
-## 5  Departamento       Alquiler -34.53344 -58.49345 Properati
-## 6            PH       Alquiler -34.66253 -58.52914 Properati</code></pre>
+##                                                                           title property_type operation_type       lat
+## 1                                                         Departamento - Flores  Departamento       Alquiler -34.61917
+## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento       Alquiler -34.55460
+## 3                                                       Departamento - Belgrano  Departamento       Alquiler -34.56318
+## 4                              Monoambiente con cochera. Zencity. Puerto Madero  Departamento       Alquiler -34.61836
+## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa  Departamento       Alquiler -34.53344
+## 6                                                        PH - Lomas Del Mirador            PH       Alquiler -34.66253
+##         lon    fuente
+## 1 -58.46222 Properati
+## 2 -58.46652 Properati
+## 3 -58.46461 Properati
+## 4 -58.36090 Properati
+## 5 -58.49345 Properati
+## 6 -58.52914 Properati</code></pre>
 <p>Ahora veamos como modificar el tipo de dato dentro de una columna:</p>
 <div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="manipulación-de-datos.html#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(datos_amba<span class="sc">$</span>title)</span></code></pre></div>
 <pre><code>## [1] &quot;factor&quot;</code></pre>
@@ -776,20 +699,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006      CABA      Comuna 1     1            35              35 42000      ARS
 ## 5     202006       GBA Vicente López     1            36              27 19000      ARS
 ## 6     202006       GBA    La Matanza     2            24              24 12000      ARS
-##                                                                           title
-## 1                                                         Departamento - Flores
-## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3                                                       Departamento - Belgrano
-## 4                              Monoambiente con cochera. Zencity. Puerto Madero
-## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
-## 6                                                        PH - Lomas Del Mirador
-##   property_type operation_type       lat       lon      prov_partido
-## 1  Departamento       Alquiler -34.61917 -58.46222     CABA_Comuna 7
-## 2  Departamento       Alquiler -34.55460 -58.46652    CABA_Comuna 13
-## 3  Departamento       Alquiler -34.56318 -58.46461    CABA_Comuna 13
-## 4  Departamento       Alquiler -34.61836 -58.36090     CABA_Comuna 1
-## 5  Departamento       Alquiler -34.53344 -58.49345 GBA_Vicente López
-## 6            PH       Alquiler -34.66253 -58.52914    GBA_La Matanza</code></pre>
+##                                                                           title property_type operation_type       lat
+## 1                                                         Departamento - Flores  Departamento       Alquiler -34.61917
+## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento       Alquiler -34.55460
+## 3                                                       Departamento - Belgrano  Departamento       Alquiler -34.56318
+## 4                              Monoambiente con cochera. Zencity. Puerto Madero  Departamento       Alquiler -34.61836
+## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa  Departamento       Alquiler -34.53344
+## 6                                                        PH - Lomas Del Mirador            PH       Alquiler -34.66253
+##         lon      prov_partido
+## 1 -58.46222     CABA_Comuna 7
+## 2 -58.46652    CABA_Comuna 13
+## 3 -58.46461    CABA_Comuna 13
+## 4 -58.36090     CABA_Comuna 1
+## 5 -58.49345 GBA_Vicente López
+## 6 -58.52914    GBA_La Matanza</code></pre>
 </div>
 <div id="ordenar-registros" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Ordenar registros</h2>
@@ -806,20 +729,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006      CABA  Comuna 2     1            15              15 12900      ARS
 ## 5     202007      CABA Comuna 15     1            18              18 48000      USD
 ## 6     202006       GBA     Morón     1            18              17 35000      USD
-##                                                                      title property_type
-## 1                             Garage - Cochera Descubierta en Villa Crespo  Departamento
-## 2                    Departamento de 2 ambientes en Pradera, Santa Barbara  Departamento
-## 3                                   VENTA PH 13,84 M2 PANTA BAJA BALVANERA            PH
-## 4                                 Departamento en Alquiler en Barrio Norte  Departamento
-## 5                       Venta Monoambiente estudio con amenities Chacarita  Departamento
-## 6 Lindo monoambiente en 2do piso por escalera al frente. BAJAS EXPENSAS!!!  Departamento
-##   operation_type       lat       lon
-## 1          Venta -34.60330 -58.45547
-## 2       Alquiler -34.44604 -58.63236
-## 3          Venta -34.61566 -58.39221
-## 4       Alquiler -34.59092 -58.40632
-## 5          Venta -34.59043 -58.44666
-## 6          Venta -34.64390 -58.63221</code></pre>
+##                                                                      title property_type operation_type       lat
+## 1                             Garage - Cochera Descubierta en Villa Crespo  Departamento          Venta -34.60330
+## 2                    Departamento de 2 ambientes en Pradera, Santa Barbara  Departamento       Alquiler -34.44604
+## 3                                   VENTA PH 13,84 M2 PANTA BAJA BALVANERA            PH          Venta -34.61566
+## 4                                 Departamento en Alquiler en Barrio Norte  Departamento       Alquiler -34.59092
+## 5                       Venta Monoambiente estudio con amenities Chacarita  Departamento          Venta -34.59043
+## 6 Lindo monoambiente en 2do piso por escalera al frente. BAJAS EXPENSAS!!!  Departamento          Venta -34.64390
+##         lon
+## 1 -58.45547
+## 2 -58.63236
+## 3 -58.39221
+## 4 -58.40632
+## 5 -58.44666
+## 6 -58.63221</code></pre>
 <p>Pero si queremos ordenar en forma descendente debemos aclararlo con <code>desc()</code>:</p>
 <div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="manipulación-de-datos.html#cb77-1" aria-hidden="true" tabindex="-1"></a>ordenar <span class="ot">&lt;-</span> <span class="fu">arrange</span>(datos_amba, <span class="fu">desc</span>(surface_total))</span>
 <span id="cb77-2"><a href="manipulación-de-datos.html#cb77-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -831,20 +754,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006      CABA   Comuna 13     2          3650              35 109500      USD
 ## 5     202007       GBA       Luján     4          2703             182 370000      USD
 ## 6     202007       GBA       Pilar     3          2500              70 121000      USD
-##                                                           title property_type
-## 1                                          Venta de Casa Quinta          Casa
-## 2 España entre Buchard y Esmeralda. Casa en venta, San Viciente          Casa
-## 3            Venta casaquinta Del Viso Residencial Los Jazmines          Casa
-## 4            Acogedor Departamento de dos ambientes en Belgrano  Departamento
-## 5                Casa 3 dormitorios estilo campo Estancias Golf          Casa
-## 6              VENTA CASA 2 AMBIENTES PILAR 2500 M2 DE PARQUE!!          Casa
-##   operation_type       lat       lon
-## 1          Venta -34.40066 -58.86919
-## 2          Venta -35.02984 -58.40594
-## 3          Venta -34.45687 -58.79651
-## 4          Venta -34.55398 -58.44853
-## 5          Venta -34.49543 -59.00930
-## 6          Venta -34.41586 -58.85729</code></pre>
+##                                                           title property_type operation_type       lat       lon
+## 1                                          Venta de Casa Quinta          Casa          Venta -34.40066 -58.86919
+## 2 España entre Buchard y Esmeralda. Casa en venta, San Viciente          Casa          Venta -35.02984 -58.40594
+## 3            Venta casaquinta Del Viso Residencial Los Jazmines          Casa          Venta -34.45687 -58.79651
+## 4            Acogedor Departamento de dos ambientes en Belgrano  Departamento          Venta -34.55398 -58.44853
+## 5                Casa 3 dormitorios estilo campo Estancias Golf          Casa          Venta -34.49543 -59.00930
+## 6              VENTA CASA 2 AMBIENTES PILAR 2500 M2 DE PARQUE!!          Casa          Venta -34.41586 -58.85729</code></pre>
 <p>También podemos ordenar por 2 o más columnas. En este caso, R priorizará ordenar la primera, luego la segunda, y asi sucesivamente. Veamos un ejemplo:</p>
 <div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="manipulación-de-datos.html#cb79-1" aria-hidden="true" tabindex="-1"></a>ordenar <span class="ot">&lt;-</span> <span class="fu">arrange</span>(datos_amba, partido, rooms)</span>
 <span id="cb79-2"><a href="manipulación-de-datos.html#cb79-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -856,51 +772,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202007       GBA Almirante Brown     2            52              48  18000      ARS
 ## 5     202007       GBA Almirante Brown     2            47              47  16000      ARS
 ## 6     202007       GBA Almirante Brown     2            50              50  96000      USD
-##                                                                                      title
-## 1                                                                 Departamento en alquiler
-## 2                                                                   Departamento - Adrogue
-## 3                                                                   Departamento - Adrogue
-## 4 Venta de Departamento 2 ambientes en Hermoso Edificio a metros de Plaza Brown de Adrogué
-## 5                                             DEPARTAMENTO 2 AMBIENTES EN AV ESPORA AL 800
-## 6                                                                   Departamento - Adrogue
-##   property_type operation_type       lat       lon
-## 1  Departamento       Alquiler -34.81144 -58.39264
-## 2  Departamento       Alquiler -34.79964 -58.38278
-## 3  Departamento          Venta -34.79732 -58.39132
-## 4  Departamento       Alquiler -34.79720 -58.38280
-## 5  Departamento       Alquiler -34.79880 -58.38863
-## 6  Departamento          Venta -34.79913 -58.38364</code></pre>
+##                                                                                      title property_type operation_type
+## 1                                                                 Departamento en alquiler  Departamento       Alquiler
+## 2                                                                   Departamento - Adrogue  Departamento       Alquiler
+## 3                                                                   Departamento - Adrogue  Departamento          Venta
+## 4 Venta de Departamento 2 ambientes en Hermoso Edificio a metros de Plaza Brown de Adrogué  Departamento       Alquiler
+## 5                                             DEPARTAMENTO 2 AMBIENTES EN AV ESPORA AL 800  Departamento       Alquiler
+## 6                                                                   Departamento - Adrogue  Departamento          Venta
+##         lat       lon
+## 1 -34.81144 -58.39264
+## 2 -34.79964 -58.38278
+## 3 -34.79732 -58.39132
+## 4 -34.79720 -58.38280
+## 5 -34.79880 -58.38863
+## 6 -34.79913 -58.38364</code></pre>
 <div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="manipulación-de-datos.html#cb81-1" aria-hidden="true" tabindex="-1"></a>ordenar <span class="ot">&lt;-</span> <span class="fu">arrange</span>(datos_amba, partido, <span class="fu">desc</span>(rooms))</span>
 <span id="cb81-2"><a href="manipulación-de-datos.html#cb81-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb81-3"><a href="manipulación-de-datos.html#cb81-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(ordenar)</span></code></pre></div>
-<pre><code>##   created_on provincia         partido rooms surface_total surface_covered   price
-## 1     202007       GBA Almirante Brown     8           447             189  230000
-## 2     202006       GBA Almirante Brown     7           670             590 1500000
-## 3     202006       GBA Almirante Brown     5           239             112  169000
-## 4     202006       GBA Almirante Brown     5           260             120  248000
-## 5     202007       GBA Almirante Brown     5           370             220  230000
-## 6     202006       GBA Almirante Brown     5           180             180  390000
-##   currency
-## 1      USD
-## 2      USD
-## 3      USD
-## 4      USD
-## 5      USD
-## 6      USD
-##                                                                                        title
-## 1                                         Casa c/2 dptos, local y galpón - Lomas del Mirador
-## 2                                                                             Casa - Adrogue
-## 3 A REFACCIONAR! Casona colonial con gran lote, fondo libre, parrilla, 3 dormitorios 2 baños
-## 4                                         Hermoso Duplex 3 dormitorios gran patio 4 cocheras
-## 5                                            Chalet en venta Barrio Santa Rita -  Longchamps
-## 6                        Casa en Construccion en Venta en Barrio Privado &#39;Brisas de Adrogue&#39;
-##   property_type operation_type       lat       lon
-## 1          Casa          Venta -34.86568 -58.37823
-## 2          Casa          Venta -34.80905 -58.40631
-## 3            PH          Venta -34.79638 -58.38691
-## 4          Casa          Venta -34.79746 -58.37885
-## 5          Casa          Venta -34.86473 -58.39129
-## 6          Casa          Venta -34.81368 -58.40300</code></pre>
+<pre><code>##   created_on provincia         partido rooms surface_total surface_covered   price currency
+## 1     202007       GBA Almirante Brown     8           447             189  230000      USD
+## 2     202006       GBA Almirante Brown     7           670             590 1500000      USD
+## 3     202006       GBA Almirante Brown     5           239             112  169000      USD
+## 4     202006       GBA Almirante Brown     5           260             120  248000      USD
+## 5     202007       GBA Almirante Brown     5           370             220  230000      USD
+## 6     202006       GBA Almirante Brown     5           180             180  390000      USD
+##                                                                                        title property_type operation_type
+## 1                                         Casa c/2 dptos, local y galpón - Lomas del Mirador          Casa          Venta
+## 2                                                                             Casa - Adrogue          Casa          Venta
+## 3 A REFACCIONAR! Casona colonial con gran lote, fondo libre, parrilla, 3 dormitorios 2 baños            PH          Venta
+## 4                                         Hermoso Duplex 3 dormitorios gran patio 4 cocheras          Casa          Venta
+## 5                                            Chalet en venta Barrio Santa Rita -  Longchamps          Casa          Venta
+## 6                        Casa en Construccion en Venta en Barrio Privado &#39;Brisas de Adrogue&#39;          Casa          Venta
+##         lat       lon
+## 1 -34.86568 -58.37823
+## 2 -34.80905 -58.40631
+## 3 -34.79638 -58.38691
+## 4 -34.79746 -58.37885
+## 5 -34.86473 -58.39129
+## 6 -34.81368 -58.40300</code></pre>
 </div>
 <div id="renombrar-columnas" class="section level2" number="2.5">
 <h2><span class="header-section-number">2.5</span> Renombrar columnas</h2>
@@ -910,27 +819,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="manipulación-de-datos.html#cb83-1" aria-hidden="true" tabindex="-1"></a>renombrar <span class="ot">&lt;-</span> <span class="fu">rename</span>(datos_amba, <span class="at">ambientes=</span>rooms)</span>
 <span id="cb83-2"><a href="manipulación-de-datos.html#cb83-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb83-3"><a href="manipulación-de-datos.html#cb83-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(renombrar)</span></code></pre></div>
-<pre><code>##   created_on provincia       partido ambientes surface_total surface_covered price
-## 1     202006      CABA      Comuna 7         1            40              37 22500
-## 2     202006      CABA     Comuna 13         1            30              30 18000
-## 3     202006      CABA     Comuna 13         1            31              29 17900
-## 4     202006      CABA      Comuna 1         1            35              35 42000
-## 5     202006       GBA Vicente López         1            36              27 19000
-## 6     202006       GBA    La Matanza         2            24              24 12000
-##   currency                                                                         title
-## 1      ARS                                                         Departamento - Flores
-## 2      ARS                         Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3      ARS                                                       Departamento - Belgrano
-## 4      ARS                              Monoambiente con cochera. Zencity. Puerto Madero
-## 5      ARS Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
-## 6      ARS                                                        PH - Lomas Del Mirador
-##   property_type operation_type       lat       lon
-## 1  Departamento       Alquiler -34.61917 -58.46222
-## 2  Departamento       Alquiler -34.55460 -58.46652
-## 3  Departamento       Alquiler -34.56318 -58.46461
-## 4  Departamento       Alquiler -34.61836 -58.36090
-## 5  Departamento       Alquiler -34.53344 -58.49345
-## 6            PH       Alquiler -34.66253 -58.52914</code></pre>
+<pre><code>##   created_on provincia       partido ambientes surface_total surface_covered price currency
+## 1     202006      CABA      Comuna 7         1            40              37 22500      ARS
+## 2     202006      CABA     Comuna 13         1            30              30 18000      ARS
+## 3     202006      CABA     Comuna 13         1            31              29 17900      ARS
+## 4     202006      CABA      Comuna 1         1            35              35 42000      ARS
+## 5     202006       GBA Vicente López         1            36              27 19000      ARS
+## 6     202006       GBA    La Matanza         2            24              24 12000      ARS
+##                                                                           title property_type operation_type       lat
+## 1                                                         Departamento - Flores  Departamento       Alquiler -34.61917
+## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento       Alquiler -34.55460
+## 3                                                       Departamento - Belgrano  Departamento       Alquiler -34.56318
+## 4                              Monoambiente con cochera. Zencity. Puerto Madero  Departamento       Alquiler -34.61836
+## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa  Departamento       Alquiler -34.53344
+## 6                                                        PH - Lomas Del Mirador            PH       Alquiler -34.66253
+##         lon
+## 1 -58.46222
+## 2 -58.46652
+## 3 -58.46461
+## 4 -58.36090
+## 5 -58.49345
+## 6 -58.52914</code></pre>
 <p>Como habrán notado, primero hay que poner el nombre de la nueva columna y luego el de la columna actual. Esto es muy importante, porque si lo hacemos al revés nos dará un error.</p>
 <p>Ahora veamos un ejemplo y cambiemos los nombres de 3 columnas:</p>
 <div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="manipulación-de-datos.html#cb85-1" aria-hidden="true" tabindex="-1"></a>renombrar <span class="ot">&lt;-</span> <span class="fu">rename</span>(datos_amba, <span class="at">ambientes=</span>rooms, <span class="at">m2_cubierto=</span>surface_covered, <span class="at">m2_total=</span>surface_total)</span>
@@ -943,20 +852,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4     202006      CABA      Comuna 1         1       35          35 42000      ARS
 ## 5     202006       GBA Vicente López         1       36          27 19000      ARS
 ## 6     202006       GBA    La Matanza         2       24          24 12000      ARS
-##                                                                           title
-## 1                                                         Departamento - Flores
-## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!
-## 3                                                       Departamento - Belgrano
-## 4                              Monoambiente con cochera. Zencity. Puerto Madero
-## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa
-## 6                                                        PH - Lomas Del Mirador
-##   property_type operation_type       lat       lon
-## 1  Departamento       Alquiler -34.61917 -58.46222
-## 2  Departamento       Alquiler -34.55460 -58.46652
-## 3  Departamento       Alquiler -34.56318 -58.46461
-## 4  Departamento       Alquiler -34.61836 -58.36090
-## 5  Departamento       Alquiler -34.53344 -58.49345
-## 6            PH       Alquiler -34.66253 -58.52914</code></pre>
+##                                                                           title property_type operation_type       lat
+## 1                                                         Departamento - Flores  Departamento       Alquiler -34.61917
+## 2                         Retasado! Monoambiente en Nuñez, excelente ubicación!  Departamento       Alquiler -34.55460
+## 3                                                       Departamento - Belgrano  Departamento       Alquiler -34.56318
+## 4                              Monoambiente con cochera. Zencity. Puerto Madero  Departamento       Alquiler -34.61836
+## 5 Alquiler TORRE dpto de 1o2 ambientes - excelente luz y vista cochera optativa  Departamento       Alquiler -34.53344
+## 6                                                        PH - Lomas Del Mirador            PH       Alquiler -34.66253
+##         lon
+## 1 -58.46222
+## 2 -58.46652
+## 3 -58.46461
+## 4 -58.36090
+## 5 -58.49345
+## 6 -58.52914</code></pre>
 </div>
 <div id="resumir-y-agrupar-datos" class="section level2" number="2.6">
 <h2><span class="header-section-number">2.6</span> Resumir y agrupar datos</h2>
@@ -1096,8 +1005,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Tipo 1. Nuestro dataset tiene <strong>diferentes categorías</strong> que están <strong>separadas en muchas filas</strong>. Por ejemplo:</p>
 <p><img src="images/opcion2.JPG" /></p>
 <p>Tipo 2. Nuestro dataset tiene <strong>diferentes categorías</strong> que están <strong>separadas en muchas columnas</strong>. Por ejemplo:</p>
-<p><img src="images/opcion1.JPG" />
-<img src="images/opcion1.JPG" /></p>
+<p><img src="images/opcion1.JPG" /></p>
 <p>Como verán, en ambos casos la información es la misma, lo que cambia es la estructura.</p>
 <p>Es muy probable que al analizar bases de datos nos encontramos con algunas estructuras similares a estas y querramos cambiarlas. Para pasar del Tipo 1 de estructura al Tipo 2 y viceversa utilizaremos las funciones <code>spread()</code> y <code>gather()</code> respectivamente.</p>
 <p><img src="images/spread_gather.jpg" /></p>

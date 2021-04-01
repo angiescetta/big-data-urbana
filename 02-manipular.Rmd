@@ -492,7 +492,6 @@ Tipo 1. Nuestro dataset tiene **diferentes categorías** que están **separadas 
 Tipo 2. Nuestro dataset tiene **diferentes categorías** que están **separadas en muchas columnas**. Por ejemplo:
 
 ![](images/opcion1.jpg)
-![](images/opcion1.jpg)
 
 Como verán, en ambos casos la información es la misma, lo que cambia es la estructura.
 
